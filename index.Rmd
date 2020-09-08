@@ -49,7 +49,7 @@ knitr::opts_chunk$set(
 Welkom bij de online versie van “*^14^C: dateren met radiokoolstof* ”. Deze handleiding werd in 2019 gepubliceerd door
 het agentschap Onroerend Erfgoed en is als pdf te downloaden op de [**Open Archives Repositiry (OAR)**](https://oar.onroerenderfgoed.be/item/5241).
 
-Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar :point_right: [**hier**](https://hanecakr.github.io/handleidingRadiokoolstof/) :point_left: kan je steeds de meest actuele versie raadplegen.
+Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar hier kan je steeds de meest actuele versie raadplegen.
 
 
 **Gelieve te citeren als:** <br/>

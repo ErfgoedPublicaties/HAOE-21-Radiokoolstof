@@ -1,0 +1,15 @@
+# Bayesiaanse analyse {#modelleren}
+
+## Modellering
+
+## Gelijktijdigheid
+
+## Sequenties en fasering
+
+## Historische gebeurtenissen en gekende ijkpunten
+
+## Gesommeerde probabiliteiten
+
+## Wiggle matching
+
+## Valkuilen

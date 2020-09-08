@@ -6,7 +6,15 @@ documentclass: book
 rmd_files: [
   "index.Rmd",
   "01_C14_intro.Rmd",
-  "02_C14_principes.Rmd"
+  "02_C14_principes.Rmd",
+  "03_C14_kalibratie.Rmd",
+  "04_C14_onderzoeksvragen.Rmd",
+  "05_C14_bemonsteren.Rmd",
+  "06_C14_rapporteren.Rmd",
+  "07_C14_modelleren.Rmd",
+  "98_C14_begrippen.Rmd",
+  "99_C14_bronnen.Rmd",
+  "C14_bijlage.Rmd"
 ]
 output_dir: "docs"
 csl: elsevier-harvard.csl
