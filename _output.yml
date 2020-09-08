@@ -1,0 +1,13 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: chapter
+  config:
+     sharing:
+       github: yes
+       facebook: yes
+       twitter: yes
+       all: []
+     toc:
+          before: |
+            <li><strong><a href="./">Handleiding radiokoolstof</a></strong></li>
+
