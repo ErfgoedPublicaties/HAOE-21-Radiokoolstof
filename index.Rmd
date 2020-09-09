@@ -1,7 +1,8 @@
 ---
 title: "Handleiding: dateren met radiokoolstof"
-author: "Kristof Haneca, Anton Ervynck, Mark Van Strydonck"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+author: 
+  "Kristof Haneca^[erfgoedonderzoeker, [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/), kristof.haneca(at)vlaanderen.be] [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7719-8305), Anton Ervynck^[erfgoedonderzoeker, [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/)], Mark Van Strydonck^[voormalig hoofd van het [laboratorium voor C14-dateringen](http://www.kikirpa.be/NL/52/253/Datering+C14.htm) aan het Koninklijk Instituut voor het Kunstpatrimonium (KIK/IRPA) in Brussel.]"
+date: " -- `r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
@@ -46,7 +47,7 @@ knitr::opts_chunk$set(
 
 # Woord vooraf {-}
 
-Welkom bij de online versie van “*^14^C: dateren met radiokoolstof* ”. Deze handleiding werd in 2019 gepubliceerd door
+Welkom bij de online versie van ***^14^C: dateren met radiokoolstof***. Deze handleiding werd in 2019 gepubliceerd door
 het agentschap Onroerend Erfgoed en is als pdf te downloaden op de [**Open Archives Repositiry (OAR)**](https://oar.onroerenderfgoed.be/item/5241).
 
 Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar hier kan je steeds de meest actuele versie raadplegen.
@@ -66,6 +67,6 @@ Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof
  Kristof Haneca <br/>
 `r format(Sys.time(), '%d %B, %Y')`<br/>
  [![](./figuren/RG.png)](https://www.researchgate.net/profile/Kristof_Haneca)
- 
+
  
  ![](./figuren/figuur_readme.png)

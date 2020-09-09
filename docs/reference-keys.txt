@@ -6,6 +6,7 @@ fig:MICADAS
 fig:precisie
 fig:normaalverdeling
 fig:fractionatie
+fig:OxCalLogin
 intro
 principes
 het-chemisch-element-koolstof
@@ -42,3 +43,4 @@ historische-gebeurtenissen-en-gekende-ijkpunten
 gesommeerde-probabiliteiten
 wiggle-matching
 valkuilen
+bijlagen

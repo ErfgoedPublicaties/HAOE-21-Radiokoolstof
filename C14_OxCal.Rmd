@@ -1,0 +1,42 @@
+# (PART\*) BIJLAGE II: OxCal {-}
+
+# **Handleiding OxCal** {-#Oxcal}
+
+## Inleiding {-#OxCal_intro}
+
+Van zodra je de resultaten van het radiokoolstoflabo in handen hebt, kan je er zelf mee aan de slag. De conventionele radiokoolstofdateringen kan je dan kalibreren (en – wat handig is – vroegere dateringen opnieuw kalibreren) en de resultaten op een voor jou logische, geordende en visueel aantrekkelijke manier voorstellen in een grafiek. Bijkomende inzichten uit het archeologisch onderzoek, de geregistreerde stratigrafie of relevante historische bronnen laten bovendien toe de resultaten verder te verfijnen of te groeperen, en zogenaamde Bayesiaanse analyses uit te voeren (zie Handleiding, [hoofdstuk 7](#modelleren)). Deze aanpak vraagt enig inzicht in de materie, de context van het onderzochte staal en hulp van gespecialiseerde software die dergelijke berekeningen kan uitvoeren. De kalibratie van radiokoolstofmetingen vraagt immers complexe wiskundige bewerkingen. Het meest uitgebreide en tevens meest populaire softwarepakket dat hiervoor wordt gebruikt is [OxCal](https://c14.arch.ox.ac.uk/oxcal.html), het kalibratieprogramma ontwikkeld door C. Bronk Ramsey van de Oxford Radiocarbon Accelerator Unit (Bronk Ramsey 1995, 2001, 2009). Het volledige softwarepakket is online vrij te gebruiken. Naast de mogelijkheid om radiokoolstofdateringen te kalibreren, laat het ook toe de dateringen met Bayesiaanse modellen te analyseren.
+
+Er zijn uiteraard nog een aantal andere alternatieven, die eveneens vrij te downloaden zijn:
+
+  - CALIB, online en te downloaden pakket, ontwikkeld door M. Stuiver, P.J. Reimer, & R.W. Reimer: [http://calib.org/calib/] 
+  - CalPal, de ‘Cologne radiocarbon calibration & paleoclimate research package’: [http://www.calpal-online.de/]
+  - BCal, een kalibratieprogramma van de University of Sheffield: [http://bcal.shef.ac.uk/]
+  - Bchron, een kalibratieprogramma als R-package: [https://cran.r-project.org/web/packages/Bchron/vignettes/Bchron.html]. ‘R’ is een statistische programmeertaal. 
+  - rCarbon, is eveneens een R-package, met functies of radiokoolstofdateringen te kalibreren, modelleren en gesommeerde probabiliteiten te analyseren: [https://cran.r-project.org/web/packages/rcarbon/vignettes/rcarbon.html]
+
+OxCal blinkt echter uit in veelzijdigheid. De analyses die het pakket kan uitvoeren kunnen grofweg onderverdeeld worden in twee groepen:
+
+  - Het kalibreren van radiokoolstofmetingen
+  - Het analyseren van groepen van radiokoolstofanalyses, rekening houdend met hun onderlinge samenhang, op basis van chronologische of stratigrafische informatie.
+
+Beide types van analyse worden in onderstaande handleiding behandeld en geïllustreerd met een aantal voorbeelden . Alle behandelde functies en uitgewerkte voorbeelden in deze handleiding voor OxCal zijn gebaseerd op versie 4.3 [build 114, 14/08/2018]. Een meer uitgebreide handleiding voor dit programma is te vinden via de online manual: http://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html. Daarin worden ook meer geavanceerde toepassingen behandeld, die niet in deze handleiding zijn opgenomen.
+
+Het programma OxCal is toegankelijk via de website https://c14.arch.ox.ac.uk/oxcal/ en kan je kosteloos gebruiken. Wie deze link volgt, krijg steeds toegang tot de meest stabiele en meest recente versie van het programma. Bij het eerste gebruik moet je een persoonlijke account aanmaken, waarmee je daarna kan inloggen (figuur B.1), nieuwe projecten aanmaken en je reeds eerder uitgevoerde en bewaarde analyses opnieuw oproepen.
+
+```{r OxCalLogin, fig.cap='Inlogscherm voor OxCal op https://c14.arch.ox.ac.uk/login.', echo = FALSE, out.width='60%', fig.asp=.75, fig.align='center'}
+
+knitr::include_graphics("./figuren/figuur_B_01.jpg")
+
+```
+
+Je kan OxCal ook lokaal installeren op je PC/laptop. Volg hiervoor de instructies op https://c14.arch.ox.ac.uk/oxcal.html#program. Regelmatig de software updaten naar de meest recente versie blijft dan wel nodig. De online versie is daarentegen steeds up-to-date.
+
+
+## Kalibreren {-}
+
+## Een datering simuleren {-}
+
+## Dateringen combineren {-}
+
+## Fasering en chronologie {-}
+

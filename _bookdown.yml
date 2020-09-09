@@ -12,9 +12,9 @@ rmd_files: [
   "05_C14_bemonsteren.Rmd",
   "06_C14_rapporteren.Rmd",
   "07_C14_modelleren.Rmd",
-  "98_C14_begrippen.Rmd",
-  "99_C14_bronnen.Rmd",
-  "C14_bijlage.Rmd"
+  "C14_bronnen.Rmd",
+  "C14_begrippen.Rmd",
+  "C14_OxCal.Rmd"
 ]
 output_dir: "docs"
 csl: elsevier-harvard.csl

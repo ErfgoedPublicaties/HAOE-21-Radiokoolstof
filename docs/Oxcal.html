@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6 Van rapport tot interpretatie | Handleiding: dateren met radiokoolstof</title>
+  <title>Handleiding OxCal | Handleiding: dateren met radiokoolstof</title>
   <meta name="description" content="Geactualiseerde online versie van de handleiding ‘14C: dateren met radiokoolstof’" />
   <meta name="generator" content="bookdown 0.20.3 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6 Van rapport tot interpretatie | Handleiding: dateren met radiokoolstof" />
+  <meta property="og:title" content="Handleiding OxCal | Handleiding: dateren met radiokoolstof" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="./figuren/figuur_readme.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="hanecakr/handleidingRadiokoolstof/" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6 Van rapport tot interpretatie | Handleiding: dateren met radiokoolstof" />
+  <meta name="twitter:title" content="Handleiding OxCal | Handleiding: dateren met radiokoolstof" />
   
   <meta name="twitter:description" content="Geactualiseerde online versie van de handleiding ‘14C: dateren met radiokoolstof’" />
   <meta name="twitter:image" content="./figuren/figuur_readme.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="bemonsteren.html"/>
-<link rel="next" href="modelleren.html"/>
+<link rel="prev" href="begrippen.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -141,26 +141,63 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="rapporteren" class="section level1">
-<h1><span class="header-section-number">6</span> Van rapport tot interpretatie</h1>
-<div id="rapporteren-1" class="section level2">
-<h2><span class="header-section-number">6.1</span> Rapporteren</h2>
+<div id="Oxcal" class="section level1 unnumbered">
+<h1><strong>Handleiding OxCal</strong></h1>
+<div id="OxCal_intro" class="section level2 unnumbered">
+<h2>Inleiding</h2>
+<p>Van zodra je de resultaten van het radiokoolstoflabo in handen hebt, kan je er zelf mee aan de slag. De conventionele radiokoolstofdateringen kan je dan kalibreren (en – wat handig is – vroegere dateringen opnieuw kalibreren) en de resultaten op een voor jou logische, geordende en visueel aantrekkelijke manier voorstellen in een grafiek. Bijkomende inzichten uit het archeologisch onderzoek, de geregistreerde stratigrafie of relevante historische bronnen laten bovendien toe de resultaten verder te verfijnen of te groeperen, en zogenaamde Bayesiaanse analyses uit te voeren (zie Handleiding, <a href="modelleren.html#modelleren">hoofdstuk 7</a>). Deze aanpak vraagt enig inzicht in de materie, de context van het onderzochte staal en hulp van gespecialiseerde software die dergelijke berekeningen kan uitvoeren. De kalibratie van radiokoolstofmetingen vraagt immers complexe wiskundige bewerkingen. Het meest uitgebreide en tevens meest populaire softwarepakket dat hiervoor wordt gebruikt is <a href="https://c14.arch.ox.ac.uk/oxcal.html">OxCal</a>, het kalibratieprogramma ontwikkeld door C. Bronk Ramsey van de Oxford Radiocarbon Accelerator Unit (Bronk Ramsey 1995, 2001, 2009). Het volledige softwarepakket is online vrij te gebruiken. Naast de mogelijkheid om radiokoolstofdateringen te kalibreren, laat het ook toe de dateringen met Bayesiaanse modellen te analyseren.</p>
+<p>Er zijn uiteraard nog een aantal andere alternatieven, die eveneens vrij te downloaden zijn:</p>
+<ul>
+<li>CALIB, online en te downloaden pakket, ontwikkeld door M. Stuiver, P.J. Reimer, &amp; R.W. Reimer: [<a href="http://calib.org/calib/" class="uri">http://calib.org/calib/</a>]</li>
+<li>CalPal, de ‘Cologne radiocarbon calibration &amp; paleoclimate research package’: [<a href="http://www.calpal-online.de/" class="uri">http://www.calpal-online.de/</a>]</li>
+<li>BCal, een kalibratieprogramma van de University of Sheffield: [<a href="http://bcal.shef.ac.uk/" class="uri">http://bcal.shef.ac.uk/</a>]</li>
+<li>Bchron, een kalibratieprogramma als R-package: [<a href="https://cran.r-project.org/web/packages/Bchron/vignettes/Bchron.html" class="uri">https://cran.r-project.org/web/packages/Bchron/vignettes/Bchron.html</a>]. ‘R’ is een statistische programmeertaal.</li>
+<li>rCarbon, is eveneens een R-package, met functies of radiokoolstofdateringen te kalibreren, modelleren en gesommeerde probabiliteiten te analyseren: [<a href="https://cran.r-project.org/web/packages/rcarbon/vignettes/rcarbon.html" class="uri">https://cran.r-project.org/web/packages/rcarbon/vignettes/rcarbon.html</a>]</li>
+</ul>
+<p>OxCal blinkt echter uit in veelzijdigheid. De analyses die het pakket kan uitvoeren kunnen grofweg onderverdeeld worden in twee groepen:</p>
+<ul>
+<li>Het kalibreren van radiokoolstofmetingen</li>
+<li>Het analyseren van groepen van radiokoolstofanalyses, rekening houdend met hun onderlinge samenhang, op basis van chronologische of stratigrafische informatie.</li>
+</ul>
+<p>Beide types van analyse worden in onderstaande handleiding behandeld en geïllustreerd met een aantal voorbeelden . Alle behandelde functies en uitgewerkte voorbeelden in deze handleiding voor OxCal zijn gebaseerd op versie 4.3 [build 114, 14/08/2018]. Een meer uitgebreide handleiding voor dit programma is te vinden via de online manual: <a href="http://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html" class="uri">http://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html</a>. Daarin worden ook meer geavanceerde toepassingen behandeld, die niet in deze handleiding zijn opgenomen.</p>
+<p>Het programma OxCal is toegankelijk via de website <a href="https://c14.arch.ox.ac.uk/oxcal/" class="uri">https://c14.arch.ox.ac.uk/oxcal/</a> en kan je kosteloos gebruiken. Wie deze link volgt, krijg steeds toegang tot de meest stabiele en meest recente versie van het programma. Bij het eerste gebruik moet je een persoonlijke account aanmaken, waarmee je daarna kan inloggen (figuur B.1), nieuwe projecten aanmaken en je reeds eerder uitgevoerde en bewaarde analyses opnieuw oproepen.</p>
+<div class="figure" style="text-align: center"><span id="fig:OxCalLogin"></span>
+<img src="figuren/figuur_B_01.jpg" alt="Inlogscherm voor OxCal op https://c14.arch.ox.ac.uk/login." width="60%" />
+<p class="caption">
+Figuur 8.1: Inlogscherm voor OxCal op <a href="https://c14.arch.ox.ac.uk/login" class="uri">https://c14.arch.ox.ac.uk/login</a>.
+</p>
 </div>
-<div id="reservoireffect" class="section level2">
-<h2><span class="header-section-number">6.2</span> Reservoireffect?</h2>
+<p>Je kan OxCal ook lokaal installeren op je PC/laptop. Volg hiervoor de instructies op <a href="https://c14.arch.ox.ac.uk/oxcal.html#program" class="uri">https://c14.arch.ox.ac.uk/oxcal.html#program</a>. Regelmatig de software updaten naar de meest recente versie blijft dan wel nodig. De online versie is daarentegen steeds up-to-date.</p>
 </div>
-<div id="op-dieet" class="section level2">
-<h2><span class="header-section-number">6.3</span> Op dieet?</h2>
+<div id="kalibreren" class="section level2 unnumbered">
+<h2>Kalibreren</h2>
+</div>
+<div id="een-datering-simuleren" class="section level2 unnumbered">
+<h2>Een datering simuleren</h2>
+</div>
+<div id="dateringen-combineren" class="section level2 unnumbered">
+<h2>Dateringen combineren</h2>
+</div>
+<div id="fasering-en-chronologie" class="section level2 unnumbered">
+<h2>Fasering en chronologie</h2>
 
 </div>
 </div>
+
+
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="bemonsteren.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="modelleren.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="begrippen.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
