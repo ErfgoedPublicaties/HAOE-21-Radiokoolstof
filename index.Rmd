@@ -7,7 +7,6 @@ site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
     split_by: chapter
-    # style: "style.css"
     config:
       toc:
         before: |
@@ -20,7 +19,8 @@ output:
 documentclass: book
 output_dir: "docs"
 github-repo: hanecakr/handleidingRadiokoolstof/
-csl: elsevier-harvard.csl
+bibliography: "C14_biblio.bib"
+csl: elsevier-harvard_nl.csl
 link-citations: TRUE
 nocite: '@*'
 description: "Geactualiseerde online versie van de handleiding '^14^C: dateren met radiokoolstof'"
@@ -63,10 +63,4 @@ Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof
 
 
 
- <br/>
- Kristof Haneca <br/>
-`r format(Sys.time(), '%d %B, %Y')`<br/>
- [![](./figuren/RG.png)](https://www.researchgate.net/profile/Kristof_Haneca)
-
- 
  ![](./figuren/figuur_readme.png)

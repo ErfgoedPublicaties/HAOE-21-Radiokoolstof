@@ -1,11 +1,14 @@
 fig:atoommodel
-fig:atoommodelIsotopen
+fig:atoommodel-isotopen
 fig:koolstofcyclus
 fig:halfwaardetijd
 fig:MICADAS
 fig:precisie
 fig:normaalverdeling
 fig:fractionatie
+fig:kalibratie
+fig:intcal
+fig:bombpeak
 fig:OxCalLogin
 intro
 principes

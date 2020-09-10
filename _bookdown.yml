@@ -18,6 +18,7 @@ rmd_files: [
 ]
 output_dir: "docs"
 csl: elsevier-harvard.csl
+bibliography: "C14_biblio.bib"
 link-citations: TRUE
 nocite: '@*'
 description: "Geactualiseerde online versie van de handleiding '^14^C: dateren met radiokoolstof'"
