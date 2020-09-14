@@ -17,6 +17,16 @@ fig:wortels
 fig:kalib-periode
 fig:combine
 fig:sims
+fig:bot
+tab:tabelAMS
+fig:registratie
+fig:rapport
+fig:Bayes
+fig:Rcombine
+fig:Difference
+fig:Sequentie
+fig:Sum
+fig:wiggle-matching
 fig:OxCalLogin
 intro
 principes
