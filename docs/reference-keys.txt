@@ -9,6 +9,14 @@ fig:fractionatie
 fig:kalibratie
 fig:intcal
 fig:bombpeak
+fig:mortel
+fig:dendro
+fig:stelwiggen
+fig:stam
+fig:wortels
+fig:kalib-periode
+fig:combine
+fig:sims
 fig:OxCalLogin
 intro
 principes
