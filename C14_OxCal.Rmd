@@ -233,14 +233,12 @@ Om volledig correct te zijn, moet er op gewezen worden dat er bij de interpretat
 Het combineren van dateringen wordt niet alleen gebruikt om een verfijnde datering te bekomen bij vermoeden van quasi gelijktijdigheid, maar deze procedure kan ook helpen bewijzen dat bepaalde vondsten helemaal niet uit dezelfde periode dateren. Zo kan bijvoorbeeld residueel en intrusief materiaal als dusdanig herkend worden. Indien er een sterk vermoeden is dat twee dateringen niet een zelfde gebeurtenis dateren – de$\chi^2$-test of *Agreement index* valt boven of onder de kritische drempelwaarde – kan bovendien becijferd worden hoe ver beide gebeurtenissen mogelijk uit elkaar liggen. In OxCal voert de functie `Difference()` daarvoor de nodige bewerkingen uit.
 
 ```{r eval=FALSE}
- {
-  Phase("Mogelijk gelijktijdig?")
-  {
-   R_Date("Date A", 1480, 25);
-   R_Date("Date B", 1380, 25);
-  };
-  Difference("A-B", "Date A", "Date B");
- };
+Plot{}
+{
+ R_Date("Date A", 1480, 25);
+ R_Date("Date B", 1380, 25);
+ Difference("A-B", "Date A", "Date B");
+};
 
 ```
 
@@ -254,7 +252,6 @@ knitr::include_graphics("./figuren/figuur_B_13.png")
 Bij de opbouw van het model dat het verschil tussen twee dateringen berekent, gebruikt je het label of de naam die je aan de individuele dateringen hebt gegeven. In de functie `Difference()` specifieer je dan met welke twee dateringen je wil werken:
 
 ```{r eval=FALSE}
-
 Difference (“verschil”, “eerste datering”, “tweede datering”)
 
 ```

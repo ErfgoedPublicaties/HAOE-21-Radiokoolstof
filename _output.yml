@@ -10,4 +10,7 @@ bookdown::gitbook:
      toc:
           before: |
             <li><strong><a href="./">Handleiding radiokoolstof</a></strong></li>
+          after: |
+            <li><a href="https://bookdown.org/" target="blank">Published with bookdown</a></li>
+
 
