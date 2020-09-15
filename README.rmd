@@ -1,5 +1,6 @@
 ---
 output: rmarkdown::github_document
+  html_preview: false
 ---
 
 # Dateren met radiokoolstof
