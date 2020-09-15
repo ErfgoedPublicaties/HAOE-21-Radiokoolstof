@@ -6,6 +6,9 @@ output:
 README.md genereren met:
      
 rmarkdown::render("README.Rmd", output_format="github_document", output_yaml = NULL)
+
+output_yaml = NULL zorgt er voor dat _output.yml niet wordt gebruikt. Deze laatste is op maat van Bookdown.
+SOms nodig om de 'global protect' connectie uit te schakelen.
 ```
 
 # Dateren met radiokoolstof
@@ -23,12 +26,12 @@ Met deze online versie willen we kleine aanpassingen aan de originele uitgave, v
 Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof, Handleiding agentschap Onroerend Erfgoed 21, Brussel. [online: https://oar.onroerenderfgoed.be/item/5241].
 
 
-
  <br/>
  Kristof Haneca [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7719-8305) <br/>
 `r format(Sys.time(), '%d %B, %Y')`
 <br/>
+<br/>
 
 
- ![](./figuren/figuur_readme.png)
+ ![](./figuren/figuur_readme.png){width=80%}
  &copy; agentschap Onroerend Erfgoed

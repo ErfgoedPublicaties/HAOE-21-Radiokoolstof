@@ -28,6 +28,6 @@ van deze handleiding blijft de originele uitgave, maar :point\_right:
 
 <br/> Kristof Haneca
 [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7719-8305)
-<br/> 15 september, 2020 <br/>
+<br/> 15 september, 2020 <br/> <br/>
 
 ![](./figuren/figuur_readme.png) © agentschap Onroerend Erfgoed
