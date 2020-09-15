@@ -1,5 +1,3 @@
-Dateren met radiokoolstof
-================
 
 # Dateren met radiokoolstof
 
