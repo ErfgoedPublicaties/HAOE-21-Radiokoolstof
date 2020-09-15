@@ -29,4 +29,4 @@ van deze handleiding blijft de originele uitgave, maar :point\_right:
 <br/> Kristof Haneca <br/> 01 september, 2020<br/>
 [![](./figuren/RG.png)](https://www.researchgate.net/profile/Kristof_Haneca)
 
-![](./figuren/figuur_readme.png) © Flanders Heritage Agency
+![](./figuren/figuur_readme.png) © agentschap Onroerend Erfgoed

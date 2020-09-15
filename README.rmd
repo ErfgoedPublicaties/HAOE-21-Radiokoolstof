@@ -20,10 +20,9 @@ Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof
 
 
  <br/>
- Kristof Haneca <br/>
+ Kristof Haneca <br/>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7719-8305)
 `r format(Sys.time(), '%d %B, %Y')`<br/>
- [![](./figuren/RG.png)](https://www.researchgate.net/profile/Kristof_Haneca)
 
 
  ![](./figuren/figuur_readme.png)
- &copy; Flanders Heritage Agency
+ &copy; agentschap Onroerend Erfgoed
