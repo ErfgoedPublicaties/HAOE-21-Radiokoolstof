@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="dateringen-combineren.html"/>
+<link rel="prev" href="densiteitsplot.html"/>
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -52,6 +52,70 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -109,19 +173,35 @@
 <li class="chapter" data-level="7.3" data-path="modelleren.html"><a href="modelleren.html#sequenties-en-fasering"><i class="fa fa-check"></i><b>7.3</b> Sequenties en fasering</a></li>
 <li class="chapter" data-level="7.4" data-path="modelleren.html"><a href="modelleren.html#historische-gebeurtenissen-en-gekende-ijkpunten"><i class="fa fa-check"></i><b>7.4</b> Historische gebeurtenissen en gekende ijkpunten</a></li>
 <li class="chapter" data-level="7.5" data-path="modelleren.html"><a href="modelleren.html#gesommeerde-probabiliteiten"><i class="fa fa-check"></i><b>7.5</b> Gesommeerde probabiliteiten</a></li>
-<li class="chapter" data-level="7.6" data-path="modelleren.html"><a href="modelleren.html#wiggle-matching"><i class="fa fa-check"></i><b>7.6</b> Wiggle matching</a></li>
+<li class="chapter" data-level="7.6" data-path="modelleren.html"><a href="modelleren.html#wiggle-matching"><i class="fa fa-check"></i><b>7.6</b> <em>Wiggle matching</em></a></li>
 <li class="chapter" data-level="7.7" data-path="modelleren.html"><a href="modelleren.html#valkuilen"><i class="fa fa-check"></i><b>7.7</b> Valkuilen</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="bronnen.html"><a href="bronnen.html"><i class="fa fa-check"></i>Bronnen</a></li>
-<li class="chapter" data-level="8" data-path="bijlagen.html"><a href="bijlagen.html"><i class="fa fa-check"></i><b>8</b> Bijlagen</a></li>
-<li class="part"><span><b>BEGRIPPEN EN DEFINITIES</b></span></li>
+<li class="chapter" data-level="8" data-path="bronnen.html"><a href="bronnen.html"><i class="fa fa-check"></i><b>8</b> Bronnen</a></li>
+<li class="chapter" data-level="9" data-path="bijlagen.html"><a href="bijlagen.html"><i class="fa fa-check"></i><b>9</b> Bijlagen</a></li>
+<li class="part"><span><b>BIJLAGE I: begrippen</b></span></li>
 <li class="chapter" data-level="" data-path="begrippen.html"><a href="begrippen.html"><i class="fa fa-check"></i>Begrippen</a></li>
-<li class="part"><span><b>HANDLEIDING OXCAL</b></span></li>
+<li class="part"><span><b>BIJLAGE II: OxCal</b></span></li>
+<li><a href="Oxcal.html#Oxcal"><strong>Handleiding OxCal</strong></a></li>
 <li class="chapter" data-level="" data-path="OxCal-intro.html"><a href="OxCal-intro.html"><i class="fa fa-check"></i>Inleiding</a></li>
-<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html"><i class="fa fa-check"></i>Kalibreren</a></li>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html"><i class="fa fa-check"></i>Kalibreren</a><ul>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#kalibratie-van-één-datering"><i class="fa fa-check"></i>Kalibratie van één datering</a></li>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#kalibratie-van-meerdere-dateringen"><i class="fa fa-check"></i>Kalibratie van meerdere dateringen</a></li>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#datainvoer-via-excel"><i class="fa fa-check"></i>Datainvoer via Excel</a></li>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#grafieken-en-tabellen"><i class="fa fa-check"></i>Grafieken en tabellen</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="een-datering-simuleren.html"><a href="een-datering-simuleren.html"><i class="fa fa-check"></i>Een datering simuleren</a></li>
-<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html"><i class="fa fa-check"></i>Dateringen combineren</a></li>
-<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html"><i class="fa fa-check"></i>Fasering en chronologie</a></li>
+<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html"><i class="fa fa-check"></i>Dateringen combineren</a><ul>
+<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#r_combine"><i class="fa fa-check"></i>R_Combine</a></li>
+<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#combine"><i class="fa fa-check"></i>Combine</a></li>
+<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#difference"><i class="fa fa-check"></i>Difference</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="densiteitsplot.html"><a href="densiteitsplot.html"><i class="fa fa-check"></i>Densiteitsplot</a></li>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html"><i class="fa fa-check"></i>Fasering en chronologie</a><ul>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#modelopbouw"><i class="fa fa-check"></i>Modelopbouw</a></li>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#historische-datum-of-gebeurtenis"><i class="fa fa-check"></i>Historische datum of gebeurtenis</a></li>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#hoe-lang"><i class="fa fa-check"></i>Hoe lang?</a></li>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#kwaliteitscontrole-en-evaluatie"><i class="fa fa-check"></i>Kwaliteitscontrole en evaluatie</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -141,7 +221,231 @@
             <section class="normal" id="section-">
 <div id="fasering-en-chronologie" class="section level1 unnumbered">
 <h1>Fasering en chronologie</h1>
+<p>Het in kaart brengen van de onderlinge samenhang en opeenvolging van individuele radiokoolstofdateringen, kan tot een meer gedetailleerde interpretatie en nauwere datering van gebeurtenissen leiden. Bij archeologisch onderzoek wordt deze informatie uit de stratigrafie van de onderzochte site afgeleid. Deze stratigrafie kan schematisch in beeld gebracht worden door een matrix op te bouwen – de zogenaamde Harris-matrix <span class="citation">(Harris <a href="bronnen.html#ref-harris_principles_1989" role="doc-biblioref">1989</a>)</span> – waardoor bij een uitgekiende selectie van stalen ook het onderlinge verband tussen de individuele radiokoolstofdateringen formeel wordt vastgelegd. Ook tijdens het onderzoek van bouwkundig erfgoed kan het herkennen van verschillende bouwfases, en het in rekening brengen van historische bronnen zoals een gearchiveerd contract, de uitgevoerde radiokoolstofdateringen verder verfijnen. Stratigrafische en chronologische verbanden kunnen mee opgenomen worden in een Bayesiaans model (zie <a href="modelleren.html#modelleren">hoofdstuk 7</a>), waar deze informatie ook een mathematische betekenis krijgt en de radiokoolstofdateringen binnen dit kader inpast. In wat volgt wordt de opbouw van een Bayesiaans model in OxCal geïllustreerd met een aantal voorbeelden.</p>
+<div id="modelopbouw" class="section level2 unnumbered">
+<h2>Modelopbouw</h2>
+<p>De twee meest voorkomende begrippen die van belang zijn bij de opbouw van een Bayesiaans model dat stratigrafie en/of chronologische fasering in rekening brengt, zijn <strong>fasen</strong> en <strong>sequenties</strong>. De definities uit de Handleiding (zie 7.3) worden hier hernomen:</p>
+<ul>
+<li><strong>Fase</strong>: verzameling van gebeurtenissen die samen een coherente, contextuele groep vormen, zonder informatie over de interne chronologische ordening (bv. dateringen uit een zelfde archeologische laag).</li>
+<li><strong>Sequentie</strong>: verzameling van gebeurtenissen die samen een coherente, contextuele groep vormen waarbij de onderlinge chronologische volgorde gekend is (bv. dateringen uit een stratigrafische gelaagdheid).</li>
+</ul>
+<p>In OxCal kunnen beide begrippen gebruikt worden, en onderling gecombineerd, via de functies <code>Sequence()</code> en <code>Phase()</code>. Binnen een fase worden alle radiokoolstofdateringen opgenomen, met de functie <code>R_Date()</code>, die tot eenzelfde archeologische laag, periode of gebeurtenis behoren. Binnen een fase is er geen chronologische volgorde van de gedateerde stalen. Bij een sequentie is de opeenvolging van de verschillende dateringen wel gekend, en worden ze gerangschikt van oud (bovenaan) naar jong (onderaan). Deze volgorde volgt bijvoorbeeld uit de stratigrafische ligging van de gedateerde stalen, waarbij de oudere stalen steeds onder lagen van jonger materiaal werden aangetroffen.</p>
+<p>Beide groeperingen kunnen door elkaar worden gebruikt. Zo kunnen er binnen één sequentie meerdere fasen aanwezig zijn, waarbij de fasen onderling in stratigrafisch verband te brengen zijn, maar er binnen de verschillende fasen geen chronologische ordening kan vooropgesteld worden. Door deze informatie (voorafgaand) in het model in te brengen, kan het dateringsinterval op de individuele gekalibreerde dateringen nauwer berekend worden. In onderstaand voorbeeld worden vier gedateerde stalen uit boven elkaar liggende archeologische lagen in een sequentie gemodelleerd (figuur <a href="fasering-en-chronologie.html#fig:oxcal-15">9.15</a>). Na modellering zijn de originele gekalibreerde dateringen (in grijs) terug te brengen tot een nauwere waarschijnlijkheidsverdeling (donker grijs) – en dus enger tijdsinterval – doordat rekening is gehouden met de onderlinge samenhang van de individuele dateringen.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="fasering-en-chronologie.html#cb6-1"></a> <span class="kw">Plot</span>()</span>
+<span id="cb6-2"><a href="fasering-en-chronologie.html#cb6-2"></a> {</span>
+<span id="cb6-3"><a href="fasering-en-chronologie.html#cb6-3"></a>  <span class="kw">Sequence</span>(<span class="st">&quot;Gesimuleerde sequentie&quot;</span>)</span>
+<span id="cb6-4"><a href="fasering-en-chronologie.html#cb6-4"></a>  {</span>
+<span id="cb6-5"><a href="fasering-en-chronologie.html#cb6-5"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;sim1&quot;</span>, <span class="dv">3200</span>, <span class="dv">25</span>);</span>
+<span id="cb6-6"><a href="fasering-en-chronologie.html#cb6-6"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;sim2&quot;</span>, <span class="dv">3180</span>, <span class="dv">20</span>);</span>
+<span id="cb6-7"><a href="fasering-en-chronologie.html#cb6-7"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;sim3&quot;</span>, <span class="dv">3160</span>, <span class="dv">20</span>);</span>
+<span id="cb6-8"><a href="fasering-en-chronologie.html#cb6-8"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;sim4&quot;</span>, <span class="dv">3150</span>, <span class="dv">20</span>);</span>
+<span id="cb6-9"><a href="fasering-en-chronologie.html#cb6-9"></a>  };</span>
+<span id="cb6-10"><a href="fasering-en-chronologie.html#cb6-10"></a> };</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-15"></span>
+<img src="figuren/figuur_B_15.png" alt=" Bayesiaans model met vier radiokoolstofdateringen die chronologisch kunnen geordend worden op basis van de stratigrafie." width="80%" />
+<p class="caption">
+Figuur 9.15:  Bayesiaans model met vier radiokoolstofdateringen die chronologisch kunnen geordend worden op basis van de stratigrafie.
+</p>
+</div>
+<p>De radiokoolstofdateringen die beschikbaar zijn voor één bepaalde sequentie of fase geven niet noodzakelijk een goede afbakening voor het begin en einde van die fase. Hoe minder gedateerde elementen uit een bepaalde fase, of uit de vroegste fase van een sequentie, hoe minder waarschijnlijk het is dat de oudste datering effectief het oudste element is uit die fase, waardoor je minder zeker bent van de datering van de aanvang van die fase, en van de eventuele sequentie. Hetzelfde geldt – omgekeerd – voor het eind van een fase of een sequentie. OxCal tracht daaraan tegemoet te komen door van de veronderstelling uit te gaan dat de gedateerde stalen een gelijke (uniforme) kans hebben om uit het begin, midden of einde van de fase te dateren. Een uniforme kansverdeling betekent dat de gedateerde materialen beschouwd worden als een willekeurige staalname uit de fase die men wil dateren: ze hebben elk dus evenveel kans op voorkomen op elk mogelijk tijdstip binnen de afgebakende fase. Dit kan in het model ingevoerd door grenzen – boundaries – te definiëren en zo verschillende groepen af te bakenen. De boundaries zullen er rekening mee houden dat de gedateerde stalen waarschijnlijk slechts in beperkte mate de volledige fase overspannen. Hoe groter de steekproef uit één fase, m.a.w. hoe groter het aantal gedateerde stalen, hoe scherper en met meer zekerheid de grenzen van die fase kunnen afgebakend worden.</p>
+<p>In het geval dat verschillende fasen elkaar mooi opvolgen, kan er één sequentie gedefinieerd worden waarbinnen de opeenvolgende fasen worden opgenomen (figuur <a href="fasering-en-chronologie.html#fig:oxcal-16">9.16</a>). De boundaries geven dan aan waar de overgang tussen het einde van de ene en het begin van de daaropvolgende fase te situeren is. Na kalibratie bekomt men zo een nauwere datering voor de individuele dateringen. Deze gemodelleerde kalibratie van de radiokoolstofouderdom wordt steeds in donkere tinten weergegeven, terwijl de oorspronkelijke waarschijnlijkheidsverdeling in lichte grijstinten is aangeduid.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="fasering-en-chronologie.html#cb7-1"></a> <span class="kw">Plot</span>()</span>
+<span id="cb7-2"><a href="fasering-en-chronologie.html#cb7-2"></a> {</span>
+<span id="cb7-3"><a href="fasering-en-chronologie.html#cb7-3"></a>  <span class="kw">Sequence</span>(<span class="st">&quot; &gt; elkaar opeenvolgende lagen&quot;</span>)</span>
+<span id="cb7-4"><a href="fasering-en-chronologie.html#cb7-4"></a>  {</span>
+<span id="cb7-5"><a href="fasering-en-chronologie.html#cb7-5"></a>   <span class="kw">Boundary</span>(<span class="st">&quot; start fase 1&quot;</span>);</span>
+<span id="cb7-6"><a href="fasering-en-chronologie.html#cb7-6"></a>   <span class="kw">Phase</span>(<span class="st">&quot; materiaal uit laag A&quot;</span>)</span>
+<span id="cb7-7"><a href="fasering-en-chronologie.html#cb7-7"></a>   {</span>
+<span id="cb7-8"><a href="fasering-en-chronologie.html#cb7-8"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;A1&quot;</span>, <span class="dv">3675</span>, <span class="dv">34</span>);</span>
+<span id="cb7-9"><a href="fasering-en-chronologie.html#cb7-9"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;A2&quot;</span>, <span class="dv">3670</span>, <span class="dv">40</span>);</span>
+<span id="cb7-10"><a href="fasering-en-chronologie.html#cb7-10"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;A3&quot;</span>, <span class="dv">3600</span>, <span class="dv">35</span>);</span>
+<span id="cb7-11"><a href="fasering-en-chronologie.html#cb7-11"></a>   };</span>
+<span id="cb7-12"><a href="fasering-en-chronologie.html#cb7-12"></a>   <span class="kw">Boundary</span>(<span class="st">&quot; einde fase 1 / begin fase 2&quot;</span>);</span>
+<span id="cb7-13"><a href="fasering-en-chronologie.html#cb7-13"></a>   <span class="kw">Phase</span>(<span class="st">&quot; materiaal uit laag B&quot;</span>)</span>
+<span id="cb7-14"><a href="fasering-en-chronologie.html#cb7-14"></a>   {</span>
+<span id="cb7-15"><a href="fasering-en-chronologie.html#cb7-15"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;B1&quot;</span>, <span class="dv">3420</span>, <span class="dv">45</span>);</span>
+<span id="cb7-16"><a href="fasering-en-chronologie.html#cb7-16"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;B2&quot;</span>, <span class="dv">3370</span>, <span class="dv">35</span>);</span>
+<span id="cb7-17"><a href="fasering-en-chronologie.html#cb7-17"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;B3&quot;</span>, <span class="dv">3435</span>, <span class="dv">40</span>);</span>
+<span id="cb7-18"><a href="fasering-en-chronologie.html#cb7-18"></a>    <span class="kw">R_date</span>(<span class="st">&quot;B4&quot;</span>, <span class="dv">3304</span>, <span class="dv">55</span>);</span>
+<span id="cb7-19"><a href="fasering-en-chronologie.html#cb7-19"></a>    <span class="kw">R_date</span>(<span class="st">&quot;B5&quot;</span>, <span class="dv">3184</span>, <span class="dv">55</span>);</span>
+<span id="cb7-20"><a href="fasering-en-chronologie.html#cb7-20"></a>   };</span>
+<span id="cb7-21"><a href="fasering-en-chronologie.html#cb7-21"></a>   <span class="kw">Boundary</span>(<span class="st">&quot; einde fase 2 / begin fase 3&quot;</span>);</span>
+<span id="cb7-22"><a href="fasering-en-chronologie.html#cb7-22"></a>   <span class="kw">Phase</span>(<span class="st">&quot; materiaal uit laag E&quot;</span>)</span>
+<span id="cb7-23"><a href="fasering-en-chronologie.html#cb7-23"></a>   {</span>
+<span id="cb7-24"><a href="fasering-en-chronologie.html#cb7-24"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;E1&quot;</span>, <span class="dv">3140</span>, <span class="dv">45</span>);</span>
+<span id="cb7-25"><a href="fasering-en-chronologie.html#cb7-25"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;E2&quot;</span>, <span class="dv">3070</span>, <span class="dv">30</span>);</span>
+<span id="cb7-26"><a href="fasering-en-chronologie.html#cb7-26"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;E3&quot;</span>, <span class="dv">3005</span>, <span class="dv">30</span>);</span>
+<span id="cb7-27"><a href="fasering-en-chronologie.html#cb7-27"></a>   };</span>
+<span id="cb7-28"><a href="fasering-en-chronologie.html#cb7-28"></a>   <span class="kw">Boundary</span>(<span class="st">&quot; einde fase 3&quot;</span>);</span>
+<span id="cb7-29"><a href="fasering-en-chronologie.html#cb7-29"></a>  };</span>
+<span id="cb7-30"><a href="fasering-en-chronologie.html#cb7-30"></a> };</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-16"></span>
+<img src="figuren/figuur_B_16.png" alt=" Bayesiaans model met vier radiokoolstofdateringen die chronologisch kunnen geordend worden op basis van de stratigrafie." width="80%" />
+<p class="caption">
+Figuur 9.16:  Bayesiaans model met vier radiokoolstofdateringen die chronologisch kunnen geordend worden op basis van de stratigrafie.
+</p>
+</div>
+<p>Is er daarentegen een overlap mogelijk tussen de verschillende fases (volgende fase vangt aan voor het einde van een voorafgaande fase), dan worden verschillende fasen gedefinieerd binnen één globale fase. De boundaries bepalen dan simpelweg voor elke groep apart het begin en het einde. Het einde van een bepaalde fase kan dan een grote overlap vertonen met de ingeschatte aanvang van een andere fase (figuur <a href="fasering-en-chronologie.html#fig:oxcal-17">9.17</a>).</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="fasering-en-chronologie.html#cb8-1"></a> <span class="kw">Plot</span>()</span>
+<span id="cb8-2"><a href="fasering-en-chronologie.html#cb8-2"></a> {</span>
+<span id="cb8-3"><a href="fasering-en-chronologie.html#cb8-3"></a>  <span class="kw">Phase</span>(<span class="st">&quot; &gt; elkaar overlappende fasen&quot;</span>)</span>
+<span id="cb8-4"><a href="fasering-en-chronologie.html#cb8-4"></a>  {</span>
+<span id="cb8-5"><a href="fasering-en-chronologie.html#cb8-5"></a>   <span class="kw">Sequence</span>()</span>
+<span id="cb8-6"><a href="fasering-en-chronologie.html#cb8-6"></a>   {</span>
+<span id="cb8-7"><a href="fasering-en-chronologie.html#cb8-7"></a>    <span class="kw">Boundary</span>(<span class="st">&quot; start fase 1&quot;</span>);</span>
+<span id="cb8-8"><a href="fasering-en-chronologie.html#cb8-8"></a>    <span class="kw">Phase</span>(<span class="st">&quot; materiaal uit laag A&quot;</span>)</span>
+<span id="cb8-9"><a href="fasering-en-chronologie.html#cb8-9"></a>    {</span>
+<span id="cb8-10"><a href="fasering-en-chronologie.html#cb8-10"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;A1&quot;</span>, <span class="dv">3675</span>, <span class="dv">34</span>);</span>
+<span id="cb8-11"><a href="fasering-en-chronologie.html#cb8-11"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;A2&quot;</span>, <span class="dv">3670</span>, <span class="dv">40</span>);</span>
+<span id="cb8-12"><a href="fasering-en-chronologie.html#cb8-12"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;A3&quot;</span>, <span class="dv">3600</span>, <span class="dv">35</span>);</span>
+<span id="cb8-13"><a href="fasering-en-chronologie.html#cb8-13"></a>    };</span>
+<span id="cb8-14"><a href="fasering-en-chronologie.html#cb8-14"></a>    <span class="kw">Boundary</span>(<span class="st">&quot; einde fase 1&quot;</span>);</span>
+<span id="cb8-15"><a href="fasering-en-chronologie.html#cb8-15"></a>   };</span>
+<span id="cb8-16"><a href="fasering-en-chronologie.html#cb8-16"></a>   <span class="kw">Sequence</span>()</span>
+<span id="cb8-17"><a href="fasering-en-chronologie.html#cb8-17"></a>   {</span>
+<span id="cb8-18"><a href="fasering-en-chronologie.html#cb8-18"></a>    <span class="kw">Boundary</span>(<span class="st">&quot; start fase 2&quot;</span>);</span>
+<span id="cb8-19"><a href="fasering-en-chronologie.html#cb8-19"></a>    <span class="kw">Phase</span>(<span class="st">&quot; materiaal uit laag B&quot;</span>)</span>
+<span id="cb8-20"><a href="fasering-en-chronologie.html#cb8-20"></a>    {</span>
+<span id="cb8-21"><a href="fasering-en-chronologie.html#cb8-21"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;B1&quot;</span>, <span class="dv">3420</span>, <span class="dv">45</span>);</span>
+<span id="cb8-22"><a href="fasering-en-chronologie.html#cb8-22"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;B2&quot;</span>, <span class="dv">3370</span>, <span class="dv">35</span>);</span>
+<span id="cb8-23"><a href="fasering-en-chronologie.html#cb8-23"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;B3&quot;</span>, <span class="dv">3435</span>, <span class="dv">40</span>);</span>
+<span id="cb8-24"><a href="fasering-en-chronologie.html#cb8-24"></a>     <span class="kw">R_date</span>(<span class="st">&quot;B4&quot;</span>, <span class="dv">3304</span>, <span class="dv">55</span>);</span>
+<span id="cb8-25"><a href="fasering-en-chronologie.html#cb8-25"></a>     <span class="kw">R_date</span>(<span class="st">&quot;B5&quot;</span>, <span class="dv">3184</span>, <span class="dv">55</span>);</span>
+<span id="cb8-26"><a href="fasering-en-chronologie.html#cb8-26"></a>    };</span>
+<span id="cb8-27"><a href="fasering-en-chronologie.html#cb8-27"></a>    <span class="kw">Boundary</span>(<span class="st">&quot; einde fase 2&quot;</span>);</span>
+<span id="cb8-28"><a href="fasering-en-chronologie.html#cb8-28"></a>   };</span>
+<span id="cb8-29"><a href="fasering-en-chronologie.html#cb8-29"></a>   <span class="kw">Sequence</span>()</span>
+<span id="cb8-30"><a href="fasering-en-chronologie.html#cb8-30"></a>   {</span>
+<span id="cb8-31"><a href="fasering-en-chronologie.html#cb8-31"></a>    <span class="kw">Boundary</span>(<span class="st">&quot; start fase 3&quot;</span>);</span>
+<span id="cb8-32"><a href="fasering-en-chronologie.html#cb8-32"></a>    <span class="kw">Phase</span>(<span class="st">&quot; materiaal uit laag E&quot;</span>)</span>
+<span id="cb8-33"><a href="fasering-en-chronologie.html#cb8-33"></a>    {</span>
+<span id="cb8-34"><a href="fasering-en-chronologie.html#cb8-34"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;E1&quot;</span>, <span class="dv">3140</span>, <span class="dv">45</span>);</span>
+<span id="cb8-35"><a href="fasering-en-chronologie.html#cb8-35"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;E2&quot;</span>, <span class="dv">3070</span>, <span class="dv">30</span>);</span>
+<span id="cb8-36"><a href="fasering-en-chronologie.html#cb8-36"></a>     <span class="kw">R_Date</span>(<span class="st">&quot;E3&quot;</span>, <span class="dv">3005</span>, <span class="dv">30</span>);</span>
+<span id="cb8-37"><a href="fasering-en-chronologie.html#cb8-37"></a>    };</span>
+<span id="cb8-38"><a href="fasering-en-chronologie.html#cb8-38"></a>    <span class="kw">Boundary</span>(<span class="st">&quot; einde fase 3&quot;</span>);</span>
+<span id="cb8-39"><a href="fasering-en-chronologie.html#cb8-39"></a>   };</span>
+<span id="cb8-40"><a href="fasering-en-chronologie.html#cb8-40"></a>  };</span>
+<span id="cb8-41"><a href="fasering-en-chronologie.html#cb8-41"></a> };</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-17"></span>
+<img src="figuren/figuur_B_17.png" alt=" Modellering van radiokoolstofdateringen uit drie elkaar mogelijk overlappende fases, gedateerd met materiaal uit drie lagen die onderling geen duidelijk stratigrafisch verband hebben." width="80%" />
+<p class="caption">
+Figuur 9.17:  Modellering van radiokoolstofdateringen uit drie elkaar mogelijk overlappende fases, gedateerd met materiaal uit drie lagen die onderling geen duidelijk stratigrafisch verband hebben.
+</p>
+</div>
+<p>Uit bovenstaande voorbeelden blijkt eveneens dat indien er maar een beperkt aantal dateringen beschikbaar is binnen één fase het eveneens moeilijker wordt (er is een grotere onzekerheid) om het begin en eindpunt van een fase af te bakenen. Dat uit zich in het grotere betrouwbaarheidsinterval op de boundaries (begin en einde).</p>
+</div>
+<div id="historische-datum-of-gebeurtenis" class="section level2 unnumbered">
+<h2>Historische datum of gebeurtenis</h2>
+<p>Naast de <code>R_Date()</code> functie, om radiokoolstofdateringen te kalibreren, kan OxCal ook andere vormen van dateringsinformatie verwerken. Een historische datum of dendrochronologische datering kan eveneens ingevoerd worden, samen met de radiokoolstofdateringen. Ook de onzekerheid, uitgedrukt in kalenderjaren, op een historische gebeurtenis of de spreiding op een dendrochronologische datering kunnen mee in rekening gebracht worden. Volgende functies komen hiervoor in aanmerking:</p>
+<ul>
+<li><code>C_Date(“Label”, kalenderjaar, onzekerheid)</code>: definieert een kalenderjaar. Het kalenderjaar wordt als AD(1302) of BC(1000) ingevuld, de (mogelijke) onzekerheid op deze datum wordt uitgedrukt in kalenderjaren. Deze kan ook 0 zijn in geval het een historische datum betreft.</li>
+<li><code>Date(“Label”, U(begin, einde))</code>: uniforme verdeling tussen een bepaalde begin- en einddatum, bijvoorbeeld 1300 tot en met 1400 voor de 14de eeuw AD. De parameters voor boven- en ondergrens worden als kalenderjaren AD (jaar) of BC (jaar) ingevuld.</li>
+<li><code>Before(“Label”, expressie)</code>: definieert een <em>terminus ante quem</em>.</li>
+<li><code>After(“Label”, expressie)</code>: definieert een <em>terminus post quem</em>.</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="fasering-en-chronologie.html#cb9-1"></a> <span class="kw">Plot</span>()</span>
+<span id="cb9-2"><a href="fasering-en-chronologie.html#cb9-2"></a> {</span>
+<span id="cb9-3"><a href="fasering-en-chronologie.html#cb9-3"></a>  <span class="kw">C_Date</span>(<span class="st">&quot;Guldensporen&quot;</span>, <span class="dv">1302</span>);</span>
+<span id="cb9-4"><a href="fasering-en-chronologie.html#cb9-4"></a>  <span class="kw">C_Date</span>(<span class="st">&quot;Rond 1300 AD&quot;</span>, <span class="kw">AD</span>(<span class="dv">1300</span>), <span class="dv">10</span>) {color=<span class="st">&quot;Darkblue&quot;</span>;};</span>
+<span id="cb9-5"><a href="fasering-en-chronologie.html#cb9-5"></a>  <span class="kw">Date</span>(<span class="st">&quot;Van 1290 tot 1340&quot;</span>, <span class="kw">U</span>(<span class="dv">1290</span>, <span class="dv">1340</span>)) {color=<span class="st">&quot;Red&quot;</span>;};</span>
+<span id="cb9-6"><a href="fasering-en-chronologie.html#cb9-6"></a>  <span class="kw">R_Date</span>(<span class="st">&quot; 600 ±25BP &quot;</span>, <span class="dv">600</span>, <span class="dv">25</span>) <span class="op">&amp;</span></span>
+<span id="cb9-7"><a href="fasering-en-chronologie.html#cb9-7"></a><span class="st">      </span><span class="kw">Before</span>(<span class="st">&quot; gekende terminus&quot;</span>, <span class="kw">AD</span>(<span class="dv">1350</span>));</span>
+<span id="cb9-8"><a href="fasering-en-chronologie.html#cb9-8"></a> };</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-18"></span>
+<img src="figuren/figuur_B_18.png" alt="OxCal functies om een gekende datering in te voegen of te combineren." width="100%" />
+<p class="caption">
+Figuur 9.18: OxCal functies om een gekende datering in te voegen of te combineren.
+</p>
+</div>
+<p>Met <code>C_Date()</code> kan een kalenderjaar ingevoerd worden. Indien er enige onzekerheid met deze datum geassocieerd is, kan deze mee opgenomen worden. Er wordt dan een normaalverdeling geplot met het kalenderjaar als gemiddelde en de onzekerheid op deze datum als standaardafwijking.</p>
+<p>De functie <code>Date()</code> laat toe om een bepaalde tijdsrange of periode af te bakenen. De kansverdeling binnen dit interval wordt doorgaans als uniform gedefinieerd, waardoor alle kalenderjaren binnen het gedefinieerde interval evenveel kans op voorkomen hebben.</p>
+<p>Indien een historische datum is gekend waarna een bepaalde gebeurtenis onmogelijk kan vallen, dan kan dit in rekening worden gebracht bij de kalibratie van een radiokoolstofdatering die geassocieerd is met die gebeurtenis. Door gebruik te maken van het commando <code>Before()</code> en dit met het symbool &amp; te koppelen aan een radiokoolstofdatering. Na het berekenen van dit model zal het bereik (en kansverdeling) van mogelijke kalenderjaren worden beperkt tot deze grenswaarde (figuur <a href="fasering-en-chronologie.html#fig:oxcal-18">9.18</a>). Een terminus ante quem kan op vergelijkbare wijze worden ingevoerd met de syntax <code>After()</code>.</p>
+<p>Een combinatie van bovenstaande functies kan nu aangewend worden om een reëel vraagstuk te modelleren, zoals te zien in figuur <a href="fasering-en-chronologie.html#fig:oxcal-19">9.19</a>.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="fasering-en-chronologie.html#cb10-1"></a> <span class="kw">Plot</span>()</span>
+<span id="cb10-2"><a href="fasering-en-chronologie.html#cb10-2"></a> {</span>
+<span id="cb10-3"><a href="fasering-en-chronologie.html#cb10-3"></a>  <span class="kw">Sequence</span>(<span class="st">&quot;: Ename 974?&quot;</span>)</span>
+<span id="cb10-4"><a href="fasering-en-chronologie.html#cb10-4"></a>  {</span>
+<span id="cb10-5"><a href="fasering-en-chronologie.html#cb10-5"></a>   <span class="kw">C_Date</span>(<span class="st">&quot;: Stichting&quot;</span>, <span class="kw">AD</span>(<span class="dv">974</span>), <span class="dv">0</span>);</span>
+<span id="cb10-6"><a href="fasering-en-chronologie.html#cb10-6"></a>   <span class="kw">Boundary</span>(<span class="st">&quot;start&quot;</span>);</span>
+<span id="cb10-7"><a href="fasering-en-chronologie.html#cb10-7"></a>   <span class="kw">Phase</span>(<span class="st">&quot;: voor donjon&quot;</span>)</span>
+<span id="cb10-8"><a href="fasering-en-chronologie.html#cb10-8"></a>   {</span>
+<span id="cb10-9"><a href="fasering-en-chronologie.html#cb10-9"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;: onderste laag&quot;</span>, <span class="dv">1090</span>, <span class="dv">25</span>);</span>
+<span id="cb10-10"><a href="fasering-en-chronologie.html#cb10-10"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;: bovenste laag&quot;</span>, <span class="dv">1095</span>, <span class="dv">30</span>);</span>
+<span id="cb10-11"><a href="fasering-en-chronologie.html#cb10-11"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;: buiten omwalling&quot;</span>, <span class="dv">1110</span>, <span class="dv">25</span>);</span>
+<span id="cb10-12"><a href="fasering-en-chronologie.html#cb10-12"></a>   };</span>
+<span id="cb10-13"><a href="fasering-en-chronologie.html#cb10-13"></a>   <span class="kw">Phase</span>(<span class="st">&quot;: aanleg&quot;</span>)</span>
+<span id="cb10-14"><a href="fasering-en-chronologie.html#cb10-14"></a>   {</span>
+<span id="cb10-15"><a href="fasering-en-chronologie.html#cb10-15"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;: paal&quot;</span>, <span class="dv">1045</span>, <span class="dv">35</span>);</span>
+<span id="cb10-16"><a href="fasering-en-chronologie.html#cb10-16"></a>   };</span>
+<span id="cb10-17"><a href="fasering-en-chronologie.html#cb10-17"></a>   <span class="kw">Phase</span>(<span class="st">&quot;: depressie&quot;</span>)</span>
+<span id="cb10-18"><a href="fasering-en-chronologie.html#cb10-18"></a>   {</span>
+<span id="cb10-19"><a href="fasering-en-chronologie.html#cb10-19"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;: onderste laag&quot;</span>, <span class="dv">1020</span>, <span class="dv">35</span>);</span>
+<span id="cb10-20"><a href="fasering-en-chronologie.html#cb10-20"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;: middelste laag&quot;</span>, <span class="dv">1045</span>, <span class="dv">30</span>);</span>
+<span id="cb10-21"><a href="fasering-en-chronologie.html#cb10-21"></a>    <span class="kw">R_Date</span>(<span class="st">&quot;: bovenste laag&quot;</span>, <span class="dv">1040</span>, <span class="dv">45</span>);</span>
+<span id="cb10-22"><a href="fasering-en-chronologie.html#cb10-22"></a>   };</span>
+<span id="cb10-23"><a href="fasering-en-chronologie.html#cb10-23"></a>   <span class="kw">Boundary</span>(<span class="st">&quot;end&quot;</span>);</span>
+<span id="cb10-24"><a href="fasering-en-chronologie.html#cb10-24"></a>  };</span>
+<span id="cb10-25"><a href="fasering-en-chronologie.html#cb10-25"></a> };</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-19"></span>
+<img src="figuren/figuur_B_19.png" alt="Een Bayesiaans model voor radiokoolstofdateringen in stratigrafisch verband, rekening houdend met een historische bron." width="80%" />
+<p class="caption">
+Figuur 9.19: Een Bayesiaans model voor radiokoolstofdateringen in stratigrafisch verband, rekening houdend met een historische bron.
+</p>
+</div>
+<p>Na het berekenen van dit model <code>[File &gt; Run]</code>, krijgen we een grafisch overzicht van het resultaat in een multiplot. Door de opgelegde voorwaarden – historische bron als oudst mogelijke datering en afbakening van verschillende elkaar opvolgende fasen – worden de mogelijke gekalibreerde dateringen voor de individuele radiokoolstofdateringen sterk ingeperkt.</p>
+</div>
+<div id="hoe-lang" class="section level2 unnumbered">
+<h2>Hoe lang?</h2>
+<p>De opbouw van een Bayesiaans model en het gebruik van boundaries laat toe om ook gebeurtenissen te dateren die niet rechtstreeks aan één staal of radiokoolstofdatering te koppelen zijn. Door het indelen in fasen en sequenties kunnen we namelijk ook berekenen hoe lang een bepaalde fase heeft geduurd, wanneer die op z’n einde liep of welke periode nu precies door de radiokoolstofdateringen wordt overspannen. De twee functies die daarvoor kunnen aangesproken worden in OxCal zijn <code>Interval()</code> en <code>Span()</code>. Elk van deze functies berekent een waarschijnlijkheidsverdeling voor de duur van de periode (figuur <a href="fasering-en-chronologie.html#fig:oxcal-20">9.20</a>).</p>
+<p>De functie <strong><code>Span()</code></strong> berekent de periode die door alle dateringen binnen een fase of sequentie wordt overspannen. Er wordt hierbij enkel rekening gehouden met de individuele radiokoolstofdateringen. De boundaries van de fase of sequentie worden hierbij niet in rekening gebracht. Dat is echter wel zo bij de functie <strong><code>Interval()</code></strong> die de waarschijnlijkheidsverdeling voor de lengte van het interval tussen het begin en einde van een fase berekent. Deze functie houdt er dus rekening mee dat de aanvang en het einde van een fase niet noodzakelijk gedateerd wordt door één van de geanalyseerde stalen.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="fasering-en-chronologie.html#cb11-1"></a> <span class="kw">Plot</span>()</span>
+<span id="cb11-2"><a href="fasering-en-chronologie.html#cb11-2"></a> {</span>
+<span id="cb11-3"><a href="fasering-en-chronologie.html#cb11-3"></a><span class="kw">Sequence</span>()</span>
+<span id="cb11-4"><a href="fasering-en-chronologie.html#cb11-4"></a>    {</span>
+<span id="cb11-5"><a href="fasering-en-chronologie.html#cb11-5"></a>     <span class="kw">Boundary</span>(<span class="st">&quot;Start fase&quot;</span>);</span>
+<span id="cb11-6"><a href="fasering-en-chronologie.html#cb11-6"></a>     <span class="kw">Phase</span>()</span>
+<span id="cb11-7"><a href="fasering-en-chronologie.html#cb11-7"></a>     {</span>
+<span id="cb11-8"><a href="fasering-en-chronologie.html#cb11-8"></a>      <span class="kw">R_Date</span>(<span class="st">&quot;A&quot;</span>,<span class="dv">2235</span>,<span class="dv">25</span>);</span>
+<span id="cb11-9"><a href="fasering-en-chronologie.html#cb11-9"></a>      <span class="kw">R_Date</span>(<span class="st">&quot;B&quot;</span>,<span class="dv">2135</span>,<span class="dv">26</span>);</span>
+<span id="cb11-10"><a href="fasering-en-chronologie.html#cb11-10"></a>      <span class="kw">R_Date</span>(<span class="st">&quot;C&quot;</span>,<span class="dv">2112</span>,<span class="dv">23</span>);</span>
+<span id="cb11-11"><a href="fasering-en-chronologie.html#cb11-11"></a>      <span class="kw">R_Date</span>(<span class="st">&quot;D&quot;</span>,<span class="dv">2000</span>,<span class="dv">23</span>);</span>
+<span id="cb11-12"><a href="fasering-en-chronologie.html#cb11-12"></a></span>
+<span id="cb11-13"><a href="fasering-en-chronologie.html#cb11-13"></a>     };</span>
+<span id="cb11-14"><a href="fasering-en-chronologie.html#cb11-14"></a>      <span class="kw">Interval</span>();</span>
+<span id="cb11-15"><a href="fasering-en-chronologie.html#cb11-15"></a>      <span class="kw">Span</span>();</span>
+<span id="cb11-16"><a href="fasering-en-chronologie.html#cb11-16"></a>     <span class="kw">Boundary</span>(<span class="st">&quot;Einde fase&quot;</span>);</span>
+<span id="cb11-17"><a href="fasering-en-chronologie.html#cb11-17"></a>    };</span>
+<span id="cb11-18"><a href="fasering-en-chronologie.html#cb11-18"></a> };</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-20"></span>
+<img src="figuren/figuur_B_20.png" alt="Berekening van de periode die wordt overspannen door de radiokoolstofdateringen (Span) en de geschatte duur van de fase (Interval)." width="100%" />
+<p class="caption">
+Figuur 9.20: Berekening van de periode die wordt overspannen door de radiokoolstofdateringen (Span) en de geschatte duur van de fase (Interval).
+</p>
+</div>
+</div>
+<div id="kwaliteitscontrole-en-evaluatie" class="section level2 unnumbered">
+<h2>Kwaliteitscontrole en evaluatie</h2>
+<p>OxCal enkel de kalibraties en berekeningen laten uitvoeren is niet voldoende; een kritische evaluatie van de resultaten en het opgebouwde model blijven noodzakelijk. Door in het keuzemenu links bovenaan [Table] te selecteren krijg je in een tabel meer details over de kwaliteit van het opgebouwde model en de gemodelleerde dateringen (figuur <a href="fasering-en-chronologie.html#fig:oxcal-21">9.21</a>). Dit wordt uitgedrukt in een <em>Agreement index</em> (<span class="math inline">\(A\)</span>). Deze index dient hoger te zijn dan 60%, zowel bij de individuele dateringen als bij het globale model (<span class="math inline">\(A_{model}\)</span>), en moet idealiter rond de 100% liggen. Indien de Agreement voor het volledige model te laag uitvalt, krijg je een melding die er als volgt uitziet:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="fasering-en-chronologie.html#cb12-1"></a></span>
+<span id="cb12-2"><a href="fasering-en-chronologie.html#cb12-2"></a>Warning<span class="op">!</span><span class="st"> </span>Poor agreement <span class="op">-</span><span class="st"> </span>A=<span class="fl">58.1</span><span class="op">% (A’c=60.0%</span><span class="er">)</span></span></code></pre></div>
+<p>Voor het model in figuur <a href="fasering-en-chronologie.html#fig:oxcal-19">9.19</a> is de <span class="math inline">\(A\)</span>-index 133,1% voor het globale model (rode kader bovenaan figuur <a href="fasering-en-chronologie.html#fig:oxcal-21">9.21</a>), wat betekent dat de opgebouwde sequentie stand houdt. Enkel bij de datering van het staal dat buiten de omwalling werd gevonden worden vraagtekens geplaatst aangezien deze datering niet zo goed in het hier gedefinieerde model past (kolom A in figuur <a href="fasering-en-chronologie.html#fig:oxcal-21">9.21</a>). De <span class="math inline">\(A\)</span>-index is voor deze datering dan ook lager dan 60%. Indien er afwijkende dateringen in het model voorkomen, is het altijd aangeraden het eens te herberekenen zonder deze outliers. Hun aanwezigheid beïnvloedt immers de aanpassingen op de probabiliteitsverdelingen van de ‘passende’ dateringen.</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-21"></span>
+<img src="figuren/figuur_B_21.png" alt="Output met de evaluatie van het opgebouwde Bayesiaanse model, in tabelvorm." width="100%" />
+<p class="caption">
+Figuur 9.21: Output met de evaluatie van het opgebouwde Bayesiaanse model, in tabelvorm.
+</p>
+</div>
+<p>Door in de keuzelijst [single plot] te kiezen kan je de individuele dateringen, en hun gemodelleerde kansverdeling, bekijken. Voor de gedateerde funderingspaal is het gekalibreerde dateringsinterval (95,4% betrouwbaarheid) volgens dit model te situeren tussen 978 en 1009 AD (figuur <a href="fasering-en-chronologie.html#fig:oxcal-22">9.22</a>). Deze bouwfase laat zich – mede op historische grond – vermoedelijk rond het jaar 1000 AD situeren.</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-22"></span>
+<img src="figuren/figuur_B_22.png" alt="Gemodelleerde datering van een individueel element uit het opgebouwde Bayesiaans model." width="60%" />
+<p class="caption">
+Figuur 9.22: Gemodelleerde datering van een individueel element uit het opgebouwde Bayesiaans model.
+</p>
+</div>
+<p>De mogelijkheid tot modelleren leidt tot de conclusie dat, indien een aantal dateringen wordt uitgevoerd om een beeld te krijgen van de chronologische spreiding van vondsten uit een ensemble, het een voordeel kan zijn om vondsten te nemen die onderling een duidelijk stratigrafisch verband hebben.</p>
 
+</div>
 </div>
 
 
@@ -156,7 +460,7 @@
           </div>
         </div>
       </div>
-<a href="dateringen-combineren.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="densiteitsplot.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>

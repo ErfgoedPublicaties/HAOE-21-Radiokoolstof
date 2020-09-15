@@ -2,9 +2,9 @@
 
 ## Rapporteren
 
-Voor de rapportage van radiokoolstofdateringen zijn internationale afspraken gemaakt, om de uitgevoerde dateringen onderling op een gestandaardiseerde manier te kunnen vergelijken (Stuiver & Polach 1977). **Conventionele radiokoolstofdateringen** worden volgens deze internationale conventie als volgt gerapporteerd:
+Voor de rapportage van radiokoolstofdateringen zijn internationale afspraken gemaakt, om de uitgevoerde dateringen onderling op een gestandaardiseerde manier te kunnen vergelijken [@stuiver_reporting_1977]. **Conventionele radiokoolstofdateringen** worden volgens deze internationale conventie als volgt gerapporteerd:
 
-**lab ID + sample ID: ^14^C jaar ± standaardafwijking BP**
+<center> **lab ID + sample ID: ^14^C jaar ± standaardafwijking BP** </center>
 
 met:
 
@@ -15,7 +15,7 @@ met:
 
 **Bijvoorbeeld**: RICH-24731: 1487±28 BP.
 
-Hier staat RICH voor ‘Royal Institute for Cultural Heritage’ (Brussel) en is 24731 de unieke code voor het onderzochte staal. Dit is de enige gestandaardiseerde manier om deze radiokoolstofanalyse, en de daaraan gekoppelde handelingen in het laboratorium, later nog op te zoeken. 1487 is de berekende radiokoolstofouderdom uitgedrukt in jaren BP. De onzekerheid op de radiokoolstofouderdom wordt uitgedrukt door de standaardafwijking van 28 jaar.
+Hier staat RICH voor ‘*Royal Institute for Cultural Heritage*’ (Brussel) en is 24731 de unieke code voor het onderzochte staal. Dit is de enige gestandaardiseerde manier om deze radiokoolstofanalyse, en de daaraan gekoppelde handelingen in het laboratorium, later nog op te zoeken. 1487 is de berekende radiokoolstofouderdom uitgedrukt in jaren BP. De onzekerheid op de radiokoolstofouderdom wordt uitgedrukt door de standaardafwijking van 28 jaar.
 
 De **gekalibreerde radiokoolstofouderdom** wordt uitgedrukt als een interval van mogelijke kalenderjaren. De werkelijke ouderdom van het geanalyseerde staal wordt verondersteld zich binnen dat interval te bevinden, een statistische onzekerheid in acht genomen. Indien de onzekerheid laag wordt gehouden (95,4% probabiliteit) zal het interval van kalenderjaren breed zijn, indien de onzekerheid hoger mag zijn (‘slechts’ 68,2% probabiliteit) zal het interval smaller zijn (zie 4.6).
 

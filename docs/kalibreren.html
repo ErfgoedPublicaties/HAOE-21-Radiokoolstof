@@ -52,6 +52,70 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -109,19 +173,35 @@
 <li class="chapter" data-level="7.3" data-path="modelleren.html"><a href="modelleren.html#sequenties-en-fasering"><i class="fa fa-check"></i><b>7.3</b> Sequenties en fasering</a></li>
 <li class="chapter" data-level="7.4" data-path="modelleren.html"><a href="modelleren.html#historische-gebeurtenissen-en-gekende-ijkpunten"><i class="fa fa-check"></i><b>7.4</b> Historische gebeurtenissen en gekende ijkpunten</a></li>
 <li class="chapter" data-level="7.5" data-path="modelleren.html"><a href="modelleren.html#gesommeerde-probabiliteiten"><i class="fa fa-check"></i><b>7.5</b> Gesommeerde probabiliteiten</a></li>
-<li class="chapter" data-level="7.6" data-path="modelleren.html"><a href="modelleren.html#wiggle-matching"><i class="fa fa-check"></i><b>7.6</b> Wiggle matching</a></li>
+<li class="chapter" data-level="7.6" data-path="modelleren.html"><a href="modelleren.html#wiggle-matching"><i class="fa fa-check"></i><b>7.6</b> <em>Wiggle matching</em></a></li>
 <li class="chapter" data-level="7.7" data-path="modelleren.html"><a href="modelleren.html#valkuilen"><i class="fa fa-check"></i><b>7.7</b> Valkuilen</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="bronnen.html"><a href="bronnen.html"><i class="fa fa-check"></i>Bronnen</a></li>
-<li class="chapter" data-level="8" data-path="bijlagen.html"><a href="bijlagen.html"><i class="fa fa-check"></i><b>8</b> Bijlagen</a></li>
-<li class="part"><span><b>BEGRIPPEN EN DEFINITIES</b></span></li>
+<li class="chapter" data-level="8" data-path="bronnen.html"><a href="bronnen.html"><i class="fa fa-check"></i><b>8</b> Bronnen</a></li>
+<li class="chapter" data-level="9" data-path="bijlagen.html"><a href="bijlagen.html"><i class="fa fa-check"></i><b>9</b> Bijlagen</a></li>
+<li class="part"><span><b>BIJLAGE I: begrippen</b></span></li>
 <li class="chapter" data-level="" data-path="begrippen.html"><a href="begrippen.html"><i class="fa fa-check"></i>Begrippen</a></li>
-<li class="part"><span><b>HANDLEIDING OXCAL</b></span></li>
+<li class="part"><span><b>BIJLAGE II: OxCal</b></span></li>
+<li><a href="Oxcal.html#Oxcal"><strong>Handleiding OxCal</strong></a></li>
 <li class="chapter" data-level="" data-path="OxCal-intro.html"><a href="OxCal-intro.html"><i class="fa fa-check"></i>Inleiding</a></li>
-<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html"><i class="fa fa-check"></i>Kalibreren</a></li>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html"><i class="fa fa-check"></i>Kalibreren</a><ul>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#kalibratie-van-één-datering"><i class="fa fa-check"></i>Kalibratie van één datering</a></li>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#kalibratie-van-meerdere-dateringen"><i class="fa fa-check"></i>Kalibratie van meerdere dateringen</a></li>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#datainvoer-via-excel"><i class="fa fa-check"></i>Datainvoer via Excel</a></li>
+<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#grafieken-en-tabellen"><i class="fa fa-check"></i>Grafieken en tabellen</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="een-datering-simuleren.html"><a href="een-datering-simuleren.html"><i class="fa fa-check"></i>Een datering simuleren</a></li>
-<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html"><i class="fa fa-check"></i>Dateringen combineren</a></li>
-<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html"><i class="fa fa-check"></i>Fasering en chronologie</a></li>
+<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html"><i class="fa fa-check"></i>Dateringen combineren</a><ul>
+<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#r_combine"><i class="fa fa-check"></i>R_Combine</a></li>
+<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#combine"><i class="fa fa-check"></i>Combine</a></li>
+<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#difference"><i class="fa fa-check"></i>Difference</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="densiteitsplot.html"><a href="densiteitsplot.html"><i class="fa fa-check"></i>Densiteitsplot</a></li>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html"><i class="fa fa-check"></i>Fasering en chronologie</a><ul>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#modelopbouw"><i class="fa fa-check"></i>Modelopbouw</a></li>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#historische-datum-of-gebeurtenis"><i class="fa fa-check"></i>Historische datum of gebeurtenis</a></li>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#hoe-lang"><i class="fa fa-check"></i>Hoe lang?</a></li>
+<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#kwaliteitscontrole-en-evaluatie"><i class="fa fa-check"></i>Kwaliteitscontrole en evaluatie</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -141,6 +221,114 @@
             <section class="normal" id="section-">
 <div id="kalibreren" class="section level1 unnumbered">
 <h1>Kalibreren</h1>
+<p>De meest gebruikte analyse binnen OxCal is het kalibreren van radiokoolstofdateringen. Daarbij wordt een conventionele radiokoolstofdatering, gerapporteerd in jaren BP, omgerekend naar kalenderjaren (BC of AD).</p>
+<div id="kalibratie-van-één-datering" class="section level2 unnumbered">
+<h2>Kalibratie van één datering</h2>
+<p>Bij het opstarten van OxCal krijgen we het openingsscherm te zien dat meteen toelaat om een <span class="math inline">\(\mathrm{^{14}C}\)</span>-datering te kalibreren (linksboven op figuur <a href="kalibreren.html#fig:oxcal-02">9.2</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-02"></span>
+<img src="figuren/figuur_B_02.jpg" alt="Openingsscherm van OxCal. Linksboven kan je een individuele radiokoolstofdatering invoeren en kalibreren." width="80%" />
+<p class="caption">
+Figuur 9.2: Openingsscherm van OxCal. Linksboven kan je een individuele radiokoolstofdatering invoeren en kalibreren.
+</p>
+</div>
+<p>Volgende velden vragen om input:</p>
+<ul>
+<li><strong>Name</strong>: in dit veld wordt bij voorkeur de unieke code van de radiokoolstofanalyse, inclusief de afkorting van het labo dat de analyse uitvoerde, ingevuld (bv. RICH-12345, Beta-98765, …)</li>
+<li><strong>Date</strong>: hier wordt de conventionele radiokoolstofdatering, in jaren BP ingevuld (bv. 1599)</li>
+<li><strong>±</strong>: de standaardafwijking op de radiokoolstofdatering (bv. 29)</li>
+<li><strong>Curve</strong>: hier selecteer je de naam van de kalibratiecurve die je wil gebruiken. Doorgaans is dit de meest recente kalibratiecurve, wat nu (dd. september 2020) de IntCal20-kalibratiecurve is <span class="citation">(Reimer <em>et al.</em> <a href="bronnen.html#ref-reimer_intcal20_2020" role="doc-biblioref">2020</a>)</span>. Voor de kalibratie van een radiokoolstofdatering uitgevoerd op materiaal uit een marien reservoir moet een andere curve gekozen worden. Ook de oudere kalibratiecurven worden mee geïnstalleerd en zijn te selecteren indien gewenst. Dit kan handig zijn bij de evaluatie van oudere, in het verleden gepubliceerde dateringen.</li>
+</ul>
+<p>Door de knop <code>[Calibrate]</code> aan te klikken wordt de kalibratie uitgevoerd en het resultaat meteen in een grafiek voorgesteld (figuur <a href="kalibreren.html#fig:oxcal-03">9.3</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-03"></span>
+<img src="figuren/figuur_B_03.jpg" alt="Grafische voorstelling van een gekalibreerde radiokoolstofdatering." width="80%" />
+<p class="caption">
+Figuur 9.3: Grafische voorstelling van een gekalibreerde radiokoolstofdatering.
+</p>
+</div>
+<p>De vormgeving van deze grafiek kan je daarna nog aanpassen in het menu [Format] (figuur <a href="kalibreren.html#fig:oxcal-04">9.4</a>). Daar kan je op het tabblad Show kiezen welk betrouwbaarheidsinterval (68,2%, 95,4% en/of 99,7%) en wat voor variabelen (mean = gemiddelde, sigma = standaardafwijking, median = mediaan) je wil weergeven. Het bereik van de assen en de zoomfactor kan je eveneens aanpassen naar eigen voorkeur, via het tabblad Adjust of de pijltoetsen <code>[Zoom]</code>, <code>[Centre]</code> en <code>[Span]</code> in de werkbalk boven de grafiek.</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-04"></span>
+<img src="figuren/figuur_B_04.png" alt="De lay-out van de grafieken kan via het menu [Format] worden aangepast." width="80%" />
+<p class="caption">
+Figuur 9.4: De lay-out van de grafieken kan via het menu [Format] worden aangepast.
+</p>
+</div>
+<p>De meest informatieve en belangrijkste elementen van dergelijke grafieken worden in figuur <a href="kalibreren.html#fig:oxcal-05">9.5</a> aangeduid en hieronder kort toegelicht:</p>
+<ul>
+<li>1: de kalibratiecurve.</li>
+<li>2: het unieke label voor de radiokoolstofdatering, de datering in jaren BP en de standaardafwijking op deze ouderdomsbepaling.</li>
+<li>3: op de staande as de normaalverdeling bepaald door de conventionele radiokoolstofdatering, in dit geval 1599 BP als gemiddelde en de daarbij horende standaardafwijking (hier 29 jaar).</li>
+<li>4: de gekalibreerde ouderdom in kalenderjaren (AD/BC), met de overeenkomstige waarschijnlijkheidsgrenzen (hier zowel het 1 sigma = 68,2%, als 2-sigma = 95,4% betrouwbaarheidsinterval).</li>
+<li>5: op de liggende as de gekalibreerde radiokoolstofdatering met bijhorende waarschijnlijkheidsverdeling.</li>
+<li>6: op de liggende as het 1-sigma en 2-sigma betrouwbaarheidsinterval van de gekalibreerde datering.</li>
+<li>7: de versie en bijhorende bibliografische referentie van de gebruikte software (OxCal 4.3), en de gebruikte kalibratiecurve (IntCal13).</li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-05"></span>
+<img src="figuren/figuur_B_05.png" alt="Onderdelen van een grafiek met een gekalibreerde radiokoolstofdatering." width="80%" />
+<p class="caption">
+Figuur 9.5: Onderdelen van een grafiek met een gekalibreerde radiokoolstofdatering.
+</p>
+</div>
+<p>Onder het invulmenu van het openingsscherm (figuur <a href="kalibreren.html#fig:oxcal-02">9.2</a>) zijn nog twee andere functies beschikbaar:</p>
+<ul>
+<li><p>Met <code>[View curve]</code> krijg je de kalibratiecurve te zien. Door de linker muisknop ingedrukt te houden terwijl je over de grafiek beweegt kan je de curve naar de gewenste tijdsperiode schuiven. Door tegelijkertijd de SHIFT-knop in te drukken, wordt het bereik aan kalenderjaren groter of kleiner naargelang je de muis naar links/rechts beweegt. Op die manier kan de kalibratiecurve verkend worden en kan een inschatting worden gemaakt van wat een datering voor een bepaalde tijdsperiode kan opleveren (aanwezigheid van plateau’s, wiggles, steil verloop, turbulente periode).</p></li>
+<li><p>De knop <code>[Projects…]</code> laat toe om eerder uitgevoerde en bewaarde OxCal-projecten te selecteren en op te roepen. Je kan opgeslagen projecten en figuren ook terugvinden door [File &gt; Manager] te selecteren.</p></li>
+</ul>
+</div>
+<div id="kalibratie-van-meerdere-dateringen" class="section level2 unnumbered">
+<h2>Kalibratie van meerdere dateringen</h2>
+<p>Uiteraard kunnen ook meerdere dateringen tegelijkertijd worden gekalibreerd en samen weergegeven in een zogenaamde multiplot. Dit laat toe om de radiokoolstofdateringen te ordenen volgens een chronologisch kader of stratigrafisch verband. De invoer start met het aanmaken van een nieuw project via het menu <code>[File &gt; new]</code>. Daarna start het eigenlijke ingeven van de radiokoolstofdateringen via het tabblad <code>[Insert]</code> (figuur <a href="kalibreren.html#fig:oxcal-06">9.6</a>). Om een radiokoolstofdatering in te voegen, selecteer je in het keuzemenu links bovenaan <code>R_Date()</code>. Deze procedure herhaal je voor alle dateringen die je wil kalibreren en aan de grafiek toevoegen.</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-06"></span>
+<img src="figuren/figuur_B_06.png" alt="Programmeercode om een multiplot op te bouwen." width="60%" />
+<p class="caption">
+Figuur 9.6: Programmeercode om een multiplot op te bouwen.
+</p>
+</div>
+<p>Met de eerste vier knoppen in de werkbalk bovenaan (vak 1 in figuur <a href="kalibreren.html#fig:oxcal-06">9.6</a>) krijg je telkens een andere weergave van dezelfde programmeercode. De eerste knop geeft het model schematisch weer (zoals tijdens de invoer), de tweede knop keert de volgorde van de ingevoerde radiokoolstofdateringen om, de derde knop laat de programmeercode zien als een lijst en de laatste knop toont deze programmeercode als tekst (figuur <a href="kalibreren.html#fig:oxcal-06">9.6</a>, onderaan).
+De opbouw van de programmeercode voor het kalibreren en weergeven van een radiokoolstofdatering neemt steeds volgende vorm aan:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="kalibreren.html#cb1-1"></a><span class="kw">Plot</span>()</span>
+<span id="cb1-2"><a href="kalibreren.html#cb1-2"></a> {</span>
+<span id="cb1-3"><a href="kalibreren.html#cb1-3"></a>  <span class="kw">R_Date</span>(<span class="st">&quot;label&quot;</span>, radiokoolstofouderdom <span class="cf">in</span> BP, standaardafwijking);</span>
+<span id="cb1-4"><a href="kalibreren.html#cb1-4"></a> };</span></code></pre></div>
+<p>De functie <code>R_Date()</code> heeft dus drie argumenten (het label van de radiokoolstofdatering de radiokoolstofouderdom en de standaardafwijking), die onderling gescheiden worden door een komma. Een regel eindigt steeds op een puntkomma, en een functie waar binnen andere functies worden opgeroepen begint met een <code>{</code> en eindigt met <code>};</code>. In deze weergave kan je zelf ook regels programmeercode toevoegen door deze in het geopende venster te typen.</p>
+<p>Met de knoppen rechts bovenaan (vak 2 in figuur <a href="kalibreren.html#fig:oxcal-06">9.6</a>) kan je respectievelijk een blok programmeercode knippen, kopiëren en plakken.</p>
+<p>Om OxCal de berekening te laten uitvoeren selecteer je in het menu <code>[File &gt; Run]</code> of klik je rechts bovenaan op de blauwe pijltoets <code>&gt;</code>. Nadat de berekeningen zijn uitgevoerd, krijg je eerst een tabel te zien. Door in het keuzeveld links bovenaan <code>[Multiple plot]</code> te selecteren, worden alle gekalibreerde radiokoolstofdateringen voorgesteld in één grafiek (figuur <a href="kalibreren.html#fig:oxcal-07">9.7</a>). Met de pijltoetsen <code>[Zoom]</code>, <code>[Centre]</code> en <code>[Span]</code> kan je de assen van de figuur aanpassen. Selecteer je <code>[Single plot]</code> dan worden de individuele dateringen één voor één in een aparte grafiek voorgesteld. Met de pijltoetsen rechts bovenaan kan je dan door de volledige reeks van gekalibreerde dateringen bladeren.</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-07"></span>
+<img src="figuren/figuur_B_07.jpg" alt="Een multiplot met negen gekalibreerde radiokoolstofdateringen." width="80%" />
+<p class="caption">
+Figuur 9.7: Een multiplot met negen gekalibreerde radiokoolstofdateringen.
+</p>
+</div>
+</div>
+<div id="datainvoer-via-excel" class="section level2 unnumbered">
+<h2>Datainvoer via Excel</h2>
+<p>Indien een lange lijst met radiokoolstofdateringen moet gekalibreerd worden, kan het invoegen in OxCal relatief veel tijd in beslag nemen. Via een omweg kan je in Excel of een gelijkaardig programma met rekenbladen de radiokoolstofdateringen eerst omvormen in programmacode die leesbaar is door OxCal. Start vanuit een tabel waarin de eerste drie kolommen bestaan uit: de <code>labocode (label)</code>, <code>de radiokoolstofouderdom</code> in BP en <code>de standaardafwijking</code>. In de kolommen ernaast voeg je stukken van de door OxCal gestandaardiseerde programmeercode toe (zie figuur <a href="kalibreren.html#fig:oxcal-08">9.8</a>). Daarna breng je alle stukken tekst samen - met de Excel-functie <code>TEKST.SAMENVOEGEN</code> - in een formaat dat kan gekopieerd worden in OxCal.</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-08"></span>
+<img src="figuren/figuur_B_08.png" alt="OxCal-programmacode aanmaken in MS Excel voor meerdere radiokoolstofdateringen. Met de functie TEKST.SAMENVOEGEN (1) breng je de stukken tekst uit de verschillende kolommen (2) samen tot de programmacode uit OxCal (3)." width="80%" />
+<p class="caption">
+Figuur 9.8: OxCal-programmacode aanmaken in MS Excel voor meerdere radiokoolstofdateringen. Met de functie TEKST.SAMENVOEGEN (1) breng je de stukken tekst uit de verschillende kolommen (2) samen tot de programmacode uit OxCal (3).
+</p>
+</div>
+<p>Een nog eenvoudiger alternatief start met het openen van een nieuw project in OxCal. In het Excel bestand kopieer je ondertussen de drie kolommen met de labocode, radiokoolstofouderdom en de standaardafwijking. Via het tabblad <code>[Tools &gt; Import]</code> krijg je een venster te zien met drie kolommen: Name, <span class="math inline">\(\mathrm{^{14}C}\)</span> Date en Uncertainty (figuur <a href="kalibreren.html#fig:oxcal-09">9.9</a>). In dit venster plak je de gegevens die je uit Excel hebt gekopieerd. Met de knop <code>[ &gt;&gt; ]</code> worden deze dateringen dan omgezet en overgebracht in het venster met de programmeercode.</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-09"></span>
+<img src="figuren/figuur_B_09.jpg" alt="Copy-paste de gegevens van de radiokoolstofdateringen rechtstreeks in OxCal." width="50%" />
+<p class="caption">
+Figuur 9.9: Copy-paste de gegevens van de radiokoolstofdateringen rechtstreeks in OxCal.
+</p>
+</div>
+<p>Welke methode er ook wordt gevolgd, door de aangemaakte programmeercode uit te voeren, bekomt men één grafiek met alle radiokoolstofdateringen samen.</p>
+</div>
+<div id="grafieken-en-tabellen" class="section level2 unnumbered">
+<h2>Grafieken en tabellen</h2>
+<p>Eens een kalibratie uitgevoerd, zijn de resultaten zowel beschikbaar als een grafische voorstelling als in tabelvorm. De grafiek met de kalibratie van individuele radiokoolstofdateringen krijgt men te zien na selectie van <code>[Single plot]</code> in het keuzemenu links bovenaan het scherm. Indien meerder dateringen tegelijkertijd werden gekalibreerd, kunnen de individuele grafieken doorlopen worden met behulp van de pijlen rechts bovenaan het scherm. Alle gekalibreerde dateringen tegelijkertijd weergeven kan door de optie <code>[Multiple plot]</code> te selecteren in het keuzemenu. In een multiplot worden alle gekalibreerde dateringen onder elkaar weergegeven in de volgorde waarin ze werden ingevoerd. De grootte, het bereik en de periode die wordt overspannen in de grafiek kan je aanpassen in het menu <code>[Format]</code> en de tabbladen die in dit menu verschijnen, of met de knoppen bovenaan het venster. In het tabblad Show kan men ook aangeven welk waarschijnlijkheidsinterval (of meerdere) je wil weergegeven in de grafiek.</p>
+<p>Opslaan van de grafieken verloopt via het menu <code>[File &gt; Save as]</code>. Daarna krijgt je een venster te zien waarin men een mappenstructuur kan opbouwen en in de gewenste map de output onder de vorm van een grafiek opslaan. In de online versie van OxCal kan men de grafieken bewaren op de server, onder de ingelogde account. Bij het opnieuw inloggen kan je via <code>[File &gt; Manager]</code> de resultaten opnieuw opvragen. Wil men een lokale kopie van de grafiek, dan selecteert men de knop <code>[Download]</code> rechts onderaan, nadat men het gewenste output formaat heeft gekozen: als .pdf (<em>portable document format</em>), .png (<em>portable network grafic</em>) of .svg (<em>scalable vector grafic</em>). De grafiek wordt daarna in het gewenste formaat gedownload.</p>
+<p>De output in de vorm van tekst laat zich minder vlot exporteren. In het keuzemenu selecteert je eerst <code>[Table]</code>, waarna een tabel verschijnt met alle resultaten. Door in de tweede kolom te klikken, komt een venster tevoorschijn met bovenaan de gekalibreerde dateringen in tekstvorm, voor elk van de gevraagde betrouwbaarheidsintervallen (figuur <a href="kalibreren.html#fig:oxcal-10">9.10</a>). Deze numerieke gegevens kan je als tekst kopiëren naar een eigen rapport of tabel. Met de pijltjestoetsen bovenaan rechts doorloop je alle gekalibreerde radiokoolstofdateringen.</p>
+<div class="figure" style="text-align: center"><span id="fig:oxcal-10"></span>
+<img src="figuren/figuur_B_10.png" alt="Output in tekstvorm na kalibratie." width="80%" />
+<p class="caption">
+Figuur 9.10: Output in tekstvorm na kalibratie.
+</p>
+</div>
+</div>
 </div>
             </section>
 

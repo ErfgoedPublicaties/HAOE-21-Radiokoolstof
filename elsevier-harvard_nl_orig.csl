@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" et-al-use-first="1" sort-separator=" " demote-non-dropping-particle="never" default-locale="en-US">
+<style class="in-text" version="1.0" et-al-use-first="1" sort-separator=" " demote-non-dropping-particle="never" default-locale="en-US" xmlns="http://purl.org/net/xbiblio/csl">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>Elsevier - Harvard_NL</title>
@@ -32,7 +32,7 @@
     <category citation-format="author-date"/>
     <category field="biology"/>
     <category field="generic-base"/>
-    <updated>2020-09-15T15:04:51+00:00</updated>
+    <updated>2020-09-15T12:56:06+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="container">
@@ -204,13 +204,6 @@
       </else-if>
     </choose>
   </macro>
-  <macro name="URL">
-    <choose>
-      <if match="none" variable="DOI">
-        <text variable="URL" prefix=" "/>
-      </if>
-    </choose>
-  </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-givenname="true" disambiguate-add-year-suffix="true" collapse="year" cite-group-delimiter="en ">
     <sort>
       <key macro="author"/>
@@ -243,7 +236,6 @@
         </group>
       </group>
       <text macro="access" prefix=". "/>
-      <text macro="URL"/>
     </layout>
   </bibliography>
 </style>
