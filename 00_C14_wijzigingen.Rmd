@@ -1,0 +1,12 @@
+# Wijzigingen t.o.v. originele publicatie {-}
+
+In het overzicht hier onder worden de belangrijkste aanpassingen die zijn aangebracht in [de originele publicatie uit 2019](https://oar.onroerenderfgoed.be/item/5241) opgesomd in chronologische volgorde.
+<br/>
+<br/>
+
+- **15-09-2020**: handleiding ***^14^C: dateren met radiokoolstof*** online te raadplegen [https://hanecakr.github.io/handleidingRadiokoolstof/], zoals gepubliceerd door K. Haneca, A. Ervynck en M. Van Strydonck in 2019.
+- **21-09-2020**: 
+     - Aanpassingen aangebracht in hoofdstuk 'Kalibratie' naar aanleiding van de publicatie van de nieuwe kalibratiecurve ***IntCal20***.
+     - Ook in de [_Handleiding OxCal_](#Oxcal_intro) (BIJLAGE II) werden figuren aangepast waar nodig en Bayesiaanse modellen opnieuw berekend met de nieuwste kalibratiecurve.
+     - De code die nodig is om de kalibraties en modellen te berekenen uit de [_Handleiding OxCal_](#Oxcal_intro), werd toegevoegd aan elke figuur en kan gekopieerd worden in een nieuw OxCal-project om hetzelfde model of grafiek op te bouwen.
+     

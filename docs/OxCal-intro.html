@@ -134,6 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Woord vooraf</a></li>
+<li class="chapter" data-level="" data-path="wijzigingen-t-o-v-originele-publicatie.html"><a href="wijzigingen-t-o-v-originele-publicatie.html"><i class="fa fa-check"></i>Wijzigingen t.o.v. originele publicatie</a></li>
 <li class="part"><span><b>HANDLEIDING</b></span></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Inleiding</a></li>
 <li class="chapter" data-level="2" data-path="principes.html"><a href="principes.html"><i class="fa fa-check"></i><b>2</b> Het principe van een <sup>14</sup>C-datering</a><ul>
@@ -147,7 +148,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.8" data-path="principes.html"><a href="principes.html#aquatische-systemen"><i class="fa fa-check"></i><b>2.8</b> Aquatische systemen</a></li>
 <li class="chapter" data-level="2.9" data-path="principes.html"><a href="principes.html#voedsel-en-stabiele-isotopen"><i class="fa fa-check"></i><b>2.9</b> Voedsel en stabiele isotopen</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="kalibratie.html"><a href="kalibratie.html"><i class="fa fa-check"></i><b>3</b> Kalibratie</a></li>
+<li class="chapter" data-level="3" data-path="kalibratie.html"><a href="kalibratie.html"><i class="fa fa-check"></i><b>3</b> Kalibratie</a><ul>
+<li class="chapter" data-level="3.1" data-path="kalibratie.html"><a href="kalibratie.html#kalibratiecurves"><i class="fa fa-check"></i><b>3.1</b> Kalibratiecurves</a></li>
+<li class="chapter" data-level="3.2" data-path="kalibratie.html"><a href="kalibratie.html#bomb-peak"><i class="fa fa-check"></i><b>3.2</b> <em>Bomb-peak</em></a></li>
+<li class="chapter" data-level="3.3" data-path="kalibratie.html"><a href="kalibratie.html#intcal20"><i class="fa fa-check"></i><b>3.3</b> INTCAL20</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html"><i class="fa fa-check"></i><b>4</b> Onderzoeksvragen en -strategie</a><ul>
 <li class="chapter" data-level="4.1" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#welk-materiaal"><i class="fa fa-check"></i><b>4.1</b> Welk materiaal?</a></li>
 <li class="chapter" data-level="4.2" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#selectie-van-geschikt-materiaal"><i class="fa fa-check"></i><b>4.2</b> Selectie van geschikt materiaal</a></li>
@@ -203,7 +208,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#kwaliteitscontrole-en-evaluatie"><i class="fa fa-check"></i>Kwaliteitscontrole en evaluatie</a></li>
 </ul></li>
 <li class="divider"></li>
-<li><a href="https://bookdown.org/" target="blank">Published with bookdown</a></li>
+<li><a href="https://bookdown.org/" target="blank">Created with bookdown</a></li>
 
 </ul>
 
@@ -236,9 +241,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>OxCal</strong> blinkt echter uit in veelzijdigheid. De analyses die het pakket kan uitvoeren kunnen grofweg onderverdeeld worden in twee groepen:</p>
 <ul>
 <li>Het kalibreren van radiokoolstofmetingen</li>
-<li>Het analyseren van groepen van radiokoolstofanalyses, rekening houdend met hun onderlinge samenhang, op basis van chronologische of stratigrafische informatie.</li>
+<li>Het analyseren van groepen van radiokoolstofanalyses, rekening houdend met hun onderlinge samenhang, op basis van chronologische of stratigrafische informatie (de zogenaamde Bayesiaanse analyses).</li>
 </ul>
-<p>Beide types van analyse worden in onderstaande handleiding behandeld en geïllustreerd met een aantal voorbeelden . Alle behandelde functies en uitgewerkte voorbeelden in deze handleiding voor OxCal zijn gebaseerd op versie 4.3 [build 114, 14/08/2018]. Een meer uitgebreide handleiding voor dit programma is te vinden via de online manual: <a href="http://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html" class="uri">http://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html</a>. Daarin worden ook meer geavanceerde toepassingen behandeld, die niet in deze handleiding zijn opgenomen.</p>
+<p>Beide types van analyse worden in onderstaande handleiding behandeld en geïllustreerd met een aantal voorbeelden . Alle behandelde functies en uitgewerkte voorbeelden in deze handleiding voor OxCal zijn gebaseerd op versie 4.4 [build 130, 21/09/2020]. Een meer uitgebreide handleiding voor dit programma is te vinden via de online manual: <a href="http://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html" class="uri">http://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html</a>. Daarin worden ook meer geavanceerde toepassingen behandeld, die niet in deze handleiding zijn opgenomen.</p>
 <p>Het programma OxCal is toegankelijk via de website <a href="https://c14.arch.ox.ac.uk/oxcal/" class="uri">https://c14.arch.ox.ac.uk/oxcal/</a> en kan je kosteloos gebruiken. Wie deze link volgt, krijg steeds toegang tot de meest stabiele en meest recente versie van het programma. Bij het eerste gebruik moet je een persoonlijke account aanmaken, waarmee je daarna kan inloggen (figuur <a href="OxCal-intro.html#fig:oxcal-01">9.1</a>), nieuwe projecten aanmaken en je reeds eerder uitgevoerde en bewaarde analyses opnieuw oproepen.</p>
 <div class="figure" style="text-align: center"><span id="fig:oxcal-01"></span>
 <img src="figuren/figuur_B_01.jpg" alt="Inlogscherm voor OxCal op https://c14.arch.ox.ac.uk/login." width="60%" />
@@ -246,7 +251,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Figuur 9.1: Inlogscherm voor OxCal op <a href="https://c14.arch.ox.ac.uk/login" class="uri">https://c14.arch.ox.ac.uk/login</a>.
 </p>
 </div>
-<p>Je kan OxCal ook lokaal installeren op je PC/laptop. Volg hiervoor de instructies op <a href="https://c14.arch.ox.ac.uk/oxcal.html#program" class="uri">https://c14.arch.ox.ac.uk/oxcal.html#program</a>. Regelmatig de software updaten naar de meest recente versie blijft dan wel nodig. De online versie is daarentegen steeds up-to-date.</p>
+<p>Je kan OxCal ook lokaal installeren op je PC/laptop. Volg hiervoor de instructies op <a href="https://c14.arch.ox.ac.uk/oxcal.html#program" class="uri">https://c14.arch.ox.ac.uk/oxcal.html#program</a>. Regelmatig de software updaten naar de meest recente versie blijft dan wel nodig. De online versie is daarentegen steeds up-to-date en is dus aan te raden.</p>
 </div>
             </section>
 

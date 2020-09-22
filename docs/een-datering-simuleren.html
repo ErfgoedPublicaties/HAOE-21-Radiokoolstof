@@ -134,6 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Woord vooraf</a></li>
+<li class="chapter" data-level="" data-path="wijzigingen-t-o-v-originele-publicatie.html"><a href="wijzigingen-t-o-v-originele-publicatie.html"><i class="fa fa-check"></i>Wijzigingen t.o.v. originele publicatie</a></li>
 <li class="part"><span><b>HANDLEIDING</b></span></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Inleiding</a></li>
 <li class="chapter" data-level="2" data-path="principes.html"><a href="principes.html"><i class="fa fa-check"></i><b>2</b> Het principe van een <sup>14</sup>C-datering</a><ul>
@@ -147,7 +148,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.8" data-path="principes.html"><a href="principes.html#aquatische-systemen"><i class="fa fa-check"></i><b>2.8</b> Aquatische systemen</a></li>
 <li class="chapter" data-level="2.9" data-path="principes.html"><a href="principes.html#voedsel-en-stabiele-isotopen"><i class="fa fa-check"></i><b>2.9</b> Voedsel en stabiele isotopen</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="kalibratie.html"><a href="kalibratie.html"><i class="fa fa-check"></i><b>3</b> Kalibratie</a></li>
+<li class="chapter" data-level="3" data-path="kalibratie.html"><a href="kalibratie.html"><i class="fa fa-check"></i><b>3</b> Kalibratie</a><ul>
+<li class="chapter" data-level="3.1" data-path="kalibratie.html"><a href="kalibratie.html#kalibratiecurves"><i class="fa fa-check"></i><b>3.1</b> Kalibratiecurves</a></li>
+<li class="chapter" data-level="3.2" data-path="kalibratie.html"><a href="kalibratie.html#bomb-peak"><i class="fa fa-check"></i><b>3.2</b> <em>Bomb-peak</em></a></li>
+<li class="chapter" data-level="3.3" data-path="kalibratie.html"><a href="kalibratie.html#intcal20"><i class="fa fa-check"></i><b>3.3</b> INTCAL20</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html"><i class="fa fa-check"></i><b>4</b> Onderzoeksvragen en -strategie</a><ul>
 <li class="chapter" data-level="4.1" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#welk-materiaal"><i class="fa fa-check"></i><b>4.1</b> Welk materiaal?</a></li>
 <li class="chapter" data-level="4.2" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#selectie-van-geschikt-materiaal"><i class="fa fa-check"></i><b>4.2</b> Selectie van geschikt materiaal</a></li>
@@ -203,7 +208,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#kwaliteitscontrole-en-evaluatie"><i class="fa fa-check"></i>Kwaliteitscontrole en evaluatie</a></li>
 </ul></li>
 <li class="divider"></li>
-<li><a href="https://bookdown.org/" target="blank">Published with bookdown</a></li>
+<li><a href="https://bookdown.org/" target="blank">Created with bookdown</a></li>
 
 </ul>
 
@@ -225,17 +230,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="een-datering-simuleren" class="section level1 unnumbered">
 <h1>Een datering simuleren</h1>
 <p>In veel gevallen heeft men op voorhand wel een idee uit welke periode een object, constructie of gebeurtenis dateert. Indien een radiokoolstofdatering wordt overwogen, kan het nuttig zijn om voorafgaand aan de staalname en analyse de vorm van de kalibratiecurve binnen de geschatte periode te controleren. Indien er veel wiggles aanwezig zijn, zal een radiokoolstofdatering binnen die periode meerdere mogelijkheden of een breed interval aan kalenderjaren opleveren. Ook indien een plateau aanwezig is, zal het bereik aan mogelijke kalenderjaren breed uitvallen (zie 4.6). Zoals al eerder aangegeven, kan je de kalibratiecurve bekijken in OxCal door op de startpagina de knop <code>[View curve]</code> aan te klikken. Om dit nog wat verder te exploreren kan je binnen OxCal voor een welbepaalde kalenderdatum een mogelijke radiokoolstofdatering simuleren. Daarvoor moet je na het opstarten van een nieuw project <code>[File &gt; new]</code> in het menu <code>[Insert]</code> de functie <code>R_Simulate()</code> selecteren in de keuzelijst en deze functie met de knop <code>[ &gt;&gt; ]</code> naar het venster met programmeercode overbrengen. Uiteraard kan je in deze weergave ook de programeercode zelf intypen (figuur <a href="een-datering-simuleren.html#fig:oxcal-11">9.11</a>). Als parameters voor deze functie moet je een naam geven aan de simulatie (tussen aanhalingstekens), het jaartal dat je wil simuleren (AD of BC met het jaar tussen haakjes) en de verwachte standaardafwijking op de radiokoolstofdatering.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="een-datering-simuleren.html#cb2-1"></a> <span class="kw">Plot</span>()</span>
-<span id="cb2-2"><a href="een-datering-simuleren.html#cb2-2"></a> {</span>
-<span id="cb2-3"><a href="een-datering-simuleren.html#cb2-3"></a>  <span class="kw">R_Simulate</span>(<span class="st">&quot;Simulatie 650 AD&quot;</span>, <span class="kw">AD</span>(<span class="dv">650</span>), <span class="dv">30</span>);</span>
-<span id="cb2-4"><a href="een-datering-simuleren.html#cb2-4"></a> };</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="een-datering-simuleren.html#cb3-1"></a> <span class="kw">Plot</span>()</span>
+<span id="cb3-2"><a href="een-datering-simuleren.html#cb3-2"></a> {</span>
+<span id="cb3-3"><a href="een-datering-simuleren.html#cb3-3"></a>  <span class="kw">R_Simulate</span>(<span class="st">&quot;Simulatie 650 AD&quot;</span>, <span class="kw">AD</span>(<span class="dv">650</span>), <span class="dv">30</span>);</span>
+<span id="cb3-4"><a href="een-datering-simuleren.html#cb3-4"></a> };</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:oxcal-11"></span>
-<img src="figuren/figuur_B_11.png" alt="Programmacode voor het simuleren van een datering op materiaal uit 650 AD." width="80%" />
+<img src="figuren/figuur_B_11_update.png" alt="Programmacode voor het simuleren van een datering op materiaal uit 650 AD." width="80%" />
 <p class="caption">
 Figuur 9.11: Programmacode voor het simuleren van een datering op materiaal uit 650 AD.
 </p>
 </div>
-<p>Als resultaat krijg je een radiokoolstofdatering gesimuleerd (in dit voorbeeld 1404 ±30 BP) die kan overeenstemmen met een gebeurtenis op de ingevoerde kalenderdatum. Telkens deze analyse opnieuw wordt uitgevoerd, krijgen we een andere mogelijke radiokoolstofdatering gesimuleerd. Je kan voor één kalenderjaar dus best meerdere simulaties uitvoeren om zo een goed beeld te krijgen van de mogelijke resultaten.</p>
+<p>Als resultaat krijg je een radiokoolstofdatering gesimuleerd (in dit voorbeeld 1375 ±30 BP) die kan overeenstemmen met een gebeurtenis op de ingevoerde kalenderdatum. Telkens deze analyse opnieuw wordt uitgevoerd, krijgen we een andere mogelijke radiokoolstofdatering gesimuleerd. Je kan voor één kalenderjaar dus best meerdere simulaties uitvoeren om zo een goed beeld te krijgen van de mogelijke resultaten.</p>
 </div>
             </section>
 

@@ -5,6 +5,7 @@ site: bookdown::bookdown_site
 documentclass: book
 rmd_files: [
   "index.Rmd",
+  "00_C14_wijzigingen.Rmd",
   "01_C14_intro.Rmd",
   "02_C14_principes.Rmd",
   "03_C14_kalibratie.Rmd",

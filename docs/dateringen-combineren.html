@@ -134,6 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Woord vooraf</a></li>
+<li class="chapter" data-level="" data-path="wijzigingen-t-o-v-originele-publicatie.html"><a href="wijzigingen-t-o-v-originele-publicatie.html"><i class="fa fa-check"></i>Wijzigingen t.o.v. originele publicatie</a></li>
 <li class="part"><span><b>HANDLEIDING</b></span></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Inleiding</a></li>
 <li class="chapter" data-level="2" data-path="principes.html"><a href="principes.html"><i class="fa fa-check"></i><b>2</b> Het principe van een <sup>14</sup>C-datering</a><ul>
@@ -147,7 +148,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.8" data-path="principes.html"><a href="principes.html#aquatische-systemen"><i class="fa fa-check"></i><b>2.8</b> Aquatische systemen</a></li>
 <li class="chapter" data-level="2.9" data-path="principes.html"><a href="principes.html#voedsel-en-stabiele-isotopen"><i class="fa fa-check"></i><b>2.9</b> Voedsel en stabiele isotopen</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="kalibratie.html"><a href="kalibratie.html"><i class="fa fa-check"></i><b>3</b> Kalibratie</a></li>
+<li class="chapter" data-level="3" data-path="kalibratie.html"><a href="kalibratie.html"><i class="fa fa-check"></i><b>3</b> Kalibratie</a><ul>
+<li class="chapter" data-level="3.1" data-path="kalibratie.html"><a href="kalibratie.html#kalibratiecurves"><i class="fa fa-check"></i><b>3.1</b> Kalibratiecurves</a></li>
+<li class="chapter" data-level="3.2" data-path="kalibratie.html"><a href="kalibratie.html#bomb-peak"><i class="fa fa-check"></i><b>3.2</b> <em>Bomb-peak</em></a></li>
+<li class="chapter" data-level="3.3" data-path="kalibratie.html"><a href="kalibratie.html#intcal20"><i class="fa fa-check"></i><b>3.3</b> INTCAL20</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html"><i class="fa fa-check"></i><b>4</b> Onderzoeksvragen en -strategie</a><ul>
 <li class="chapter" data-level="4.1" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#welk-materiaal"><i class="fa fa-check"></i><b>4.1</b> Welk materiaal?</a></li>
 <li class="chapter" data-level="4.2" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#selectie-van-geschikt-materiaal"><i class="fa fa-check"></i><b>4.2</b> Selectie van geschikt materiaal</a></li>
@@ -203,7 +208,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#kwaliteitscontrole-en-evaluatie"><i class="fa fa-check"></i>Kwaliteitscontrole en evaluatie</a></li>
 </ul></li>
 <li class="divider"></li>
-<li><a href="https://bookdown.org/" target="blank">Published with bookdown</a></li>
+<li><a href="https://bookdown.org/" target="blank">Created with bookdown</a></li>
 
 </ul>
 
@@ -233,18 +238,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="combine" class="section level2 unnumbered">
 <h2>Combine</h2>
-<p>Indien meerdere radiokoolstofanalyses een zelfde gebeurtenis dateren, maar de geanalyseerde stalen niet hetzelfde koolstofreservoir hebben aangesproken, kunnen deze pas na kalibratie samengevoegd worden. De overeenkomst tussen de dateringen kan nu niet met een <span class="math inline">\(\chi^2\)</span>-test worden getoetst, maar wordt aan de hand van een <em>Agreement index</em> geëvalueerd. Deze index <span class="math inline">\(A\)</span> geeft weer of de gecombineerde radiokoolstofdateringen daadwerkelijk eenzelfde gebeurtenis dateren. De <span class="math inline">\(A_{comb}\)</span> moet groter zijn dan de kritische <span class="math inline">\(A_n\)</span>-waarde en best rond de 100% liggen. In onderstaand voorbeeld (figuur <a href="dateringen-combineren.html#fig:oxcal-12">9.12</a>) worden drie dateringen op materiaal uit een zelfde grafkist gecombineerd. De <span class="math inline">\(A_{comb}\)</span> (113,6%) ligt in dit geval hoger dan de drempelwaarde (<span class="math inline">\(A_n\)</span> = 40,8%). De drie dateringen kunnen dus inderdaad een zelfde gebeurtenis dateren. De combinatie van deze dateringen geeft een nauwer dateringsinterval dan de individuele radiokoolstofdateringen (Grafkist2: 544AD (95.4%) 600AD).</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="dateringen-combineren.html#cb3-1"></a> <span class="kw">Plot</span>()</span>
-<span id="cb3-2"><a href="dateringen-combineren.html#cb3-2"></a> {</span>
-<span id="cb3-3"><a href="dateringen-combineren.html#cb3-3"></a>  <span class="kw">Combine</span>(<span class="st">&quot;Grafkist2&quot;</span>)</span>
-<span id="cb3-4"><a href="dateringen-combineren.html#cb3-4"></a>  {</span>
-<span id="cb3-5"><a href="dateringen-combineren.html#cb3-5"></a>   <span class="kw">R_Date</span>(<span class="st">&quot;Grafkist_bot&quot;</span>, <span class="dv">1475</span>, <span class="dv">25</span>);</span>
-<span id="cb3-6"><a href="dateringen-combineren.html#cb3-6"></a>   <span class="kw">R_Date</span>(<span class="st">&quot;Grafkist_textiel&quot;</span>, <span class="dv">1500</span>, <span class="dv">30</span>);</span>
-<span id="cb3-7"><a href="dateringen-combineren.html#cb3-7"></a>   <span class="kw">R_Date</span>(<span class="st">&quot;Grafkist_hout&quot;</span>, <span class="dv">1530</span>, <span class="dv">30</span>);</span>
-<span id="cb3-8"><a href="dateringen-combineren.html#cb3-8"></a>  };</span>
-<span id="cb3-9"><a href="dateringen-combineren.html#cb3-9"></a> };</span></code></pre></div>
+<p>Indien meerdere radiokoolstofanalyses een zelfde gebeurtenis dateren, maar de geanalyseerde stalen niet hetzelfde koolstofreservoir hebben aangesproken, kunnen deze pas na kalibratie samengevoegd worden. De overeenkomst tussen de dateringen kan nu niet met een <span class="math inline">\(\chi^2\)</span>-test worden getoetst, maar wordt aan de hand van een <em>Agreement index</em> geëvalueerd. Deze index <span class="math inline">\(A\)</span> geeft weer of de gecombineerde radiokoolstofdateringen daadwerkelijk eenzelfde gebeurtenis dateren. De <span class="math inline">\(A_{comb}\)</span> moet groter zijn dan de kritische <span class="math inline">\(A_n\)</span>-waarde en best rond de 100% liggen. In onderstaand voorbeeld (figuur <a href="dateringen-combineren.html#fig:oxcal-12">9.12</a>) worden drie dateringen op materiaal uit een zelfde grafkist gecombineerd. De <span class="math inline">\(A_{comb}\)</span> (118,6%) ligt in dit geval hoger dan de drempelwaarde (<span class="math inline">\(A_n\)</span> = 40,8%). De drie dateringen kunnen dus inderdaad een zelfde gebeurtenis dateren. De combinatie van deze dateringen geeft een nauwer dateringsinterval dan de individuele radiokoolstofdateringen (Grafkist2: 554 AD (95.4%) 602 AD).</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="dateringen-combineren.html#cb4-1"></a> <span class="kw">Plot</span>()</span>
+<span id="cb4-2"><a href="dateringen-combineren.html#cb4-2"></a> {</span>
+<span id="cb4-3"><a href="dateringen-combineren.html#cb4-3"></a>  <span class="kw">Combine</span>(<span class="st">&quot;Grafkist2&quot;</span>)</span>
+<span id="cb4-4"><a href="dateringen-combineren.html#cb4-4"></a>  {</span>
+<span id="cb4-5"><a href="dateringen-combineren.html#cb4-5"></a>   <span class="kw">R_Date</span>(<span class="st">&quot;Grafkist_bot&quot;</span>, <span class="dv">1475</span>, <span class="dv">25</span>);</span>
+<span id="cb4-6"><a href="dateringen-combineren.html#cb4-6"></a>   <span class="kw">R_Date</span>(<span class="st">&quot;Grafkist_textiel&quot;</span>, <span class="dv">1500</span>, <span class="dv">30</span>);</span>
+<span id="cb4-7"><a href="dateringen-combineren.html#cb4-7"></a>   <span class="kw">R_Date</span>(<span class="st">&quot;Grafkist_hout&quot;</span>, <span class="dv">1530</span>, <span class="dv">30</span>);</span>
+<span id="cb4-8"><a href="dateringen-combineren.html#cb4-8"></a>  };</span>
+<span id="cb4-9"><a href="dateringen-combineren.html#cb4-9"></a> };</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:oxcal-12"></span>
-<img src="figuren/figuur_B_12.png" alt="Combineren van drie dateringen na kalibratie." width="80%" />
+<img src="figuren/figuur_B_12_update.png" alt="Combineren van drie dateringen na kalibratie." width="80%" />
 <p class="caption">
 Figuur 9.12: Combineren van drie dateringen na kalibratie.
 </p>
@@ -253,22 +258,25 @@ Figuur 9.12: Combineren van drie dateringen na kalibratie.
 </div>
 <div id="difference" class="section level2 unnumbered">
 <h2>Difference</h2>
-<p>Het combineren van dateringen wordt niet alleen gebruikt om een verfijnde datering te bekomen bij vermoeden van quasi gelijktijdigheid, maar deze procedure kan ook helpen bewijzen dat bepaalde vondsten helemaal niet uit dezelfde periode dateren. Zo kan bijvoorbeeld residueel en intrusief materiaal als dusdanig herkend worden. Indien er een sterk vermoeden is dat twee dateringen niet een zelfde gebeurtenis dateren – de<span class="math inline">\(\chi^2\)</span>-test of <em>Agreement index</em> valt boven of onder de kritische drempelwaarde – kan bovendien becijferd worden hoe ver beide gebeurtenissen mogelijk uit elkaar liggen. In OxCal voert de functie <code>Difference()</code> daarvoor de nodige bewerkingen uit.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="dateringen-combineren.html#cb4-1"></a>Plot{}</span>
-<span id="cb4-2"><a href="dateringen-combineren.html#cb4-2"></a>{</span>
-<span id="cb4-3"><a href="dateringen-combineren.html#cb4-3"></a> <span class="kw">R_Date</span>(<span class="st">&quot;Date A&quot;</span>, <span class="dv">1480</span>, <span class="dv">25</span>);</span>
-<span id="cb4-4"><a href="dateringen-combineren.html#cb4-4"></a> <span class="kw">R_Date</span>(<span class="st">&quot;Date B&quot;</span>, <span class="dv">1380</span>, <span class="dv">25</span>);</span>
-<span id="cb4-5"><a href="dateringen-combineren.html#cb4-5"></a> <span class="kw">Difference</span>(<span class="st">&quot;A-B&quot;</span>, <span class="st">&quot;Date A&quot;</span>, <span class="st">&quot;Date B&quot;</span>);</span>
-<span id="cb4-6"><a href="dateringen-combineren.html#cb4-6"></a>};</span></code></pre></div>
+<p>Het combineren van dateringen wordt niet alleen gebruikt om een verfijnde datering te bekomen bij vermoeden van quasi gelijktijdigheid, maar deze procedure kan ook helpen bewijzen dat bepaalde vondsten helemaal niet uit dezelfde periode dateren. Zo kan bijvoorbeeld residueel en intrusief materiaal als dusdanig herkend worden. Indien er een sterk vermoeden is dat twee dateringen niet een zelfde gebeurtenis dateren – de<span class="math inline">\(\chi^2\)</span>-test of <em>Agreement index</em> valt respectievelijk boven of onder de kritische drempelwaarde – kan bovendien becijferd worden hoe ver beide gebeurtenissen mogelijk uit elkaar liggen. In OxCal voert de functie <code>Difference()</code> daarvoor de nodige bewerkingen uit.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="dateringen-combineren.html#cb5-1"></a><span class="kw">Plot</span>()</span>
+<span id="cb5-2"><a href="dateringen-combineren.html#cb5-2"></a> {</span>
+<span id="cb5-3"><a href="dateringen-combineren.html#cb5-3"></a>  <span class="kw">Phase</span>(<span class="st">&quot;: mogelijk gelijktijdig?&quot;</span>)</span>
+<span id="cb5-4"><a href="dateringen-combineren.html#cb5-4"></a>  {</span>
+<span id="cb5-5"><a href="dateringen-combineren.html#cb5-5"></a>   <span class="kw">R_Date</span>(<span class="st">&quot;Date A&quot;</span>, <span class="dv">1480</span>, <span class="dv">25</span>);</span>
+<span id="cb5-6"><a href="dateringen-combineren.html#cb5-6"></a>   <span class="kw">R_Date</span>(<span class="st">&quot;Date B&quot;</span>, <span class="dv">1365</span>, <span class="dv">20</span>);</span>
+<span id="cb5-7"><a href="dateringen-combineren.html#cb5-7"></a>  };</span>
+<span id="cb5-8"><a href="dateringen-combineren.html#cb5-8"></a>  <span class="kw">Difference</span>(<span class="st">&quot;A-B&quot;</span>, <span class="st">&quot;Date A&quot;</span>, <span class="st">&quot;Date B&quot;</span>);</span>
+<span id="cb5-9"><a href="dateringen-combineren.html#cb5-9"></a> };</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:oxcal-13"></span>
-<img src="figuren/figuur_B_13.png" alt="Opbouwen van een waarschijnlijkheidsverdeling voor het verschil tussen twee radiokoolstofdateringen. We kunnen met 95,4% zekerheid stellen dat er minstens 5 tot maximaal 115 kalenderjaren tussen beide gedateerde gebeurtenissen ligt. Deze radiokoolstofdateringen kunnen niet een zelfde gebeurtenis dateren." width="80%" />
+<img src="figuren/figuur_B_13_update_a.png" alt="Opbouwen van een waarschijnlijkheidsverdeling voor het verschil tussen twee radiokoolstofdateringen. We kunnen met 95,4% zekerheid stellen dat er minstens 5 tot maximaal 115 kalenderjaren tussen beide gedateerde gebeurtenissen ligt. Deze radiokoolstofdateringen kunnen niet een zelfde gebeurtenis dateren." width="80%" /><img src="figuren/figuur_B_13_update_b.png" alt="Opbouwen van een waarschijnlijkheidsverdeling voor het verschil tussen twee radiokoolstofdateringen. We kunnen met 95,4% zekerheid stellen dat er minstens 5 tot maximaal 115 kalenderjaren tussen beide gedateerde gebeurtenissen ligt. Deze radiokoolstofdateringen kunnen niet een zelfde gebeurtenis dateren." width="80%" />
 <p class="caption">
 Figuur 9.13: Opbouwen van een waarschijnlijkheidsverdeling voor het verschil tussen twee radiokoolstofdateringen. We kunnen met 95,4% zekerheid stellen dat er minstens 5 tot maximaal 115 kalenderjaren tussen beide gedateerde gebeurtenissen ligt. Deze radiokoolstofdateringen kunnen niet een zelfde gebeurtenis dateren.
 </p>
 </div>
 <p>Bij de opbouw van het model dat het verschil tussen twee dateringen berekent, gebruikt je het label of de naam die je aan de individuele dateringen hebt gegeven. In de functie <code>Difference()</code> specifieer je dan met welke twee dateringen je wil werken:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="dateringen-combineren.html#cb5-1"></a><span class="kw">Difference</span> (“verschil”, “eerste datering”, “tweede datering”)</span></code></pre></div>
-<p>De grafiek die hiermee wordt opgebouwd laat de waarschijnlijkheidsverdeling zien van het mogelijke tijdsinterval tussen de twee dateringen. Indien een verschil (Interval) van 0 jaar binnen het 95,4% interval ligt, dan zijn we niet zeker dat er werkelijk een verschil zit tussen de dateringen. In het voorbeeld in figuur <a href="dateringen-combineren.html#fig:oxcal-13">9.13</a> ligt 0 buiten het 95,4% betrouwbaarheidsinterval, waarvan boven- en ondergrens aangeven dat datering A minstens 5 en maximaal 115 kalenderjaren ouder is dan datering B.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="dateringen-combineren.html#cb6-1"></a><span class="kw">Difference</span> (“verschil”, “eerste datering”, “tweede datering”)</span></code></pre></div>
+<p>De grafiek die hiermee wordt opgebouwd laat de waarschijnlijkheidsverdeling zien van het mogelijke tijdsinterval tussen de twee dateringen. Indien een verschil (Interval) van 0 jaar binnen het 95,4% interval ligt, dan zijn we niet zeker dat er werkelijk een verschil zit tussen de dateringen. In het voorbeeld in figuur <a href="dateringen-combineren.html#fig:oxcal-13">9.13</a> ligt 0 buiten het 95,4% betrouwbaarheidsinterval, waarvan boven- en ondergrens aangeven dat datering A minstens 9 en maximaal 112 kalenderjaren ouder is dan datering B.</p>
 </div>
 </div>
             </section>
