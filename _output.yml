@@ -1,8 +1,6 @@
 bookdown::gitbook:
   css: style.css
   split_by: chapter
-  includes:
-     before_body: COinS.html
   config:
      sharing:
        github: yes

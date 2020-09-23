@@ -59,3 +59,12 @@ Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof
 
 
  ![](./figuren/figuur_readme.png)
+<meta name="citation_book_title" content="<sup>14</sup>C: dateren met radiokoolstof"/>
+<meta name="citation_author" content="Haneca, Kristof"/>
+<meta name="citation_author" content="Ervynck, Anton"/>
+<meta name="citation_author" content="Van Strydonck, Mark"/>
+<meta name="citation_publication_date" content="2020"/>
+<meta name="citation_publisher" content="agentschap Onroerend Erfgoed"/>
+<meta name="citation_public_url" content="https://oar.onroerenderfgoed.be/item/5241"/>
+<meta name="citation_abstract" content="Geactualiseerde online versie van de handleiding "14C: dateren met radiokoolstof". Deze handleiding werd in 2019 gepubliceerd op de Open Archives Repository (https://oar.onroerenderfgoed.be/item/5241/), als handleiding van het agentschap Onroerend Erfgoed, nummer 21."/>
+<meta name="citation_volume" content="Handleiding agentschap Onroerend Erfgoed 21"/>
