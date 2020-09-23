@@ -1,5 +1,8 @@
 # Bijlagen {#bijlagen} 
 
+![](./figuren/C14GIF.gif)
+
+
 # (PART\*) BIJLAGE I: begrippen {-}
 
 # Begrippen {-#begrippen}
