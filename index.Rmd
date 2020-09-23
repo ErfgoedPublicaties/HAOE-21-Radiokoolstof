@@ -40,6 +40,7 @@ knitr::opts_chunk$set(
 
 ```
 
+<span class='Z3988' title='url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=A%20manual%20published%20with%20bookdown&amp;rft.description=Brief%20content%20of%20the%20website%20or%20book&amp;rft.identifier=testurlOfTheWebsite&amp;rft.aufirst=first&amp;rft.aulast=Author&amp;rft.au=first%20Author&amp;rft.au=Second%20Author'></span>
 
 # Woord vooraf {-}
 
