@@ -11,6 +11,6 @@ bookdown::gitbook:
           before: |
             <li><strong><a href="./">Handleiding radiokoolstof</a></strong></li>
           after: |
-            <li><a href="https://bookdown.org/" target="blank">Created with bookdown</a></li>
+            <li><small><a href="https://bookdown.org/" target="blank">Created with bookdown</a></small></li>
 
 

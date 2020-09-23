@@ -50,6 +50,9 @@ fig:oxcal-20
 fig:oxcal-21
 fig:oxcal-22
 intro
+radiokoolstof-in-het-erfgoedonderzoek
+leeswijzer
+youtube
 principes
 het-chemisch-element-koolstof
 het-ontstaan-van-radiokoolstof
