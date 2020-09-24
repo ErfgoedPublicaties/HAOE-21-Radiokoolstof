@@ -6,13 +6,19 @@ In het overzicht hier onder worden de belangrijkste wijzigingen die zijn aangebr
 
 - `15-09-2020`: handleiding ***^14^C: dateren met radiokoolstof*** online te raadplegen [https://hanecakr.github.io/handleidingRadiokoolstof/], zoals gepubliceerd door K. Haneca, A. Ervynck en M. Van Strydonck in 2019.
 
+<br/>
+
 - `21-09-2020`: 
      - Aanpassingen aangebracht in het hoofdstuk 'Kalibratie' naar aanleiding van de publicatie van de nieuwe kalibratiecurve ***IntCal20***.
-     - Ook in de [_Handleiding OxCal_](#Oxcal_intro) (BIJLAGE II) werden figuren aangepast waar nodig en Bayesiaanse modellen opnieuw berekend met de nieuwste versie van OxCal (v4.4) en de IntCal20 kalibratiecurve.
-     - De code die nodig is om de kalibraties uit te voeren en de Bayesiaanse modellen te berekenen uit de [_Handleiding OxCal_](#Oxcal_intro), werd toegevoegd bi elke figuur. Deze code kan gekopieerd worden en in een nieuw OxCal-project gebruikt worden om het model of grafiek uit de handleiding op te bouwen.
+     - Ook in de [Handleiding OxCal](#Oxcal) werden figuren aangepast waar nodig en Bayesiaanse modellen opnieuw berekend met de nieuwste versie van OxCal (v4.4) en de IntCal20 kalibratiecurve.
+     - De code die nodig is om de kalibraties uit te voeren of de Bayesiaanse modellen te berekenen uit de [Handleiding OxCal](#Oxcal), werd toegevoegd aan elke figuur. Deze code kan gekopieerd worden naar een nieuw OxCal-project om dezelfde analyse te herhalen.
+
+<br/>
 
 - `24-09-2020`:
-     - Extra paragraaf toegevoegd over het dateren via de _bomb-peak_ in het hoofdstuk 'Kalibratie'.
-     - Extra paragraaf over de C/N-verhouding (als maat voor mogelijke contaminatie), %C en %N (als maat voor degradatie en conditie) bij botmateriaal, in het hoofdstuk 'Rapporteren'.
+     - Extra paragraaf toegevoegd over dateren met behulp van de _bomb peak_ in het hoofdstuk [Kalibratie](#kalibratie).
+     - Extra paragraaf over de C/N-verhouding (als maat voor mogelijke contaminatie), %C en %N (als maat voor degradatie en conditie) bij botmateriaal, in het hoofdstuk [Rapporteren](#rapporteren).
      - Youtube-video van "Universiteit van Vlaanderen" over het principe van een radiokoolstofdatering toegevoegd aan de inleiding.
+     - Korte paragraaf toegevoegd over _Kernel Density Estimates (KDE)_ aan 'Gesommeerde probabiliteiten' in het hoofdstuk [Bayesiaanse analyses](#modelleren).
 
+<br/>

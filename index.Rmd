@@ -1,9 +1,6 @@
 ---
 title: "^14^C: dateren met radiokoolstof"
-author: 
-  - "Kristof Haneca^[erfgoedonderzoeker, [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/), kristof.haneca@vlaanderen.be] [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7719-8305)"
-  - "Anton Ervynck^[erfgoedonderzoeker, [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/)]"
-  - "Mark Van Strydonck^[voormalig hoofd van het [laboratorium voor C14-dateringen](http://www.kikirpa.be/NL/52/253/Datering+C14.htm) aan het Koninklijk Instituut voor het Kunstpatrimonium (KIK/IRPA) in Brussel.]"
+author: "Kristof Haneca^[erfgoedonderzoeker, [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/), kristof.haneca@vlaanderen.be] [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7719-8305), Anton Ervynck^[erfgoedonderzoeker, [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/)], Mark Van Strydonck^[voormalig hoofd van het [laboratorium voor C14-dateringen](http://www.kikirpa.be/NL/52/253/Datering+C14.htm) aan het Koninklijk Instituut voor het Kunstpatrimonium (KIK/IRPA) in Brussel.]"
 date: " -- `r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 output: 
