@@ -15,12 +15,12 @@ output:
 documentclass: book
 output_dir: "docs"
 github-repo: hanecakr/handleidingRadiokoolstof/
+cover-image: "figuren/figuur_readme.png"
 bibliography: "C14_biblio.bib"
 csl: elsevier-harvard_nl.csl
 link-citations: TRUE
 nocite: '@*'
 description: "Geactualiseerde online versie van de handleiding ***14C: dateren met radiokoolstof***. Deze handleiding werd in 2019 gepubliceerd op de Open Archives Repository (https://oar.onroerenderfgoed.be/item/5241/), als handleiding van het agentschap Onroerend Erfgoed, nummer 21."
-cover-image: "./figuren/figuur_readme.png"
 ---
 
 

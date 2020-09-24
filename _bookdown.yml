@@ -23,7 +23,7 @@ bibliography: "C14_biblio.bib"
 link-citations: TRUE
 nocite: '@*'
 description: "Geactualiseerde online versie van de handleiding '^14^C: dateren met radiokoolstof'"
-cover-image: "./figuren/figuur_readme.png"
+cover-image:: "figuren/figuur_readme.png"
 language:
      label: 
        fig: "Figuur " 
