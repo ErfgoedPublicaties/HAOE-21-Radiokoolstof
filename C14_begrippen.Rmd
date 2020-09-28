@@ -20,7 +20,7 @@
 
 **Cal. BP**: Gekalibreerde radiokoolstof datering, uitgedrukt in het aantal kalenderjaren voor 1950 AD.
 
-**Cambium**: weefsellaag aan de buitenzijde van de stam of takken van struiken en bomen, waar nieuwe cellen worden aangemaakt. Dit (deel)weefstel zorgt voor de aanmaak van nieuw hout (xyleem) en bast (floëem).
+**Cambium**: Weefsellaag aan de buitenzijde van de stam of takken van struiken en bomen, waar nieuwe cellen worden aangemaakt. Dit (deel)weefstel zorgt voor de aanmaak van nieuw hout (xyleem) en bast (floëem).
 
 **CE**: Afkorting van _Common Era_, als alternatieve en meer neutrale formulering voor *na Christus* of **AD**.
 
@@ -34,7 +34,7 @@
 
 **Radiokoolstof ($\mathrm{ ^{14}C}$)**: Radioactieve **isotoop** van koolstof met 8 neutronen in de kern. De meest voorkomende vorm van koolstof ($\mathrm{ ^{12}C}$) is volkomen stabiel en heeft 12 kerndeeltjes (6 protonen + 6 neutronen).
 
-**Schors**: het weefsel dat zich aan de buitenzijde van stam en wortels bevindt. Het bestaat grotendeels uit dode cellen, kurkweefsel, dat wordt aangemaakt vanuit een **cambium**, op de overgang tussen schors en bast.
+**Schors**: Het weefsel dat zich aan de buitenzijde van stam en wortels bevindt. Het bestaat grotendeels uit dode cellen, kurkweefsel, dat wordt aangemaakt vanuit een **cambium**, op de overgang tussen schors en bast.
 
 **Spinthout**: Levend of fysiologisch actief deel van het hout. Het spinthout verzorgt de sapstroom in de stam en dient als opslagplaats voor voedingsstoffen. Het heeft exact dezelfde structuur als het kernhout, maar bij het spinthout zijn de transportkanalen (vaten) nog grotendeels vrij. Het bevindt zich tussen het kernhout en de bast van de boom. Het spinthout is bij eik, net zoals bij veel andere houtsoorten, gekenmerkt door een lichtere kleur dan het kernhout.
 

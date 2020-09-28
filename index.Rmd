@@ -1,7 +1,9 @@
 ---
 title: "^14^C: dateren met radiokoolstof"
 author: "Kristof Haneca^[erfgoedonderzoeker, [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/), kristof.haneca@vlaanderen.be] [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7719-8305), Anton Ervynck^[erfgoedonderzoeker, [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/)], Mark Van Strydonck^[voormalig hoofd van het [laboratorium voor C14-dateringen](http://www.kikirpa.be/NL/52/253/Datering+C14.htm) aan het Koninklijk Instituut voor het Kunstpatrimonium (KIK/IRPA) in Brussel.]"
-date: " -- `r format(Sys.time(), '%d %B, %Y')`"
+date:  -- `r format(Sys.time(), '%d %B, %Y')`
+ <br/>
+ <br/> ![](./figuren/cover_large.png){width=100%}
 site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
@@ -15,12 +17,14 @@ output:
 documentclass: book
 output_dir: "docs"
 github-repo: hanecakr/handleidingRadiokoolstof/
-cover-image: "figuren/figuur_readme.png"
+url: "https://hanecakr.github.io/handleidingRadiokoolstof/" 
+description: "<strong><sup>14</sup>C: dateren met radiokoolstof</strong>: een praktische handleidng voor de erfgoedonderzoeker."
+cover-image: figuren/cover.png
 bibliography: "C14_biblio.bib"
 csl: elsevier-harvard_nl.csl
 link-citations: TRUE
 nocite: '@*'
-description: "Geactualiseerde online versie van de handleiding ***14C: dateren met radiokoolstof***. Deze handleiding werd in 2019 gepubliceerd op de Open Archives Repository (https://oar.onroerenderfgoed.be/item/5241/), als handleiding van het agentschap Onroerend Erfgoed, nummer 21."
+
 ---
 
 
@@ -56,5 +60,3 @@ Haneca K., Ervynck A,, Van Strydonck M. (`r Sys.Date()`). ^14^C: dateren met rad
 Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof, Handleiding agentschap Onroerend Erfgoed 21, Brussel. [online: https://oar.onroerenderfgoed.be/item/5241].
 
 
-
- ![](./figuren/figuur_readme.png)
