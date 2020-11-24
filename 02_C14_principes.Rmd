@@ -36,7 +36,7 @@ De productie van $\mathrm{^{14}C}$ blijft wel miniem en wordt wereldwijd geschat
 
 ```{r koolstofcyclus, fig.cap='Vereenvoudigde voorstelling van de koolstofcyclus. (&copy; KIK/IRPA, Brussel)', echo = FALSE, out.width='100%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_03.png")
+knitr::include_graphics("./figuren/figuur_03.png")
 
 ```
 
@@ -69,7 +69,7 @@ Nu is de snelheid waarmee het radioactief verval verloopt, constant en gekend. Z
 
 ```{r halfwaardetijd, fig.cap='Evolutie van het ^14^C-gehalte in de resten van een organisme, in functie van de tijd.', echo = FALSE, out.width='60%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_04.png")
+knitr::include_graphics("./figuren/figuur_04.png")
 
 ```
 
@@ -82,7 +82,7 @@ Het bepalen van de ouderdom van een stukje organisch of anorganisch materiaal st
 
 ```{r MICADAS, fig.cap='Opstelling van een MICADAS aan het KIK/IRPA te Brussel. (foto: &copy; KIK/IRPA, Brussel)', echo = FALSE, out.width='100%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_05.jpg")
+knitr::include_graphics("./figuren/figuur_05.jpg")
 
 ```
 
@@ -100,7 +100,7 @@ Beide parameters worden enerzijds bepaald door de meetonzekerheid en anderzijds 
 
 ```{r precisie, fig.cap='Visuele voorstelling van accuraatheid en precisie, aan de hand van een schietschijf.', echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_06.png")
+knitr::include_graphics("./figuren/figuur_06.png")
 
 ```
 
@@ -116,7 +116,7 @@ Soms ervaart een onderzoeker die een datering laat uitvoeren een gebrek aan accu
 
 ```{r normaalverdeling, fig.cap='De normaalverdeling met karakteristieke parameters, *µ* = het gemiddelde en *σ* = de standaardafwijking.', echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_07.png")
+knitr::include_graphics("./figuren/figuur_07.png")
 
 ```
 
@@ -158,7 +158,7 @@ Ook bij stikstof (chemisch element $\mathrm{N}$) treden er parallelle processen 
 
 ```{r fractionatie, fig.cap='Sterk vereenvoudigde, schematische voorstelling van het effect van isotopenfractionatie voor koolstof en stikstof gemeten in botmateriaal van dieren met een verschillend dieet en plaats in de voedselketen (naar Müldner 2009).', echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_08.png")
+knitr::include_graphics("./figuren/figuur_08.png")
 
 ```
 
