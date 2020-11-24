@@ -6,7 +6,7 @@ Eerst en vooral kan wat duidelijkheid scheppen in de gangbare terminologie geen 
 
 ```{r atoommodel, fig.cap='Het atoommodel voor koolstof', echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_01.png")
+knitr::include_graphics("/figuren/Figuur_01.png")
 
 ```
 
@@ -14,7 +14,7 @@ Daarnaast bestaan er varianten van koolstof met meer kerndeeltjes, bijvoorbeeld 
 
 ```{r atoommodel-isotopen, fig.cap='Atoommodel voor drie isotopen van het element koolstof. De isotopen ^13^C en ^14^C hebben respectievelijk één en twee neutronen (blauw) meer in hun atoomkern dan de meest courante koolstofisotoop ^12^C. Het aantal protonen (rood) blijft gelijk.', echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_02.png")
+knitr::include_graphics("/figuren/Figuur_02.png")
 
 ```
 

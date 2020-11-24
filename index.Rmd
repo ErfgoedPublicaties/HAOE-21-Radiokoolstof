@@ -38,7 +38,7 @@ knitr::opts_chunk$set(
   echo = TRUE,
   warning = FALSE,
   collapse = TRUE,
-  fig.path = "./figuren/",
+  # fig.path = "./figuren/",
   comment = "#>"
   )
 
