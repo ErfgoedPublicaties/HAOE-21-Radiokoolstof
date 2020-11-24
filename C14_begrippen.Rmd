@@ -1,6 +1,6 @@
 # Bijlagen {#bijlagen} 
 
-![](./figuren/c14gif.gif)
+![](./figuren/c_14_gif.gif)
 
 
 # (PART\*) BIJLAGE I: begrippen {-}
