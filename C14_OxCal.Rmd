@@ -159,7 +159,7 @@ knitr::include_graphics("./figuren/figuur_B_08.png")
 ```
 
 
-Een nog eenvoudiger alternatief start met het openen van een nieuw project in OxCal. In het Excel bestand kopieer je ondertussen de drie kolommen met de labocode, radiokoolstofouderdom en de standaardafwijking. Via het tabblad `[Tools > Import]` krijg je een venster te zien met drie kolommen: `Name`, `$\mathrm{^{14}C}$ Date` en `Uncertainty` (figuur \@ref(fig:oxcal-09)). In dit venster plak je de gegevens die je uit Excel hebt gekopieerd. Met de knop `[ >> ]` worden deze dateringen dan omgezet en overgebracht in het venster met de programmeercode.
+Een nog eenvoudiger alternatief start met het openen van een nieuw project in OxCal. In het Excel bestand kopieer je ondertussen de drie kolommen met de labocode, radiokoolstofouderdom en de standaardafwijking. Via het tabblad `[Tools > Import]` krijg je een venster te zien met drie kolommen: `Name`, `14C Date` en `Uncertainty` (figuur \@ref(fig:oxcal-09)). In dit venster plak je de gegevens die je uit Excel hebt gekopieerd. Met de knop `[ >> ]` worden deze dateringen dan omgezet en overgebracht in het venster met de programmeercode.
 
 ```{r oxcal-09, fig.cap='Copy-paste de gegevens van de radiokoolstofdateringen rechtstreeks in OxCal.', echo = FALSE, out.width='40%', fig.asp=.75, fig.align='center'}
 
@@ -247,7 +247,7 @@ Om volledig correct te zijn, moet er op gewezen worden dat er bij de interpretat
 
 ## Difference {-}
 
-Het combineren van dateringen wordt niet alleen gebruikt om een verfijnde datering te bekomen bij vermoeden van quasi gelijktijdigheid, maar deze procedure kan ook helpen bewijzen dat bepaalde vondsten helemaal niet uit dezelfde periode dateren. Zo kan bijvoorbeeld residueel en intrusief materiaal als dusdanig herkend worden. Indien er een sterk vermoeden is dat twee dateringen niet een zelfde gebeurtenis dateren – de$\chi^2$-test of *Agreement index* valt respectievelijk boven of onder de kritische drempelwaarde – kan bovendien becijferd worden hoe ver beide gebeurtenissen mogelijk uit elkaar liggen. In OxCal voert de functie `Difference()` daarvoor de nodige bewerkingen uit.
+Het combineren van dateringen wordt niet alleen gebruikt om een verfijnde datering te bekomen bij vermoeden van quasi gelijktijdigheid, maar deze procedure kan ook helpen bewijzen dat bepaalde vondsten helemaal niet uit dezelfde periode dateren. Zo kan bijvoorbeeld residueel en intrusief materiaal als dusdanig herkend worden. Indien er een sterk vermoeden is dat twee dateringen niet een zelfde gebeurtenis dateren – de $\chi^2$-test of *Agreement index* valt respectievelijk boven of onder de kritische drempelwaarde – kan bovendien becijferd worden hoe ver beide gebeurtenissen mogelijk uit elkaar liggen. In OxCal voert de functie `Difference()` daarvoor de nodige bewerkingen uit.
 
 ```{r eval=FALSE}
 Plot()
@@ -549,11 +549,7 @@ knitr::include_graphics("./figuren/figuur_B_20_update_c.png")
 
 OxCal enkel de kalibraties en berekeningen laten uitvoeren is niet voldoende; een kritische evaluatie van de resultaten en het opgebouwde model blijven noodzakelijk. Door in het keuzemenu links bovenaan `[Table]` te selecteren krijg je in een tabel meer details over de kwaliteit van het opgebouwde model en de gemodelleerde dateringen (figuur \@ref(fig:oxcal-21)). Dit wordt uitgedrukt in een _Agreement index_ ($A$). Deze index dient hoger te zijn dan 60%, zowel bij de individuele dateringen als bij het globale model ($A_{model}$), en moet idealiter rond de 100% liggen. Indien de Agreement voor het volledige model te laag uitvalt, krijg je een melding die er bijvoorbeeld als volgt uitziet:
 
-```{r eval=FALSE, class.output="bg-danger" }
-
-Warning! Poor agreement - A=58.1% (A’c=60.0%)
-
-```
+<p style="color:red;font-family:Consolas;text-align:center">Warning! Poor agreement - A=58.1% (A’c=60.0%)</p>
 
 Voor het model in figuur \@ref(fig:oxcal-19) is de $A$-index 133,1% voor het globale model (kolom 'indices' bovenaan figuur \@ref(fig:oxcal-21)), wat betekent dat de opgebouwde sequentie stand houdt. Ook voor de individuele dateringen ligt de $A$-index hoger dan 100% (kolom $A$ in figuur \@ref(fig:oxcal-21)). Enkel bij de datering van het staal dat buiten de omwalling werd gevonden ligt de $A$-index iets lager (90,8%). Aangezien dit echter nog ruim boven de kritische waarde van 60% ligt, worden geen verdere vraagtekens geplaatst bij deze datering. Indien er afwijkende dateringen in het model voorkomen, krijgt je in de overzichtstabel een waarschuwing te zien bij de dateringen die niet goed in het gedefinieerde model passen. Het is dan altijd aangeraden het model te herberekenen zonder deze _outliers_. Hun aanwezigheid beïnvloedt immers de aanpassingen op de probabiliteitsverdelingen van de ‘passende’ dateringen.
 
