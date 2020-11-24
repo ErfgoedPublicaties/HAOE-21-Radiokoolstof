@@ -45,13 +45,27 @@ knitr::include_graphics("./figuren/figuur_11.png")
 
 Het grillige verloop van de kalibratiecurve in het meest recente, 'postmiddeleeuwse' deel van de chronologie zorgt ervoor dat het quasi onmogelijk is om materiaal daterend van na 1650 AD en voor 1955 AD - wanneer de hoeveelheid $\mathrm{^{14}C}$ in de atmosfeer begint te stijgen door nucleaire experimenten - met enige precisie met de radiokoolstofmethode te dateren. Dat beperkt de range van de radiokoolstofmethode dus van ca. 55.000 jaar geleden tot het midden van de 17de eeuw. De _bomb peak_ kan echter wel gebruikt worden om bijvoorbeeld 20ste-eeuwse vervalsingen van oudere of originele kunstwerken te onderscheiden. Indien hoge $\mathrm{^{14}C}$-concentraties worden gemeten in een materiaal en deze beduidend hoger liggen dan tijdens het postmiddeleeuwse gedeelte van de kalibratiecurve, wijst dit op een recente datering, rond de _bomb peak_. Dergelijk recente dateringen, op basis van het gehalte aan _modern carbon_ (pMC) geven echter steeds twee mogelijkheden, één links en één rechts van de _bomb peak_ in 1963. Door natuurlijk verval en de steeds maar toenemende aanrijking van de atmosfeer met oude koolstof (door verbranding fossiele brandstoffen) deemstert het effect van de _bomb peak_ langzaam weg en zal binnen een aantal jaar het gehalte aan radiokoolstof in de atmosfeer terug op het niveau komen van het postmiddeleeuwse deel van de kalibratiecurve. 
 
-## INTCAL20
+## IntCal20
 
 Kalibratiecurves worden met enige regelmaat verlengd, verfijnd en aangevuld met recent onderzochte datasets. Ook de achterliggende modellering kan op basis van nieuwe statistische technieken aan herziening toe zijn. Geactualiseerde kalibratiecurves worden als sinds de jaren ‘1960 gepubliceerd [@stuiver_relationship_1966]. De meest recente update kwam er in 2020 [@reimer_intcal20_2020], met de **IntCal20** kalibratiecurve, ter vervanging van Intcal13 (uit 2013). Deze nieuwste kalibratiecurve - voor terrestrische systemen op het noordelijke halfrond – is tot 11.960 BC volledig gebaseerd op dendrochronologisch gedateerd hout. Het oudere gedeelte is samengesteld met metingen op jaarringchronologieën die via _wiggle-matching_ bij benadering zijn gedateerd (zie 7.6), sedimentlagen uit diepere meren (varven), mariene sedimenten, druipstenen (speleothems) en koralen, en gaat tot 55.000 jaar BP terug in de tijd (http://intcal.org).
 
 De globale trend in de IntCal20 kalibratiecurve wijkt tot ca. 25.000 jaar terug weinig af van de voorgaande gepubliceerde kalibratiecurven. Voor nog oudere perioden is er wel een significant verschil doordat er bij de update van de kalibratiecurve meer meetpunten van goed gedateerd materiaal zijn opgenomen. Dit uit zich bij het kalibreren van oud materiaal in vrij grote verschillen in vergelijking met de kalibratie met de vorige kalibratiecurven. Globaal gezien zal het verschil na kalibratie met behulp van IntCal20 in vergelijking met IntCal13, de vorige kalibratiecurve, vrij beperkt zijn voor de historische perioden, maar dit verschil kan oplopen tot enkele honderden jaren bij de kalibratie van ouder materiaal [@reimer_composition_2020; @van_der_plicht_recent_2020]. 
 
-IntCal20 heeft in vergelijking met vroegere kalibratiecurven veel meer detail en ziet er daardoor ook wat ‘nerveuzer’ uit, met meer kleine schommelingen. Dit is het gevolg van de integratie van metingen op materiaal met een hoge tijdsresolutie, zoals de jaarlijkse groeiringen in dendrochronologisch gedateerd hout. Ook de vrij recente ontdekking van zogenaamde **Miyake-events** – een plotse, sterke toename van de $\mathrm{^{14}C}$-concentratie in de atmosfeer als gevolg van een protonenstorm veroorzaakt door een zonnevlam (*solar particle event* (SPE)) - in 774-75 AD en 993 AD [@miyake_another_2013; @miyake_signature_2012] zorgen op die plaatsen voor een duidelijk verschil met vorige kalibratiecurven. Door het meer nerveuze karakter van IntCal20 zal een gekalibreerde radiokoolstofdatering vaker resulteren in een discontinu bereik aan mogelijke kalenderjaren, in vergelijking met de oudere kalibratiecurven.
+```{r calcurves, fig.cap="Vergelijking van de huidige en voorgaande kalibratiecurves in de Romeinse periode.", echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
+
+knitr::include_graphics("./figuren/calcurves.jpg")
+
+```
+
+IntCal20 heeft in vergelijking met vroegere kalibratiecurven veel meer detail en ziet er daardoor ook wat ‘nerveuzer’ uit, met meer kleine schommelingen (figuur \@ref(fig:calcurves)). Dit is het gevolg van de integratie van metingen op materiaal met een hoge tijdsresolutie, zoals de jaarlijkse groeiringen in dendrochronologisch gedateerd hout. Zo heeft IntCal20 tot 3050 BC een jaarlijkse resolutie. Het nog oudere gedeelte is dan weer berekend aan de hand van blokjes van 5, 10 of 20 jaarringen (figuur \@ref(fig:calcurves-res)). 
+
+```{r calcurves-res, fig.cap="Vergelijking van de resolutie van de huidige en voorgaande kalibratiecurves.", echo = FALSE, out.width='100%', fig.asp=.75, fig.align='center'}
+
+knitr::include_graphics("./figuren/calcurves_res.jpg")
+
+```
+
+Ook de vrij recente ontdekking van zogenaamde **Miyake-events** – een plotse, sterke toename van de $\mathrm{^{14}C}$-concentratie in de atmosfeer als gevolg van een protonenstorm veroorzaakt door een zonnevlam (*solar particle event* (SPE)) - in 774-75 AD en 993 AD [@miyake_another_2013; @miyake_signature_2012] zorgen op die plaatsen voor een duidelijk verschil met vorige kalibratiecurven. Door het meer nerveuze karakter van IntCal20 zal een gekalibreerde radiokoolstofdatering vaker resulteren in een discontinu bereik aan mogelijke kalenderjaren, in vergelijking met de oudere kalibratiecurven.
 
 >
 >**Het is aangewezen radiokoolstofdateringen altijd met de meest recente kalibratiecurve te (her)kalibreren.**

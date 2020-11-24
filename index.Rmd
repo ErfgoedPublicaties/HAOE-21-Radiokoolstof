@@ -8,6 +8,7 @@ site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
     split_by: chapter
+    split_bib: no
     config:
       sharing:
         github: yes
@@ -18,7 +19,7 @@ documentclass: book
 output_dir: "docs"
 github-repo: hanecakr/handleidingRadiokoolstof/
 url: "https://hanecakr.github.io/handleidingRadiokoolstof/" 
-description: "<strong><sup>14</sup>C: dateren met radiokoolstof</strong>: een praktische handleidng voor de erfgoedonderzoeker."
+description: "14C: dateren met radiokoolstof: een praktische handleidng voor de erfgoedonderzoeker."
 cover-image: figuren/cover.png
 bibliography: "C14_biblio.bib"
 csl: elsevier-harvard_nl.csl

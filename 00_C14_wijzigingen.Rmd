@@ -22,3 +22,6 @@ In het overzicht hier onder worden de belangrijkste wijzigingen die zijn aangebr
      - Korte paragraaf toegevoegd over _Kernel Density Estimates (KDE)_ aan 'Gesommeerde probabiliteiten' in het hoofdstuk [Bayesiaanse analyses](#modelleren).
 
 <br/>
+
+- `24-11-2020`:
+     - Extra figuren in het hoofdstuk [Kalibratie](#kalibratie) i.v.m. de **IntCal20** kalibratiecurve (vergelijking met oudere curves en resolutie).
