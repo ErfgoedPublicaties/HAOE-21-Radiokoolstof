@@ -6,7 +6,7 @@ Eerst en vooral kan wat duidelijkheid scheppen in de gangbare terminologie geen 
 
 ```{r atoommodel, fig.cap='Het atoommodel voor koolstof', echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
 
-knitr::include_graphics("./figuren/Figuur_01.png")
+knitr::include_graphics("./figuren/figuur_01.png")
 
 ```
 
