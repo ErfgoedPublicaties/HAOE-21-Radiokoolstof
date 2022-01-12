@@ -25,3 +25,7 @@ In het overzicht hier onder worden de belangrijkste wijzigingen die zijn aangebr
 
 - `24-11-2020`:
      - Extra figuren in het hoofdstuk [Kalibratie](#kalibratie) i.v.m. de **IntCal20** kalibratiecurve (vergelijking met oudere curves en resolutie).
+
+<br/>
+
+- `12-01-2022`: nieuwe layout (bootstrap4 template).

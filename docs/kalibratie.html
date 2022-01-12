@@ -1,376 +1,182 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html lang="en">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>hoofdstuk 3 Kalibratie | 14C: dateren met radiokoolstof</title>
+<meta name="author" content="Kristof Haneca ">
+<meta name="author" content="Anton Ervynck ">
+<meta name="author" content="Mark Van Strydonck ">
+<meta name="description" content="3.1 Kalibratiecurves De hierboven beschreven methode om de radiokoolstofouderdom te bepalen gaat uit van de veronderstelling dat het \(\mathrm{^{14}C}\)-gehalte in de atmosfeer gelijk is gebleven...">
+<meta name="generator" content="bookdown 0.24.4 with bs4_book()">
+<meta property="og:title" content="hoofdstuk 3 Kalibratie | 14C: dateren met radiokoolstof">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://hanecakr.github.io/handleidingRadiokoolstof/kalibratie.html">
+<meta property="og:image" content="https://hanecakr.github.io/handleidingRadiokoolstof/figuren/cover.png">
+<meta property="og:description" content="3.1 Kalibratiecurves De hierboven beschreven methode om de radiokoolstofouderdom te bepalen gaat uit van de veronderstelling dat het \(\mathrm{^{14}C}\)-gehalte in de atmosfeer gelijk is gebleven...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hoofdstuk 3 Kalibratie | 14C: dateren met radiokoolstof">
+<meta name="twitter:description" content="3.1 Kalibratiecurves De hierboven beschreven methode om de radiokoolstofouderdom te bepalen gaat uit van de veronderstelling dat het \(\mathrm{^{14}C}\)-gehalte in de atmosfeer gelijk is gebleven...">
+<meta name="twitter:image" content="https://hanecakr.github.io/handleidingRadiokoolstof/figuren/cover.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-1DZH8JLBT5"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Kalibratie | 14C: dateren met radiokoolstof</title>
-  <meta name="description" content="3 Kalibratie | 14C: dateren met radiokoolstof: een praktische handleidng voor de erfgoedonderzoeker." />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
-
-  <meta property="og:title" content="3 Kalibratie | 14C: dateren met radiokoolstof" />
-  <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://hanecakr.github.io/handleidingRadiokoolstof/" />
-  <meta property="og:image" content="https://hanecakr.github.io/handleidingRadiokoolstof/figuren/cover.png" />
-  <meta property="og:description" content="3 Kalibratie | 14C: dateren met radiokoolstof: een praktische handleidng voor de erfgoedonderzoeker." />
-  <meta name="github-repo" content="hanecakr/handleidingRadiokoolstof/" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Kalibratie | 14C: dateren met radiokoolstof" />
-  
-  <meta name="twitter:description" content="3 Kalibratie | 14C: dateren met radiokoolstof: een praktische handleidng voor de erfgoedonderzoeker." />
-  <meta name="twitter:image" content="https://hanecakr.github.io/handleidingRadiokoolstof/figuren/cover.png" />
-
-<meta name="author" content="Kristof Haneca , Anton Ervynck, Mark Van Strydonck" />
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<link rel="prev" href="principes.html"/>
-<link rel="next" href="onderzoeksvragen.html"/>
-<script src="libs/header-attrs-2.4/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
-
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<meta name="citation_title" content="3 Kalibratie | 14C: dateren met radiokoolstof">
-<meta name="citation_author" content="Haneca, Kristof">
-<meta name="citation_author" content="Ervynck, Anton">
-<meta name="citation_author" content="Van Strydonck, Mark">
-<meta name="citation_publication_date" content="2020">
-<meta name="citation_publisher" content="agentschap Onroerend Erfgoed">
-<meta name="citation_public_url" content="https://hanecakr.github.io/handleidingRadiokoolstof/">
-<meta name="citation_series_title" content="Handleiding agentschap Onroerend Erfgoed">
-<meta name="citation_volume" content="21">
-
-
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
-
-<link rel="stylesheet" href="style.css" type="text/css" />
+      gtag('config', 'G-1DZH8JLBT5');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="style.css">
 </head>
+<body data-spy="scroll" data-target="#toc">
 
-<body>
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-
-
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li><strong><a href="./">Handleiding radiokoolstof</a></strong></li>
-
-<li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Woord vooraf</a></li>
-<li class="chapter" data-level="" data-path="updates.html"><a href="updates.html"><i class="fa fa-check"></i>Updates</a></li>
-<li class="part"><span><b>HANDLEIDING</b></span></li>
-<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Inleiding</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#radiokoolstof-in-het-erfgoedonderzoek"><i class="fa fa-check"></i><b>1.1</b> Radiokoolstof in het erfgoedonderzoek</a></li>
-<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#leeswijzer"><i class="fa fa-check"></i><b>1.2</b> Leeswijzer</a></li>
-<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#youtube"><i class="fa fa-check"></i><b>1.3</b> Youtube</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="principes.html"><a href="principes.html"><i class="fa fa-check"></i><b>2</b> Het principe van een <sup>14</sup>C-datering</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="principes.html"><a href="principes.html#het-chemisch-element-koolstof"><i class="fa fa-check"></i><b>2.1</b> Het chemisch element koolstof</a></li>
-<li class="chapter" data-level="2.2" data-path="principes.html"><a href="principes.html#het-ontstaan-van-radiokoolstof"><i class="fa fa-check"></i><b>2.2</b> Het ontstaan van radiokoolstof</a></li>
-<li class="chapter" data-level="2.3" data-path="principes.html"><a href="principes.html#de-koolstofcyclus"><i class="fa fa-check"></i><b>2.3</b> De koolstofcyclus</a></li>
-<li class="chapter" data-level="2.4" data-path="principes.html"><a href="principes.html#radioactiviteit"><i class="fa fa-check"></i><b>2.4</b> Radioactiviteit</a></li>
-<li class="chapter" data-level="2.5" data-path="principes.html"><a href="principes.html#ouderdom-bepalen"><i class="fa fa-check"></i><b>2.5</b> Ouderdom bepalen</a></li>
-<li class="chapter" data-level="2.6" data-path="principes.html"><a href="principes.html#meetfout-en-statistische-onzekerheid"><i class="fa fa-check"></i><b>2.6</b> Meetfout en statistische onzekerheid</a></li>
-<li class="chapter" data-level="2.7" data-path="principes.html"><a href="principes.html#isotopenfractionatie"><i class="fa fa-check"></i><b>2.7</b> Isotopenfractionatie</a></li>
-<li class="chapter" data-level="2.8" data-path="principes.html"><a href="principes.html#aquatische-systemen"><i class="fa fa-check"></i><b>2.8</b> Aquatische systemen</a></li>
-<li class="chapter" data-level="2.9" data-path="principes.html"><a href="principes.html#voedsel-en-stabiele-isotopen"><i class="fa fa-check"></i><b>2.9</b> Voedsel en stabiele isotopen</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="kalibratie.html"><a href="kalibratie.html"><i class="fa fa-check"></i><b>3</b> Kalibratie</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="kalibratie.html"><a href="kalibratie.html#kalibratiecurves"><i class="fa fa-check"></i><b>3.1</b> Kalibratiecurves</a></li>
-<li class="chapter" data-level="3.2" data-path="kalibratie.html"><a href="kalibratie.html#bomb-peak"><i class="fa fa-check"></i><b>3.2</b> <em>Bomb peak</em></a></li>
-<li class="chapter" data-level="3.3" data-path="kalibratie.html"><a href="kalibratie.html#intcal20"><i class="fa fa-check"></i><b>3.3</b> IntCal20</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html"><i class="fa fa-check"></i><b>4</b> Onderzoeksvragen en -strategie</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#welk-materiaal"><i class="fa fa-check"></i><b>4.1</b> Welk materiaal?</a></li>
-<li class="chapter" data-level="4.2" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#selectie-van-geschikt-materiaal"><i class="fa fa-check"></i><b>4.2</b> Selectie van geschikt materiaal</a></li>
-<li class="chapter" data-level="4.3" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#dateringsstrategie"><i class="fa fa-check"></i><b>4.3</b> Dateringsstrategie</a></li>
-<li class="chapter" data-level="4.4" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#oud-hout-effect"><i class="fa fa-check"></i><b>4.4</b> Oud-hout-effect</a></li>
-<li class="chapter" data-level="4.5" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#residueel-en-intrusief-materiaal"><i class="fa fa-check"></i><b>4.5</b> Residueel en intrusief materiaal</a></li>
-<li class="chapter" data-level="4.6" data-path="onderzoeksvragen.html"><a href="onderzoeksvragen.html#periode-en-precisie"><i class="fa fa-check"></i><b>4.6</b> Periode en precisie</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="bemonsteren.html"><a href="bemonsteren.html"><i class="fa fa-check"></i><b>5</b> Bemonsteren</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="bemonsteren.html"><a href="bemonsteren.html#hoeveel-materiaal"><i class="fa fa-check"></i><b>5.1</b> Hoeveel materiaal?</a></li>
-<li class="chapter" data-level="5.2" data-path="bemonsteren.html"><a href="bemonsteren.html#documentatie"><i class="fa fa-check"></i><b>5.2</b> Documentatie</a></li>
-<li class="chapter" data-level="5.3" data-path="bemonsteren.html"><a href="bemonsteren.html#mogelijke-verontreiniging"><i class="fa fa-check"></i><b>5.3</b> Mogelijke verontreiniging</a></li>
-<li class="chapter" data-level="5.4" data-path="bemonsteren.html"><a href="bemonsteren.html#chemische-transformatie-en-voorbehandeling"><i class="fa fa-check"></i><b>5.4</b> Chemische transformatie en voorbehandeling</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="rapporteren.html"><a href="rapporteren.html"><i class="fa fa-check"></i><b>6</b> Van rapport tot interpretatie</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="rapporteren.html"><a href="rapporteren.html#rapporteren-1"><i class="fa fa-check"></i><b>6.1</b> Rapporteren</a></li>
-<li class="chapter" data-level="6.2" data-path="rapporteren.html"><a href="rapporteren.html#reservoireffect"><i class="fa fa-check"></i><b>6.2</b> Reservoireffect?</a></li>
-<li class="chapter" data-level="6.3" data-path="rapporteren.html"><a href="rapporteren.html#op-dieet"><i class="fa fa-check"></i><b>6.3</b> Op dieet?</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="modelleren.html"><a href="modelleren.html"><i class="fa fa-check"></i><b>7</b> Bayesiaanse analyse</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="modelleren.html"><a href="modelleren.html#modellering"><i class="fa fa-check"></i><b>7.1</b> Modellering</a></li>
-<li class="chapter" data-level="7.2" data-path="modelleren.html"><a href="modelleren.html#gelijktijdigheid"><i class="fa fa-check"></i><b>7.2</b> Gelijktijdigheid</a></li>
-<li class="chapter" data-level="7.3" data-path="modelleren.html"><a href="modelleren.html#sequenties-en-fasering"><i class="fa fa-check"></i><b>7.3</b> Sequenties en fasering</a></li>
-<li class="chapter" data-level="7.4" data-path="modelleren.html"><a href="modelleren.html#historische-gebeurtenissen-en-gekende-ijkpunten"><i class="fa fa-check"></i><b>7.4</b> Historische gebeurtenissen en gekende ijkpunten</a></li>
-<li class="chapter" data-level="7.5" data-path="modelleren.html"><a href="modelleren.html#gesommeerde-probabiliteiten"><i class="fa fa-check"></i><b>7.5</b> Gesommeerde probabiliteiten</a></li>
-<li class="chapter" data-level="7.6" data-path="modelleren.html"><a href="modelleren.html#wiggle-matching"><i class="fa fa-check"></i><b>7.6</b> <em>Wiggle matching</em></a></li>
-<li class="chapter" data-level="7.7" data-path="modelleren.html"><a href="modelleren.html#valkuilen"><i class="fa fa-check"></i><b>7.7</b> Valkuilen</a></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="bronnen.html"><a href="bronnen.html"><i class="fa fa-check"></i><b>8</b> Bronnen</a></li>
-<li class="chapter" data-level="9" data-path="bijlagen.html"><a href="bijlagen.html"><i class="fa fa-check"></i><b>9</b> Bijlagen</a></li>
-<li class="part"><span><b>BIJLAGE I: begrippen</b></span></li>
-<li class="chapter" data-level="" data-path="begrippen.html"><a href="begrippen.html"><i class="fa fa-check"></i>Begrippen</a></li>
-<li class="part"><span><b>BIJLAGE II: OxCal</b></span></li>
-<li><a href="Oxcal.html#Oxcal"><strong>Handleiding OxCal</strong></a></li>
-<li class="chapter" data-level="" data-path="OxCal-intro.html"><a href="OxCal-intro.html"><i class="fa fa-check"></i>Inleiding</a></li>
-<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html"><i class="fa fa-check"></i>Kalibreren</a>
-<ul>
-<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#kalibratie-van-één-datering"><i class="fa fa-check"></i>Kalibratie van één datering</a></li>
-<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#kalibratie-van-meerdere-dateringen"><i class="fa fa-check"></i>Kalibratie van meerdere dateringen</a></li>
-<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#datainvoer-via-excel"><i class="fa fa-check"></i>Datainvoer via Excel</a></li>
-<li class="chapter" data-level="" data-path="kalibreren.html"><a href="kalibreren.html#grafieken-en-tabellen"><i class="fa fa-check"></i>Grafieken en tabellen</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="een-datering-simuleren.html"><a href="een-datering-simuleren.html"><i class="fa fa-check"></i>Een datering simuleren</a></li>
-<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html"><i class="fa fa-check"></i>Dateringen combineren</a>
-<ul>
-<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#r_combine"><i class="fa fa-check"></i>R_Combine</a></li>
-<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#combine"><i class="fa fa-check"></i>Combine</a></li>
-<li class="chapter" data-level="" data-path="dateringen-combineren.html"><a href="dateringen-combineren.html#difference"><i class="fa fa-check"></i>Difference</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="densiteitsplot.html"><a href="densiteitsplot.html"><i class="fa fa-check"></i>Densiteitsplot</a></li>
-<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html"><i class="fa fa-check"></i>Fasering en chronologie</a>
-<ul>
-<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#modelopbouw"><i class="fa fa-check"></i>Modelopbouw</a></li>
-<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#historische-datum-of-gebeurtenis"><i class="fa fa-check"></i>Historische datum of gebeurtenis</a></li>
-<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#hoe-lang"><i class="fa fa-check"></i>Hoe lang?</a></li>
-<li class="chapter" data-level="" data-path="fasering-en-chronologie.html"><a href="fasering-en-chronologie.html#kwaliteitscontrole-en-evaluatie"><i class="fa fa-check"></i>Kwaliteitscontrole en evaluatie</a></li>
-</ul></li>
-<li class="divider"></li>
-<li><small><a href="https://bookdown.org/" target="blank">Created with bookdown</a></small></li>
-
-</ul>
-
-      </nav>
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title=""><sup>14</sup>C: dateren met radiokoolstof</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
 
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><sup>14</sup>C: dateren met radiokoolstof</a>
-          </h1>
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="zoeken" aria-label="zoeken">
+</form>
+
+      <nav aria-label="Inhoudstafel"><h2>Inhoudstafel</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welkom</a></li>
+<li><a class="" href="updates.html">Updates</a></li>
+<li class="book-part">HANDLEIDING</li>
+<li><a class="" href="intro.html"><span class="header-section-number">1</span> Inleiding</a></li>
+<li><a class="" href="principes.html"><span class="header-section-number">2</span> Het principe van een 14C-datering</a></li>
+<li><a class="active" href="kalibratie.html"><span class="header-section-number">3</span> Kalibratie</a></li>
+<li><a class="" href="onderzoeksvragen.html"><span class="header-section-number">4</span> Onderzoeksvragen en -strategie</a></li>
+<li><a class="" href="bemonsteren.html"><span class="header-section-number">5</span> Bemonsteren</a></li>
+<li><a class="" href="rapporteren.html"><span class="header-section-number">6</span> Van rapport tot interpretatie</a></li>
+<li><a class="" href="modelleren.html"><span class="header-section-number">7</span> Bayesiaanse analyse</a></li>
+<li><a class="" href="bijlagen.html"><span class="header-section-number">8</span> Handleiding OxCal</a></li>
+<li class="book-part">BIJLAGEN</li>
+<li><a class="" href="begrippen.html">Begrippen</a></li>
+<li><a class="" href="bronnen.html">Bronnen</a></li>
+</ul>
+
+        <div class="book-extra">
+          
         </div>
-
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="kalibratie" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Kalibratie</h1>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="kalibratie" class="section level1" number="3">
+<h1>
+<span class="header-section-number">hoofdstuk 3</span> Kalibratie<a class="anchor" aria-label="anchor" href="#kalibratie"><i class="fas fa-link"></i></a>
+</h1>
 <div id="kalibratiecurves" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Kalibratiecurves</h2>
+<h2>
+<span class="header-section-number">3.1</span> Kalibratiecurves<a class="anchor" aria-label="anchor" href="#kalibratiecurves"><i class="fas fa-link"></i></a>
+</h2>
 <p>De hierboven beschreven methode om de radiokoolstofouderdom te bepalen gaat uit van de veronderstelling dat het <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte in de atmosfeer gelijk is gebleven door de eeuwen heen. Dat is echter niet geheel waar. Natuurlijke variaties in het aardmagnetisme en de zonneactiviteit veroorzaken wisselingen in het aardmagnetisch veld, waardoor een steeds wisselende hoeveelheid kosmische straling de atmosfeer binnendringt. Dit heeft tot gevolg dat de concentratie <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer nooit geheel constant was (en is). Daardoor is het noodzakelijk om gemeten radiokoolstofouderdom te ‘corrigeren’ (kalibreren) voor de steeds wisselende <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie in de atmosfeer. Zonder deze correctie of kalibratie zou het niet mogelijk zijn om radiokoolstofdateringen direct te vergelijken met historische data of andere dateringstechnieken.</p>
-<p>De variaties in de atmosferische <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie werden in kaart gebracht door het radiokoolstofgehalte te meten in houtstalen met exact gekende ouderdom. Die zijn afkomstig van dendrochronologisch gedateerd hout, waarbij men van elke jaarring weet in welk jaar die werd gevormd (zie de handleiding “<a href="https://hanecakr.github.io/handleidingDendro/">Dendrochronologie en erfgoedonderzoek</a>”, Haneca 2017). Door het vergelijken van de gemeten conventionele radiokoolstofouderdom en de werkelijke ouderdom van een jaarring kan voor de afgelopen 14.000 jaar een zogenaamde kalibratiecurve worden opgesteld die de relatie tussen beide weergeeft <span class="citation">(Reimer <em>et al.</em> <a href="bronnen.html#ref-reimer_intcal20_2020" role="doc-biblioref">2020</a>)</span>. Voor oudere periodes is de kalibratiecurve gebaseerd op de datering van organisch materiaal uit jaarlijkse sedimentlaagjes in diepe meren (varven) en op koolstof gehaald uit de aangroeilagen van koralen. De meersedimenten hebben een andere kleur in zomer en winter waardoor ze ook een gelaagdheid tonen waarin de opeenvolgende jaren van elkaar te onderscheiden zijn. Koralen worden gedateerd met andere ‘radiometrische’ methoden dan <span class="math inline">\(\mathrm{^{14}C}\)</span>, waarna de resultaten kunnen vergeleken worden met de <span class="math inline">\(\mathrm{^{14}C}\)</span>-datering.De huidige kalibratiecurve gaat terug in de tijd tot aan de detectielimieten van de meetinstrumenten en zo kan men materiaal tot 55.000 jaar oud kalibreren. Dergelijk oud materiaal betrouwbaar meten blijft echter een uiterst gevoelige en moeilijke opdracht (zie ook 2.5).</p>
+<p>De variaties in de atmosferische <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie werden in kaart gebracht door het radiokoolstofgehalte te meten in houtstalen met exact gekende ouderdom. Die zijn afkomstig van dendrochronologisch gedateerd hout, waarbij men van elke jaarring weet in welk jaar die werd gevormd (zie de handleiding “<a href="https://hanecakr.github.io/handleidingDendro/">Dendrochronologie en erfgoedonderzoek</a>,” Haneca 2017). Door het vergelijken van de gemeten conventionele radiokoolstofouderdom en de werkelijke ouderdom van een jaarring kan voor de afgelopen 14.000 jaar een zogenaamde kalibratiecurve worden opgesteld die de relatie tussen beide weergeeft <span class="citation">(<a href="bronnen.html#ref-reimer_intcal20_2020" role="doc-biblioref">Reimer <em>et al.</em> 2020</a>)</span>. Voor oudere periodes is de kalibratiecurve gebaseerd op de datering van organisch materiaal uit jaarlijkse sedimentlaagjes in diepe meren (varven) en op koolstof gehaald uit de aangroeilagen van koralen. De meersedimenten hebben een andere kleur in zomer en winter waardoor ze ook een gelaagdheid tonen waarin de opeenvolgende jaren van elkaar te onderscheiden zijn. Koralen worden gedateerd met andere ‘radiometrische’ methoden dan <span class="math inline">\(\mathrm{^{14}C}\)</span>, waarna de resultaten kunnen vergeleken worden met de <span class="math inline">\(\mathrm{^{14}C}\)</span>-datering.De huidige kalibratiecurve gaat terug in de tijd tot aan de detectielimieten van de meetinstrumenten en zo kan men materiaal tot 55.000 jaar oud kalibreren. Dergelijk oud materiaal betrouwbaar meten blijft echter een uiterst gevoelige en moeilijke opdracht (zie ook 2.5).</p>
 <blockquote>
-<p><strong>De concentratie <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer was (en is) nooit geheel constant.</strong></p>
+<p>De concentratie <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer was (en is) nooit geheel constant.</p>
 </blockquote>
 <p>De kalibratiecurve laat toe om een radiokoolstofouderdom - gerapporteerd in jaren BP en een standaardafwijking op deze meting - om te rekenen naar een bereik van <strong>kalenderjaren</strong>, uitgedrukt in jaren BC (vóór het begin van onze jaartelling) of AD (na het begin van onze jaartelling). Dit resulteert meestal in een groter bereik aan mogelijke jaren, in vergelijking met de radiokoolstofouderdom. Dit komt door de vaak grillige vorm van de kalibratiecurve en door het feit dat op de curve ook een statistische onzekerheid zit (ze is dus geen smalle lijn maar eerder een bredere band) (figuur <a href="kalibratie.html#fig:kalibratie">3.1</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:kalibratie"></span>
-<img src="figuren/figuur_09_update.png" alt="Kalibratie van een radiokoolstof-ouderdom (2018 ± 25 BP)" width="80%" />
-<p class="caption">
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:kalibratie"></span>
+<img src="figuren/figuur_09_update.png" alt="Kalibratie van een radiokoolstof-ouderdom (2018 ± 25 BP)" width="80%"><p class="caption">
 Figuur 3.1: Kalibratie van een radiokoolstof-ouderdom (2018 ± 25 BP)
 </p>
 </div>
 <p>Op basis van de kalibratiecurve kan een grafiek worden opgebouwd die, doorheen de tijd, het verschil weergeeft tussen de conventionele radiokoolstofouderdom en het werkelijke kalenderjaar waaruit een materiaal stamt. Op die grafiek is te zien dat <span class="math inline">\(\mathrm{^{14}C}\)</span>-jaren tot 200 ‘jaar’ te oud zijn tijdens het eerste millennium AD, maar tot 800 jaar te jong in het 5de millennium BC (figuur <a href="kalibratie.html#fig:intcal">3.2</a>). De relatie tussen de conventionele radiokoolstofouderdom en de werkelijke kalenderjaren is dus niet alleen wisselend van jaar tot jaar maar vertoont ook bredere trends doorheen de tijd die verband houden met astronomische fenomenen (schommelingen in het aardmagnetisme, cycli in de zonneactiviteit, …).</p>
-<div class="figure" style="text-align: center"><span id="fig:intcal"></span>
-<img src="figuren/figuur_10_update.png" alt="Evolutie van het verschil tussen de kalenderouderdom en de radiokoolstofouderdom tussen 5000 BC en 1950 AD, berekend op basis van de IntCal20 kalibratiecurve." width="80%" />
-<p class="caption">
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:intcal"></span>
+<img src="figuren/figuur_10_update.png" alt="Evolutie van het verschil tussen de kalenderouderdom en de radiokoolstofouderdom tussen 5000 BC en 1950 AD, berekend op basis van de IntCal20 kalibratiecurve." width="80%"><p class="caption">
 Figuur 3.2: Evolutie van het verschil tussen de kalenderouderdom en de radiokoolstofouderdom tussen 5000 BC en 1950 AD, berekend op basis van de IntCal20 kalibratiecurve.
 </p>
 </div>
-<p>Zoals eerder aangehaald (zie 2.2), bepaalt de zonneactiviteit voor een groot deel de aanmaak van <span class="math inline">\(\mathrm{^{14}C}\)</span> in onze atmosfeer. Tussen 1645 en 1715 werden door toenmalige astronomen uitzonderlijk weinig <strong>zonnevlekken</strong> geobserveerd (een periode nu gekend als het <strong>‘Maunder-minimum’</strong>), wat wijst op een extreem lage zonneactiviteit, wat een verhoogde vorming van <span class="math inline">\(\mathrm{ ^{14}C}\)</span> in de aardse atmosfeer tot gevolg had. De zonneactiviteit was tijdens de kleine ijstijd (15de-19de eeuw) bovendien al vrij laag. Door deze astronomische fenomenen, in combinatie met menselijk ingrijpen op de vegetatie <span class="citation">(Koch <em>et al.</em> <a href="bronnen.html#ref-koch_earth_2019" role="doc-biblioref">2019</a>)</span>, heeft de kalibratiecurve vanaf 1650 AD een vrij grillig en plateauvormig verloop (figuur <a href="kalibratie.html#fig:intcal">3.2</a>).</p>
+<p>Zoals eerder aangehaald (zie 2.2), bepaalt de zonneactiviteit voor een groot deel de aanmaak van <span class="math inline">\(\mathrm{^{14}C}\)</span> in onze atmosfeer. Tussen 1645 en 1715 werden door toenmalige astronomen uitzonderlijk weinig <strong>zonnevlekken</strong> geobserveerd (een periode nu gekend als het <strong>‘Maunder-minimum’</strong>), wat wijst op een extreem lage zonneactiviteit, wat een verhoogde vorming van <span class="math inline">\(\mathrm{ ^{14}C}\)</span> in de aardse atmosfeer tot gevolg had. De zonneactiviteit was tijdens de kleine ijstijd (15de-19de eeuw) bovendien al vrij laag. Door deze astronomische fenomenen, in combinatie met menselijk ingrijpen op de vegetatie <span class="citation">(<a href="bronnen.html#ref-koch_earth_2019" role="doc-biblioref">Koch <em>et al.</em> 2019</a>)</span>, heeft de kalibratiecurve vanaf 1650 AD een vrij grillig en plateauvormig verloop (figuur <a href="kalibratie.html#fig:intcal">3.2</a>).</p>
 <p>Het meest recente deel van de kalibratiecurve laat zien dat er aan het begin van de 20ste eeuw in de atmosfeer minder <span class="math inline">\(\mathrm{^{14}C}\)</span> aanwezig was dan ooit voorheen. Dit komt omdat vanaf halfweg de 19de eeuw de verbranding van <strong>fossiele brandstoffen</strong> enorm steeg door de industriële revolutie. Fossiele brandstoffen bestaan uit miljoenen jaren oude koolstof, en bevatten dus geen <span class="math inline">\(\mathrm{^{14}C}\)</span> meer. Aangezien deze oude koolstof massaal in de atmosfeer terechtkwam, kregen alle ‘deelnemers’ aan de koolstofcyclus minder <span class="math inline">\(\mathrm{^{14}C}\)</span> in hun weefsels, en dus een oudere radiokoolstofouderdom.</p>
 </div>
 <div id="bomb-peak" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> <em>Bomb peak</em></h2>
-<p>Vlak na de eerste nucleaire testen en het gebruik van atoombommen in 1945, en vooral tijdens de daaropvolgende wapenwedloop met tal van <strong>nucleaire experimenten</strong> in de atmosfeer, steeg halfweg de 20ste eeuw het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer dramatisch, tot meer dan 100% boven het gemiddelde ‘normale’ niveau van vóór de postmiddeleeuwse periode <span class="citation">(Hua <em>et al.</em> <a href="bronnen.html#ref-hua_atmospheric_2013" role="doc-biblioref">2013</a>)</span>. In de noordelijke hemisfeer bereikte het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> daardoor een <strong>piekwaarde in 1963</strong>, een fenomeen waarnaar nu wordt verwezen als de <strong><em>‘bomb peak’</em></strong> (figuur <a href="kalibratie.html#fig:bombpeak">3.3</a>). In de zuidelijke hemisfeer werd een gelijkaardige piekwaarde geregistreerd in 1965.</p>
+<h2>
+<span class="header-section-number">3.2</span> <em>Bomb peak</em><a class="anchor" aria-label="anchor" href="#bomb-peak"><i class="fas fa-link"></i></a>
+</h2>
+<p>Vlak na de eerste nucleaire testen en het gebruik van atoombommen in 1945, en vooral tijdens de daaropvolgende wapenwedloop met tal van <strong>nucleaire experimenten</strong> in de atmosfeer, steeg halfweg de 20ste eeuw het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer dramatisch, tot meer dan 100% boven het gemiddelde ‘normale’ niveau van vóór de postmiddeleeuwse periode <span class="citation">(<a href="bronnen.html#ref-hua_atmospheric_2013" role="doc-biblioref">Hua <em>et al.</em> 2013</a>)</span>. In de noordelijke hemisfeer bereikte het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> daardoor een <strong>piekwaarde in 1963</strong>, een fenomeen waarnaar nu wordt verwezen als de <strong><em>‘bomb peak’</em></strong> (figuur <a href="kalibratie.html#fig:bombpeak">3.3</a>). In de zuidelijke hemisfeer werd een gelijkaardige piekwaarde geregistreerd in 1965.</p>
 <p>Een radiokoolstofanalyse op recent gevormd organisch materiaal wordt niet uitgedrukt als een conventionele <span class="math inline">\(\mathrm{^{14}C}\)</span> ouderdom. Aangezien 1950 als het referentiejaar 0 BP werd vastgelegd, zouden meer recente materialen een negatieve <span class="math inline">\(\mathrm{^{14}C}\)</span> ouderdom moeten krijgen, wat theoretisch uiteraard niet wenselijk is. In dergelijke gevallen wordt daarom niet langer de conventionele <span class="math inline">\(\mathrm{^{14}C}\)</span> ouderdom berekend, maar de <em>fraction modern carbon</em> (<span class="math inline">\(\mathrm{ F^{14}C}\)</span>) of, als percentage uitgedrukt: het <em>percentage modern carbon</em> (<span class="math inline">\(pMC\)</span>). Dit is de verhouding van de gemeten <span class="math inline">\(\mathrm{^{14}C}\)</span>-activiteit ten opzichte van de internationaal vastgelegde standaard.</p>
-<div class="figure" style="text-align: center"><span id="fig:bombpeak"></span>
-<img src="figuren/figuur_11.png" alt="De 'bomb peak' zoals geobserveerd in het noordelijk halfrond, met maximale waarde in 1963, als gevolg van thermonucleaire testen tijdens de wapenwedloop in de jaren '1950 en '1960. De huidige kalibratiecurve voor de periode na 1950 in onze regio is Bomb13NH1 [@hua_atmospheric_2013]." width="80%" />
-<p class="caption">
-Figuur 3.3: De ‘bomb peak’ zoals geobserveerd in het noordelijk halfrond, met maximale waarde in 1963, als gevolg van thermonucleaire testen tijdens de wapenwedloop in de jaren ’1950 en ’1960. De huidige kalibratiecurve voor de periode na 1950 in onze regio is Bomb13NH1 <span class="citation">(Hua <em>et al.</em> <a href="bronnen.html#ref-hua_atmospheric_2013" role="doc-biblioref">2013</a>)</span>.
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:bombpeak"></span>
+<img src="figuren/figuur_11.png" alt="De 'bomb peak' zoals geobserveerd in het noordelijk halfrond, met maximale waarde in 1963, als gevolg van thermonucleaire testen tijdens de wapenwedloop in de jaren '1950 en '1960. De huidige kalibratiecurve voor de periode na 1950 in onze regio is Bomb13NH1 [@hua_atmospheric_2013]." width="80%"><p class="caption">
+Figuur 3.3: De ‘bomb peak’ zoals geobserveerd in het noordelijk halfrond, met maximale waarde in 1963, als gevolg van thermonucleaire testen tijdens de wapenwedloop in de jaren ’1950 en ’1960. De huidige kalibratiecurve voor de periode na 1950 in onze regio is Bomb13NH1 <span class="citation">(<a href="bronnen.html#ref-hua_atmospheric_2013" role="doc-biblioref">Hua <em>et al.</em> 2013</a>)</span>.
 </p>
 </div>
 <p>Het grillige verloop van de kalibratiecurve in het meest recente, ‘postmiddeleeuwse’ deel van de chronologie zorgt ervoor dat het quasi onmogelijk is om materiaal daterend van na 1650 AD en voor 1955 AD - wanneer de hoeveelheid <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer begint te stijgen door nucleaire experimenten - met enige precisie met de radiokoolstofmethode te dateren. Dat beperkt de range van de radiokoolstofmethode dus van ca. 55.000 jaar geleden tot het midden van de 17de eeuw. De <em>bomb peak</em> kan echter wel gebruikt worden om bijvoorbeeld 20ste-eeuwse vervalsingen van oudere of originele kunstwerken te onderscheiden. Indien hoge <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentraties worden gemeten in een materiaal en deze beduidend hoger liggen dan tijdens het postmiddeleeuwse gedeelte van de kalibratiecurve, wijst dit op een recente datering, rond de <em>bomb peak</em>. Dergelijk recente dateringen, op basis van het gehalte aan <em>modern carbon</em> (pMC) geven echter steeds twee mogelijkheden, één links en één rechts van de <em>bomb peak</em> in 1963. Door natuurlijk verval en de steeds maar toenemende aanrijking van de atmosfeer met oude koolstof (door verbranding fossiele brandstoffen) deemstert het effect van de <em>bomb peak</em> langzaam weg en zal binnen een aantal jaar het gehalte aan radiokoolstof in de atmosfeer terug op het niveau komen van het postmiddeleeuwse deel van de kalibratiecurve.</p>
 </div>
 <div id="intcal20" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> IntCal20</h2>
-<p>Kalibratiecurves worden met enige regelmaat verlengd, verfijnd en aangevuld met recent onderzochte datasets. Ook de achterliggende modellering kan op basis van nieuwe statistische technieken aan herziening toe zijn. Geactualiseerde kalibratiecurves worden als sinds de jaren ‘1960 gepubliceerd <span class="citation">(Stuiver en Suess <a href="bronnen.html#ref-stuiver_relationship_1966" role="doc-biblioref">1966</a>)</span>. De meest recente update kwam er in 2020 <span class="citation">(Reimer <em>et al.</em> <a href="bronnen.html#ref-reimer_intcal20_2020" role="doc-biblioref">2020</a>)</span>, met de <strong>IntCal20</strong> kalibratiecurve, ter vervanging van Intcal13 (uit 2013). Deze nieuwste kalibratiecurve - voor terrestrische systemen op het noordelijke halfrond – is tot 11.960 BC volledig gebaseerd op dendrochronologisch gedateerd hout. Het oudere gedeelte is samengesteld met metingen op jaarringchronologieën die via <em>wiggle-matching</em> bij benadering zijn gedateerd (zie 7.6), sedimentlagen uit diepere meren (varven), mariene sedimenten, druipstenen (speleothems) en koralen, en gaat tot 55.000 jaar BP terug in de tijd (<a href="http://intcal.org" class="uri">http://intcal.org</a>).</p>
-<p>De globale trend in de IntCal20 kalibratiecurve wijkt tot ca. 25.000 jaar terug weinig af van de voorgaande gepubliceerde kalibratiecurven. Voor nog oudere perioden is er wel een significant verschil doordat er bij de update van de kalibratiecurve meer meetpunten van goed gedateerd materiaal zijn opgenomen. Dit uit zich bij het kalibreren van oud materiaal in vrij grote verschillen in vergelijking met de kalibratie met de vorige kalibratiecurven. Globaal gezien zal het verschil na kalibratie met behulp van IntCal20 in vergelijking met IntCal13, de vorige kalibratiecurve, vrij beperkt zijn voor de historische perioden, maar dit verschil kan oplopen tot enkele honderden jaren bij de kalibratie van ouder materiaal <span class="citation">(Reimer <a href="bronnen.html#ref-reimer_composition_2020" role="doc-biblioref">2020</a>; Van der Plicht <em>et al.</em> <a href="bronnen.html#ref-van_der_plicht_recent_2020" role="doc-biblioref">2020</a>)</span>.</p>
-<div class="figure" style="text-align: center"><span id="fig:calcurves"></span>
-<img src="figuren/calcurves.jpg" alt="Vergelijking van de huidige en voorgaande kalibratiecurves in de Romeinse periode." width="80%" />
-<p class="caption">
+<h2>
+<span class="header-section-number">3.3</span> IntCal20<a class="anchor" aria-label="anchor" href="#intcal20"><i class="fas fa-link"></i></a>
+</h2>
+<p>Kalibratiecurves worden met enige regelmaat verlengd, verfijnd en aangevuld met recent onderzochte datasets. Ook de achterliggende modellering kan op basis van nieuwe statistische technieken aan herziening toe zijn. Geactualiseerde kalibratiecurves worden als sinds de jaren ‘1960 gepubliceerd <span class="citation">(<a href="bronnen.html#ref-stuiver_relationship_1966" role="doc-biblioref">Stuiver en Suess 1966</a>)</span>. De meest recente update kwam er in 2020 <span class="citation">(<a href="bronnen.html#ref-reimer_intcal20_2020" role="doc-biblioref">Reimer <em>et al.</em> 2020</a>)</span>, met de <strong>IntCal20</strong> kalibratiecurve, ter vervanging van Intcal13 (uit 2013). Deze nieuwste kalibratiecurve - voor terrestrische systemen op het noordelijke halfrond – is tot 11.960 BC volledig gebaseerd op dendrochronologisch gedateerd hout. Het oudere gedeelte is samengesteld met metingen op jaarringchronologieën die via <em>wiggle-matching</em> bij benadering zijn gedateerd (zie 7.6), sedimentlagen uit diepere meren (varven), mariene sedimenten, druipstenen (speleothems) en koralen, en gaat tot 55.000 jaar BP terug in de tijd (<a href="http://intcal.org" class="uri">http://intcal.org</a>).</p>
+<p>De globale trend in de IntCal20 kalibratiecurve wijkt tot ca. 25.000 jaar terug weinig af van de voorgaande gepubliceerde kalibratiecurven. Voor nog oudere perioden is er wel een significant verschil doordat er bij de update van de kalibratiecurve meer meetpunten van goed gedateerd materiaal zijn opgenomen. Dit uit zich bij het kalibreren van oud materiaal in vrij grote verschillen in vergelijking met de kalibratie met de vorige kalibratiecurven. Globaal gezien zal het verschil na kalibratie met behulp van IntCal20 in vergelijking met IntCal13, de vorige kalibratiecurve, vrij beperkt zijn voor de historische perioden, maar dit verschil kan oplopen tot enkele honderden jaren bij de kalibratie van ouder materiaal <span class="citation">(<a href="bronnen.html#ref-reimer_composition_2020" role="doc-biblioref">Reimer 2020</a>; <a href="bronnen.html#ref-van_der_plicht_recent_2020" role="doc-biblioref">Van der Plicht <em>et al.</em> 2020</a>)</span>.</p>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:calcurves"></span>
+<img src="figuren/calcurves.jpg" alt="Vergelijking van de huidige en voorgaande kalibratiecurves in de Romeinse periode." width="80%"><p class="caption">
 Figuur 3.4: Vergelijking van de huidige en voorgaande kalibratiecurves in de Romeinse periode.
 </p>
 </div>
 <p>IntCal20 heeft in vergelijking met vroegere kalibratiecurven veel meer detail en ziet er daardoor ook wat ‘nerveuzer’ uit, met meer kleine schommelingen (figuur <a href="kalibratie.html#fig:calcurves">3.4</a>). Dit is het gevolg van de integratie van metingen op materiaal met een hoge tijdsresolutie, zoals de jaarlijkse groeiringen in dendrochronologisch gedateerd hout. Zo heeft IntCal20 tot 3050 BC een jaarlijkse resolutie. Het nog oudere gedeelte is dan weer berekend aan de hand van blokjes van 5, 10 of 20 jaarringen (figuur <a href="kalibratie.html#fig:calcurves-res">3.5</a>).</p>
-<div class="figure" style="text-align: center"><span id="fig:calcurves-res"></span>
-<img src="figuren/calcurves_res.jpg" alt="Vergelijking van de resolutie van de huidige en voorgaande kalibratiecurves." width="100%" />
-<p class="caption">
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:calcurves-res"></span>
+<img src="figuren/calcurves_res.jpg" alt="Vergelijking van de resolutie van de huidige en voorgaande kalibratiecurves." width="100%"><p class="caption">
 Figuur 3.5: Vergelijking van de resolutie van de huidige en voorgaande kalibratiecurves.
 </p>
 </div>
-<p>Ook de vrij recente ontdekking van zogenaamde <strong>Miyake-events</strong> – een plotse, sterke toename van de <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie in de atmosfeer als gevolg van een protonenstorm veroorzaakt door een zonnevlam (<em>solar particle event</em> (SPE)) - in 774-75 AD en 993 AD <span class="citation">(Miyake <em>et al.</em> <a href="bronnen.html#ref-miyake_another_2013" role="doc-biblioref">2013</a> en <a href="bronnen.html#ref-miyake_signature_2012" role="doc-biblioref">2012</a>)</span> zorgen op die plaatsen voor een duidelijk verschil met vorige kalibratiecurven. Door het meer nerveuze karakter van IntCal20 zal een gekalibreerde radiokoolstofdatering vaker resulteren in een discontinu bereik aan mogelijke kalenderjaren, in vergelijking met de oudere kalibratiecurven.</p>
+<p>Ook de vrij recente ontdekking van zogenaamde <strong>Miyake-events</strong> – een plotse, sterke toename van de <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie in de atmosfeer als gevolg van een protonenstorm veroorzaakt door een zonnevlam (<em>solar particle event</em> (SPE)) - in 774-75 AD en 993 AD <span class="citation">(<a href="bronnen.html#ref-miyake_another_2013" role="doc-biblioref">Miyake <em>et al.</em> 2013</a> en <a href="bronnen.html#ref-miyake_signature_2012" role="doc-biblioref">2012</a>)</span> zorgen op die plaatsen voor een duidelijk verschil met vorige kalibratiecurven. Door het meer nerveuze karakter van IntCal20 zal een gekalibreerde radiokoolstofdatering vaker resulteren in een discontinu bereik aan mogelijke kalenderjaren, in vergelijking met de oudere kalibratiecurven.</p>
 <blockquote>
-<p><strong>Het is aangewezen radiokoolstofdateringen altijd met de meest recente kalibratiecurve te (her)kalibreren.</strong></p>
+<p>Het is aangewezen radiokoolstofdateringen altijd met de meest recente kalibratiecurve te (her)kalibreren.</p>
 </blockquote>
 <p>Radiokoolstofdateringen die werden uitgevoerd vóór de publicatie van de IntCal20 curve, werden doorgaans met de toen geldende kalibratiecurve gekalibreerd (IntCal13, IntCal09, …). Indien we dergelijke oudere dateringen willen vergelijken met recent uitgevoerde radiokoolstofanalyses, dan moet de volledige set aan dateringen gekalibreerd worden met dezelfde (en meest recente) kalibratiecurve. Voor de vroeger uitgevoerde dateringen kan het bereik aan mogelijke kalenderjaren na kalibratie daardoor wel afwijken t.o.v. de origineel gerapporteerde datering.</p>
 
 </div>
 </div>
-            </section>
+  <div class="chapter-nav">
+<div class="prev"><a href="principes.html"><span class="header-section-number">2</span> Het principe van een 14C-datering</a></div>
+<div class="next"><a href="onderzoeksvragen.html"><span class="header-section-number">4</span> Onderzoeksvragen en -strategie</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="Op deze pagina"><h2>Op deze pagina</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#kalibratie"><span class="header-section-number">3</span> Kalibratie</a></li>
+<li><a class="nav-link" href="#kalibratiecurves"><span class="header-section-number">3.1</span> Kalibratiecurves</a></li>
+<li><a class="nav-link" href="#bomb-peak"><span class="header-section-number">3.2</span> Bomb peak</a></li>
+<li><a class="nav-link" href="#intcal20"><span class="header-section-number">3.3</span> IntCal20</a></li>
+</ul>
 
-          </div>
-        </div>
-      </div>
-<a href="principes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="onderzoeksvragen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p><strong><sup>14</sup>C: dateren met radiokoolstof</strong> <br> Kristof Haneca <a href="https://orcid.org/0000-0002-7719-8305"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"></a>, Anton Ervynck <a href="https://researchportal.be/en/researcher/anton-ervynck-2"><img src="figuren/address-card-regular.svg" height="16"></a>, Mark Van Strydonck <a href="https://www.researchgate.net/profile/Mark-Strydonck"><img src="figuren/address-card-regular.svg" height="16"></a> <br> Laatste update: 12 januari, 2022.</p>
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": true,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"all": {}
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"toc": {
-"collapse": "subsection"
-}
-});
-});
-</script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -382,7 +188,22 @@ gitbook.start({
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
 </script>
 </body>
-
 </html>

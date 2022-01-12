@@ -1,8 +1,13 @@
-title: "Handleiding: dateren met radiokoolstof"
-author: "Kristof Haneca, Anton Ervynck, Mark Van Strydonck"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-site: bookdown::bookdown_site
-documentclass: book
+book_filename: "handleiding_14C"
+new_session: true
+before_chapter_script: _before.R
+delete_merged_file: true
+language:
+  label:
+    fig: "Figuur " 
+    tab: "Tabel "
+  ui:
+    chapter_name: "hoofdstuk "
 rmd_files: [
   "index.Rmd",
   "00_C14_wijzigingen.Rmd",
@@ -13,18 +18,7 @@ rmd_files: [
   "05_C14_bemonsteren.Rmd",
   "06_C14_rapporteren.Rmd",
   "07_C14_modelleren.Rmd",
-  "C14_bronnen.Rmd",
-  "C14_begrippen.Rmd",
-  "C14_OxCal.Rmd"
+  "C14_OxCal.Rmd",
+  "C14_begrippen.Rmd"
 ]
 output_dir: "docs"
-csl: elsevier-harvard.csl
-bibliography: "C14_biblio.bib"
-link-citations: TRUE
-nocite: '@*'
-description: "Geactualiseerde online versie van de handleiding '^14^C: dateren met radiokoolstof'"
-cover-image:: "figuren/figuur_readme.png"
-language:
-     label: 
-       fig: "Figuur " 
-       tab: "Tabel "

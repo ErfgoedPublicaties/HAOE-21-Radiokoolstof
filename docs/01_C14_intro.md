@@ -1,0 +1,32 @@
+# (PART\*) HANDLEIDING {-}
+
+# Inleiding {#intro}
+
+## Radiokoolstof in het erfgoedonderzoek
+
+De toepassing van radiokoolstofdateringen op organisch en anorganisch materiaal uit archeologische sporen, landschappelijke elementen of gebouwd erfgoed heeft, sinds de ontdekking van deze methode in het midden van de 20ste eeuw [@arnold_age_1949; @taylor_radiocarbon_1987: 97], een ware aardverschuiving teweeggebracht in onze kennis van het verleden. De zogenaamde ‘radiokoolstof-revolutie’ zorgde de afgelopen decennia voor een beter afgelijnd chronologisch kader van verschillende culturele perioden en natuurlijke processen, en voor een preciezere datering van gebeurtenissen uit het verleden.
+
+Vandaag is radiokoolstofdatering niet meer weg te denken uit het erfgoedonderzoek. Naar schatting worden alleen al in Vlaanderen – op het moment van schrijven – zo’n 1500 dateringen per jaar uitgevoerd. Deze resulteren in chronologische ankerpunten voor de evaluatie en interpretatie van archeologische vondsten, sporen, structuren en natuurlijke fenomenen die worden aangetroffen in het bodemarchief. Ook binnen het bouwhistorisch onderzoek wordt dankbaar gebruik gemaakt van deze dateringstechniek. Kalkmortel is immers ook een gekende bron van ‘oude’ koolstof, die toelaat om de ouderdom van dit materiaal te achterhalen. Daarnaast maken organische materialen sowieso vaak deel uit van gebouwd erfgoed.
+
+>
+>The determination of the chronology of ancient civilizations may be said to be the main archaeological problem and task of radiocarbon dating.
+>
+> -- Nobel Foundation 1964.
+>
+
+## Leeswijzer
+
+Deze handleiding is bedoeld voor erfgoedonderzoekers die hun kennis over de radiokoolstofdateringstechniek willen aanscherpen. Een betere kennis van de onderliggende processen zal immers leiden tot een betere staalname ([hoofdstukken 2](#principes) en [3](#kalibratie)), tot een realistische vraagstelling ([hoofdstuk 4](#onderzoeksvragen)), en zal teleurstellingen voorkomen. Vele vragen duiken daarbij op. Wanneer is een radiokoolstofdatering zinnig? Welk materiaal komt in aanmerking en welke dateringsvragen zijn ermee te beantwoorden? Wat zijn de addertjes onder het gras? Uiteraard zijn bij dit alles de correcte rapportage en interpretatie van een radiokoolstofouderdom van groot belang.
+
+Naast de radioactieve koolstof – die toelaat een ouderdomsbepaling uit te voeren – wordt in wat volgt ook de analyse van stabiele koolstof- en stikstofisotopen kort onder de loep genomen (2.9 en 6.3). Deze chemische elementen laten immers toe om dieetreconstructies te maken of reservoireffecten (6.2) op te sporen. Beide aspecten hebben hun invloed op het dateringsresultaat.
+
+Voor wie reeds voldoende ervaring heeft met het selecteren van geschikte stalen ([hoofdstuk 5](#bemonsteren)), en het rapporteren en interpreteren van de uiteindelijke radiokoolstoofdateringen ([hoofdstuk 6](#rapporteren)), kan een praktische handleiding voor het softwarepakket OxCal van nut zijn. Zeker wanneer meerdere radiokoolstofdateringen beschikbaar zijn uit eenzelfde spoor, structuur of elkaar opeenvolgende lagen, kan een gespecialiseerd softwarepakket als OxCal een handige hulp zijn bij de analyse en de rapportage onder de vorm van grafieken en tabellen (zie [hoofdstuk 7](#modelleren) en een handleidng voor OxCal in [hoofdstuk 8](#OxCal_intro)). Door stratigrafische informatie mee in rekening te brengen, kan de kenniswinst en precisie van individuele dateringen zelfs verhoogd worden, wat uiteindelijk toch het doel is van een dateringsonderzoek.
+
+
+## Youtube
+
+Liever bewegend beeld? In onderstaande video van [**Universiteit van Vlaanderen**](https://www.universiteitvanvlaanderen.be/) wordt het principe van een radiokoolstofdatering kort uitgelegd.
+
+
+<iframe src="https://www.youtube.com/embed/lBPAwTEPAKU" width="100%" height="400px" data-external="1"></iframe>
+
