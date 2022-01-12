@@ -5,7 +5,7 @@ In principe kan alle organisch materiaal gedateerd worden met de radiokoolstofte
 De radiokoolstofmethode dateert een materiaal, maar de erfgoedonderzoeker wil doorgaans de datering van een bepaalde gebeurtenis of activiteit bepalen. Het is dan ook uitermate belangrijk om een innig verband te hebben tussen het dateerbaar materiaal en deze gebeurtenis of activiteit. Binnen het erfgoedonderzoek wordt dit verband afgeleid uit de kennis die men heeft opgebouwd tijdens archeologische bodemingrepen of bouwhistorisch onderzoek. De veronderstellingen (en de onzekerheid hierop) die aan de basis liggen van deze verbanden tussen materiaal en activiteit moeten steeds zorgvuldig en kritisch geanalyseerd worden.
 
 >
->**De radiokoolstofmethode dateert een materiaal. De erfgoedonderzoeker wil echter meestal de datering van een gebeurtenis of activiteit bepalen.**
+>De radiokoolstofmethode dateert een materiaal. De erfgoedonderzoeker wil echter meestal de datering van een gebeurtenis of activiteit bepalen.
 >
 
 Een staalname en datering van materiaal met een gekende tafonomische achtergrond en een bij de opgravingen of bouwhistorisch onderzoek goed geëvalueerd stratigrafisch verband zal de kenniswinst maximaliseren [@ervynck_assessment._2015]. Rijzen er na de radiokoolstofdatering vragen over de herkomst van het materiaal, het onderlinge verband tussen het staal en het archeologisch spoor of de activiteit die men wil dateren, dan is de uitgevoerde analyse een verkwisting van tijd en middelen. Een adequate staalname en selectie van geschikt materiaal vormt het fundament van de uiteindelijke dateringsresultaten en hun interpretatie [@evin_single_1999].
@@ -148,7 +148,7 @@ knitr::include_graphics("./figuren/figuur_17_update.png")
 
 
 >
->**De vorm van de kalibratiecurve bepaalt voor een groot deel de precisie van de gekalibreerde radiokoolstofdatering.**
+>De vorm van de kalibratiecurve bepaalt voor een groot deel de precisie van de gekalibreerde radiokoolstofdatering.
 >
 
 Dat de **vorm van de kalibratiecurve** voor een groot deel de precisie van de gekalibreerde radiokoolstofdatering bepaalt, wordt in wat volgt geïllustreerd met een aantal gesimuleerde voorbeelden. Indien een radiokoolstofdatering in een periode valt waarin de kalibratiecurve een mooi, quasi rechtlijnig verloop kent, zal het bereik van de gekalibreerde datering meestal een vrij beperkt tijdsinterval overspannen. In de kansverdeling van de kalenderjaren valt dan nog de vorm van een normaalverdeling te herkennen (simulatie 1 in figuur \@ref(fig:sims)). Dit ligt helemaal anders wanneer de radiokoolstofdatering in een zone valt waarin de kalibratiecurve een plateau of een vlak verloop vertoont. Dit is bijvoorbeeld het geval in de ijzertijd waar de kalibratiecurve het zogenaamde **Hallstatt-plateau** bereikt. Een gekalibreerde radiokoolstofdatering valt dan enkel binnen een heel ruim tijdsinterval te situeren, van gemakkelijk 200 tot 300 jaar breed (simulatie 2 in figuur \@ref(fig:sims)). Dit heeft tot gevolg dat materiaal uit de vroege ijzertijd moeilijk nauwkeurig te dateren valt met een radiokoolstofanalyse. Net vóór en aan het eind van deze periode, waar de kalibratiecurve weer een helling volgt, heeft een gekalibreerde radiokoolstofouderdom weer een prima, nauw dateringsinterval. Helemaal aan het begin van het Hallstatt-plateau heeft de kalibratiecurve een zodanig steil verloop dat na kalibratie het dateringsinterval zelfs nauwer is dan voor kalibratie (simulatie 3 in figuur \@ref(fig:sims)): een fenomeen dat zich op geen enkel ander tijdstip manifesteert!

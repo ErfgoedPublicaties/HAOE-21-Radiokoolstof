@@ -1,9 +1,4 @@
-# Bijlagen {#bijlagen} 
-
-![](./figuren/c_14_gif.gif)
-
-
-# (PART\*) BIJLAGE I: begrippen {-}
+# (PART\*) BIJLAGEN {-}
 
 # Begrippen {-#begrippen}
 
@@ -47,3 +42,9 @@
 **Trofisch niveau**: De plaats van een organisme (plant, dier, eencellige, …) in de globale voedselketen. Een trofisch niveau bestaat uit een groep organismen met eenzelfde type voeding.
 
 ***Wiggle-matching***: Combinatie van meerdere radiokoolstofdateringen met een onderling gekende tussenafstand en schikking in de tijd om zo de precisie van de gekalibreerde radiokoolstofdateringen te verhogen.
+
+
+
+# Bronnen {-#bronnen}
+
+<div id="refs"></div>

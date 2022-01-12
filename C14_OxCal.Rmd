@@ -1,11 +1,6 @@
-# (PART\*) BIJLAGE II: OxCal {-}
+# Handleiding OxCal {#bijlagen} 
 
-
-# **Handleiding OxCal** {-#Oxcal}
-
-![](./figuren/figuur_B_00.jpg)
-
-# Inleiding {-#OxCal_intro}
+## Inleiding {#OxCal_intro}
 
 Van zodra je de resultaten van het radiokoolstoflabo in handen hebt, kan je er zelf mee aan de slag. De conventionele radiokoolstofdateringen kan je dan kalibreren (en – wat handig is – vroegere dateringen opnieuw kalibreren) en de resultaten op een voor jou logische, geordende en visueel aantrekkelijke manier voorstellen in een grafiek. Bijkomende inzichten uit het archeologisch onderzoek, de geregistreerde stratigrafie of relevante historische bronnen laten bovendien toe de resultaten verder te verfijnen of te groeperen, en zogenaamde Bayesiaanse analyses uit te voeren (zie Handleiding, [hoofdstuk 7](#modelleren)). Deze aanpak vraagt enig inzicht in de materie, de context van het onderzochte staal en hulp van gespecialiseerde software die dergelijke berekeningen kan uitvoeren. De kalibratie van radiokoolstofmetingen vraagt immers complexe wiskundige bewerkingen. Het meest uitgebreide en tevens meest populaire softwarepakket dat hiervoor wordt gebruikt is [OxCal](https://c14.arch.ox.ac.uk/oxcal.html), het kalibratieprogramma ontwikkeld door C. Bronk Ramsey van de Oxford Radiocarbon Accelerator Unit (Bronk Ramsey 1995, 2001, 2009). Het volledige softwarepakket is online vrij te gebruiken. Naast de mogelijkheid om radiokoolstofdateringen te kalibreren, laat het ook toe de dateringen met Bayesiaanse modellen te analyseren.
 
@@ -35,11 +30,11 @@ knitr::include_graphics("./figuren/figuur_B_01.jpg")
 Je kan OxCal ook lokaal installeren op je PC/laptop. Volg hiervoor de instructies op https://c14.arch.ox.ac.uk/oxcal.html#program. Regelmatig de software updaten naar de meest recente versie blijft dan wel nodig. De online versie is daarentegen steeds up-to-date en is dus aan te raden.
 
 
-# Kalibreren {-}
+## Kalibreren
 
 De meest gebruikte analyse binnen OxCal is het kalibreren van radiokoolstofdateringen. Daarbij wordt een conventionele radiokoolstofdatering, gerapporteerd in jaren BP, omgerekend naar kalenderjaren (BC of AD).
 
-## Kalibratie van één datering {-}
+### Kalibratie van één datering
 
 Bij het opstarten van OxCal krijgen we het openingsscherm te zien dat meteen toelaat om een $\mathrm{^{14}C}$-datering te kalibreren (linksboven op figuur \@ref(fig:oxcal-02)).
 
@@ -97,7 +92,7 @@ Onder het invulmenu van het openingsscherm (figuur \@ref(fig:oxcal-02)) zijn nog
   - De knop `[Projects…]` laat toe om eerder uitgevoerde en bewaarde OxCal-projecten te selecteren en op te roepen. Je kan opgeslagen projecten en figuren ook terugvinden door [File > Manager] te selecteren.
 
 
-## Kalibratie van meerdere dateringen {-}
+### Kalibratie van meerdere dateringen
 
 Uiteraard kunnen ook meerdere dateringen tegelijkertijd worden gekalibreerd en samen weergegeven in een zogenaamde multiplot. Dit laat toe om de radiokoolstofdateringen te ordenen volgens een chronologisch kader of stratigrafisch verband. De invoer start met het aanmaken van een nieuw project via het menu `[File > new]`. Daarna start het eigenlijke ingeven van de radiokoolstofdateringen via het tabblad `[Insert]` (figuur \@ref(fig:oxcal-06)). Om een radiokoolstofdatering in te voegen, selecteer je in het keuzemenu links bovenaan `R_Date()`. Deze procedure herhaal je voor alle dateringen die je wil kalibreren en aan de grafiek toevoegen.
 
@@ -148,7 +143,7 @@ knitr::include_graphics("./figuren/figuur_B_07_update.png")
 ```
 
 
-## Datainvoer via Excel {-}
+### Datainvoer via Excel
 
 Indien een lange lijst met radiokoolstofdateringen moet gekalibreerd worden, kan het invoegen in OxCal relatief veel tijd in beslag nemen. Via een omweg kan je in Excel of een gelijkaardig programma met rekenbladen de radiokoolstofdateringen eerst omvormen in programmacode die leesbaar is door OxCal. Start vanuit een tabel waarin de eerste drie kolommen bestaan uit: de `labocode (label)`, `de radiokoolstofouderdom` in BP en `de standaardafwijking`. In de kolommen ernaast voeg je stukken van de door OxCal gestandaardiseerde programmeercode toe (zie figuur \@ref(fig:oxcal-08)). Daarna breng je alle stukken tekst samen - met de Excel-functie `TEKST.SAMENVOEGEN` - in een formaat dat kan gekopieerd worden in OxCal.
 
@@ -170,7 +165,7 @@ knitr::include_graphics("./figuren/figuur_B_09.jpg")
 
 Welke methode er ook wordt gevolgd, door de aangemaakte programmeercode uit te voeren, bekomt men één grafiek met alle radiokoolstofdateringen samen.
 
-## Grafieken en tabellen {-}
+### Grafieken en tabellen
 
 Eens een kalibratie uitgevoerd, zijn de resultaten zowel beschikbaar als een grafische voorstelling als in tabelvorm. De grafiek met de kalibratie van individuele radiokoolstofdateringen krijgt men te zien na selectie van `[Single plot]` in het keuzemenu links bovenaan het scherm. Indien meerder dateringen tegelijkertijd werden gekalibreerd, kunnen de individuele grafieken doorlopen worden met behulp van de pijlen rechts bovenaan het scherm. Alle gekalibreerde dateringen tegelijkertijd weergeven kan door de optie `[Multiple plot]` te selecteren in het keuzemenu. In een multiplot worden alle gekalibreerde dateringen onder elkaar weergegeven in de volgorde waarin ze werden ingevoerd. De grootte, het bereik en de periode die wordt overspannen in de grafiek kan je aanpassen in het menu `[Format]` en de tabbladen die in dit menu verschijnen, of met de knoppen bovenaan het venster (`[Zoom]`, `[Centre]` of `[Span]` selecteren en daarna met de pijltoetsen op het klavier het gewenste bereik selecteren). In het tabblad `[Show]` kan men ook aangeven welk waarschijnlijkheidsinterval (of meerdere) je wil weergegeven in de grafiek.
 
@@ -185,7 +180,7 @@ knitr::include_graphics("./figuren/figuur_B_10.png")
 ```
 
 
-# Een datering simuleren {-}
+## Een datering simuleren
 
 In veel gevallen heeft men op voorhand wel een idee uit welke periode een object, constructie of gebeurtenis dateert. Indien een radiokoolstofdatering wordt overwogen, kan het nuttig zijn om voorafgaand aan de staalname en analyse de vorm van de kalibratiecurve binnen de geschatte periode te controleren. Indien er veel wiggles aanwezig zijn, zal een radiokoolstofdatering binnen die periode meerdere mogelijkheden of een breed interval aan kalenderjaren opleveren. Ook indien een plateau aanwezig is, zal het bereik aan mogelijke kalenderjaren breed uitvallen (zie 4.6). Zoals al eerder aangegeven, kan je de kalibratiecurve bekijken in OxCal door op de startpagina de knop `[View curve]` aan te klikken. Om dit nog wat verder te exploreren kan je binnen OxCal voor een welbepaalde kalenderdatum een mogelijke radiokoolstofdatering simuleren. Daarvoor moet je na het opstarten van een nieuw project `[File > new]` in het menu `[Insert]` de functie `R_Simulate()` selecteren in de keuzelijst en deze functie met de knop `[ >> ]` naar het venster met programmeercode overbrengen. Uiteraard kan je in deze weergave ook de programeercode zelf intypen (figuur \@ref(fig:oxcal-11)). Als parameters voor deze functie moet je een naam geven aan de simulatie (tussen aanhalingstekens), het jaartal dat je wil simuleren (AD of BC met het jaar tussen haakjes) en de verwachte standaardafwijking op de radiokoolstofdatering.
 
@@ -204,12 +199,12 @@ knitr::include_graphics("./figuren/figuur_B_11_update.png")
 
 Als resultaat krijg je een radiokoolstofdatering gesimuleerd (in dit voorbeeld 1375 ±30 BP) die kan overeenstemmen met een gebeurtenis op de ingevoerde kalenderdatum. Telkens deze analyse opnieuw wordt uitgevoerd, krijgen we een andere mogelijke radiokoolstofdatering gesimuleerd. Je kan voor één kalenderjaar dus best meerdere simulaties uitvoeren om zo een goed beeld te krijgen van de mogelijke resultaten.
 
-# Dateringen combineren {-}
+## Dateringen combineren
 
 Indien er voor eenzelfde gebeurtenis meerdere radiokoolstofdateringen beschikbaar zijn, kunnen deze voorafgaand aan de kalibratie samengevoegd worden. Op deze manier tracht men de nauwkeurigheid op de datering van deze gebeurtenis te verhogen door meerdere informatiebronnen te combineren. Het kan bijvoorbeeld interessant zijn als uit één graf zowel de kledij (textielresten), een stuk botmateriaal van een individu, alsook een stuk spinthout uit één van de planken van de doodskist zijn gedateerd. Indien we aannemen dat de kist en de kledij kort voor het overlijden van die persoon gemaakt zijn, kan de combinatie van al deze dateringen de sterfdatum beter benaderen dan de individuele dateringen. Andere voorbeelden zijn het combineren van de dateringen op meerdere dierlijke botfragmenten uit eenzelfde afvalcontext, of het uitvoeren van meerdere dateringen op eenzelfde mensenskelet. Het combineren van dateringen kan voor of na de eigenlijke kalibratie.
 
 
-## R_Combine {-}
+### R_Combine
 
 Meerdere radiokoolstofdateringen van stalen die dezelfde gebeurtenis of object dateren en die opgebouwd zijn met koolstof uit eenzelfde reservoir, kunnen beschouwd worden als herhaalde metingen. Deze herhaalde metingen kunnen dan gecombineerd worden. Dit zal een meer robuust dateringsresultaat opleveren: het zijn immers dateringen van eenzelfde gebeurtenis. De datering van meerdere beenderen van eenzelfde skelet vallen bijvoorbeeld onder deze categorie. Ze dateren alle het overlijden van dezelfde persoon en het koolstofreservoir (de voeding) is ook identiek. In dit geval kunnen de radiokoolstofdateringen samen gevoegd worden voorafgaand aan de eigenlijke kalibratie, door gebruik te maken van de functie `R_Combine()`.
 
@@ -218,7 +213,7 @@ Dit voer je uit door, na het opstarten van een nieuw project `[File > new]`, in 
 Tijdens het combineren van de radiokoolstofdateringen voert OxCal ook een statistische test uit om na te gaan of de individuele dateringen weldegelijk een benadering van dezelfde gebeurtenis kunnen zijn. Dit is een $\chi^2$-test (Chi-kwadraat-test) waarvan het resultaat in de grafiek wordt weergegeven. In deze test wordt een T-waarde berekend, die kleiner moet zijn dan de kritische *t*-waarde voor het beoogde betrouwbaarheidsinterval en het aantal dateringen die gecombineerd worden. Indien de T-waarde toch groter is dan deze kritische waarde (weergegeven tussen haakjes in de grafiek), mogen de radiokoolstofdateringen niet worden samen gevoegd en moeten ze afzonderlijk gerapporteerd worden. Indien de T-waarde lager ligt dan deze drempelwaarde, kunnen we met 95% zekerheid stellen dat de individuele dateringen inderdaad eenzelfde gebeurtenis kunnen vertegenwoordigen.
 
 
-## Combine {-}
+### Combine
 
 Indien meerdere radiokoolstofanalyses een zelfde gebeurtenis dateren, maar de geanalyseerde stalen niet hetzelfde koolstofreservoir hebben aangesproken, kunnen deze pas na kalibratie samengevoegd worden. De overeenkomst tussen de dateringen kan nu niet met een $\chi^2$-test worden getoetst, maar wordt aan de hand van een *Agreement index* geëvalueerd. Deze index $A$ geeft weer of de gecombineerde radiokoolstofdateringen daadwerkelijk eenzelfde gebeurtenis dateren. De $A_{comb}$ moet groter zijn dan de kritische $A_n$-waarde en best rond de 100% liggen. In onderstaand voorbeeld (figuur \@ref(fig:oxcal-12)) worden drie dateringen op materiaal uit een zelfde grafkist gecombineerd. De $A_{comb}$ (118,6%) ligt in dit geval hoger dan de drempelwaarde ($A_n$ = 40,8%). De drie dateringen kunnen dus inderdaad een zelfde gebeurtenis dateren. De combinatie van deze dateringen geeft een nauwer dateringsinterval dan de individuele radiokoolstofdateringen (Grafkist2: 554 AD (95.4%) 602 AD).
 
@@ -245,7 +240,7 @@ knitr::include_graphics("./figuren/figuur_B_12_update.png")
 Om volledig correct te zijn, moet er op gewezen worden dat er bij de interpretatie van gecombineerde dateringen nooit 100% zekerheid is dat de dateringen echt gelijktijdig zijn, of zelfs als één gebeurtenis kunnen bestempeld worden. Zelfs bij een gunstige waarde voor de *Agreement index* is er geen statistische grond om te besluiten dat ze volledig gelijktijdig zijn. In het voorbeeld van de begraving zijn het scheren van de wol voor de productie van een stuk textiel, het overlijden van de persoon en het kappen van een boom voor het hout van de kist drie aparte gebeurtenissen, die niet op hetzelfde moment doorgingen maar wel in de tijd dichtbij elkaar kunnen liggen. Bij het uitvoeren van meerdere dateringen op één skelet gaat het natuurlijk wel om één gebeurtenis. Bij het dateren van meerdere skeletten uit één grafkamer liggen alle mogelijkheden open.
 
 
-## Difference {-}
+### Difference
 
 Het combineren van dateringen wordt niet alleen gebruikt om een verfijnde datering te bekomen bij vermoeden van quasi gelijktijdigheid, maar deze procedure kan ook helpen bewijzen dat bepaalde vondsten helemaal niet uit dezelfde periode dateren. Zo kan bijvoorbeeld residueel en intrusief materiaal als dusdanig herkend worden. Indien er een sterk vermoeden is dat twee dateringen niet een zelfde gebeurtenis dateren – de $\chi^2$-test of *Agreement index* valt respectievelijk boven of onder de kritische drempelwaarde – kan bovendien becijferd worden hoe ver beide gebeurtenissen mogelijk uit elkaar liggen. In OxCal voert de functie `Difference()` daarvoor de nodige bewerkingen uit.
 
@@ -280,7 +275,7 @@ Difference (“verschil”, “eerste datering”, “tweede datering”)
 De grafiek die hiermee wordt opgebouwd laat de waarschijnlijkheidsverdeling zien van het mogelijke tijdsinterval tussen de twee dateringen. Indien een verschil (Interval) van 0 jaar binnen het 95,4% interval ligt, dan zijn we niet zeker dat er werkelijk een verschil zit tussen de dateringen. In het voorbeeld in figuur \@ref(fig:oxcal-13) ligt 0 buiten het 95,4% betrouwbaarheidsinterval, waarvan boven- en ondergrens aangeven dat datering A minstens 9 en maximaal 112 kalenderjaren ouder is dan datering B.
 
 
-# Densiteitsplot {-}
+## Densiteitsplot
 
 Indien uit een bepaalde context, periode of regio veel radiokoolstofdateringen van een zelfde cultureel of natuurlijk fenomeen beschikbaar zijn, kan de som van hun probabiliteiten (waarschijnlijkheidsverdeling) een duidelijker beeld geven van de chronologische spreiding en van het voorkomen van hiaten in dit fenomeen doorheen de tijd. In OxCal kan de som van meerdere radiokoolstofdateringen berekend worden met de functie `Sum()`. Een dergelijk model bouw je op via het menu `[Insert]` waarna je in het keuzemenu deze functie selecteert en overbrengt naar het venster met de programmacode. Daarna voeg je de individuele radiokoolstofdateringen toe met de functie `R_Date()`.
 
@@ -296,12 +291,12 @@ knitr::include_graphics("./figuren/figuur_B_14.png")
 Uit kritische evaluaties van deze methode blijkt echter dat de gesommeerde probabiliteiten met de nodige voorzichtigheid moeten geïnterpreteerd worden [@contreras_summed_2014; @steele_radiocarbon_2010; @williams_use_2012]. De vorm van de kalibratiecurve heeft immers een duidelijke invloed op het eindresultaat en uit de analyses blijkt dat er heel veel radiokoolstofdateringen nodig zijn om tot een stabiel resultaat te komen. Bovendien wordt ook verondersteld dat een neutrale, toevallige staalname binnen de te onderzoeken populatie of fasering werd uitgevoerd. De uiteindelijke waarschijnlijkheden (*probability density*) mogen dan ook niet als absolute waarden geïnterpreteerd worden.
 
 
-# Fasering en chronologie {-}
+## Fasering en chronologie
 
 Het in kaart brengen van de onderlinge samenhang en opeenvolging van individuele radiokoolstofdateringen, kan tot een meer gedetailleerde interpretatie en nauwere datering van gebeurtenissen leiden. Bij archeologisch onderzoek wordt deze informatie uit de stratigrafie van de onderzochte site afgeleid. Deze stratigrafie kan schematisch in beeld gebracht worden door een matrix op te bouwen – de zogenaamde Harris-matrix [@harris_principles_1989] – waardoor bij een uitgekiende selectie van stalen ook het onderlinge verband tussen de individuele radiokoolstofdateringen formeel in rekening kan worden gebracht. Ook tijdens het onderzoek van bouwkundig erfgoed kan het herkennen van verschillende bouwfases, en het in rekening brengen van historische bronnen zoals een gearchiveerd contract, de uitgevoerde radiokoolstofdateringen verder verfijnen. Stratigrafische en chronologische verbanden kunnen mee opgenomen worden in een Bayesiaans model (zie [hoofdstuk 7](#modelleren)), waar deze informatie ook een mathematische betekenis krijgt en de radiokoolstofdateringen binnen dit kader worden ingepast. In wat volgt wordt de opbouw van een Bayesiaans model in OxCal geïllustreerd met een aantal voorbeelden.
 
 
-## Modelopbouw {-}
+### Modelopbouw
 
 De twee meest voorkomende begrippen die van belang zijn bij de opbouw van een Bayesiaans model dat stratigrafie en/of chronologische fasering in rekening brengt, zijn **fasen** en **sequenties**. De definities uit de Handleiding (zie 7.3) worden hier hernomen:
 
@@ -434,7 +429,7 @@ knitr::include_graphics("./figuren/figuur_B_17_update.png")
 
 Uit bovenstaande voorbeelden blijkt eveneens dat indien er maar een beperkt aantal dateringen beschikbaar is binnen één fase het eveneens moeilijker wordt (er is een grotere onzekerheid) om het begin en eindpunt van een fase af te bakenen. Dat uit zich in het grotere betrouwbaarheidsinterval op de boundaries (begin en einde).
 
-## Historische datum of gebeurtenis {-}
+### Historische datum of gebeurtenis
 
 Naast de `R_Date()` functie, om radiokoolstofdateringen te kalibreren, kan OxCal ook andere vormen van dateringsinformatie verwerken. Een historische datum of dendrochronologische datering kan eveneens ingevoerd worden, samen met de radiokoolstofdateringen. Ook de onzekerheid, uitgedrukt in kalenderjaren, op een historische gebeurtenis of de spreiding op een dendrochronologische datering kunnen mee in rekening gebracht worden. Volgende functies komen hiervoor in aanmerking:
 
@@ -508,7 +503,7 @@ knitr::include_graphics("./figuren/figuur_B_19_update.png")
 Na het berekenen van dit model `[File > Run]`, krijgen we een grafisch overzicht van het resultaat in een _multiplot_. Door de opgelegde voorwaarden – historische bron als oudst mogelijke datering en afbakening van verschillende elkaar opvolgende fasen – worden de mogelijke gekalibreerde dateringen voor de individuele radiokoolstofdateringen sterk ingeperkt.
 
 
-## Hoe lang? {-}
+### Hoe lang?
 
 De opbouw van een Bayesiaans model en het gebruik van _boundaries_ laat toe om ook gebeurtenissen te dateren die niet rechtstreeks aan één staal of radiokoolstofdatering te koppelen zijn. Door het indelen in fasen en sequenties kunnen we namelijk ook berekenen hoe lang een bepaalde fase heeft geduurd, wanneer die op z’n einde liep of welke periode nu precies door de radiokoolstofdateringen wordt overspannen. De twee functies die daarvoor kunnen aangesproken worden in OxCal zijn `Interval()` en `Span()`. Elk van deze functies berekent een waarschijnlijkheidsverdeling voor de duur van de periode (figuur \@ref(fig:oxcal-20)).
 
@@ -545,7 +540,7 @@ knitr::include_graphics("./figuren/figuur_B_20_update_c.png")
 ```
 
 
-## Kwaliteitscontrole en evaluatie {-}
+### Kwaliteitscontrole en evaluatie
 
 OxCal enkel de kalibraties en berekeningen laten uitvoeren is niet voldoende; een kritische evaluatie van de resultaten en het opgebouwde model blijven noodzakelijk. Door in het keuzemenu links bovenaan `[Table]` te selecteren krijg je in een tabel meer details over de kwaliteit van het opgebouwde model en de gemodelleerde dateringen (figuur \@ref(fig:oxcal-21)). Dit wordt uitgedrukt in een _Agreement index_ ($A$). Deze index dient hoger te zijn dan 60%, zowel bij de individuele dateringen als bij het globale model ($A_{model}$), en moet idealiter rond de 100% liggen. Indien de Agreement voor het volledige model te laag uitvalt, krijg je een melding die er bijvoorbeeld als volgt uitziet:
 

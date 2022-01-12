@@ -1,19 +1,12 @@
-bookdown::gitbook:
+bookdown::bs4_book:
   css: style.css
   split_by: chapter
-  split_bib: no
-  includes:
-     in_header: meta_tags.html  
+  theme:
+    primary: "#3b84c4"
   config:
-     sharing:
-       github: yes
-       facebook: yes
-       twitter: yes
-       all: []
-     toc:
-          before: |
-            <li><strong><a href="./">Handleiding radiokoolstof</a></strong></li>
-          after: |
-            <li><small><a href="https://bookdown.org/" target="blank">Created with bookdown</a></small></li>
+    toc:
+      toc_float: true
+  includes:
+    in_header: [ga_script.html]
 
 
