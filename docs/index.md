@@ -4,7 +4,7 @@ author:
   - Kristof Haneca [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7719-8305) 
   - Anton Ervynck [![](./figuren/address-card-regular.svg){height=16}](https://researchportal.be/en/researcher/anton-ervynck-2) 
   - Mark Van Strydonck [![](./figuren/address-card-regular.svg){width=16, height=16}](https://www.researchgate.net/profile/Mark-Strydonck) 
-date: "12 januari, 2022"
+date: "13 januari, 2022"
 site: bookdown::bookdown_site
 url: "https://hanecakr.github.io/handleidingRadiokoolstof/" 
 cover-image: figuren/cover.png
@@ -25,13 +25,12 @@ nocite: '@*'
 
 Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar hier kan je steeds de meest actuele versie raadplegen.
 
-<br/>
 
 ## Citeren {-}
 
 Gelieve te citeren als: <br/>
 
-Haneca K., Ervynck A., Van Strydonck M. (2022-01-12). ^14^C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed, Brussel. [https://hanecakr.github.io/handleidingRadiokoolstof/]
+Haneca K., Ervynck A., Van Strydonck M. (2022-01-13). ^14^C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed, Brussel. [https://hanecakr.github.io/handleidingRadiokoolstof/]
 
 Oorspronkelijke gepubliceerd als: <br/>
 

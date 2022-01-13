@@ -12,6 +12,8 @@ Er zijn uiteraard nog een aantal andere alternatieven, die eveneens vrij te down
   - Bchron, een kalibratieprogramma als R-package: [https://cran.r-project.org/web/packages/Bchron/vignettes/Bchron.html]. ‘R’ is een statistische programmeertaal. 
   - rCarbon, is eveneens een R-package, met functies of radiokoolstofdateringen te kalibreren, modelleren en gesommeerde probabiliteiten te analyseren: [https://cran.r-project.org/web/packages/rcarbon/vignettes/rcarbon.html]
 
+<br/> 
+
 **OxCal** blinkt echter uit in veelzijdigheid. De analyses die het pakket kan uitvoeren kunnen grofweg onderverdeeld worden in twee groepen:
 
   - Het kalibreren van radiokoolstofmetingen
