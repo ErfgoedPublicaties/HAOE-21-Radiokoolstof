@@ -85,7 +85,7 @@ knitr::include_graphics("./figuren/figuur_27.png")
 ```
 
 
-## *Wiggle matching*
+## *Wiggle matching* {#wiggle-matching}
 
 Voor het dateren van houten structuren wordt doorgaans eerst aan een dendrochronologisch onderzoek gedacht. Niet alle dendrochronologische analyses leveren echter een datering op. In sommige gevallen laten de opgemeten groeiringpatronen zich niet inpassen in een referentiekalender of worden de stukken hout niet voor datering weerhouden omdat ze te weinig groeiringen hebben (wat de uitkomst van elke analyse onzeker of zelfs onbetrouwbaar maakt). Dan vormt een radiokoolstofdatering van bijvoorbeeld de jongste groeiring het beste alternatief. Dit zal, na kalibratie, echter doorgaans een breed dateringsinterval opleveren. Indien er toch een preciezere datering gewenst is, kan _wiggle-matching_ overwogen worden. Dit is eigenlijk een bijzonder geval van Bayesiaanse modelering. De techniek levert een veel nauwkeuriger datering op dan een individuele $\mathrm{^{14}C}$-datering. Zeker voor het dateren van historische houtconstructies kan deze techniek dus van groot nut zijn.
 
