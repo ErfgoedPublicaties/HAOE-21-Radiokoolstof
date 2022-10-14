@@ -29,3 +29,11 @@ In het overzicht hier onder worden de belangrijkste wijzigingen die zijn aangebr
 <br/>
 
 - `12-01-2022`: nieuwe layout (bootstrap4 template).
+
+<br/>
+
+- `14-10-2022`: 
+     - Achterliggende OxCal-code toegevoegd aan '8 - Handleiding OxCal'.
+     - Animaties verval $\mathrm{^{14}C}$ atomen en kalibratie toegevoegd (met dank aan &copy; [Maarten Blaauw](https://maarten14c.github.io/)).
+     
+     <br/>

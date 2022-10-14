@@ -2,7 +2,7 @@
 
 ## Kalibratiecurves
 
-De hierboven beschreven methode om de radiokoolstofouderdom te bepalen gaat uit van de veronderstelling dat het $\mathrm{^{14}C}$-gehalte in de atmosfeer gelijk is gebleven door de eeuwen heen. Dat is echter niet geheel waar. Natuurlijke variaties in het aardmagnetisme en de zonneactiviteit veroorzaken wisselingen in het aardmagnetisch veld, waardoor een steeds wisselende hoeveelheid kosmische straling de atmosfeer binnendringt. Dit heeft tot gevolg dat de concentratie $\mathrm{^{14}C}$ in de atmosfeer nooit geheel constant was (en is). Daardoor is het noodzakelijk om gemeten radiokoolstofouderdom te ‘corrigeren’ (kalibreren) voor de steeds wisselende $\mathrm{^{14}C}$-concentratie in de atmosfeer. Zonder deze correctie of kalibratie zou het niet mogelijk zijn om radiokoolstofdateringen direct te vergelijken met historische data of andere dateringstechnieken.
+De hierboven beschreven methode om de radiokoolstofouderdom te bepalen gaat uit van de veronderstelling dat het $\mathrm{^{14}C}$-gehalte in de atmosfeer gelijk is gebleven door de eeuwen heen. Dat is echter niet geheel waar. Natuurlijke variaties in het aardmagnetisme en de zonneactiviteit veroorzaken wisselingen in het aardmagnetisch veld, waardoor een steeds wisselende hoeveelheid kosmische straling de atmosfeer binnendringt. Dit heeft tot gevolg dat de concentratie $\mathrm{^{14}C}$ in de atmosfeer nooit geheel constant was (en is). Daardoor is het noodzakelijk om gemeten radiokoolstofouderdom te 'corrigeren' (kalibreren) voor de steeds wisselende $\mathrm{^{14}C}$-concentratie in de atmosfeer. Zonder deze correctie of kalibratie zou het niet mogelijk zijn om radiokoolstofdateringen direct te vergelijken met historische data of andere dateringstechnieken.
 
 De variaties in de atmosferische $\mathrm{^{14}C}$-concentratie werden in kaart gebracht door het radiokoolstofgehalte te meten in houtstalen met exact gekende ouderdom. Die zijn afkomstig van dendrochronologisch gedateerd hout, waarbij men van elke jaarring weet in welk jaar die werd gevormd (zie de handleiding "[Dendrochronologie en erfgoedonderzoek](https://hanecakr.github.io/handleidingDendro/)", Haneca 2017). Door het vergelijken van de gemeten conventionele radiokoolstofouderdom en de werkelijke ouderdom van een jaarring kan voor de afgelopen 14.000 jaar een zogenaamde kalibratiecurve worden opgesteld die de relatie tussen beide weergeeft [@reimer_intcal20_2020]. Voor oudere periodes is de kalibratiecurve gebaseerd op de datering van organisch materiaal uit jaarlijkse sedimentlaagjes in diepe meren (varven) en op koolstof gehaald uit de aangroeilagen van koralen. De meersedimenten hebben een andere kleur in zomer en winter waardoor ze ook een gelaagdheid tonen waarin de opeenvolgende jaren van elkaar te onderscheiden zijn. Koralen worden gedateerd met andere 'radiometrische' methoden dan $\mathrm{^{14}C}$, waarna de resultaten kunnen vergeleken worden met de $\mathrm{^{14}C}$-datering.De huidige kalibratiecurve gaat terug in de tijd tot aan de detectielimieten van de meetinstrumenten en zo kan men materiaal tot 55.000 jaar oud kalibreren. Dergelijk oud materiaal betrouwbaar meten blijft echter een uiterst gevoelige en moeilijke opdracht (zie ook 2.5).
 
@@ -18,7 +18,21 @@ knitr::include_graphics("./figuren/figuur_09_update.png")
 
 ```
 
-Op basis van de kalibratiecurve kan een grafiek worden opgebouwd die, doorheen de tijd, het verschil weergeeft tussen de conventionele radiokoolstofouderdom en het werkelijke kalenderjaar waaruit een materiaal stamt. Op die grafiek is te zien dat $\mathrm{^{14}C}$-jaren tot 200 'jaar' te oud zijn tijdens het eerste millennium AD, maar tot 800 jaar te jong in het 5de millennium BC (figuur \@ref(fig:intcal)). De relatie tussen de conventionele radiokoolstofouderdom en de werkelijke kalenderjaren is dus niet alleen wisselend van jaar tot jaar maar vertoont ook bredere trends doorheen de tijd die verband houden met astronomische fenomenen (schommelingen in het aardmagnetisme, cycli in de zonneactiviteit, …).
+
+
+<div class="warning" style='color: #69337A; border-left: solid #4D6F8D 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+Onderstaande animatie toont hoe een radiokoolstofdatering met bijhorende onzekerheid wordt omgerekend naar een bereik van kalenderjaren (&copy; [Maarten Blaauw](https://maarten14c.github.io/)). 
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/603364618?h=5a53c721b6" width="640" height="640" frameborder="0" allowfullscreen></iframe>
+
+</span>
+</div>
+
+<br>
+
+Op basis van de kalibratiecurve kan een grafiek worden opgebouwd die, doorheen de tijd, het verschil weergeeft tussen de conventionele radiokoolstofouderdom en het werkelijke kalenderjaar waaruit een materiaal stamt. Op die grafiek is te zien dat $\mathrm{^{14}C}$-jaren tot 200 'jaar' te oud zijn tijdens het eerste millennium AD, maar tot 800 jaar te jong in het 5de millennium BC (figuur \@ref(fig:intcal)). De relatie tussen de conventionele radiokoolstofouderdom en de werkelijke kalenderjaren is dus niet alleen wisselend van jaar tot jaar maar vertoont ook bredere trends doorheen de tijd die verband houden met astronomische fenomenen (schommelingen in het aardmagnetisme, cycli in de zonneactiviteit, -¦).
 
 ```{r intcal, fig.cap='Evolutie van het verschil tussen de kalenderouderdom en de radiokoolstofouderdom tussen 5000 BC en 1950 AD, berekend op basis van de IntCal20 kalibratiecurve.', echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
 
@@ -47,7 +61,7 @@ Het grillige verloop van de kalibratiecurve in het meest recente, 'postmiddeleeu
 
 ## IntCal20
 
-Kalibratiecurves worden met enige regelmaat verlengd, verfijnd en aangevuld met recent onderzochte datasets. Ook de achterliggende modellering kan op basis van nieuwe statistische technieken aan herziening toe zijn. Geactualiseerde kalibratiecurves worden als sinds de jaren ‘1960 gepubliceerd [@stuiver_relationship_1966]. De meest recente update kwam er in 2020 [@reimer_intcal20_2020], met de **IntCal20** kalibratiecurve, ter vervanging van Intcal13 (uit 2013). Deze nieuwste kalibratiecurve - voor terrestrische systemen op het noordelijke halfrond – is tot 11.960 BC volledig gebaseerd op dendrochronologisch gedateerd hout. Het oudere gedeelte is samengesteld met metingen op jaarringchronologieën die via _wiggle-matching_ bij benadering zijn gedateerd (zie 7.6), sedimentlagen uit diepere meren (varven), mariene sedimenten, druipstenen (speleothems) en koralen, en gaat tot 55.000 jaar BP terug in de tijd (http://intcal.org).
+Kalibratiecurves worden met enige regelmaat verlengd, verfijnd en aangevuld met recent onderzochte datasets. Ook de achterliggende modellering kan op basis van nieuwe statistische technieken aan herziening toe zijn. Geactualiseerde kalibratiecurves worden als sinds de jaren '1960 gepubliceerd [@stuiver_relationship_1966]. De meest recente update kwam er in 2020 [@reimer_intcal20_2020], met de **IntCal20** kalibratiecurve, ter vervanging van Intcal13 (uit 2013). Deze nieuwste kalibratiecurve - voor terrestrische systemen op het noordelijke halfrond - is tot 11.960 BC volledig gebaseerd op dendrochronologisch gedateerd hout. Het oudere gedeelte is samengesteld met metingen op jaarringchronologieën die via _wiggle-matching_ bij benadering zijn gedateerd (zie 7.6), sedimentlagen uit diepere meren (varven), mariene sedimenten, druipstenen (speleothems) en koralen, en gaat tot 55.000 jaar BP terug in de tijd (http://intcal.org).
 
 De globale trend in de IntCal20 kalibratiecurve wijkt tot ca. 25.000 jaar terug weinig af van de voorgaande gepubliceerde kalibratiecurven. Voor nog oudere perioden is er wel een significant verschil doordat er bij de update van de kalibratiecurve meer meetpunten van goed gedateerd materiaal zijn opgenomen. Dit uit zich bij het kalibreren van oud materiaal in vrij grote verschillen in vergelijking met de kalibratie met de vorige kalibratiecurven. Globaal gezien zal het verschil na kalibratie met behulp van IntCal20 in vergelijking met IntCal13, de vorige kalibratiecurve, vrij beperkt zijn voor de historische perioden, maar dit verschil kan oplopen tot enkele honderden jaren bij de kalibratie van ouder materiaal [@reimer_composition_2020; @van_der_plicht_recent_2020]. 
 
@@ -57,7 +71,7 @@ knitr::include_graphics("./figuren/calcurves.jpg")
 
 ```
 
-IntCal20 heeft in vergelijking met vroegere kalibratiecurven veel meer detail en ziet er daardoor ook wat ‘nerveuzer’ uit, met meer kleine schommelingen (figuur \@ref(fig:calcurves)). Dit is het gevolg van de integratie van metingen op materiaal met een hoge tijdsresolutie, zoals de jaarlijkse groeiringen in dendrochronologisch gedateerd hout. Zo heeft IntCal20 tot 3050 BC een jaarlijkse resolutie. Het nog oudere gedeelte is dan weer berekend aan de hand van blokjes van 5, 10 of 20 jaarringen (figuur \@ref(fig:calcurves-res)). 
+IntCal20 heeft in vergelijking met vroegere kalibratiecurven veel meer detail en ziet er daardoor ook wat 'nerveuzer' uit, met meer kleine schommelingen (figuur \@ref(fig:calcurves)). Dit is het gevolg van de integratie van metingen op materiaal met een hoge tijdsresolutie, zoals de jaarlijkse groeiringen in dendrochronologisch gedateerd hout. Zo heeft IntCal20 tot 3050 BC een jaarlijkse resolutie. Het nog oudere gedeelte is dan weer berekend aan de hand van blokjes van 5, 10 of 20 jaarringen (figuur \@ref(fig:calcurves-res)). 
 
 ```{r calcurves-res, fig.cap="Vergelijking van de resolutie van de huidige en voorgaande kalibratiecurves.", echo = FALSE, out.width='100%', fig.asp=.75, fig.align='center'}
 
@@ -65,11 +79,11 @@ knitr::include_graphics("./figuren/calcurves_res.jpg")
 
 ```
 
-Ook de vrij recente ontdekking van zogenaamde **Miyake-events** – een plotse, sterke toename van de $\mathrm{^{14}C}$-concentratie in de atmosfeer als gevolg van een protonenstorm veroorzaakt door een zonnevlam (*solar particle event* (SPE)) - in 774-75 AD en 993 AD [@miyake_another_2013; @miyake_signature_2012] zorgen op die plaatsen voor een duidelijk verschil met vorige kalibratiecurven. Door het meer nerveuze karakter van IntCal20 zal een gekalibreerde radiokoolstofdatering vaker resulteren in een discontinu bereik aan mogelijke kalenderjaren, in vergelijking met de oudere kalibratiecurven.
+Ook de vrij recente ontdekking van zogenaamde **Miyake-events** - een plotse, sterke toename van de $\mathrm{^{14}C}$-concentratie in de atmosfeer als gevolg van een protonenstorm veroorzaakt door een zonnevlam (*solar particle event* (SPE)) - in 774-75 AD en 993 AD [@miyake_another_2013; @miyake_signature_2012] zorgen op die plaatsen voor een duidelijk verschil met vorige kalibratiecurven. Door het meer nerveuze karakter van IntCal20 zal een gekalibreerde radiokoolstofdatering vaker resulteren in een discontinu bereik aan mogelijke kalenderjaren, in vergelijking met de oudere kalibratiecurven.
 
 >
 >Het is aangewezen radiokoolstofdateringen altijd met de meest recente kalibratiecurve te (her)kalibreren.
 >
 
-Radiokoolstofdateringen die werden uitgevoerd vóór de publicatie van de IntCal20 curve, werden doorgaans met de toen geldende kalibratiecurve gekalibreerd (IntCal13, IntCal09, …). Indien we dergelijke oudere dateringen willen vergelijken met recent uitgevoerde radiokoolstofanalyses, dan moet de volledige set aan dateringen gekalibreerd worden met dezelfde (en meest recente) kalibratiecurve. Voor de vroeger uitgevoerde dateringen kan het bereik aan mogelijke kalenderjaren na kalibratie daardoor wel afwijken t.o.v. de origineel gerapporteerde datering.
+Radiokoolstofdateringen die werden uitgevoerd vóór de publicatie van de IntCal20 curve, werden doorgaans met de toen geldende kalibratiecurve gekalibreerd (IntCal13, IntCal09, -¦). Indien we dergelijke oudere dateringen willen vergelijken met recent uitgevoerde radiokoolstofanalyses, dan moet de volledige set aan dateringen gekalibreerd worden met dezelfde (en meest recente) kalibratiecurve. Voor de vroeger uitgevoerde dateringen kan het bereik aan mogelijke kalenderjaren na kalibratie daardoor wel afwijken t.o.v. de origineel gerapporteerde datering.
 

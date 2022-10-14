@@ -96,7 +96,7 @@ valkuilen
 bijlagen
 OxCal_intro
 kalibreren
-kalibratie-van-één-datering
+kalibratie-van-éénn-datering
 kalibratie-van-meerdere-dateringen
 datainvoer-via-excel
 grafieken-en-tabellen

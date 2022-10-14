@@ -7,7 +7,7 @@ language:
     fig: "Figuur " 
     tab: "Tabel "
   ui:
-    chapter_name: "hoofdstuk "
+    chapter_name: ""
 rmd_files: [
   "index.Rmd",
   "00_C14_wijzigingen.Rmd",

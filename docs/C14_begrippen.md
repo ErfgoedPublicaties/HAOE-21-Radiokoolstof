@@ -23,7 +23,7 @@
 
 **Dendrochronologie** of **jaarringonderzoek**: De wetenschappelijke discipline waarbij de datering van groeiringen in hout centraal staat. De opeenvolgende groeiringen worden hierbij beschouwd als een kalender, waarbij men als het ware terug kan gaan in de tijd door de groeiringen van een boom één voor één te registreren.
 
-**Isotoop**: Atomen van een zelfde chemisch element met een verschillende opbouw van de kern, meer bepaald variërende aantallen neutronen. De meeste chemische elementen hebben meerdere isotopen.
+**Isotoop**: Atomen van een zelfde chemisch element met een verschillende opbouw van de kern, meer bepaald met een variërend aantal neutronen. De meeste chemische elementen hebben meerdere isotopen.
 
 **Kalibratiecurve**: Visualisatie van de relatie tussen de gemeten radiokoolstofouderdom en de werkelijke ouderdom (uitgedrukt in kalenderjaren) van een geanalyseerd monster. De kalibratiecurve wijkt sterk af van een rechte lijn door de natuurlijke schommelingen in het $\mathrm{ ^{14}C}$-gehalte van de atmosfeer. Een kalibratiecurve wordt opgesteld door het dateren van monsters met een exact gekende ouderdom (bv. dendrochronologisch gedateerde stukken hout, varven in meersedimenten of druipstenen).
 
@@ -39,7 +39,7 @@
 
 ***Terminus ante quem***: Laatst mogelijke tijdstip (bovengrens) waarop een gebeurtenis kan hebben plaatsgevonden.
 
-**Trofisch niveau**: De plaats van een organisme (plant, dier, eencellige, …) in de globale voedselketen. Een trofisch niveau bestaat uit een groep organismen met eenzelfde type voeding.
+**Trofisch niveau**: De plaats van een organisme (plant, dier, eencellige, ...) in de globale voedselketen. Een trofisch niveau bestaat uit een groep organismen met eenzelfde type voeding.
 
 ***Wiggle-matching***: Combinatie van meerdere radiokoolstofdateringen met een onderling gekende tussenafstand en schikking in de tijd om zo de precisie van de gekalibreerde radiokoolstofdateringen te verhogen.
 
