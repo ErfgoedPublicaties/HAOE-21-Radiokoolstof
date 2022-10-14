@@ -93,7 +93,7 @@ Op een stuk hout worden dan, aan de hand van het groeiringpatroon, verschillende
 
 _Wiggle-matching_ biedt ook een uitkomst om houtsoorten te dateren waarvoor geen dendrochronologische kalenders beschikbaar zijn of waarbij de groei en de anatomie de toepassing van de techniek niet toelaten. In principe heeft de houtsoort geen belang zolang er maar jaarringen kunnen onderscheiden worden.
 
-```{r wiggle-matching, fig.cap="Wiggle-matching uitgevoerd op een plank van een waterputbekisting uit de late bronstijd (a). Vijf stalen waarop een radiokoolstofdatering werd uitgevoerd (b) worden in een wiskundig model aan elkaar verbonden door de tussenafstand, uitgedrukt in aantal jaarringen, in het model op te nemen (c). Het opgebouwde model laat toe om de veldatum van dit stuk hout veel preciezer te bepalen dan op basis van de individuele radiokoolstofdateringen mogelijk is.", echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
+```{r wiggle-matching, fig.cap="Wiggle-matching uitgevoerd op een plank van een waterputbekisting uit de late bronstijd (a). Vijf stalen waarop een radiokoolstofdatering werd uitgevoerd (b) worden in een wiskundig model aan elkaar verbonden door de tussenafstand, uitgedrukt in aantal jaarringen, in het model op te nemen (c). Het opgebouwde model laat toe om de veldatum van dit stuk hout veel preciezer te bepalen dan op basis van de individuele radiokoolstofdateringen mogelijk is.", echo = FALSE, out.width='100%', fig.asp=.75, fig.align='center'}
 
 knitr::include_graphics("./figuren/figuur_28.png")
 
