@@ -3,27 +3,27 @@ output:
   github_document
 ---
 ```{r echo=FALSE, eval=FALSE}
-README.md genereren met:
-     
-rmarkdown::render("README.Rmd", output_format="github_document", output_yaml = NULL)
-
-output_yaml = NULL zorgt er voor dat _output.yml niet wordt gebruikt. Deze laatste is op maat van Bookdown.
-SOms nodig om de 'global protect' connectie uit te schakelen.
+# README.md genereren met:
+#      
+# rmarkdown::render("README.Rmd", output_format="github_document", output_yaml = NULL)
+# 
+# output_yaml = NULL zorgt er voor dat _output.yml niet wordt gebruikt. Deze laatste is op maat van Bookdown.
+# SOms nodig om de 'global protect' connectie uit te schakelen.
 ```
 
 # Dateren met radiokoolstof
 
 Welkom bij de online versie van ***^14^C: dateren met radiokoolstof***. Deze handleiding werd in 2019 gepubliceerd door
-het agentschap Onroerend Erfgoed en is als pdf te downloaden op de [**Open Archives Repositiry (OAR)**](https://oar.onroerenderfgoed.be/item/5241).
+het agentschap Onroerend Erfgoed en is als pdf te downloaden op de [**Open Archives Repository (OAR)**](https://oar.onroerenderfgoed.be/item/5241).
 
-Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar :point_right: [**hier**](https://hanecakr.github.io/handleidingRadiokoolstof/) :point_left: kan je steeds de meest actuele versie raadplegen.
+Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar :point_right: [**hier**](https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/) :point_left: kan je steeds de meest actuele versie raadplegen.
 
 > Gelieve te citeren als:\
 >
->Haneca K., Ervynck A,, Van Strydonck M. (`r Sys.Date()`). ^14^C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed, Brussel. [online: https://hanecakr.github.io/handleidingRadiokoolstof/]
+>Haneca K., Ervynck A,, Van Strydonck M. (`r Sys.Date()`). ^14^C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed, Brussel. <https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/>
 >
 > Oorspronkelijke gepubliceerd als: <br/>
-Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof, Handleiding agentschap Onroerend Erfgoed 21, Brussel. [online: https://oar.onroerenderfgoed.be/item/5241].
+Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof, Handleiding agentschap Onroerend Erfgoed 21, Brussel. <https://oar.onroerenderfgoed.be/item/5241>
 
 
  <br/>
