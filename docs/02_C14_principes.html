@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl" xml:lang="nl"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>$\mathrm{^{14}C:}$ dateren met radiokoolstof – 2&nbsp; Het principe van een 14C-datering</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./03_C14_kalibratie.html" rel="next">
+<link href="./01_C14_intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Geen resultaat",
+    "search-matching-documents-text": "Gevonden documenten",
+    "search-copy-link-title": "Kopieer link om te zoeken",
+    "search-hide-matches-text": "Extra overeenkomsten verbergen",
+    "search-more-match-text": "meer overeenkomst in dit document",
+    "search-more-matches-text": "meer overeenkomsten in dit document",
+    "search-clear-button-title": "Wissen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuleren",
+    "search-submit-button-title": "Verzenden",
+    "search-label": "Zoeken"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #00509d;
+      }
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta name="twitter:title" content="\(\mathrm{^{14}C:}\) dateren met radiokoolstof - 2&nbsp; Het principe van een 14C-datering">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof//figuren/haoe021-001_cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalknavigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_C14_intro.html">Handleiding</a></li><li class="breadcrumb-item"><a href="./02_C14_principes.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Het principe van een <sup>14</sup>C-datering</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalknavigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Zoeken" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_C14_intro.html">Handleiding</a></li><li class="breadcrumb-item"><a href="./02_C14_principes.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Het principe van een <sup>14</sup>C-datering</span></a></li></ol></nav>
+      <h1 class="title"><span id="principes" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Het principe van een <sup>14</sup>C-datering</span></span></h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./"><span class="math inline">\(\mathrm{^{14}C:}\)</span> dateren met radiokoolstof</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/" title="Broncode" class="quarto-navigation-tool px-1" aria-label="Broncode"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Schakel donkere modus"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Zoeken"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Woord vooraf</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_C14_wijzigingen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Updates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Handleiding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Schakel sectie">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_C14_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inleiding</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_C14_principes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Het principe van een <sup>14</sup>C-datering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_C14_kalibratie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kalibratie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_C14_onderzoeksvragen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Onderzoeksvragen en -strategie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_C14_bemonsteren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Bemonsteren</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_C14_rapporteren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Van rapport tot interpretatie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_C14_modelleren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bayesiaanse analyse</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">OxCal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Schakel sectie">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_C14_OxCal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Handleiding OxCal</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Begrippen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Schakel sectie">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_begrippen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Begrippenlijst</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bronnen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Schakel sectie">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_14C_bibliografie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliografie</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Op deze pagina</h2>
+   
+  <ul>
+  <li><a href="#het-chemisch-element-koolstof" id="toc-het-chemisch-element-koolstof" class="nav-link active" data-scroll-target="#het-chemisch-element-koolstof"><span class="header-section-number">2.1</span> Het chemisch element koolstof</a></li>
+  <li><a href="#het-ontstaan-van-radiokoolstof" id="toc-het-ontstaan-van-radiokoolstof" class="nav-link" data-scroll-target="#het-ontstaan-van-radiokoolstof"><span class="header-section-number">2.2</span> Het ontstaan van radiokoolstof</a></li>
+  <li><a href="#de-koolstofcyclus" id="toc-de-koolstofcyclus" class="nav-link" data-scroll-target="#de-koolstofcyclus"><span class="header-section-number">2.3</span> De koolstofcyclus</a></li>
+  <li><a href="#radioactiviteit" id="toc-radioactiviteit" class="nav-link" data-scroll-target="#radioactiviteit"><span class="header-section-number">2.4</span> Radioactiviteit</a></li>
+  <li><a href="#ouderdom-bepalen" id="toc-ouderdom-bepalen" class="nav-link" data-scroll-target="#ouderdom-bepalen"><span class="header-section-number">2.5</span> Ouderdom bepalen</a></li>
+  <li><a href="#meetfout-en-statistische-onzekerheid" id="toc-meetfout-en-statistische-onzekerheid" class="nav-link" data-scroll-target="#meetfout-en-statistische-onzekerheid"><span class="header-section-number">2.6</span> Meetfout en statistische onzekerheid</a></li>
+  <li><a href="#isotopenfractionatie" id="toc-isotopenfractionatie" class="nav-link" data-scroll-target="#isotopenfractionatie"><span class="header-section-number">2.7</span> Isotopenfractionatie</a></li>
+  <li><a href="#aquatische-systemen" id="toc-aquatische-systemen" class="nav-link" data-scroll-target="#aquatische-systemen"><span class="header-section-number">2.8</span> Aquatische systemen</a></li>
+  <li><a href="#voedsel-en-stabiele-isotopen" id="toc-voedsel-en-stabiele-isotopen" class="nav-link" data-scroll-target="#voedsel-en-stabiele-isotopen"><span class="header-section-number">2.9</span> Voedsel en stabiele isotopen</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/02_C14_principes.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="het-chemisch-element-koolstof" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="het-chemisch-element-koolstof"><span class="header-section-number">2.1</span> Het chemisch element koolstof</h2>
+<p>Eerst en vooral kan wat duidelijkheid scheppen in de gangbare terminologie geen kwaad. Veelal worden ‘radiokoolstof’ en de notaties C-14, C14 , 14C of koolstof-14 vlot door en naast elkaar gebruikt. Volgens internationale afspraken binnen de scheikunde is <span class="math inline">\(\mathrm{^{14}C}\)</span> echter de enige correcte afgekorte benaming voor radiokoolstof. Het is de weerslag van de chemische karakterisatie van het element koolstof dat met de hoofdletter <span class="math inline">\(\mathrm{C}\)</span> (van carbon) is opgenomen in het <em>periodiek systeem der elementen</em>, ook wel de <em>tabel van Mendelejev</em> genoemd. In die tabel staan de gekende chemische elementen geordend volgens het aantal protonen in hun atoomkern (= het atoomnummer). Het aantal protonen in de atoomkern bepaalt immers het element. Koolstof heeft atoomnummer 6, wat wil zeggen dat dit element 6 protonen heeft in zijn kern en 6 elektronen die cirkelen rond die kern (<a href="#fig-atoommodel" class="quarto-xref">fig.&nbsp;<span>2.1</span></a>). Doorgaans betekent dit dat er ook 6 neutronen aanwezig zijn in de kern, en dat wordt genoteerd als <span class="math inline">\(\mathrm{^{12}_6C}\)</span> waarbij 12 het totale aantal kerndeeltjes (protonen en neutronen) weergeeft en 6 het aantal protonen. Vrijwel alle massa bevindt zich in de atoomkern (protonen en neutronen).</p>
+<div id="fig-atoommodel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-atoommodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figuur&nbsp;2.1: Het atoommodel voor koolstof."><img src="./figuren/figuur_01.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-atoommodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;2.1: Het atoommodel voor koolstof.
+</figcaption>
+</figure>
+</div>
+<p>Daarnaast bestaan er varianten van koolstof met meer kerndeeltjes, bijvoorbeeld met 7 (<span class="math inline">\(\mathrm{ ^{13}_6C}\)</span>) en 8 (<span class="math inline">\(\mathrm{^{14}_6C}\)</span>) neutronen in de kern (<a href="#fig-atoommodel-isotopen" class="quarto-xref">fig.&nbsp;<span>2.2</span></a>). Die varianten van eenzelfde element worden isotopen genoemd. Bij de koolstofatomen in de aardse atmosfeer bestaat het overgrote deel (98,9%) uit de variant met 12 kerndeeltjes (6 protonen + 6 neutronen) en bestaat slechts 1,1% uit <span class="math inline">\(\mathrm{ ^{13}C}\)</span> (6 protonen + 7 neutronen). De isotoop <span class="math inline">\(\mathrm{ ^{14}C}\)</span> is een derde, maar uiterst zeldzaam fenomeen in vergelijking met <span class="math inline">\(\mathrm{ ^{12}C}\)</span>, en zelfs <span class="math inline">\(\mathrm{ ^{13}C}\)</span>. Zo kan men in de atmosfeer doorgaans slecht één <span class="math inline">\(\mathrm{ ^{14}C}\)</span>-isotoop vinden op 1.000.000.000.000 (duizend miljard) atomen koolstof. Aangezien er meer kerndeeltjes aanwezig zijn bij <span class="math inline">\(\mathrm{ ^{13}C}\)</span> en <span class="math inline">\(\mathrm{ ^{14}C}\)</span> (respectievelijk één of twee extra neutronen, met atomaire massa 1), zijn dit ook zwaardere isotopen in vergelijking met de meest courant voorkomende <span class="math inline">\(\mathrm{^{12}C}\)</span>.</p>
+<div id="fig-atoommodel-isotopen" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-atoommodel-isotopen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figuur&nbsp;2.2: Atoommodel voor drie isotopen van het element koolstof. De isotopen 13C en 14C hebben respectievelijk één en twee neutronen (blauw) meer in hun atoomkern dan de meest courante koolstofisotoop 12C. Het aantal protonen (rood) blijft gelijk."><img src="./figuren/figuur_02.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-atoommodel-isotopen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;2.2: Atoommodel voor drie isotopen van het element koolstof. De isotopen <sup>13</sup>C en <sup>14</sup>C hebben respectievelijk één en twee neutronen (blauw) meer in hun atoomkern dan de meest courante koolstofisotoop <sup>12</sup>C. Het aantal protonen (rood) blijft gelijk.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>In de atmosfeer tref je slecht één <span class="math inline">\(\mathrm{^{14}C}\)</span>-isotoop aan op 1.000.000.000.000 atomen koolstof.</p>
+</div>
+</div>
+</div>
+<p>Isotopen van een element verschillen dan wel in het aantal kerndeeltjes (dus in hun natuurkundige kenmerken), maar de chemische reacties die ze aangaan met andere atomen worden daardoor niet beïnvloed. Ze reageren met andere woorden op een gelijkaardige manier met andere atomen en moleculen, en vormen er samen identiek dezelfde (nieuwe) chemische stoffen mee. Koolstof reageert bijvoorbeeld samen met zuurstof tot de molecule koolstofdioxide (<span class="math inline">\(\mathrm{CO_2}\)</span>), ongeacht welke koolstofisotoop betrokken is in deze chemische reactie.</p>
+</section>
+<section id="het-ontstaan-van-radiokoolstof" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="het-ontstaan-van-radiokoolstof"><span class="header-section-number">2.2</span> Het ontstaan van radiokoolstof</h2>
+<p><span class="math inline">\(\mathrm{^{14}C}\)</span> is de zwaarste isotoop van koolstof die in de natuur voorkomt. Hij wordt gevormd in de bovenste laag van de atmosfeer, op ca. 15 km hoogte, door de interactie van zogenaamde ‘thermische neutronen’ (<span class="math inline">\(n\)</span>) met stikstofatomen (meer bepaald de isotoop (<span class="math inline">\(\mathrm{^{14}_7N}\)</span>) met 7 protonen en 7 neutronen in de kern). De thermische neutronen worden gevormd als gevolg van kosmische straling die de dampkring binnendringt. Ze hebben voldoende energie om een proton (<span class="math inline">\(p\)</span>) uit de kern van een stikstofatoom te verdringen, en daarvan de plaats in te nemen. Hierdoor ontstaat een koolstofatoom met 14 kerndeeltjes (6 protonen + 8 neutronen): de <span class="math inline">\(\mathrm{^{14}C}\)</span>-isotoop.</p>
+<p><span class="math display">\[n + \mathrm{^{14}_7N} \rightarrow \mathrm{^{14}_7C} + p\]</span></p>
+<p>De productie van <span class="math inline">\(\mathrm{^{14}C}\)</span> blijft wel miniem en wordt wereldwijd geschat op niet meer dan 7,5 kg per jaar. Eens zich een <span class="math inline">\(\mathrm{^{14}C}\)</span>-isotoop gevormd heeft, zal die met de in de lucht aanwezige zuurstofmoleculen oxideren tot koolstofdioxide (<span class="math inline">\(\mathrm{^{14}CO_2}\)</span>). Deze moleculen vermengen zich met <span class="math inline">\(\mathrm{CO_2}\)</span> die is opgebouwd met de courante <span class="math inline">\(\mathrm{^{12}C}\)</span>-isotopen en samen komen ze in de koolstofcyclus terecht (<a href="#fig-koolstofcyclus" class="quarto-xref">fig.&nbsp;<span>2.3</span></a>).</p>
+<div id="fig-koolstofcyclus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-koolstofcyclus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_03.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figuur&nbsp;2.3: Vereenvoudigde voorstelling van de koolstofcyclus. (© KIK/IRPA, Brussel)"><img src="./figuren/figuur_03.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-koolstofcyclus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;2.3: Vereenvoudigde voorstelling van de koolstofcyclus. (© KIK/IRPA, Brussel)
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="de-koolstofcyclus" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="de-koolstofcyclus"><span class="header-section-number">2.3</span> De koolstofcyclus</h2>
+<p>Koolstof is de essentiële bouwsteen voor alle leven op aarde. Elk levend organisme neemt koolstof op en verwerkt het bij de opbouw van nieuwe cellen. Planten doen dit via fotosynthese, nemen zowel <span class="math inline">\(\mathrm{^{12}C}\)</span>, <span class="math inline">\(\mathrm{^{13}C}\)</span> en <span class="math inline">\(\mathrm{^{14}C}\)</span> op, en vormen op zich een voedselbron voor mens en dier. De hele voedselketen is dan ook van koolstof doordrongen, van de kleinste eencelligen tot vleeseters <em>pur sang</em>.</p>
+<p>Een gigantische ‘voorraad’ aan koolstof zit echter opgeslagen in de oceanen. Daar kan de opgeslagen koolstof, onder de vorm van carbonaten (verbindingen van koolstof en zuurstof, samen met calcium), de grondstof vormen waaruit koralen, schelpen en vele kleine organismen zijn opgebouwd.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Koolstof is de essentiële bouwsteen voor alle leven op aarde. Elk levend organisme neemt koolstof op en verwerkt het bij de opbouw van nieuwe cellen.</p>
+</div>
+</div>
+</div>
+<p>De <span class="math inline">\(\mathrm{CO_2}\)</span> die door levende wezens wordt opgeslagen, komt uiteindelijk weer vrij wanneer hun organisch materiaal na de dood vergaat. Maar daarom wordt die vrijgekomen <span class="math inline">\(\mathrm{CO_2}\)</span> nog niet onmiddellijk in de atmosfeer opgenomen. Koolstof uit planten en dieren kan worden weggespoeld in waterlopen, opgenomen in de bodem of in organische afzettingen zoals veen, via grondwaterbewegingen verplaatst, of simpelweg gevangen blijven in organisch materiaal dat aan desintegratie ontsnapt en zo deel van het archeologisch bodemarchief wordt. Constructiehout dat droog en gevrijwaard blijft van schimmel of ernstige insectenvraat kan eeuwenlang zijn mechanische eigenschappen behouden en een structurele functie blijven uitoefenen in historische gebouwen, en zo de in het hout vastgelegde koolstof aan de koolstofcyclus onttrekken.</p>
+<p>Een totaal ander en heel specifiek (menselijk) proces, dat relevant is in het erfgoedonderzoek maar buiten de natuurlijke koolstofcyclus staat, vormt de aanmaak van kalkmortel. Tijdens dit proces wordt ongebluste kalk (bereid door het branden van kalksteen of schelpen) gemengd met water en zand, en wordt koolstof uit de atmosfeer (onder de vorm van <span class="math inline">\(\mathrm{CO_2}\)</span>) vastgelegd in de mortel <span class="citation" data-cites="hajdas_preparation_2017">(<a href="999_14C_bibliografie.html#ref-hajdas_preparation_2017" role="doc-biblioref">Hajdas <em>e.a.</em> 2017</a>)</span>. Later kan die <span class="math inline">\(\mathrm{CO_2}\)</span> door verwering weer vrijkomen. Ook bij de productie van andere materialen, zoals ijzer of loodcarbonaat, kan koolstof gevangen worden. Deze materialen dateren is daardoor in sommige gevallen mogelijk, al berust dit voorlopig nog op experimenteel onderzoek (zie 4.1).</p>
+</section>
+<section id="radioactiviteit" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="radioactiviteit"><span class="header-section-number">2.4</span> Radioactiviteit</h2>
+<p>Door een uitgesproken onevenwicht in de verhouding van neutronen en protonen in de atoomkern kunnen bepaalde isotopen onstabiel zijn. Ze ondergaan vroeg of laat een spontane transformatie waarbij een vorm van straling vrijkomt. Dit spontane proces wordt omschreven als radioactief verval. In het geval van de instabiele isotoop <span class="math inline">\(\mathrm{^{14}C}\)</span> stoot één van de neutronen tijdens dit proces een electron (<span class="math inline">\(e^-\)</span>) en een anti-neutrino (<span class="math inline">\(v\)</span>) uit, en wordt zo een proton. Daardoor transformeert het instabiele koolstofisotoop (met 6 protonen en 8 neutronen in de kern) in een stabiel stikstofisotoop, met 7 protonen en 7 neutronen in de kern.</p>
+<p><span class="math display">\[\mathrm{^{14}_6C} \rightarrow \mathrm{^{14}_7N} + e^{-} + \bar{v}{_e}\]</span></p>
+<p>Bij levende wezens, die koolstof rechtstreeks uit de atmosfeer assimileren of die onrechtstreeks door de inname van voedsel verwerven, bouwt zich een dynamisch evenwicht op tussen de opname van <span class="math inline">\(\mathrm{^{14}C}\)</span> en het radioactief verval ervan. In levende wezens stralen er <span class="math inline">\(\mathrm{^{14}C}\)</span>-isotopen weg maar komen er ook steeds nieuwe bij. En vermits levende wezens de meeste van hun eigen structuren steeds weer vernieuwen (afbreken en heropbouwen) is het interne gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> in die structuren in overeenstemming met de concentratie in de atmosfeer. Bij het overlijden van een dier of persoon, of het afsterven van een plant, wordt dit dynamisch evenwicht echter verbroken. Op dat moment blijft het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span>-isotopen in het stoffelijk overschot of de organische resten dalen, door het radioactieve verval, maar komen er geen nieuwe meer bij. Bij het overlijden begint als het ware een interne klok te lopen: de radioactieve isotopen ‘tikken weg’ en worden niet meer aangevuld.</p>
+<p>Nu is de snelheid waarmee het radioactief verval verloopt, constant en gekend. Ze wordt beschreven door een parameter die men de halfwaardetijd noemt, de tijd nodig om van alle aanwezige <span class="math inline">\(\mathrm{^{14}C}\)</span>-atomen nog de helft over te houden. De meest accurate bepaling van de halfwaardetijd van <span class="math inline">\(\mathrm{^{14}C}\)</span>-isotopen is 5730 (±40) jaar. Dit betekent dat na 5730 jaar gemiddeld de helft van de originele hoeveelheid <span class="math inline">\(\mathrm{^{14}C}\)</span>-isotopen is gedesintegreerd. Na nog eens 5730 jaar zal opnieuw gemiddeld de helft van de nog aanwezige onstabiele isotopen vervallen zijn tot stabiele stikstof en blijft er dus slechts een kwart meer over van de originele hoeveelheid <span class="math inline">\(\mathrm{^{14}C}\)</span> (<a href="#fig-halfwaardetijd" class="quarto-xref">fig.&nbsp;<span>2.4</span></a>).</p>
+<div id="fig-halfwaardetijd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-halfwaardetijd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figuur&nbsp;2.4: Evolutie van het 14C-gehalte in de resten van een organisme, in functie van de tijd."><img src="./figuren/figuur_04.png" class="img-fluid figure-img" style="width:80.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-halfwaardetijd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;2.4: Evolutie van het <sup>14</sup>C-gehalte in de resten van een organisme, in functie van de tijd.
+</figcaption>
+</figure>
+</div>
+<p>Tijdens de beginjaren van het onderzoek naar de toepassingsmogelijkheden van radiokoolstof werd de halfwaardetijd wat minder precies bepaald en kwam men tot een waarde van 5568 (±30) jaar. Aangezien de preciezere bepaling van de halfwaardetijd pas jaren later werd uitgevoerd, en er ondertussen al heel wat radiokoolstofdateringen waren gerapporteerd, heeft men ervoor gekozen toch verder te werken met de oude, minder precieze halfwaardetijd <span class="citation" data-cites="stuiver_reporting_1977">(<a href="999_14C_bibliografie.html#ref-stuiver_reporting_1977" role="doc-biblioref">Stuiver en Polach 1977</a>)</span>. Op zich is dit geen groot probleem, aangezien de kalibratiecurves (zie verder) hiermee rekening houden.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>In onderstaande animatie is het exponentieel verval van radiokoolstofatomen gevisualiseerd (© <a href="https://maarten14c.github.io/">Maarten Blaauw</a>).</p>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/605461321?h=ebdfd9e585" width="640" height="640" frameborder="0" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="ouderdom-bepalen" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="ouderdom-bepalen"><span class="header-section-number">2.5</span> Ouderdom bepalen</h2>
+<p>Het bepalen van de ouderdom van een stukje organisch of anorganisch materiaal steunt op het meten van het aandeel aan radioactieve isotopen die (nog) aanwezig zijn in het materiaal. Het meten van de hoeveelheid <span class="math inline">\(\mathrm{^{14}C}\)</span>-isotopen is echter geen sinecure en vereist precisie-instrumenten (want <span class="math inline">\(\mathrm{^{14}C}\)</span> is uitermate zeldzaam, zie eerder). Proportionele gastellers en detectoren op basis van vloeistof-scintillatie waren de eerste toestellen die in staat waren de radioactiviteit van een staal te meten, wat dan een maat was voor het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> Vanaf de jaren 1980 bood Accelerated Mass Spectrometry (AMS) echter de mogelijkheid om in plaats van de radioactiviteit rechtstreeks de verschillende isotopen (<span class="math inline">\(\mathrm{^{12}C}\)</span>, <span class="math inline">\(\mathrm{^{13}C}\)</span> en <span class="math inline">\(\mathrm{^{14}C}\)</span>) zelf te tellen, op basis van het verschil in hun massa. Deze techniek is daardoor in staat meteen de verhoudingen <span class="math inline">\(\mathrm{^{14}C}/\mathrm{^{12}C}\)</span> of <span class="math inline">\(\mathrm{^{13}C}/\mathrm{^{12}C}\)</span> in het onderzochte staal te bepalen. Recent kwamen vernieuwde en compacte versies van AMS-machines op de markt, bijvoorbeeld de MICADAS (<em>Mini carbon dating system</em>, ™IONplus) (<a href="#fig-MICADAS" class="quarto-xref">fig.&nbsp;<span>2.5</span></a>). Deze toestellen laten toe om met grote precisie de verhouding van de verschillende koolstofisotopen te meten voor zeer kleine stalen, in slechts enkele uren tijd. Ze hebben het bijkomend voordeel dat ze veel minder plaats innemen dan de oude AMS-toestellen, minder energie verbruiken, eenvoudiger te bedienen zijn en een beduidend lagere onderhoudskost hebben.</p>
+<div id="fig-MICADAS" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-MICADAS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_05.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figuur&nbsp;2.5: Opstelling van een MICADAS aan het KIK/IRPA te Brussel. (foto: © KIK/IRPA, Brussel)"><img src="./figuren/figuur_05.jpg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-MICADAS-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;2.5: Opstelling van een MICADAS aan het KIK/IRPA te Brussel. (foto: © KIK/IRPA, Brussel)
+</figcaption>
+</figure>
+</div>
+<p>De radiokoolstofouderdom van een organisch staal wordt steeds gerapporteerd in jaren BP (before present). Deze term verwijst naar het aantal jaren voor het arbitraire jaar 0, wat initieel het jaar was waarin de <span class="math inline">\(\mathrm{^{14}C}\)</span>-datering werd uitgevoerd. Al snel werd before present vastgelegd als het aantal jaar vóór 1950 - niet geheel toevallig omdat in december 1949 de eerste wetenschappelijke publicatie met radiokoolstofdateringen verscheen <span class="citation" data-cites="arnold_age_1949">(<a href="999_14C_bibliografie.html#ref-arnold_age_1949" role="doc-biblioref">Arnold en Libby 1949</a>)</span>. Sindsdien worden alle <span class="math inline">\(\mathrm{^{14}C}\)</span>-dateringen in BP uitgedrukt. Dat we ondertussen al lang na 1950 zijn wordt bij de rapportage van een datering uiteraard in rekening gebracht.</p>
+<p>Om de radiokoolstofouderdom van een stuk organisch materiaal te berekenen, wordt de verhouding van de oorspronkelijke radioactiviteit van het onderzochte materiaal en de gemeten (resterende) radioactiviteit vergeleken met een internationale standaard, die de theoretische radiokoolstof-activiteit van het jaar 0 (= 1950 AD) benadert. Bij AMS-metingen doet men hetzelfde maar met de directe tellingen van de isotopen als maatstaf, in plaats van de radioactiviteit. Met de huidige meetinstrumenten kan men zelfs bij 55.000 jaar oud materiaal nog de aanwezige <span class="math inline">\(\mathrm{^{14}C}\)</span> detecteren. Bij het dateren van dergelijk oud materiaal (&gt;40.000 BP) moeten we ons bewust zijn dat we op de detectielimiet balanceren en (vooral) dat een uiterst minieme verontreiniging van het onderzochte materiaal (bv. met recentere koolstof) het dateringsresultaat compleet kan verstoren. In nog ouder materiaal is het <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte te klein om nog betrouwbaar gemeten te kunnen worden en moet er beroep gedaan worden op andere dateringstechnieken.</p>
+</section>
+<section id="meetfout-en-statistische-onzekerheid" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="meetfout-en-statistische-onzekerheid"><span class="header-section-number">2.6</span> Meetfout en statistische onzekerheid</h2>
+<p>De kwaliteit van een radiokoolstofdatering wordt bepaald door de precisie en de accuraatheid van het meetresultaat. Een resultaat is precies wanneer herhaalde metingen van een zelfde fenomeen steeds vrijwel dezelfde uitkomst geven. Een resultaat is accuraat als de metingen de werkelijke waarde sterk benaderen (<a href="#fig-precisie" class="quarto-xref">fig.&nbsp;<span>2.6</span></a>).</p>
+<p>Beide parameters worden enerzijds bepaald door de meetonzekerheid en anderzijds door de meetfout. De meetonzekerheid ontstaat doordat herhaalde metingen van hetzelfde staal steeds verschillende, licht afwijkende waarden zullen geven. Dit is geen meetfout, maar een eigenschap van het radioactieve proces. Deze meetonzekerheid is bij AMS-metingen en radiometrische analyses te beschrijven met een normaalverdelingscurve of Gauss-curve. Men noemt dit ook een waarschijnlijkheidsverdeling. De klokvorm van de verdeling wordt bepaald door twee parameters: het gemiddelde (<span class="math inline">\(\mu\)</span>) en de standaardafwijking (<span class="math inline">\(\sigma\)</span> of sigma) op dit gemiddelde. Een radiokoolstofdatering zal daardoor steeds gerapporteerd worden als een gemiddelde waarde, uitgedrukt als de radiokoolstofouderdom van het onderzochte staal in jaren BP, en de onzekerheid op deze ouderdom uitgedrukt door de standaardafwijking (± <span class="math inline">\(\sigma\)</span>). De grootte van de standaardafwijking bepaalt in grote mate de precisie van de meting. Een grote standaardafwijking betekent een ruimer bereik waarin de werkelijke ouderdom te situeren is. Deze standaardafwijking wordt enkel bepaald door het meetproces, waarin de grootte van het onderzochte staal, de meettijd en de ouderdom van het staal een rol spelen.</p>
+<div id="fig-precisie" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-precisie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_06.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figuur&nbsp;2.6: Visuele voorstelling van accuraatheid en precisie, aan de hand van een schietschijf."><img src="./figuren/figuur_06.png" class="img-fluid figure-img" style="width:80.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-precisie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;2.6: Visuele voorstelling van accuraatheid en precisie, aan de hand van een schietschijf.
+</figcaption>
+</figure>
+</div>
+<p>De normaalverdeling heeft enkele interessante eigenschappen (<a href="#fig-normaalverdeling" class="quarto-xref">fig.&nbsp;<span>2.7</span></a>). Zo kan het wiskundig aangetoond worden dat 68,2% van alle metingen binnen het bereik van <span class="math inline">\(\mu-\sigma\)</span> tot <span class="math inline">\(\mu+\sigma\)</span> zullen liggen. Nemen we dit interval rond het gemiddelde iets ruimer, namelijk 2 x de standaardafwijking langs elke zijde, dan liggen 95,4% van de metingen binnen dit interval. Het komt erop neer dat bij 20 herhaalde metingen op hetzelfde staal, 19 keer de werkelijke ouderdom binnen het 2-sigma interval zal liggen (95 op 100 gevallen). Bijgevolg is dit bij 1 op de 20 meting niet het geval en zal de werkelijke ouderdom dus verder afwijken van de meting. Alhoewel de precieze afbakening van dit 95,4% betrouwbaarheidsinterval geen wiskundige of fysische betekenis heeft, kunnen we intuïtief meestal overweg met deze onzekerheid. Dat wordt duidelijker als we vergelijken met de range van 1 x de standaardafwijking rond het gemiddelde. Dan moeten we er rekening mee houden dat op 20 herhaalde metingen op hetzelfde staal, iets minder dan 14 keer de werkelijke ouderdom binnen het 1-sigma interval zal liggen (68 op 100 gevallen). Met de nauwe range (1-sigma) is de datering strakker omschreven maar de onzekerheid van die inschatting is vrij groot. Met de bredere range (2-sigma) is de datering breder omschreven maar is die inschatting veel betrouwbaarder.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Een 95,4% betrouwbaarheidsinterval wil zeggen dat bij 20 herhaalde analyses op hetzelfde staal, de gemeten radiokoolstofouderdom 19 keer binnen dat interval zal liggen.</p>
+</div>
+</div>
+</div>
+<p>Daarnaast kunnen meetfouten ontstaan door toevallige en systematische fouten in het laboratorium. Men kan deze opsporen door een staal met gekende ouderdom meermaals te meten. Niet-systematische fouten, waarbij een staal de ene keer iets te oud en de andere keer iets te jong dateert, zijn het moeilijkst om in het laboratorium te corrigeren. Daarom gaan de meeste laboratoria hun meetonzekerheid iets verhogen. Met andere woorden verlagen laboratoria hun precisie om rekening te houden met de laboratoriumfouten. Systematische fouten daarentegen beïnvloeden de accuraatheid en moeten absoluut vermeden worden door regelmatig blanco’s en stalen met gekende ouderdom te meten en - uiteraard - uiterst nauwgezet te werk te gaan in het laboratorium.</p>
+<p>Soms ervaart een onderzoeker die een datering laat uitvoeren een gebrek aan accuraatheid (of een vermoeden daarvan) maar is dit niet de verantwoordelijkheid van het dateringslaboratorium. Een radiokoolstofanalyse dateert immers een materiaal terwijl de erfgoedonderzoeker vooral geïnteresseerd is in de gebeurtenis die geassocieerd is met dit materiaal. Hoe beter beiden bij elkaar aansluiten, hoe accurater de datering van de gebeurtenis zal zijn. Soms is de relatie tussen materiaal en gebeurtenis echter verstoord door fenomenen zoals residualiteit, intrusiviteit en complexe depositiegeschiedenissen (zie 4.5). Een uitgekiende bemonsteringsstrategie en selectie van het meest geschikte materiaal is dan ook van het grootste belang (zie <a href="04_C14_onderzoeksvragen.html">hoofdstuk 4</a>).</p>
+<div id="fig-normaalverdeling" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-normaalverdeling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_07.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figuur&nbsp;2.7: De normaalverdeling met karakteristieke parameters, µ = het gemiddelde en s = de standaardafwijking."><img src="./figuren/figuur_07.png" class="img-fluid figure-img" style="width:80.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-normaalverdeling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;2.7: De normaalverdeling met karakteristieke parameters, <em>µ</em> = het gemiddelde en <em>s</em> = de standaardafwijking.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="isotopenfractionatie" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="isotopenfractionatie"><span class="header-section-number">2.7</span> Isotopenfractionatie</h2>
+<p>Meet men de verhouding van koolstofisotopen in de atmosfeer (<span class="math inline">\(\mathrm{CO_2}\)</span>) en in planten, dan blijken er in planten verhoudingsgewijs minder zwaardere isotopen (<span class="math inline">\(\mathrm{^{13}C}\)</span> en <span class="math inline">\(\mathrm{^{14}C}\)</span>) aanwezig zijn. Er worden dus iets meer lichte isotopen dan zware isotopen opgenomen tijdens de fotosynthese. Daardoor zal in nieuw gevormd plantenmateriaal een kleiner aandeel aan <span class="math inline">\(\mathrm{^{14}C}\)</span> te vinden zijn in vergelijking met de atmosfeer waaruit de koolstof, onder de vorm van <span class="math inline">\(\mathrm{CO}_2\)</span>, werd gehaald. Er treedt dus een kleine verschuiving op in de onderlinge verhouding van de lichtere <span class="math inline">\(\mathrm{^{12}C}\)</span> t.o.v. de zwaardere isotopen <span class="math inline">\(\mathrm{^{13}C}\)</span> en <span class="math inline">\(\mathrm{^{14}C}\)</span>. Dit fenomeen wordt omschreven als isotopenfractionatie.</p>
+<p>Fractionatie komt voor op elk niveau in de voedselketen (de zogenaamde trofische niveaus). Planten worden gegeten door dier en mens. Tijdens de spijsvertering wordt het plantenmateriaal afgebroken tot kleinere componenten die op hun beurt, via complexe biochemische processen, weer de bouwstenen vormen voor nieuwe, nu dierlijke of menselijke weefsels. Bij deze biochemische reacties treedt opnieuw isotopenfractionatie op, maar nu in de andere richting dan bij de fotosynthese. De zwaardere isotopen zijn deze keer in het voordeel. Deze processen worden per trofisch niveau herhaald en zorgen ervoor dat hoe hoger men zich in de voedselketen bevindt, hoe groter de aanrijking is met zwaardere koolstofisotopen ten opzichte van het plantenmateriaal onderaan de voedselketen. Een toppredator, die kleinere carnivoren eet, die op hun beurt kleine dieren verorberen welke hun voeding uit planten halen, zal verhoudingsgewijs meer zware koolstofisotopen in zich dragen dan een dier onderaan de voedselketen. Aangezien er door dit proces van fractionatie meer <span class="math inline">\(\mathrm{^{14}C}\)</span> in een organisme zal ‘ingebouwd’ worden, leidt dit tot een schijnbare ‘verjonging’ in radiokoolstofjaren van het organisme ten opzichte van de verorberde prooien.</p>
+<p>De fractionatie wordt bepaald door de verhouding <span class="math inline">\(\mathrm{^{13}C}/\mathrm{^{12}C}\)</span> te meten t.o.v. een standaard, en wordt uitgedrukt als (<span class="math inline">\(\delta \mathrm{^{13}C}\)</span>, uitgedrukt in promille, ‰). Het is nu zo dat deze waarde steeds de helft bedraagt van de fractionatie van <span class="math inline">\(\mathrm{^{14}C}/\mathrm{^{12}C}\)</span>, wat betekent dat als de (<span class="math inline">\(\delta \mathrm{^{13}C}\)</span> met een bepaalde waarde verschoven is, de fractionatie van <span class="math inline">\(\mathrm{^{14}C}/\mathrm{^{12}C}\)</span> dat met een dubbele waarde zal gedaan hebben. Het meten van de <span class="math inline">\(\delta \mathrm{^{13}C}\)</span> laat op die manier toe voor de <span class="math inline">\(\mathrm{^{14}C}\)</span>-metingen een correctie voor de fractionatie uit te voeren. Voor de atmosferische <span class="math inline">\(\mathrm{CO_2}\)</span> is de waarde voor <span class="math inline">\(\delta \mathrm{^{13}C}\)</span> gelijk aan -8‰ (dus een lagere verhouding dan de algemene standaard, die als nulpunt dient). Bij planten kunnen er drie grote groepen onderscheiden worden. De meest voorkomende planten in West Europa volgen een gelijkaardig biochemisch proces tijdens de fotosynthese (ze worden C-3 planten genoemd) en hebben daardoor ook gelijkaardige <span class="math inline">\(\delta \mathrm{^{13}C}\)</span>-waarden van ongeveer -23‰. Voor hout en houtskool is de isotopenfractionatie t.o.v. de internationale standaard gelijk aan -25‰. De zogenaamde C-4 planten (zoals maaïs, grassen en gierst, die door een ‘alternatieve’ fotosynthese beter droogte kunnen weerstaan) nemen het meest efficiënt de zwaardere isotopen op, wat resulteert in een minder negatieve <span class="math inline">\(\delta \mathrm{^{13}C}\)</span> van -10‰. Indien er geen correctie wordt uitgevoerd om de hierboven beschreven processen te compenseren, kan er een afwijking tot 200 jaar in de radiokoolstofouderdom sluipen.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Een dier dat hoog in de voedselketen staat, zal verhoudingsgewijs meer zware isotopen - en dus ook <span class="math inline">\(\mathrm{^{14}C}\)</span> - in zich dragen dan een dier onderaan de voedselketen.</p>
+</div>
+</div>
+</div>
+<p>Het radiokoolstoflaboratorium rapporteert steeds de radiokoolstofouderdom rekening houdend met de isotopenfractionatie. We spreken dan over een conventionele radiokoolstofdatering. Het is steeds deze ouderdomsbepaling die moet gekalibreerd worden (zie <a href="03_C14_kalibratie.html">hoofdstuk 3</a>) om de radiokoolstofouderdom om te zetten in werkelijke kalenderjaren.</p>
+</section>
+<section id="aquatische-systemen" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="aquatische-systemen"><span class="header-section-number">2.8</span> Aquatische systemen</h2>
+<p>Alles wat hierboven beschreven staat, geldt voor terrestrische systemen, elke leefomgeving op het land dus. Voor aquatische systemen (oceanen, zeeën, grote meren, rivieren) is er een belangrijke nuance. Het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> is in grote watervolumes immers beduidend lager dan in terrestrische systemen. Het relatieve aandeel van radioactieve koolstof die door inspoeling in grote waterbekkens terechtkomt is niet erg groot is. De voornaamste koolstofbron is te situeren aan het wateroppervlak, waar <span class="math inline">\(\mathrm{CO_2}\)</span> met de atmosfeer wordt uitgewisseld. Ook hier treedt fractionatie op, waarna een traag proces start waarbij de opgenomen koolstof zich mengt in de diepere lagen van de oceaan. Die diepere waterlagen hebben dus weinig rechtstreeks contact met de atmosfeer, waardoor dit water schijnbaar ouder is dan het bovenliggende oppervlaktewater en daardoor ook een andere verhouding aan koolstofisotopen heeft. Aangezien water uit de diepzee niet of nauwelijks wordt ‘aangevuld’ met recente koolstof uit de atmosfeer en (in het geval van <span class="math inline">\(\mathrm{^{14}C}\)</span>) het radioactieve verval gewoon doorgaat, zijn er verhoudingsgewijs minder zwaardere koolstofisotopen aanwezig dan in de atmosfeer.</p>
+<p>Hetzelfde geldt voor diepere zoetwatermassa’s zoals meren. Dit lagere <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte in aquatische systemen wordt het reservoireffect genoemd <span class="citation" data-cites="alves_worldwide_2018">(<a href="999_14C_bibliografie.html#ref-alves_worldwide_2018" role="doc-biblioref">Alves <em>e.a.</em> 2018</a>)</span>. Organismen die in een aquatische biosfeer leven zullen daardoor vanaf het begin van de voedselketen ook een andere verhouding aan <span class="math inline">\(\mathrm{^{14}C/{^{12}C}}\)</span> opnemen tijdens hun groei. Het komt er op neer dat de oceanen - en bijgevolg de levende wezens die er in leven en de opgeloste koolstof assimileren - een schijnbaar oudere leeftijd hebben t.o.v. de atmosfeer (zie 6.2). In het reservoir van de Noordzee ligt het <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte zodanig laag dat een vandaag gevangen vis schijnbaar al ca. 400 jaar dood is. Toch blijft een radiokoolstofdatering voor aquatisch materiaal - zowel planten als dieren - mogelijk. Daarvoor wordt bij het omrekenen van de conventionele radiokoolstofouderdom naar kalenderjaren (= kalibratie, zie <a href="03_C14_kalibratie.html">hoofdstuk 3</a>) voor materiaal uit aquatische systemen - of dieren die hun voedsel uitsluitend uit de zee halen - een aangepaste kalibratiecurve gebruikt.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Het lagere <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte in oceanen, meren en rivieren wordt het reservoireffect genoemd.</p>
+</div>
+</div>
+</div>
+<p>Ook het startpunt om de fractionatie doorheen de voedselketen in rekening te brengen, is lichtjes anders. In grote meren, zeeën en oceanen is het in het water opgeloste <span class="math inline">\(\mathrm{CO_2}\)</span> initieel al minder negatief in zijn <span class="math inline">\(\delta \mathrm{^{13}C}\)</span> waarde in vergelijking met wat op het land het geval is (door fractionatie bij de uitwisseling van <span class="math inline">\(\mathrm{CO_2}\)</span> tussen atmosfeer en wateroppervlak). Dat vertaalt zich dan ook doorheen de aquatische voedselketen. Schelp- en schaaldieren - die zich onderaan de voedselketen bevinden - hebben <span class="math inline">\(\delta \mathrm{^{13}C}\)</span> waarden van slechts -14‰ tot -12‰, terwijl dit bij het schelpenmateriaal zelf gemiddeld 0‰ bedraagt (schelpen worden grotendeels opgebouwd met in het water opgeloste koolstofverbindingen). Bij vissen, en zeker bij vissen die kleinere vissen eten, ligt dit wat hoger (minder negatief). Visetende zoogdieren zoals zeehonden staan helemaal bovenaan deze voedselketen en hebben daardoor de hoogste <span class="math inline">\(\delta \mathrm{^{13}C}\)</span> waarden. Het summum is echter een landdier dat andere visetende zoogdieren eet: de ijsbeer. Waterplanten die <span class="math inline">\(\mathrm{CO_2}\)</span> (gedeeltelijk) uit het water halen (met bladeren onder de waterspiegel) hebben sterk variabele <span class="math inline">\(\mathrm{^{13}C}\)</span>-waarden die zowel minder negatief kunnen zijn dan landplanten tot in tegendeel extreem negatief. Wanneer resten van aquatische organismen gedateerd worden, wordt de meting van de verhouding <span class="math inline">\(\mathrm{^{14}C/{^{12}C}}\)</span> opnieuw gecorrigeerd via de verhouding <span class="math inline">\(\mathrm{^{13}C/{^{12}C}}\)</span>, en wordt zo een conventionele radiokoolstofouderdom berekend.</p>
+</section>
+<section id="voedsel-en-stabiele-isotopen" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="voedsel-en-stabiele-isotopen"><span class="header-section-number">2.9</span> Voedsel en stabiele isotopen</h2>
+<p>Zoals hierboven beschreven, speelt isotopenfractionatie zich af in elk organisme en tussen elk (trofisch) niveau van de voedselketen. Dieren die planten eten (herbivoren) hebben een meer negatieve <span class="math inline">\(\mathrm{^{13}C/{^{12}C}}\)</span> verhouding in hun lichaam dan vleeseters (carnivoren). Herbivoren hebben m.a.w. relatief minder zware koolstofisotopen in hun weefsels opgenomen dan carnivoren. Omnivoren (alleseters) zitten daar tussenin.</p>
+<p>Ook bij stikstof (chemisch element <span class="math inline">\(\mathrm{N}\)</span>) treden er parallelle processen op. Stikstof is een veel voorkomend element dat aanwezig is in de lucht en de bodem, en geassimileerd wordt door alle levende wezens. Het kent eveneens een aantal isotopen: naast <span class="math inline">\(\mathrm{^{14}N}\)</span> komt ook de stabiele <span class="math inline">\(\mathrm{^{15}N}\)</span>-isotoop van nature voor. De verhouding van <span class="math inline">\(\mathrm{^{15}N/{^{14}N}}\)</span> ten opzichte van een standaard wordt opnieuw uitgedrukt als <span class="math inline">\(\delta \mathrm{^{15}N}\)</span>. Naarmate men zich hoger in de voedselpiramide bevindt, zal men door fractionatie bij de processen van de stofwisseling hogere waarden van deze verhouding meten, dit zowel bij dieren die hun voeding op het land of in zee vinden (<a href="#fig-fractionatie" class="quarto-xref">fig.&nbsp;<span>2.8</span></a>).</p>
+<div id="fig-fractionatie" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fractionatie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_08.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figuur&nbsp;2.8: Sterk vereenvoudigde, schematische voorstelling van het effect van isotopenfractionatie voor koolstof en stikstof gemeten in botmateriaal van dieren met een verschillend dieet en plaats in de voedselketen (naar Müldner 2009)."><img src="./figuren/figuur_08.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fractionatie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;2.8: Sterk vereenvoudigde, schematische voorstelling van het effect van isotopenfractionatie voor koolstof en stikstof gemeten in botmateriaal van dieren met een verschillend dieet en plaats in de voedselketen (naar Müldner 2009).
+</figcaption>
+</figure>
+</div>
+<p>Bij archeologisch onderzoek komt met regelmaat dierlijk en menselijk botmateriaal aan het licht. De organische component van beenderen, het eiwit collageen, leent zich goed voor de analyse van de isotopenverhouding van zowel koolstof als stikstof. De gecombineerde interpretatie van beide elementen kan zo een goed idee geven over het dieet van een dier of mens. De isotopenverhoudingen van koolstof en stikstof in botmateriaal leren dus in welk segment van de voedselketen een dier of zelfs een bepaalde persoon thuishoorde. Dit gegeven zal van belang blijken bij de interpretatie van radiokoolstofdateringen (zie 6.3).</p>
+<p>Het klimaat heeft echter ook een belangrijke invloed op de isotopenverhoudingen van zowel koolstof als stikstof. Zo is in gebieden met een hogere gemiddelde temperatuur de verhouding <span class="math inline">\(\mathrm{^{13}C/{^{12}C}}\)</span> in plantenmateriaal iets minder negatief in vergelijking met onze regio. De verhouding tussen <span class="math inline">\(\mathrm{^{15}N}\)</span>- en <span class="math inline">\(\mathrm{^{14}N}\)</span>-stikstofisotopen zal in droge, warme regio’s hoger liggen in vergelijking met Noordwest-Europa <span class="citation" data-cites="amundson_global_2003">(<a href="999_14C_bibliografie.html#ref-amundson_global_2003" role="doc-biblioref">Amundson <em>e.a.</em> 2003</a>)</span>. Het terrestrisch model in figuur <a href="#fig-fractionatie" class="quarto-xref"><span>2.8</span></a> is dus enkel geldig voor onze regio. In organisch materiaal uit Mediterraan gebied of de Siberische graslanden liggen de isotopenverhoudingen van koolstof en stikstof iets hoger of lager, waardoor het isotopenmodel voor die regio’s in blok verschuift. Deze vaststelling kan gebruikt worden binnen het erfgoedonderzoek. Zo werd op basis van de koolstof-isotopenverhouding aangetoond dat hoornpitten van zogenaamde ‘longhorn’ runderen - gevonden tijdens het archeologisch onderzoek van een postmiddeleeuws leerlooierssite in het historische centrum van Brugge - wel degelijk afkomstig waren van lokaal grootgebrachte runderen, en niet van geïmporteerde dieren uit meer zuidelijke (en dus warmere) gebieden <span class="citation" data-cites="ervynck_tanning_2003">(<a href="999_14C_bibliografie.html#ref-ervynck_tanning_2003" role="doc-biblioref">Ervynck <em>e.a.</em> 2003</a>)</span>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-alves_worldwide_2018" class="csl-entry" role="listitem">
+Alves E.Q., Macario K., Ascough P., Bronk Ramsey C., 2018. The worldwide marine radiocarbon reservoir effect: definitions, mechanisms, and prospects. Reviews of Geophysics 56, 278–305. <a href="https://doi.org/10.1002/2017RG000588">https://doi.org/10.1002/2017RG000588</a>
+</div>
+<div id="ref-amundson_global_2003" class="csl-entry" role="listitem">
+Amundson R., Austin A.T., Schuur E.a.G., Yoo K., Matzek V., Kendall C., Uebersax A., Brenner D., Baisden W.T., 2003. Global patterns of the isotopic composition of soil and plant nitrogen. Global Biogeochemical Cycles 17, 1–10. <a href="https://doi.org/10.1029/2002GB001903">https://doi.org/10.1029/2002GB001903</a>
+</div>
+<div id="ref-arnold_age_1949" class="csl-entry" role="listitem">
+Arnold J.R., Libby W.F., 1949. Age determinations by radiocarbon content: checks with samples of known age. Science 110, 678–680. <a href="https://doi.org/10.1126/science.110.2869.678">https://doi.org/10.1126/science.110.2869.678</a>
+</div>
+<div id="ref-ervynck_tanning_2003" class="csl-entry" role="listitem">
+Ervynck A., Hillewaert B., Maes A., Van Strydonck M., 2003. Tanning and horn-working at late- and post-medieval <span>Brugge</span>: <span>The</span> organic evidence, in: The environmental archaeology of industry, Symposia of the <span>Association</span> for <span>Environmental</span> <span>Archaeology</span>. Oxbow Books, Oxford, pp. 60–70.
+</div>
+<div id="ref-hajdas_preparation_2017" class="csl-entry" role="listitem">
+Hajdas I., Lindroos A., Heinemeier J., Ringbom Å., Marzaioli F., Terrasi F., Passariello I., Capano M., Artioli G., Addis A., Secco M., Michalska D., Czernik J., Goslar T., Hayen R., Van Strydonck M., Fontaine L., Boudin M., Maspero F., Panzeri L., Galli A., Urbanová P., Guibert P., 2017. Preparation and dating of mortar samples – mortar dating inter-comparison study (modis). Radiocarbon 59, 1845–1858. <a href="https://doi.org/10.1017/RDC.2017.112">https://doi.org/10.1017/RDC.2017.112</a>
+</div>
+<div id="ref-stuiver_reporting_1977" class="csl-entry" role="listitem">
+Stuiver M., Polach H.A., 1977. Reporting of <span>C</span>-14 <span>Data</span> - <span>Discussion</span>. Radiocarbon 19, 355–363. <a href="https://doi.org/10.1017/S0033822200003672">https://doi.org/10.1017/S0033822200003672</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Gekopieerd!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Gekopieerd!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/publicaties\.onroerenderfgoed\.be\/HAOE-21-Radiokoolstof\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./01_C14_intro.html" class="pagination-link" aria-label="Inleiding">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inleiding</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./03_C14_kalibratie.html" class="pagination-link" aria-label="Kalibratie">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kalibratie</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/02_C14_principes.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

@@ -6,12 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kristof Haneca">
-<meta name="author" content="Anton Ervynck">
-<meta name="author" content="Mark Van Strydonck">
-<meta name="dcterms.date" content="2024-09-02">
 
-<title>\mathrm{^{14}C:} dateren met radiokoolstof</title>
+<title>$\mathrm{^{14}C:}$ dateren met radiokoolstof – 7&nbsp; Bayesiaanse analyse</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -34,7 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./00_C14_wijzigingen.html" rel="next">
+<link href="./08_C14_OxCal.html" rel="next">
+<link href="./06_C14_rapporteren.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -124,8 +141,8 @@ window.Quarto = {
 };
 </script>
 
-<meta name="twitter:title" content="\(\mathrm{^{14}C:}\) dateren met radiokoolstof">
-<meta name="twitter:description" content="Handleiding Onroerend Erfgoed">
+<meta name="twitter:title" content="\(\mathrm{^{14}C:}\) dateren met radiokoolstof - 7&nbsp; Bayesiaanse analyse">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof//figuren/haoe021-001_cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -139,7 +156,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalknavigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Woord vooraf</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_C14_intro.html">Handleiding</a></li><li class="breadcrumb-item"><a href="./07_C14_modelleren.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bayesiaanse analyse</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalknavigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Zoeken" onclick="window.quartoOpenSearch();">
@@ -151,48 +168,15 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title"><span class="math inline">\(\mathrm{^{14}C:}\)</span> dateren met radiokoolstof</h1>
-            <p class="subtitle lead">Handleiding Onroerend Erfgoed</p>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_C14_intro.html">Handleiding</a></li><li class="breadcrumb-item"><a href="./07_C14_modelleren.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bayesiaanse analyse</span></a></li></ol></nav>
+      <h1 class="title"><span id="modelleren" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bayesiaanse analyse</span></span></h1>
                       </div>
   </div>
     
-  <div class="quarto-title-meta-author">
-    <div class="quarto-title-meta-heading">auteurs</div>
-    <div class="quarto-title-meta-heading">Affiliatie</div>
-    
-      <div class="quarto-title-meta-contents">
-      <p class="author">Kristof Haneca <a href="https://orcid.org/0000-0002-7719-8305" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              agentschap Onroerend Erfgoed
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Anton Ervynck <a href="https://orcid.org/0000-0002-2016-8041" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              agentschap Onroerend Erfgoed
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Mark Van Strydonck <a href="https://orcid.org/0000-0002-9074-4526" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-        </div>
-    </div>
-
+  
   <div class="quarto-title-meta">
 
-        
-      <div>
-      <div class="quarto-title-meta-heading">laatste update</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">2 september 2024</p>
-      </div>
-    </div>
+      
     
       
     </div>
@@ -242,7 +226,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Woord vooraf</span></a>
   </div>
 </li>
@@ -299,7 +283,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07_C14_modelleren.html" class="sidebar-item-text sidebar-link">
+  <a href="./07_C14_modelleren.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bayesiaanse analyse</span></span></a>
   </div>
 </li>
@@ -366,11 +350,15 @@ window.Quarto = {
     <h2 id="toc-title">Op deze pagina</h2>
    
   <ul>
-  <li><a href="#woord-vooraf" id="toc-woord-vooraf" class="nav-link active" data-scroll-target="#woord-vooraf">Woord vooraf</a></li>
-  <li><a href="#citeren" id="toc-citeren" class="nav-link" data-scroll-target="#citeren">Citeren</a></li>
-  <li><a href="#de-auteurs" id="toc-de-auteurs" class="nav-link" data-scroll-target="#de-auteurs">De auteurs</a></li>
+  <li><a href="#modellering" id="toc-modellering" class="nav-link active" data-scroll-target="#modellering"><span class="header-section-number">7.1</span> Modellering</a></li>
+  <li><a href="#gelijktijdigheid" id="toc-gelijktijdigheid" class="nav-link" data-scroll-target="#gelijktijdigheid"><span class="header-section-number">7.2</span> Gelijktijdigheid</a></li>
+  <li><a href="#sequentie-en-fasering" id="toc-sequentie-en-fasering" class="nav-link" data-scroll-target="#sequentie-en-fasering"><span class="header-section-number">7.3</span> Sequenties en fasering</a></li>
+  <li><a href="#historische-gebeurtenissen-en-gekende-ijkpunten" id="toc-historische-gebeurtenissen-en-gekende-ijkpunten" class="nav-link" data-scroll-target="#historische-gebeurtenissen-en-gekende-ijkpunten"><span class="header-section-number">7.4</span> Historische gebeurtenissen en gekende ijkpunten</a></li>
+  <li><a href="#gesommeerde-probabiliteiten" id="toc-gesommeerde-probabiliteiten" class="nav-link" data-scroll-target="#gesommeerde-probabiliteiten"><span class="header-section-number">7.5</span> Gesommeerde probabiliteiten</a></li>
+  <li><a href="#wiggle-matching" id="toc-wiggle-matching" class="nav-link" data-scroll-target="#wiggle-matching"><span class="header-section-number">7.6</span> <em>Wiggle matching</em></a></li>
+  <li><a href="#valkuilen" id="toc-valkuilen" class="nav-link" data-scroll-target="#valkuilen"><span class="header-section-number">7.7</span> Valkuilen</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/07_C14_modelleren.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -379,27 +367,150 @@ window.Quarto = {
 
 
 
-<p><a href="figuren/haoe021-001_cover.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="figuren/haoe021-001_cover.jpg" title="$\mathrm{^{14}C:}$ dateren met radiokoolstof" class="quarto-cover-image img-fluid"></a></p>
-<section id="woord-vooraf" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="woord-vooraf">Woord vooraf</h2>
-<p>Welkom bij de online versie van <strong><sup>14</sup>C: dateren met radiokoolstof</strong>. Deze handleiding werd in 2019 gepubliceerd door het agentschap Onroerend Erfgoed en is als pdf te downloaden op de <a href="https://doi.org/10.55465/ESYP8347"><strong>Open Archives Repositiry (OAR)</strong></a>.</p>
-<p>Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar hier kan je steeds de meest actuele versie raadplegen.</p>
+<section id="modellering" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="modellering"><span class="header-section-number">7.1</span> Modellering</h2>
+<p>De kalibratie van een radiokoolstofdatering is een heel rechtlijnig proces: het levert een tijdsinterval op waarbinnen - met een bepaalde waarschijnlijkheid - de werkelijke ouderdom van het gedateerde materiaal te situeren is. Het wordt al gauw complexer indien van eenzelfde activiteit of fase meerdere dateringen beschikbaar zijn, of wanneer elkaar opvolgende gebeurtenissen zijn gedateerd (met één of meerdere dateringen). Weten we bovendien dat in het laatste geval bepaalde gedateerde stalen onderling ook stratigrafisch in verband staan, dan kan deze kennis aangewend worden om de dateringen te verfijnen. Dit vereist evenwel statistische modellering en complexe berekeningen. De uitwerking van dergelijke vraagstellingen baseert zich op een theorema geformuleerd door de 18de-eeuwse wiskundige Thomas Bayes, dat zich op verbluffend eenvoudige wijze laat formuleren (zie <a href="#fig-bayes" class="quarto-xref">fig.&nbsp;<span>7.1</span></a>). De daaruit afgeleide Bayesiaanse statistiek gaat er van uit dat we op basis van nieuw opgedane ervaringen of analyses (in dit geval radiokoolstofdateringen) onze bestaande kennis over het onderzochte erfgoed (gegevens uit het archeologisch of bouwhistorisch onderzoek) evalueren en zodoende tot nieuwe kennis komen (een meer verfijnde datering en/of fasering). Met deze nieuw verworven kennis kan daarna hetzelfde proces opnieuw doorlopen worden, om onze interpretaties verder te verfijnen.</p>
+<div id="fig-bayes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bayes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_23.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figuur&nbsp;7.1: De stelling van Bayes, ‘vertaald’ naar het erfgoedonderzoek."><img src="./figuren/figuur_23.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bayes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;7.1: De stelling van Bayes, ‘vertaald’ naar het erfgoedonderzoek.
+</figcaption>
+</figure>
+</div>
+<p>De eerste component van dit model (de <em>standardised likelihoods</em>) omvat de dateringen. Dit zijn de uitgevoerde radiokoolstofmetingen op stalen die relevant zijn voor de vraagstelling. Maar ook andere natuurwetenschappelijke dateringen (dendrochronologische data, luminiscentie of archeomagnetische dateringen, …), kunnen naast dateringen op basis van muntvondsten of historisch gedocumenteerde gebeurtenissen in overweging genomen worden. In de tweede component van het Bayesiaans model (de <em>prior beliefs</em>) wordt onze huidige kennis over de relevante archeologische of bouwkundige contexten formeel vastgelegd in eenvoudige wiskundige formuleringen. Zo kan vanuit stratigrafisch oogpunt soms een relatieve chronologie opgebouwd worden, als we er bijvoorbeeld vanuit kunnen gaan dat materiaal uit dieper gelegen archeologische lagen ouder is dan het materiaal uit bovenliggende lagen. Het onderste, gedateerde staal is dan ‘ouder dan’ het staal uit een bovenliggende laag. In andere gevallen kan soms geen chronologische opeenvolging vastgesteld worden, maar wel aangenomen worden dat verschillende stalen of vondsten tot eenzelfde organisme of individu, eenzelfde bouw- of bewoningsfase, of tot eenzelfde typologische groep behoren. Ook deze gerelateerdheid is een parameter die kan meegenomen worden in het Bayesiaanse model.</p>
+<p>Binnen het archeologisch bodemonderzoek worden de onderlinge verbanden (jonger dan, ouder dan, gelijktijdig met, zelfde fase, …) tussen sporen en eventuele vondstenconcentraties op een archeologische site visueel voorgesteld in een <strong>Harris-matrix</strong> <span class="citation" data-cites="harris_principles_1989">(<a href="999_14C_bibliografie.html#ref-harris_principles_1989" role="doc-biblioref">Harris 1989</a>)</span>. Het is exact deze informatie die uiterst relevant is om samen met de uitgevoerde radiokoolstofdateringen te evalueren in een Bayesiaans model.</p>
+<p>Uiteindelijk wordt het Bayesiaans model gevoed met de beschikbare relevante kennis en resulteert dit in een meer verfijnde interpretatie dan mogelijk was enkel op basis van de individuele componenten. De kalibratie van de individuele radiokoolstofdateringen wordt meer verfijnd door rekening te houden met hun onderlinge verbanden. Indien de in het model opgenomen kennis relevant is voor de gemodelleerde onderzoeksvraag, zal dit uiteindelijk resulteren in gekalibreerde dateringen met een nauwer interval.</p>
 </section>
-<section id="citeren" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="citeren">Citeren</h2>
-<p>Gelieve te citeren als: <br></p>
-<p>Haneca K., Ervynck A., Van Strydonck M. (2024). <sup>14</sup>C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed (v 1.2.4), Brussel. <a href="https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/index.html" class="uri">https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/index.html</a> (geraadpleegd op 02-09-2024)</p>
-<p>Oorspronkelijke gepubliceerd als: <br></p>
-<p>Haneca K., Ervynck A,, Van Strydonck M. (2019). <sup>14</sup>C: dateren met radiokoolstof, Handleiding agentschap Onroerend Erfgoed 21, Brussel. <a href="https://doi.org/10.55465/ESYP8347" class="uri">https://doi.org/10.55465/ESYP8347</a>.</p>
-<p><br></p>
-<p><a href="./figuren/cover.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./figuren/cover.png" class="img-fluid" style="width:100.0%"></a></p>
+<section id="gelijktijdigheid" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="gelijktijdigheid"><span class="header-section-number">7.2</span> Gelijktijdigheid</h2>
+<p>Indien er voor een zelfde object of gebeurtenis meerdere radiokoolstofdateringen beschikbaar zijn, kunnen deze gecombineerd worden. Op deze manier tracht men de nauwkeurigheid op de datering te verhogen door meerdere metingen aan elkaar te toetsen. Het kan bijvoorbeeld interessant zijn als uit een graf zowel de kledij (textielresten), een stuk botmateriaal van een individu, alsook een stuk spinthout uit één van de planken van de doodskist zijn gedateerd. Indien we aannemen dat de kist en de kledij kort voor het overlijden van die persoon gemaakt zijn, kan de combinatie van al deze dateringen de sterfdatum beter benaderen dan de individuele dateringen. Andere voorbeelden zijn het combineren van de dateringen op meerdere dierlijke botfragmenten uit eenzelfde afvalcontext, of het uitvoeren van meerdere dateringen op eenzelfde mensenskelet.</p>
+<p>Indien de gedateerde stalen afkomstig zijn uit eenzelfde individueel organisme of object - m.a.w. afkomstig van hetzelfde skelet, houten voorwerp, …) - worden de radiokoolstofdateringen gecombineerd voorafgaand aan de kalibratie (functie <code>R_Combine()</code> in OxCal; zie <a href="08_C14_OxCal.html#oxcal_rcombine">hoofdstuk 8</a> en <a href="#fig-rcombine" class="quarto-xref">fig.&nbsp;<span>7.2</span></a>). Is er echter niet voldaan aan deze voorwaarde en kunnen we enkel veronderstellen dat de datering van meerdere objecten betrekking heeft op eenzelfde gebeurtenis of activiteit, dan worden de radiokoolstofdateringen pas gecombineerd na kalibratie (functie <code>Combine()</code> in OxCal; zie <a href="08_C14_OxCal.html#oxcal_combine">hoofdstuk 8</a>). Bij het uitvoeren van dergelijke combinaties wordt ook telkens een statistische test toegepast om na te gaan of de gecombineerde dateringen weldegelijk eenzelfde gebeurtenis kunnen vertegenwoordigen.</p>
+<div id="fig-rcombine" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rcombine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_24.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figuur&nbsp;7.2: Fictief voorbeeld waarbij twee dateringen voorafgaand aan de kalibratie worden gecombineerd."><img src="./figuren/figuur_24.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rcombine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;7.2: Fictief voorbeeld waarbij twee dateringen voorafgaand aan de kalibratie worden gecombineerd.
+</figcaption>
+</figure>
+</div>
+<p>De vraagstelling kan natuurlijk ook omgedraaid worden: hoe waarschijnlijk is het dat twee dateringen wel of niet eenzelfde gebeurtenis vertegenwoordigen? Om op die vraag te antwoorden kan er een waarschijnlijkheidsdistributie worden opgebouwd voor het veronderstelde chronologisch verschil. Dit geeft dan ook meteen een beeld van het mogelijke chronologische verschil in jaren tussen beide dateringen (functie <code>Difference()</code> in OxCal; zie <a href="08_C14_OxCal.html#oxcal_difference">hoofdstuk 8</a>). Aangezien radiokoolstofdateringen dikwijls een grillig en breed tijdsinterval hebben na kalibratie, is het niet altijd eenvoudig om (on)gelijktijdigheid vast te stellen indien er slechts een (kleine) overlap is tussen twee dateringen (zie voorbeeld in <a href="#fig-difference" class="quarto-xref">fig.&nbsp;<span>7.3</span></a>).</p>
+<div id="fig-difference" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-difference-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_25.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figuur&nbsp;7.3: Waarschijnlijkheidsdistributie van het verschil tussen telkens twee radiokoolstofdateringen (A en B, C en D). Tussen de dateringen A en B is er statistisch gezien geen duidelijk verschil: ze kunnen ook overlappen (interval omvat 0 jaar en meer, met 95,4% probabiliteit). Tussen datering C en D is er een chronologisch verschil: datering C is tussen de 26 en 215 jaar ouder dan D, met 95,4% probabiliteit."><img src="./figuren/figuur_25.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-difference-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;7.3: Waarschijnlijkheidsdistributie van het verschil tussen telkens twee radiokoolstofdateringen (A en B, C en D). Tussen de dateringen A en B is er statistisch gezien geen duidelijk verschil: ze kunnen ook overlappen (interval omvat 0 jaar en meer, met 95,4% probabiliteit). Tussen datering C en D is er een chronologisch verschil: datering C is tussen de 26 en 215 jaar ouder dan D, met 95,4% probabiliteit.
+</figcaption>
+</figure>
+</div>
 </section>
-<section id="de-auteurs" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="de-auteurs">De auteurs</h2>
-<p>Dr.&nbsp;Kristof Haneca en dr. Anton Ervynck zijn beide erfgoedonderzoekers aan het <a href="https://www.onroerenderfgoed.be/">agentschap Onroerend Erfgoed</a>.<br>
-Mark Van Strydonck is het voormalig hoofd van het <a href="https://www.kikirpa.be/nl/wetenschappelijke-analyses/labo-koolstofdatering">Labo koolstofdatering</a> aan het <em>Koninklijk Instituut voor het Kunstpatrimonium (KIK/IRPA)</em> in Brussel.</p>
+<section id="sequentie-en-fasering" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="sequentie-en-fasering"><span class="header-section-number">7.3</span> Sequenties en fasering</h2>
+<p>Indien de onderlinge samenhang en opeenvolging van radiokoolstofdateringen gekend is, kan deze informatie bijdragen tot een nauwere datering van gebeurtenissen. Door een model op te bouwen, en dit via Bayesiaanse analyse statistisch uit te werken, kunnen verschillende fases en gebeurtenissen nauwkeuriger in de tijd te situeren zijn. Op basis van de individuele dateringen is dergelijke verfijning niet mogelijk. De twee meest voorkomende begrippen die hier van belang zijn, zijn fasen en sequenties:</p>
+<ul>
+<li><strong>Fase</strong>: verzameling van gebeurtenissen die samen een coherente, contextuele groep vormen, zonder informatie over de interne chronologische ordening (bv. dateringen uit eenzelfde archeologische laag).</li>
+<li><strong>Sequentie</strong>: verzameling van gebeurtenissen die samen een coherente, contextuele groep vormen waarbij de onderlinge chronologische volgorde gekend is (bv. dateringen uit een stratigrafische gelaagdheid).</li>
+</ul>
+<p>Binnen een fase is de chronologische verhouding tussen de gedateerde monsters niet gekend. Bij een sequentie is de opeenvolging van de verschillende dateringen wel van belang. Beide groeperingen kunnen door elkaar gebruikt worden. Zo kunnen er binnen een sequentie meerdere fasen aanwezig zijn, waarbij de fasen onderling in stratigrafisch verband te brengen zijn, maar er binnen de verschillende fasen geen chronologische ordening van de dateringen kan opgesteld worden. Door voor een reeks van dateringen de informatie rond hun sequentie (voorafgaand) in het model in te brengen, kan het dateringsinterval op de individuele gekalibreerde dateringen nauwer berekend worden. In onderstaand voorbeeld worden vier gedateerde stalen uit boven elkaar liggende archeologische lagen in een sequentie gemodelleerd. Na modellering zijn de mogelijke kalenderjaren voor elke datering terug te brengen tot een enger interval, doordat rekening is gehouden met de onderlinge samenhang van de individuele dateringen (<a href="#fig-sequentie" class="quarto-xref">fig.&nbsp;<span>7.4</span></a>).</p>
+<div id="fig-sequentie" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sequentie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_26.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figuur&nbsp;7.4: Een gemodelleerde sequentie van vier individuele dateringen die elkaar chronologisch opvolgen. De kalibratie van de individuele radiokoolstofdateringen (grijze verdeling) kan door rekening te houden met hun gekende chronologische volgorde, verfijnd worden (zwarte verdeling)."><img src="./figuren/figuur_26.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sequentie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;7.4: Een gemodelleerde sequentie van vier individuele dateringen die elkaar chronologisch opvolgen. De kalibratie van de individuele radiokoolstofdateringen (grijze verdeling) kan door rekening te houden met hun gekende chronologische volgorde, verfijnd worden (zwarte verdeling).
+</figcaption>
+</figure>
+</div>
+<p>Naast het verfijnen van de dateringen, kan een Bayesiaanse analyse ook een antwoord bieden op vragen die niet rechtstreeks uit de individuele dateringen kunnen afgeleid worden: zoals de duur van een bepaalde fase of het geschatte tijdstip van opgave van een bepaalde site. Deze berekeningen resulteren in een waarschijnlijkheidsverdeling waaruit - met een vooropgestelde probabiliteit - de duur of datering van de gebeurtenis kan worden afgeleid.</p>
+<p>De radiokoolstofdateringen die beschikbaar zijn voor een bepaalde sequentie of fase geven niet noodzakelijk een goede afbakening voor het begin en einde van die fase. Hoe minder gedateerde elementen uit het oudste deel van een bepaalde fase, of uit de vroegste fase van een sequentie, hoe minder waarschijnlijk het is dat de oudste datering effectief het oudste element is uit die fase, waardoor je minder zeker bent van de datering van de aanvang van die fase, en van de eventuele sequentie. Hetzelfde geldt - omgekeerd - voor het einde van een fase of een sequentie. OxCal tracht daaraan tegemoet te komen door, uitgaande van de veronderstelling dat de radiokoolstofdateringen uniform tussen begin en eindpunt verspreid liggen, een interval te berekenen waar binnen het werkelijke aanvangs- en eindpunt begrepen is. Dit moet in het model ingevoerd door grenzen - boundaries - te definiëren en zo de verschillende groepen duidelijk af te bakenen.</p>
+</section>
+<section id="historische-gebeurtenissen-en-gekende-ijkpunten" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="historische-gebeurtenissen-en-gekende-ijkpunten"><span class="header-section-number">7.4</span> Historische gebeurtenissen en gekende ijkpunten</h2>
+<p>Gekende historische gebeurtenissen, muntvondsten, of gedateerde documenten kunnen in bepaalde gevallen als ijkpunten gebruikt worden bij het dateren en interpreteren van archeologische vondsten of sporen of van bouwfases in historische gebouwen. De uitgevoerde radiokoolstofdateringen kunnen dan met zekerheid voor of na een bepaalde kalenderdatum gesitueerd worden. Aangezien gekalibreerde radiokoolstofdateringen vaak een ruim dateringsinterval opleveren, kan - indien dit interval een gekende historische datum omvat - deze een <em>terminus post</em> of <em>ante quem</em> voor een individuele radiokoolstofdatering vormen, of zelfs voor een sequentie van radiokoolstofdateringen.</p>
+<p>Een dendrochronologische datering kan op een gelijkaardige manier gekoppeld worden aan gerelateerde radiokoolstofdateringen. Indien een kapdatum exact werd bepaald, kan deze dendrochronologische datering een terminus vormen voor de gebeurtenis die men wil dateren (bv. een bouwfase). Een dendrochronologische analyse resulteert soms ook in ‘vroegst mogelijke kapdatum’ of dateringsinterval waar binnen de werkelijke kapdatum zich situeert. Ook deze dateringsinformatie kan opgenomen worden in een Bayesiaans model.</p>
+</section>
+<section id="gesommeerde-probabiliteiten" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="gesommeerde-probabiliteiten"><span class="header-section-number">7.5</span> Gesommeerde probabiliteiten</h2>
+<p>Indien uit een bepaalde context, periode of regio een ruim aantal radiokoolstofdateringen van een zelfde cultureel of natuurlijk fenomeen beschikbaar zijn, kan de som van hun probabiliteiten (waarschijnlijkheidsfuncties) meer duidelijkheid bieden over de chronologische spreiding, en het voorkomen van hiaten of piekmomenten in dit fenomeen doorheen de tijd. De gekalibreerde, individuele radiokoolstofdateringen worden bij elkaar opgeteld door de probabiliteit geassocieerd met elke datering per afzonderlijk kalenderjaar te sommeren.</p>
+<p>Uit kritische evaluaties van deze methode blijkt echter dat de gesommeerde probabiliteiten met de nodige voorzichtigheid moeten geïnterpreteerd worden <span class="citation" data-cites="contreras_summed_2014 steele_radiocarbon_2010 williams_use_2012">(<a href="999_14C_bibliografie.html#ref-contreras_summed_2014" role="doc-biblioref">Contreras en Meadows 2014</a>; <a href="999_14C_bibliografie.html#ref-steele_radiocarbon_2010" role="doc-biblioref">Steele 2010</a>; <a href="999_14C_bibliografie.html#ref-williams_use_2012" role="doc-biblioref">Williams 2012</a>)</span>. De vorm van de kalibratiecurve heeft immers een duidelijke invloed op het eindresultaat en uit de analyses blijkt dat er heel veel radiokoolstofdateringen nodig zijn om tot een stabiel resultaat te komen. De uiteindelijke waarschijnlijkheden (<em>probability density</em>) mogen ook niet als absolute waarden geïnterpreteerd worden. Meer geavanceerde statistische methoden, zoals <strong><em>kernel density estimates (KDE)</em></strong>, geven dikwijls een beter en meer betrouwbaar resultaat waarbij eerder de globale trend wordt benadrukt en de scherpe pieken en dalen, die eigen zijn aan gesommeerde probabiliteiten, worden uitgevlakt. Hierbij kan tevens rekening gehouden worden met een ongebalanceerde staalname uit verschillende sites of fasen <span class="citation" data-cites="bevan_rcarbon_2020 bronk_ramsey_methods_2017 capuzzo_cremation_2020">(<a href="999_14C_bibliografie.html#ref-bevan_rcarbon_2020" role="doc-biblioref">Bevan en Crema 2020</a>; <a href="999_14C_bibliografie.html#ref-bronk_ramsey_methods_2017" role="doc-biblioref">Bronk Ramsey 2017</a>; <a href="999_14C_bibliografie.html#ref-capuzzo_cremation_2020" role="doc-biblioref">Capuzzo <em>e.a.</em> 2020</a>)</span>.</p>
+<p>Toch geven gesommeerde probabiliteiten van een grote groep van radiokoolstofdateringen al een eerste (ruw) beeld van de evolutie van een bepaald fenomeen doorheen de tijd. Het voorkomen van hiaten kan op deze manier soms duidelijk gevisualiseerd worden (<a href="#fig-sum" class="quarto-xref">fig.&nbsp;<span>7.5</span></a>).</p>
+<p>Ook van objecten met gelijkaardige stilistische kenmerken - zoals bijvoorbeeld textiel - kan op deze manier de aanvangs- en bloeiperiode in beeld gebracht worden door de beschikbare radiokoolstofdateringen te sommeren en daaruit de meest waarschijnlijke chronologische afbakening af te leiden <span class="citation" data-cites="de_moor_radiocarbon_2011">(<a href="999_14C_bibliografie.html#ref-de_moor_radiocarbon_2011" role="doc-biblioref">De Moor <em>e.a.</em> 2011</a>)</span>.</p>
+<div id="fig-sum" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_27.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figuur&nbsp;7.5: Voorbeeld van een probabiliteitssom van 69 radiokoolstofdateringen op stukjes houtskool uit houtskoolmeilers."><img src="./figuren/figuur_27.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;7.5: Voorbeeld van een probabiliteitssom van 69 radiokoolstofdateringen op stukjes houtskool uit houtskoolmeilers.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="wiggle-matching" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="wiggle-matching"><span class="header-section-number">7.6</span> <em>Wiggle matching</em></h2>
+<p>Voor het dateren van houten structuren wordt doorgaans eerst aan een dendrochronologisch onderzoek gedacht. Niet alle dendrochronologische analyses leveren echter een datering op. In sommige gevallen laten de opgemeten groeiringpatronen zich niet inpassen in een referentiekalender of worden de stukken hout niet voor datering weerhouden omdat ze te weinig groeiringen hebben (wat de uitkomst van elke analyse onzeker of zelfs onbetrouwbaar maakt). Dan vormt een radiokoolstofdatering van bijvoorbeeld de jongste groeiring het beste alternatief. Dit zal, na kalibratie, echter doorgaans een breed dateringsinterval opleveren. Indien er toch een preciezere datering gewenst is, kan <em>wiggle-matching</em> overwogen worden. Dit is eigenlijk een bijzonder geval van Bayesiaanse modelering. De techniek levert een veel nauwkeuriger datering op dan een individuele <span class="math inline">\(\mathrm{^{14}C}\)</span>-datering. Zeker voor het dateren van historische houtconstructies kan deze techniek dus van groot nut zijn.</p>
+<p>Op een stuk hout worden dan, aan de hand van het groeiringpatroon, verschillende bemonsteringspunten vastgelegd, met een gekend interval (= aantal jaarringen) tussen de verschillende punten (<a href="#fig-wiggle-matching" class="quarto-xref">fig.&nbsp;<span>7.6</span></a>). Op elk van deze punten wordt een radiokoolstofanalyse uitgevoerd en de resultaten hiervan in een Bayesiaans model gebracht. De waarschijnlijkheidsdistributies van de individuele dateringen kunnen dan nauwer worden door de met absolute zekerheid gekende sequentie van oud naar jong en het exacte leeftijdsverschil tussen de dateringen in rekening te brengen.</p>
+<p><em>Wiggle-matching</em> biedt ook een uitkomst om houtsoorten te dateren waarvoor geen dendrochronologische kalenders beschikbaar zijn of waarbij de groei en de anatomie de toepassing van de techniek niet toelaten. In principe heeft de houtsoort geen belang zolang er maar jaarringen kunnen onderscheiden worden.</p>
+<div id="fig-wiggle-matching" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wiggle-matching-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_28.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figuur&nbsp;7.6: Wiggle-matching uitgevoerd op een plank van een waterputbekisting uit de late bronstijd (a). Vijf stalen waarop een radiokoolstofdatering werd uitgevoerd (b) worden in een wiskundig model aan elkaar verbonden door de tussenafstand, uitgedrukt in aantal jaarringen, in het model op te nemen (c). Het opgebouwde model laat toe om de veldatum van dit stuk hout veel preciezer te bepalen dan op basis van de individuele radiokoolstofdateringen mogelijk is."><img src="./figuren/figuur_28.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wiggle-matching-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;7.6: Wiggle-matching uitgevoerd op een plank van een waterputbekisting uit de late bronstijd (a). Vijf stalen waarop een radiokoolstofdatering werd uitgevoerd (b) worden in een wiskundig model aan elkaar verbonden door de tussenafstand, uitgedrukt in aantal jaarringen, in het model op te nemen (c). Het opgebouwde model laat toe om de veldatum van dit stuk hout veel preciezer te bepalen dan op basis van de individuele radiokoolstofdateringen mogelijk is.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="valkuilen" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="valkuilen"><span class="header-section-number">7.7</span> Valkuilen</h2>
+<p>Elk opgebouwd Bayesiaans model kan en moet uiteraard ook statistisch worden gevalideerd. Dit gebeurt aan de hand van statistische testen (<em>t</em>-test, <span class="math inline">\(\chi^2\)</span>-test) of door het berekenen van een <em>agreement index</em> (zie <a href="#oxcal-agreement-indexo">hoofdstuk 8</a> voor meer detail). Een model berekent namelijk steeds een resultaat, maar geeft zonder bijkomende validatie niet aan of dit ook betekenisvol is.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Een Bayesiaans model is maar zo sterk als de veronderstellingen waarmee het is opgebouwd.</p>
+</div>
+</div>
+</div>
+<p>Tot slot moet zeker nog worden opgemerkt dat de Bayesiaanse modellering van radiokoolstofdateringen staat of valt met de kwaliteit en betrouwbaarheid van de veronderstelde prior kennis (<a href="#fig-bayes" class="quarto-xref">fig.&nbsp;<span>7.1</span></a>). Wordt verkeerdelijk de datering van intrusief materiaal mee opgenomen in het model, dan loopt de initiële interpretatie van een sequentie fout. Worden de dateringen beïnvloed door een reservoir- of oud-hout-effect, dan zal de uitkomst van het model (de posterior beliefs) betekenisloos zijn. Een Bayesiaans model is maar zo sterk als de veronderstellingen waarmee het is opgebouwd. Tijdens het modelleren van radiokoolstofdateringen dringt zich steeds een kritische evaluatie op van de reeds opgedane, en als ‘waarheid’ veronderstelde, kennis.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bevan_rcarbon_2020" class="csl-entry" role="listitem">
+Bevan A., Crema E.R., 2020. rcarbon: <span>Methods</span> for calibrating and analysing radiocarbon dates. <a href="https://github.com/ahb108/rcarbon">https://github.com/ahb108/rcarbon</a>
+</div>
+<div id="ref-bronk_ramsey_methods_2017" class="csl-entry" role="listitem">
+Bronk Ramsey C., 2017. Methods for summarizing radiocarbon datasets. Radiocarbon 59, 1809–1833. <a href="https://doi.org/10.1017/RDC.2017.108">https://doi.org/10.1017/RDC.2017.108</a>
+</div>
+<div id="ref-capuzzo_cremation_2020" class="csl-entry" role="listitem">
+Capuzzo G., Snoeck C., Boudin M., Dalle S., Annaert R., Hlad M., Kontopoulos I., Sabaux C., Salesse K., Sengeløv A., Stamataki E., Veselka B., Warmenbol E., De Mulder G., Tys D., Vercauteren M., 2020. Cremation vs. inhumation: modeling cultural changes in funerary practices from the mesolithic to the middle ages in <span>Belgium</span> using kernel density analysis on <span class="math inline">\(^{\textrm{14}}\)</span><span>C</span> data. Radiocarbon 62, 1809–1832. <a href="https://doi.org/10.1017/RDC.2020.88">https://doi.org/10.1017/RDC.2020.88</a>
+</div>
+<div id="ref-contreras_summed_2014" class="csl-entry" role="listitem">
+Contreras D.A., Meadows J., 2014. Summed radiocarbon calibrations as a population proxy: a critical evaluation using a realistic simulation approach. Journal of Archaeological Science 52, 591–608. <a href="https://doi.org/10.1016/j.jas.2014.05.030">https://doi.org/10.1016/j.jas.2014.05.030</a>
+</div>
+<div id="ref-de_moor_radiocarbon_2011" class="csl-entry" role="listitem">
+De Moor A., Van Strydonck M., Boudin M., Bénazeth D., 2011. Radiocarbon dating of brocaded furnishing textiles and tunics from <span>Katoen</span> <span>Natie</span> and <span>The</span> <span>Musée</span> du <span>Louvre</span>, in: De Moor A., Fluck C. (Red.), Dress accessories of the 1st millennium <span>AD</span> from <span>Egypt</span>. Lannoo, Tielt, pp. 261–271.
+</div>
+<div id="ref-harris_principles_1989" class="csl-entry" role="listitem">
+Harris E.C., 1989. Principles of archaeological stratigraphy, 2de ed. Academic Press, London. <a href="http://harrismatrix.com/download/">http://harrismatrix.com/download/</a>
+</div>
+<div id="ref-steele_radiocarbon_2010" class="csl-entry" role="listitem">
+Steele J., 2010. Radiocarbon dates as data: quantitative strategies for estimating colonization front speeds and event densities. Journal of Archaeological Science 37, 2017–2030. <a href="https://doi.org/10.1016/j.jas.2010.03.007">https://doi.org/10.1016/j.jas.2010.03.007</a>
+</div>
+<div id="ref-williams_use_2012" class="csl-entry" role="listitem">
+Williams A.N., 2012. The use of summed radiocarbon probability distributions in archaeology: a review of methods. Journal of Archaeological Science 39, 578–589. <a href="https://doi.org/10.1016/j.jas.2011.07.014">https://doi.org/10.1016/j.jas.2011.07.014</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -974,15 +1085,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./06_C14_rapporteren.html" class="pagination-link" aria-label="Van rapport tot interpretatie">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Van rapport tot interpretatie</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./00_C14_wijzigingen.html" class="pagination-link" aria-label="Updates">
-        <span class="nav-page-text">Updates</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./08_C14_OxCal.html" class="pagination-link" aria-label="Handleiding OxCal">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Handleiding OxCal</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom"});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/07_C14_modelleren.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
