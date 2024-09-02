@@ -25,11 +25,11 @@ book:
   publisher: "agentschap Onroerend Erfgoed"
   date: today
   cover-image: figuren/haoe021-001_cover.jpg
-  sharing: [twitter, facebook, linkedin]
-  twitter-card:
-    image: "/figuren/haoe021-001_cover.jpg"
+  bread-crumbs: false
+  reader-mode: true
   repo-url: https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/
   repo-actions: [edit, issue]
+  repo-branch: master
   site-url: https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/
   chapters:
     - index.qmd
