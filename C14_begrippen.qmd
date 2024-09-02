@@ -1,0 +1,42 @@
+# Begrippenlijst {.unnumbered #begrippen}
+
+
+**AD**: Afkorting van _anno Domini_ (Lat., *in het jaar van de Heer*). Het kalenderjaar geteld vanaf het veronderstelde geboortejaar van Christus, volgens de christelijke Gregoriaanse jaartelling.
+
+**Bast**: dit weefsel wordt door het cambium naar de buitenzijde van de boom aangemaakt. Het staat in voor transport van voedingsstoffen en andere assimilaten, die door fotosynthese in de bladeren worden aangemaakt, naar de overige delen van een boom. Aan de buitenzijde van de bast vormt zich een **cambium** dat kurkweefsel aanmaakt (= de **schors**).
+
+**BC**: Afkorting van _before Christ_ (Eng., *vóór Christus*). Het kalenderjaar geteld voorafgaand aan het veronderstelde geboortejaar van Christus, volgens de christelijke Gregoriaanse jaartelling. 
+
+**BCE**: Afkorting van _Before Common Era_, als alternatieve en meer neutrale formulering voor **BC** (*before Christ*) of *voor Christus*.
+
+**BP**: _before present_. Het jaar 1950 AD geldt voor $\mathrm{ ^{14}C}$-dateringen als het jaar 0 (*the present*). Alle radiokoolstofdateringen worden uitgedrukt in het aantal jaar voor 1950.
+
+**Cal. BP**: Gekalibreerde radiokoolstof datering, uitgedrukt in het aantal kalenderjaren voor 1950 AD.
+
+**Cambium**: Weefsellaag aan de buitenzijde van de stam of takken van struiken en bomen, waar nieuwe cellen worden aangemaakt. Dit (deel)weefstel zorgt voor de aanmaak van nieuw hout (xyleem) en bast (floëem).
+
+**CE**: Afkorting van _Common Era_, als alternatieve en meer neutrale formulering voor *na Christus* of **AD**.
+
+**Correlatiecoëfficiënt**: Statistische maat die de samenhang/overeenkomst tussen twee variabelen uitdrukt. Ze varieert tussen 0 en 1. Een hoge correlatiecoëfficiënt geeft aan dat de waarden van de beide variabelen een zelfde (positieve correlatiecoëfficiënt) of een tegengesteld (negatieve correlatiecoëfficiënt) verband vertonen.
+
+**Dendrochronologie** of **jaarringonderzoek**: De wetenschappelijke discipline waarbij de datering van groeiringen in hout centraal staat. De opeenvolgende groeiringen worden hierbij beschouwd als een kalender, waarbij men als het ware terug kan gaan in de tijd door de groeiringen van een boom één voor één te registreren.
+
+**Isotoop**: Atomen van een zelfde chemisch element met een verschillende opbouw van de kern, meer bepaald met een variërend aantal neutronen. De meeste chemische elementen hebben meerdere isotopen.
+
+**Kalibratiecurve**: Visualisatie van de relatie tussen de gemeten radiokoolstofouderdom en de werkelijke ouderdom (uitgedrukt in kalenderjaren) van een geanalyseerd monster. De kalibratiecurve wijkt sterk af van een rechte lijn door de natuurlijke schommelingen in het $\mathrm{ ^{14}C}$-gehalte van de atmosfeer. Een kalibratiecurve wordt opgesteld door het dateren van monsters met een exact gekende ouderdom (bv. dendrochronologisch gedateerde stukken hout, varven in meersedimenten of druipstenen).
+
+**Radiokoolstof ($\mathrm{ ^{14}C}$)**: Radioactieve **isotoop** van koolstof met 8 neutronen in de kern. De meest voorkomende vorm van koolstof ($\mathrm{ ^{12}C}$) is volkomen stabiel en heeft 12 kerndeeltjes (6 protonen + 6 neutronen).
+
+**Schors**: Het weefsel dat zich aan de buitenzijde van stam en wortels bevindt. Het bestaat grotendeels uit dode cellen, kurkweefsel, dat wordt aangemaakt vanuit een **cambium**, op de overgang tussen schors en bast.
+
+**Spinthout**: Levend of fysiologisch actief deel van het hout. Het spinthout verzorgt de sapstroom in de stam en dient als opslagplaats voor voedingsstoffen. Het heeft exact dezelfde structuur als het kernhout, maar bij het spinthout zijn de transportkanalen (vaten) nog grotendeels vrij. Het bevindt zich tussen het kernhout en de bast van de boom. Het spinthout is bij eik, net zoals bij veel andere houtsoorten, gekenmerkt door een lichtere kleur dan het kernhout.
+
+**Standaardafwijking**: (ook wel standaarddeviatie): De statistische maatstaf van de spreiding van een variabele rond zijn gemiddelde. 
+
+***Terminus post quem***: Vroegst mogelijke tijdstip (ondergrens) waarop een gebeurtenis kan hebben plaatsgevonden.
+
+***Terminus ante quem***: Laatst mogelijke tijdstip (bovengrens) waarop een gebeurtenis kan hebben plaatsgevonden.
+
+**Trofisch niveau**: De plaats van een organisme (plant, dier, eencellige, ...) in de globale voedselketen. Een trofisch niveau bestaat uit een groep organismen met eenzelfde type voeding.
+
+***Wiggle-matching***: Combinatie van meerdere radiokoolstofdateringen met een onderling gekende tussenafstand en schikking in de tijd om zo de precisie van de gekalibreerde radiokoolstofdateringen te verhogen.

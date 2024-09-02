@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl" xml:lang="nl"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>$\mathrm{^{14}C:}$ dateren met radiokoolstof – 4&nbsp; Onderzoeksvragen en -strategie</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./05_C14_bemonsteren.html" rel="next">
+<link href="./03_C14_kalibratie.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Geen resultaat",
+    "search-matching-documents-text": "Gevonden documenten",
+    "search-copy-link-title": "Kopieer link om te zoeken",
+    "search-hide-matches-text": "Extra overeenkomsten verbergen",
+    "search-more-match-text": "meer overeenkomst in dit document",
+    "search-more-matches-text": "meer overeenkomsten in dit document",
+    "search-clear-button-title": "Wissen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuleren",
+    "search-submit-button-title": "Verzenden",
+    "search-label": "Zoeken"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #00509d;
+      }
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta name="twitter:title" content="\(\mathrm{^{14}C:}\) dateren met radiokoolstof - 4&nbsp; Onderzoeksvragen en -strategie">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof//figuren/haoe021-001_cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalknavigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_C14_intro.html">Handleiding</a></li><li class="breadcrumb-item"><a href="./04_C14_onderzoeksvragen.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Onderzoeksvragen en -strategie</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalknavigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Zoeken" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_C14_intro.html">Handleiding</a></li><li class="breadcrumb-item"><a href="./04_C14_onderzoeksvragen.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Onderzoeksvragen en -strategie</span></a></li></ol></nav>
+      <h1 class="title"><span id="onderzoeksvragen" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Onderzoeksvragen en -strategie</span></span></h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./"><span class="math inline">\(\mathrm{^{14}C:}\)</span> dateren met radiokoolstof</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/" title="Broncode" class="quarto-navigation-tool px-1" aria-label="Broncode"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Schakel donkere modus"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Zoeken"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Woord vooraf</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_C14_wijzigingen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Updates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Handleiding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Schakel sectie">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_C14_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inleiding</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_C14_principes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Het principe van een <sup>14</sup>C-datering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_C14_kalibratie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kalibratie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_C14_onderzoeksvragen.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Onderzoeksvragen en -strategie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_C14_bemonsteren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Bemonsteren</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_C14_rapporteren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Van rapport tot interpretatie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_C14_modelleren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bayesiaanse analyse</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">OxCal</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Schakel sectie">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_C14_OxCal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Handleiding OxCal</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Begrippen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Schakel sectie">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./C14_begrippen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Begrippenlijst</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bronnen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Schakel sectie">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_14C_bibliografie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliografie</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Op deze pagina</h2>
+   
+  <ul>
+  <li><a href="#welk-materiaal" id="toc-welk-materiaal" class="nav-link active" data-scroll-target="#welk-materiaal"><span class="header-section-number">4.1</span> Welk materiaal?</a></li>
+  <li><a href="#selectie-van-geschikt-materiaal" id="toc-selectie-van-geschikt-materiaal" class="nav-link" data-scroll-target="#selectie-van-geschikt-materiaal"><span class="header-section-number">4.2</span> Selectie van geschikt materiaal</a></li>
+  <li><a href="#dateringsstrategie" id="toc-dateringsstrategie" class="nav-link" data-scroll-target="#dateringsstrategie"><span class="header-section-number">4.3</span> Dateringsstrategie</a></li>
+  <li><a href="#oud-hout-effect" id="toc-oud-hout-effect" class="nav-link" data-scroll-target="#oud-hout-effect"><span class="header-section-number">4.4</span> Oud-hout-effect</a></li>
+  <li><a href="#residueel-en-intrusief-materiaal" id="toc-residueel-en-intrusief-materiaal" class="nav-link" data-scroll-target="#residueel-en-intrusief-materiaal"><span class="header-section-number">4.5</span> Residueel en intrusief materiaal</a></li>
+  <li><a href="#periode-en-precisie" id="toc-periode-en-precisie" class="nav-link" data-scroll-target="#periode-en-precisie"><span class="header-section-number">4.6</span> Periode en precisie</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/04_C14_onderzoeksvragen.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>In principe kan alle organisch materiaal gedateerd worden met de radiokoolstoftechniek. Organisch materiaal bevat koolstof en zal dus oorspronkelijk ook een fractie radioactieve koolstof in zich hebben opgeslagen, wat een ouderdomsbepaling mogelijk maakt. Toch zijn er enkele belangrijke beperkingen en aandachtspunten bij dateringsprojecten zowel de materiaalkeuze als de vraagstelling moeten sturen. Dat geldt trouwens ook voor anorganisch materiaal, waarbij de materiaalkeuze al veel beperkter is vermits niet alle anorganische stoffen koolstof bevatten.</p>
+<p>De radiokoolstofmethode dateert een materiaal, maar de erfgoedonderzoeker wil doorgaans de datering van een bepaalde gebeurtenis of activiteit bepalen. Het is dan ook uitermate belangrijk om een innig verband te hebben tussen het dateerbaar materiaal en deze gebeurtenis of activiteit. Binnen het erfgoedonderzoek wordt dit verband afgeleid uit de kennis die men heeft opgebouwd tijdens archeologische bodemingrepen of bouwhistorisch onderzoek. De veronderstellingen (en de onzekerheid hierop) die aan de basis liggen van deze verbanden tussen materiaal en activiteit moeten steeds zorgvuldig en kritisch geanalyseerd worden.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>De radiokoolstofmethode dateert een materiaal. De erfgoedonderzoeker wil echter meestal de datering van een gebeurtenis of activiteit bepalen.</p>
+</div>
+</div>
+</div>
+<p>Een staalname en datering van materiaal met een gekende tafonomische achtergrond en een bij de opgravingen of bouwhistorisch onderzoek goed geëvalueerd stratigrafisch verband zal de kenniswinst maximaliseren <span class="citation" data-cites="ervynck_assessment._2015">(<a href="999_14C_bibliografie.html#ref-ervynck_assessment._2015" role="doc-biblioref">Ervynck <em>e.a.</em> 2015</a>)</span>. Rijzen er na de radiokoolstofdatering vragen over de herkomst van het materiaal, het onderlinge verband tussen het staal en het archeologisch spoor of de activiteit die men wil dateren, dan is de uitgevoerde analyse een verkwisting van tijd en middelen. Een adequate staalname en selectie van geschikt materiaal vormt het fundament van de uiteindelijke dateringsresultaten en hun interpretatie <span class="citation" data-cites="evin_single_1999">(<a href="999_14C_bibliografie.html#ref-evin_single_1999" role="doc-biblioref">Ashmore 1999</a>)</span>.</p>
+<section id="welk-materiaal" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="welk-materiaal"><span class="header-section-number">4.1</span> Welk materiaal?</h2>
+<p>Eén van de vaakst gedateerde materialen is <strong>hout</strong>, zowel in droge, waterverzadigde als verkoolde toestand. Hout is dan ook éénn van de meest gebruikte grondstoffen doorheen de geschiedenis van de mens. Bovendien vraagt het materiaal slechts een vrij eenvoudige behandeling voorafgaand aan de radiokoolstofdatering (zie 5.4). Andere plantaardige resten, zoals <strong>zaden en vruchten</strong>, zijn eveneens ideaal materiaal om tot een radiokoolstofdatering te komen. Uit pakketten van niet-vergane plantenresten, zoals veenlagen, kunnen zowel bulkstalen als specifieke macroresten (zaden, stukjes hout, …) voor een datering geselecteerd worden. <strong>Vezels</strong> van plantaardige oorsprong, al dan niet verwerkt in touw, kledij of ander <strong>textiel</strong> zijn eveneens opgebouwd uit koolstofverbindingen en kunnen dus een datering opleveren.</p>
+<p><strong>Beenderen</strong>, zowel van dier als mens, bevatten aanzienlijke hoeveelheden koolstof. Indien beendermateriaal in het bodemarchief bewaard is gebleven, bestaat echter de kans dat het botweefsel (recente) koolstof heeft uitgewisseld met in de bodem aanwezige koolstofverbindingen (zoals humuszuren, …). Een stukje bot dateren kan daardoor een te jonge radiokoolstofdatering opleveren. Om dat te verhelpen worden eiwitcomponenten - hoofdzakelijk collageen - uit het botmateriaal geëxtraheerd. Dit collageen is tijdens het ‘verblijf in de bodem’ niet geneigd om meer recente koolstof in te bouwen en vormt zo een betrouwbare bron van oude koolstof voor de radiokoolstofanalyse. Bij <strong>crematies</strong> kunnen stukken witverbrand bot ook een datering opleveren. Hier is in regel geen collageen meer aanwezig, en moet men noodgedwongen een ander bestanddeel - in dit geval het anorganische apatiet - afzonderen en dateren. Apatiet is een mineraal waarin ook koolstof kan opgenomen zijn. Ook tanden, hoorn en haar zijn geschikt materiaal voor een radiokoolstofdatering. <strong>Hoorn en haar</strong> zijn opgebouwd uit keratine, een eiwit dat als bron voor de koolstofdatering kan worden gebruikt. Bij <strong>tanden</strong> kan koolstof worden gehaald uit de verschillende delen: email, dentine en cementum. Gelooide huid die tot <strong>leer</strong> werd verwerkt, of ruwe huid die onder droge of extreem natte omstandigheden bewaard is gebleven, kan eveneens bemonsterd worden voor een radiokoolstofanalyse.</p>
+<p>Voor de bouw van historische gebouwen werden doorgaans niet-hydraulische of slechts gedeeltelijk hydraulische mortels gebruikt als bindmiddel tussen de natuur- of bakstenen bouwelementen <span class="citation" data-cites="van_balen_kalkboek._2003">(<a href="999_14C_bibliografie.html#ref-van_balen_kalkboek._2003" role="doc-biblioref">Balen <em>e.a.</em> 2003</a>)</span>. Niet-hydraulische <strong>(kalk)mortel</strong> hardt uit door blootstelling aan de lucht, de hydraulische variant wordt hard door reactie met nevenbestanddelen zoals klei, kalk en water. In principe wordt een niet-hydraulische kalkmortel als volgt bereid (<a href="#fig-mortel" class="quarto-xref">fig.&nbsp;<span>4.1</span></a>). Kalksteen of schelpen, al dan niet tot poeder vermalen, worden op hoge temperatuur gebracht waardoor het calciumcarbonaat (<span class="math inline">\(\mathrm{CaCO_3}\)</span>) ontbindt tot calciumoxide (<span class="math inline">\(\mathrm{CaO}\)</span>) of ongebluste kalk, en (<span class="math inline">\(\mathrm{CO_2}\)</span>) (reactie 1). Aan de ongebluste kalk wordt water (<span class="math inline">\(\mathrm{H_2O}\)</span>) toegevoegd zodat calciumhydroxide (<span class="math inline">\(\mathrm{Ca(OH)_2}\)</span>) of gebluste kalk ontstaat (reactie 2). Die wordt vermengd met een vulmiddel (zoals bv. zand) waardoor men mortel bekomt. Na het metselen zal de gebluste kalk zich binden met koolstofdioxide uit de lucht en opnieuw calciumcarbonaat vormen (reactie 3). Dit calciumcarbonaat vormt uiteindelijk de uitgeharde mortel tussen de natuur- of bakstenen.</p>
+<p><span class="math display">\[ \mathrm{CaCO_3} \xrightarrow{\text{warmte}} \mathrm{CaO + CO_2} \ \ \ [1]\]</span> <span class="math display">\[\mathrm{CaO} \xrightarrow{\text{water}} \mathrm{Ca(OH)_2}\ \ \ [2]\]</span> <span class="math display">\[\mathrm{Ca(OH)_2 + CO_{2\ \ (atm.)}} \rightarrow \mathrm{CaCO_3}\ \ \ [3]\]</span></p>
+<p>Uit reactie 3 blijkt duidelijk dat er rechtstreeks (<span class="math inline">\(\mathrm{CO_2}\)</span>) uit de lucht wordt ingebouwd in de calciumcarbonaatmolecule, terwijl de originele, ‘oude’ <span class="math inline">\(\mathrm{CO_2}\)</span> tijdens het verhitten (reactie 1) is uitgestoten. De <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie in de mortel weerspiegelt met andere woorden de <span class="math inline">\(\mathrm{ ^{14}C}\)</span>-concentratie van de atmosfeer ten tijde van de bouw van het metselwerk. Na deze reactie gaat het radioactieve verval van de koolstofisotopen verder zijn gang terwijl er geen uitwisseling meer is met de atmosfeer en de <span class="math inline">\(\mathrm{ ^{14}C}\)</span> dus niet wordt aangevuld. In principe is mortel dus even goed te dateren met de radiokoolstofmethode als een stuk hout of een dierlijk of menselijk bot.</p>
+<div id="fig-mortel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mortel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_12.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figuur&nbsp;4.1: Proces van aanmaak en toepassing van een hydraulische kalkmortel [naar @heinemeier_successful_2010]."><img src="./figuren/figuur_12.jpg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mortel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;4.1: Proces van aanmaak en toepassing van een hydraulische kalkmortel <span class="citation" data-cites="heinemeier_successful_2010">(naar <a href="999_14C_bibliografie.html#ref-heinemeier_successful_2010" role="doc-biblioref">Heinemeier <em>e.a.</em> 2010</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Soms wordt ervoor geopteerd om niet zozeer de mortel op zich te dateren, maar partikels houtskool ingesloten in de mortel. Men gaat er dan van uit dat die afkomstig zijn van het vuur waarin de kalksteen of de schelpen werden gebrand om ongebluste kalk te bekomen. Er zijn echter scenario’s denkbaar die deze veronderstelling kunnen ondergraven en die aldus een te oude datering opleveren. Zo kan houtskool eeuwenlang in de (zand)bodem bewaard blijven en tijdens het mengen van de mortel met zand in de mortel terecht komen. Soms is het afkomstig van gerecycleerd (en dus ouder) hout dat gebruikt werd als brandstof bij het verhitten van de kalksteen. Om nog maar te zwijgen over een mogelijk ‘oud-hout effect’ (zie 4.4). Een extreme vorm van contaminatie kan optreden wanneer steenkool is gebruikt om de kalk te branden. Kleine partikels van deze fossiele brandstof kunnen in de mortel zijn opgenomen en zien er op het eerste gezicht uit als archeologische houtskool.</p>
+<p>Een aantal andere, niet-organische materialen wordt onder bepaalde omstandigheden ook aanzien als betrouwbare bron van oude, te dateren koolstof, al is dit dikwijls nog onderzoek in een experimenteel stadium. Zo kon loodcarbonaat uit de vermeende (loden) grafkist van Sint-Idesbald (een 12de-eeuwse abt van de Duinenabdij te Koksijde) gedateerd worden en werd bevestigd dat de menselijke resten niet van deze heilige konden komen. Het loodcarbonaat ontstond tijdens de ontbinding van het mensenlichaam, waarbij methaan (<span class="math inline">\(\mathrm{CH_4}\)</span>) en koolstofdioxide (<span class="math inline">\(\mathrm{CO_2}\)</span>) uit de menselijke resten vrijkomen, die op hun beurt reageerden met de loden grafkist. De koolstof in het loodcarbonaat is dus afkomstig van het lichaam van de overledene en aldus een geschikte bron om het overlijden van deze persoon te dateren <span class="citation" data-cites="van_strydonck_14c-dating_2016">(<a href="999_14C_bibliografie.html#ref-van_strydonck_14c-dating_2016" role="doc-biblioref">Van Strydonck <em>e.a.</em> 2016</a>)</span>. Daarnaast vinden we loodcarbonaat soms terug in zalfpotjes of andere toiletartikelen: dit product heeft in poedervorm een bleke kleur welke in het oude Egypte al werd gebruikt als cosmetica. Tijdens het productieproces van dit gegeerde poeder wordt koolstof uit de atmosfeer in het loodcarbonaat vastgelegd, wat nu - met een aangepast laboratoriumprotocol - een radiokoolstofdatering mogelijk maakt <span class="citation" data-cites="beck_absolute_2018">(<a href="999_14C_bibliografie.html#ref-beck_absolute_2018" role="doc-biblioref">Beck <em>e.a.</em> 2018</a>)</span>. Ook de koolstof gevangen in ijzer kan een datering van het smeltproces opleveren, op voorwaarde dat geen steenkool, maar houtskool werd gebruikt als brandstof <span class="citation" data-cites="cook_using_2003">(<a href="999_14C_bibliografie.html#ref-cook_using_2003" role="doc-biblioref">Cook <em>e.a.</em> 2003</a>)</span>. Steenkool bevat immers geen <span class="math inline">\(\mathrm{ ^{14}C}\)</span> meer door het eeuwenlange radioactief verval, waardoor een veel te oude datering zou bekomen worden.</p>
+</section>
+<section id="selectie-van-geschikt-materiaal" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="selectie-van-geschikt-materiaal"><span class="header-section-number">4.2</span> Selectie van geschikt materiaal</h2>
+<p>Indien men een gebeurtenis in het verleden, zoals de vulling van een archeologisch spoor, chronologisch wil plaatsen, stelt zich - bij geschikte bewaringsomstandigheden - allereerst de keuze van het te dateren materiaal (het soort en type van vondst). Zaden en vruchten dienen zich dikwijls aan als ideaal materiaal om vondsten, sporen of structuren te dateren. Ze komen in het bodemarchief zowel voor in verkoolde als onverkoolde vorm en zijn kortlevende structuren, dus niet onderhevig aan een oud-hout-effect (zie verder, 4.3). Belangrijk is wel om terrestrische soorten uit te kiezen, zo vermijdt men het aquatisch reservoireffect (zie 2.8).</p>
+<p>Ook houtskool en hout zijn zeer geschikt dateringsmateriaal maar kunnen onderhevig zijn aan een oud-hout-effect (zie 4.3). Dieren- en mensenresten laten zich eveneens goed dateren maar bij crematies kunnen complicerende factoren optreden (zie 4.4). Resten van aquatische dieren worden best uitgesloten, vanwege het moeilijk te bepalen reservoireffect, en dat geldt ook voor de resten van dieren die aquatische organismen tot voedsel nemen. Om die reden kan ook het dieet van vroegere mensen het dateren van hun resten bemoeilijken (zie 2.9). Het botmateriaal van grazende dieren (met een dieet van louter terrestrische planten) is daarom beter geschikt materiaal.</p>
+<p>Wanneer mensenresten worden gedateerd, vormen deze van jong gestorven personen een wat meer betrouwbare keuze dan deze van oudere individuen. Tijdens het leven gaat de op- en afbouw van weefsels steeds weer door (= remodeleren) waardoor het <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte in een lichaam hetzelfde blijft als in de atmosfeer. Een skeletdeel van een jong gestorven persoon dateren zal daardoor een goede benadering geven voor het tijdstip van overlijden. Bij oudere mensen verloopt deze remodelering echter niet meer zo vlot, waardoor in hun skelet steeds meer ‘oude’ koolstof blijft zitten. Indien men botmateriaal dateert van een persoon die ouder was dan 60 jaar op het moment van overlijden, kan er tussen de radiokoolstofdateringen en het tijdstip van overlijden een maximaal verschil van ca. 30 jaar optreden <span class="citation" data-cites="ubelaker_impact_2015">(<a href="999_14C_bibliografie.html#ref-ubelaker_impact_2015" role="doc-biblioref">Ubelaker <em>e.a.</em> 2015</a>)</span>. Bij huisdieren die voor de vleesvoorziening worden gebruikt, stelt dit probleem van remodelering zich nauwelijks omdat zij toch op vrij jonge leeftijd worden geslacht.</p>
+<p>In veel gevallen lijkt een datering op zaden en vruchten, of jong houtig materiaal (vanwege het oud-houteffect, zie 4.3) een goede keuze. Men dient er zich wel steeds van bewust te zijn dat verkoold materiaal inert is tegen biologische degradatie en honderden, zelfs duizenden jaren in het bodemarchief aanwezig kan blijven zonder te vergaan. Mogelijk zijn verkoolde zaden en vruchten of kleine partikels houtskool in het bodemarchief dus residueel (zie ook 4.5). Ook gecremeerd menselijk of dierlijk botmateriaal kan trouwens lang in de bodem bewaard blijven en als residuele vondst in archeologische sporen opduiken. Indien men echter zeker is dat het verkoold materiaal niet residueel is of men net het branden van houtskool, een crematieproces of een brand wil dateren, is het uiteraard wel geschikt om die gebeurtenis te dateren. In bodemomstandigheden waarin onverkoold planten- of dierenmateriaal in regel niet bewaart (zoals droge zand- of leembodems) maar dit toch aanwezig is, is de kans echter groot dat het om recente, intrusieve resten gaat. In die gevallen is een datering van het onverkoolde materiaal zinloos en vormen de verkoolde resten een betere optie.</p>
+<p>Aardewerk is op zich niet via radiokoolstof te dateren, maar aan de binnenzijde van menige pot, pan of kruik heeft zich soms een korst van etensresten opgebouwd. Aangezien die etensresten rechtstreeks gelinkt zijn aan het gebruik van het recipiënt, en gebruiksaardewerk in regel geen lange ‘levensduur’ kent, kan een radiokoolstofdatering op dat organisch materiaal wel een betrouwbare datering voor het gebruiksvoorwerp opleveren. Een meer doorgedreven residu-analyse kan bijkomend nog details onthullen over de inhoud van het recipiÃ«nt, wat soms nodig is om een reservoireffect uit te sluiten (zie 2.8).</p>
+</section>
+<section id="dateringsstrategie" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="dateringsstrategie"><span class="header-section-number">4.3</span> Dateringsstrategie</h2>
+<p>De selectie van het te dateren materiaal hangt in grote mate samen met de onderzoeksvraag. Eerst moet men ‘scherpstellen’ welke gebeurtenis men wil dateren. Daarna kan men op zoek naar het meest geschikte materiaal. Bij archeologisch dateringsonderzoek moet de vraagstelling dus steeds duidelijk geformuleerd worden. Als een vondst uit een spoor wordt gedateerd, wil men dan de ouderdom te weten komen van de vondst op zich (ongeacht zijn mogelijk residuele of intrusieve aard) of wil men via de datering van de vondst weten uit welke tijd het spoor stamt? En gaat in het laatste geval de interesse dan naar de aanleg van het spoor, naar het gebruik of naar de opgave?</p>
+<p>Als bij een archeologisch terreinonderzoek een kistbegraving wordt aangetroffen kan men zowel het menselijk skeletmateriaal als het hout van de kist dateren. Zowel bot als hout zijn immers opgebouwd met koolstof. Met het botmateriaal dateer je het overlijden van de persoon in kwestie, met het hout dateer je het kappen van de boom waaruit de planken voor de kist gezaagd zijn. Vermoedelijk is men eerder geïnteresseerd in het eerste. De radiokoolstofdatering van de kist kan echter wel overwogen worden indien het botmateriaal te sterk gedegradeerd is.</p>
+<p>Dezelfde vraag stelt zich bijvoorbeeld bij het archeologisch onderzoek van een houten waterput <span class="citation" data-cites="debruyne_waterputten_2013">(<a href="999_14C_bibliografie.html#ref-debruyne_waterputten_2013" role="doc-biblioref">Debruyne <em>e.a.</em> 2013</a>)</span>. Wil men de aanleg dateren, dan is het materiaal waarmee de bekisting is uitgevoerd waarschijnlijk het meest geschikte materiaal om te dateren. Indien een dendrochronologische analyse geen uitsluitsel kon geven, kan een radiokoolstofdatering op een stuk spinthout van de planken van de bekisting overwogen worden (wanneer die niet uit hergebruikt hout is samengesteld). Ook kleinere stukjes van twijgen (jong hout) waarmee grotere onderdelen aan elkaar vast zijn gemaakt, vormen geschikt materiaal om de aanleg te helpen dateren. Eventueel kan ook materiaal uit de aanlegkuil hiervoor in aanmerking komen, al dient men er zich bewust van te zijn dat in de aanlegkuil dikwijls residueel materiaal is beland, dat bovendien een vermenging kan zijn van vondsten met uiteenlopende dateringen. Het gebruik van de waterput zal eerder te dateren vallen door materiaal uit de bezinkingslaag te dateren, tot stand gekomen uit toevallig in de put gedwarreld materiaal. Dat is tenminste zo indien het niet om herwerkt, residueel materiaal gaat, dat vanuit oudere archeologische contexten in de vulling is terechtgekomen. Aangezien een waterput (normaal gezien) regelmatig werd geruimd, zullen niet-residuele vondsten uit de gebruiksfase vooral uit klein materiaal bestaan (zaden, vruchten, kleine dierenresten, kleine artefacten,…). Dit materiaal kan via een radiokoolstofanalyse gedateerd worden. Een rituele depositie onderin de schachtvulling maar bovenaan het sediment uit de gebruiksfase kan een datering geven voor de opgave van de structuur, en aldus ook een schatting geven van hoe lang de put in gebruik is geweest, indien de aanleg goed gedateerd kon worden. Het materiaal afgezet na de (soms rituele) opgave van de put moet, wat de datering betreft, opgesplitst worden in natuurlijke afzettingen die in de schacht belandden (omdat die als een val voor dieren en plantenresten werkte) en door de mens aangebracht afval of andere afzettingen. Bij die laatste antropogene deposities kan steeds residueel materiaal zitten, wat het risico oplevert voor een te oude datering voor het tijdstip van opgave. De sterkte van de analyse zit steeds in het in verband brengen van de dateringen van verschillende structuurelementen, en een goede tafonomische en stratigrafische analyse.</p>
+<p>Een voorbeeld van hoe de interactie tussen <span class="math inline">\(\mathrm{^{14}C}\)</span>-analyses en dendrochronologische dateringen de interpretatie van bepaalde structuren of gebruiksfasen kan scherper stellen, wordt geleverd door de archeologische site Kluizenmolen (Sint-Gillis-Waas) waar in 2010 een waterput dendrochronologisch werd gedateerd, met een veldatum die te situeren is tussen 52 en 61 AD. Uit diezelfde waterput werd ook een takje uit de organische vulling gedateerd met de radiokoolstofmethode. Dit leverde een datering op van 2001 ±31 BP (RICH-20248), wat gekalibreerd met 95,4% probabiliteit een datering tussen 51 BC en 84 BC (90,8%) of 95 en 116 AD (4,6%) oplevert. Koppelen we dit terug met de dendrochronologische datering, en nemen we aan dat de organische opvulling zich pas begon te vormen na de opgave van de waterput, dan is de kans groot dat deze maximaal 23 (= 84 - 61) tot 32 (= 84 - 52) jaar in gebruik is geweest (<a href="#fig-dendro" class="quarto-xref">fig.&nbsp;<span>4.2</span></a>). De gekalibreerde radiokoolstofdatering wijst echter ook op de mogelijkheid dat het takje uit de opvulling een nog jongere datering heeft, nl. tussen 95 en 116 AD. Alhoewel dit minder waarschijnlijk is dan het grotere dateringsinterval (4,6% t.o.v. 90,8%), mag dit meest recente interval niet genegeerd worden. Duidelijk is wel dat de combinatie van beide dateringstechnieken toelaat om tot een meer diepgaande interpretatie te komen. Al gaan we er in dit geval wel vanuit dat het gedateerde takje niet residueel of intrusief is.</p>
+<div id="fig-dendro" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dendro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_13_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figuur&nbsp;4.2: De dendrochronologische datering van de Romeinse waterput WP2 van de site Kluizenmolen en de gekalibreerde radiokoolstofdatering van een takje uit de organische vulling van de waterput. Daaruit valt af te leiden dat deze waterput waarschijnlijk 23 tot 32 jaar in gebruik was, als we aannemen dat de organische opvulling pas startte na de opgave van de waterput."><img src="./figuren/figuur_13_update.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dendro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;4.2: De dendrochronologische datering van de Romeinse waterput WP2 van de site Kluizenmolen en de gekalibreerde radiokoolstofdatering van een takje uit de organische vulling van de waterput. Daaruit valt af te leiden dat deze waterput waarschijnlijk 23 tot 32 jaar in gebruik was, als we aannemen dat de organische opvulling pas startte na de opgave van de waterput.
+</figcaption>
+</figure>
+</div>
+<p>Bij bouwhistorisch onderzoek is het soms wat zoeken naar geschikt materiaal om te dateren. Kalkmortel is daar vaak een mogelijke bron van ‘oude’ koolstof, en is meteen ook rechtstreeks in verband te brengen met een historische activiteit: het metselen van muurwerk <span class="citation" data-cites="hajdas_preparation_2017 heinemeier_successful_2010">(<a href="999_14C_bibliografie.html#ref-hajdas_preparation_2017" role="doc-biblioref">Hajdas <em>e.a.</em> 2017</a>; <a href="999_14C_bibliografie.html#ref-heinemeier_successful_2010" role="doc-biblioref">Heinemeier <em>e.a.</em> 2010</a>)</span>. Historische kapconstructies - die vaak een nauw verband vertonen met het muurwerk of een bepaalde bouwfase - zijn samengesteld uit tientallen stukken bouwhout. Indien op een keper, balk of plank nog spinthout (zie 4.4) aanwezig is, kan de radiokoolstofdatering van zo’n stuk bouwhout een uitstekende datering opleveren voor het kappen van de bomen waaruit die balken werden gezaagd (als dendrochronologisch onderzoek geen uitkomst biedt). Al dient men rekening te houden met de beoogde vraagstelling en precisie (zie verder, 4.6). Soms zitten interessante stukken organisch materiaal wat beter verstopt, of worden ze niet meteen opgemerkt. Houten stelwiggen, die onder een kolom of sokkel werden aangebracht bij de opbouw van een natuurstenen constructie, zijn daar een voorbeeld van (<a href="#fig-stelwiggen" class="quarto-xref">fig.&nbsp;<span>4.3</span></a>).</p>
+<div id="fig-stelwiggen" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stelwiggen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_14.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figuur&nbsp;4.3: Stelwiggen tussen de sokkels en de schachten van de colonnetten van het triforium van het zuidtransept en het schip in de O.L.V-basiliek van Tongeren. Deze wigvormige stukjes hout werden geselecteerd voor een 14C-datering aangezien ze rechtstreeks in verband staan met de bouw van het triforium."><img src="./figuren/figuur_14.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stelwiggen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;4.3: Stelwiggen tussen de sokkels en de schachten van de colonnetten van het triforium van het zuidtransept en het schip in de O.L.V-basiliek van Tongeren. Deze wigvormige stukjes hout werden geselecteerd voor een <sup>14</sup>C-datering aangezien ze rechtstreeks in verband staan met de bouw van het triforium.
+</figcaption>
+</figure>
+</div>
+<p>Tot slot een bedenking die eigenlijk bij aanvang moet gemaakt worden: zijn er reeds andere bronnen gekend die een scherpe datering opleveren en is een radiokoolstofdatering dus wel nodig? Indien een archeologische context al scherp gedateerd is door het aanwezige aardewerk (in sommige culturele perioden kan dit), kan een radiokoolstofdatering waarschijnlijk weinig (of geen) extra informatie opleveren. Zeker als men bedenkt dat een gekalibreerde radiokoolstofdatering met 95% statistische zekerheid meestal een bereik heeft dat al vlug 80 tot 100 jaar omvat. In meerdere culturele perioden kan het aardewerk nauwer gedateerd worden. Een radiokoolstofdatering is wellicht ook niet nodig indien een spoor gedateerd is door muntvondsten of een historische omkadering kent (alhoewel historische bronnen altijd kritisch moeten bekeken worden). Hout dat dendrochronologisch kan gedateerd worden behoeft natuurlijk ook geen radiokoolstofanalyse. Het is aangeraden bij dergelijke afwegingen ook steeds de kalibratiecurve te bekijken, gezien de precisie na kalibratie sterk per periode kan verschillen (zie verder, 4.6).</p>
+<p>Natuurlijk kan het binnen een spoor toch nuttig zijn een <span class="math inline">\(\mathrm{ ^{14}C}\)</span>-datering van bepaalde vondstcategorieÃ«n te confronteren met de dateringen (cultureel, historisch of radiometrisch) van andere types van vondsten, bijvoorbeeld wanneer er een vermoeden is van tafonomische vermenging binnen het vondstensemble. Het kan dan gaan om residuele of intrusieve objecten (zie 4.5), of in het algemeen om vondstensembles van gemengde oorsprong.</p>
+</section>
+<section id="oud-hout-effect" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="oud-hout-effect"><span class="header-section-number">4.4</span> Oud-hout-effect</h2>
+<p>Het oud-hout-effect wordt tegenwoordig als een soort containerbegrip gebruikt voor alles wat kan mis gaan bij het dateren van hout en houtskool uit archeologische, bouwhistorische en museale contexten. In oorsprong verwijst het naar de problemen die kunnen opduiken bij het dateren van <strong>kernhout</strong>. Kernhout is het dode houtweefsel waarin geen actief transport van water en voedingsstoffen meer kan plaatsvinden. Het bevindt zich in het centrale gedeelte van een stam en wordt omgeven door het <strong>spinthout</strong>, dat aan de buitenzijde van de stam gelegen is, net onder de schors (zie <a href="#fig-stam" class="quarto-xref">fig.&nbsp;<span>4.4</span></a> en de handleiding <a href="https://publicaties.onroerenderfgoed.be/HAOE-16-Dendrochronologie/">Dendrochronologie en erfgoedonderzoek</a> voor meer detail). Bij een levende boom wordt elk jaar een nieuw laagje hout gevormd vanuit een weefsellaag (het cambium) die zich net onder de schors bevindt. Het ‘jongste’, meest recent gevormde hout situeert zich dus aan de buitenzijde van een stam. Naarmate de boom ouder wordt, zal zich een steeds groter leeftijdsverschil opbouwen tussen de meest recent gevormde jaarring aan de buitenzijde van de stam en het centrale gedeelte van een boom, dat enkel uit dood houtweefsel bestaat. Aangezien sommige bomen wel honderden jaren oud kunnen worden, kan de datering van een stuk kernhout (dat dus mogelijk werd gevormd toen een eeuwenoude boom nog maar enkele jaren oud was) een sterk vertekend beeld opleveren van het kappen van die boom (meestal de gebeurtenis die men wil dateren). Een radiokoolstofdatering van een stuk kernhout is daardoor slechts te interpreteren als een <em>post quem</em>-datering, en ligt mogelijk vele decennia ver verwijderd van de werkelijke kapdatum.</p>
+<div id="fig-stam" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stam-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_15_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figuur&nbsp;4.4: Doorsnede van een eikenhouten stam."><img src="./figuren/figuur_15_update.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stam-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;4.4: Doorsnede van een eikenhouten stam.
+</figcaption>
+</figure>
+</div>
+<p>Om terug te keren op het voorbeeld van de waterput, blijkt het dus belangrijk zich te realiseren dat een exacte datering van de aanleg van de put (zowel via dendrochronologie als radiokoolstofdatering) enkel mogelijk wordt wanneer het jongste hout van de gekapte en gebruikte bomen of takken aanwezig is: spinthout dus, al dan niet met schors. Indien er geen spinthout (met schors) meer aanwezig is op het constructiehout, levert een datering enkel een <em>terminus post quem</em> op voor de aanleg van de waterput.</p>
+<p>Dit oud-hout-effect kan voor een deel omzeild worden door een aantal vuistregels in acht te nemen:</p>
+<ul>
+<li>Dateer enkel stukken hout waaraan nog schors vast zit. Het hout net onder de schors is het ideale materiaal om het vellen van die boom (en dus het stuk hout dat uit de stam werd gehaald) te dateren.</li>
+<li>Indien geen schors aanwezig is, kan spinthout gedateerd worden. De aanwezigheid van spinthout betekent immers dat slechts een beperkt aantal jaarringen ontbreken tot aan de schors of laatste gevormde jaarring voor het kappen van die boom.</li>
+<li>Dunne takjes of twijgen zijn voor een datering interessanter dan grote stukken hout (zonder schors of spint). Aan takjes en twijgen zit dikwijls wel nog de schors en ze zijn opgebouwd uit hout dat in slechts één of een beperkt aantal jaren werd gevormd.</li>
+<li>Indien enkel stukken hout voorhanden zijn waar geen schors meer aan vast hangt, wordt best een selectie gemaakt op basis van de houtsoort. Hout van relatief kortlevende bomen en struiken (zoals hazelaar, wilg, els,…) krijgt dan de voorkeur op langlevende soorten zoals eik en beuk. Bij die laatste groep is het risico op een aanzienlijk oud-hout effect beduidend hoger. Hout of houtskool moet dus eerst op soort worden gebracht (gedetermineerd) vooraleer het als radiokoolstofstaal te gebruiken.</li>
+</ul>
+<p>Schors op zich kan ook onderhevig zijn aan een oud-hout effect. Het is immers houtweefsel dat zich heeft opgebouwd doorheen de levensloop van een groeiende boom. In tegenstelling tot het hout bevindt het oudste materiaal zich aan de buitenzijde van de schors. Bij dunne takken stelt zich dit probleem niet, aangezien daar de schors eveneens nog dun is en zich heeft opgebouwd over een beperkt aantal jaren.</p>
+<p>Daarnaast wordt de term oud-hout-effect ook soms aangehaald indien er sprake is van <strong>hergebruik</strong> van ouder bouwhout. De datering van hergebruikt, ouder materiaal zal uiteraard geen verband houden met de gebeurtenis die men wil dateren, maar een (veel) oudere uitkomst opleveren. Een goede inspectie en selectie van het beschikbare materiaal kan ervoor zorgen dat hergebruikt bouwhout tijdig wordt herkend (bv. door de aanwezigheid van niet-functionele verbindingen, bewerkingssporen of een sterk afwijkende vorm t.o.v. het andere hout uit dezelfde collectie).</p>
+<p>Hiermee verwant is het gebruik van hout van bomen die op dat ogenblik al een tijd dood waren. Soms stonden die nog recht, soms gaat het om gevallen exemplaren maar in beide gevallen kan de sterfdatum van de boom beduidend ouder zijn dan de datum van het gebruik van het hout. De impact van deze praktijk valt helaas heel moeilijk te detecteren.</p>
+<p>Tot slot kan er ook een oud-hout-effect optreden bij <strong>crematies</strong>, waar (oud) hout wordt gebruikt op de brandstapel. Indien men een wat oudere boomstam of tak als brandhout gebruikt bij een crematieritueel komt alle opgeslagen koolstof onder de vorm van <span class="math inline">\(\mathrm{CO_2}\)</span> vrij bij het aanmaken van de brandstapel. De stoffelijke resten van de overledene worden tijdens dit ritueel verbrand en de botten ondergaan een crematieproces. Tijdens deze crematie wordt er uiteindelijk ook <span class="math inline">\(\mathrm{CO_2}\)</span> opgenomen uit de omgevende atmosfeer en ingebouwd in het gecremeerde bot <span class="citation" data-cites="olsen_old_2013 snoeck_carbon_2014 van_strydonck_carbon_2010">(<a href="999_14C_bibliografie.html#ref-olsen_old_2013" role="doc-biblioref">Olsen <em>e.a.</em> 2013</a>; <a href="999_14C_bibliografie.html#ref-snoeck_carbon_2014" role="doc-biblioref">Snoeck <em>e.a.</em> 2014</a>; <a href="999_14C_bibliografie.html#ref-van_strydonck_carbon_2010" role="doc-biblioref">Van Strydonck <em>e.a.</em> 2010</a>)</span>. Op de brandstapel bestaat die atmosfeer echter voor een groot deel uit <span class="math inline">\(\mathrm{CO_2}\)</span> die is vrijgekomen tijdens het verbranden van het hout. Het ‘oudere’ hout uit het centrum van een stam kan aldus een verouderend effect hebben op het gecremeerde botmateriaal. De bekomen dateringen kunnen daardoor te oud uitvallen.</p>
+</section>
+<section id="residueel-en-intrusief-materiaal" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="residueel-en-intrusief-materiaal"><span class="header-section-number">4.5</span> Residueel en intrusief materiaal</h2>
+<p>Het organisch materiaal dat men aantreft tijdens archeologisch onderzoek is niet altijd rechtstreeks in verband te brengen met de gebeurtenis die men wil dateren. Stukjes gecremeerd bot, houtskool, zaden of ander klein botanisch materiaal kunnen reeds lang voor een bewoningsfase in het bodemarchief aanwezig zijn, of later, na opgave van een site, ingespoeld raken in de archeologische sporen. Zelfs niet-verbrand botmateriaal dat niet binnen een archeologisch spoor of duidelijke stratigrafie wordt aangetroffen, kan evengoed al eeuwenlang rondslingeren in het bodemarchief. Indien dergelijk materiaal wordt geselecteerd voor een radiokoolstofanalyse zal dit onvermijdelijk leiden tot een foutieve interpretatie van de te dateren gebeurtenis. De bekomen datering kan dan moeilijk in verband gebracht worden met de sporen die men wil dateren.</p>
+<p>Interpretatieproblemen treden vaak op bij het dateren van gebouwplattegronden op basis van de houtskool aangetroffen in paalgaten (nog los van het oud-houteffect). De houtskool kan net als ander verkoold materiaal eeuwenlang circuleren in de bodem. Daarom moet men rekening houden met het feit dat stukjes houtskool niet noodzakelijk verband houden met het te dateren archeologisch spoor. Ze kunnen als residueel materiaal in het paalgat terechtgekomen zijn, bij de aanleg of de uitbraak van de structuur. Evengoed kunnen ze intrusief zijn, en in het archeologisch spoor terechtgekomen zijn als nazakking op de plaats van een uitgebroken paal. Zelden is in paalsporen nog materiaal aanwezig dat rechtstreeks aan de aanleg van het verdwenen gebouw gerelateerd is.</p>
+<p>Bij het selecteren van geschikt materiaal uit Mesolitische haardkuilen, komen dikwijls verkoolde stukjes schil van hazelnoten in het vizier. Tijdens het Mesoliticum vormden geroosterde hazelnoten een belangrijk deel van het dieet van de lokale jager-verzamelaars. Het frequent roosteren van hazelnoten heeft er echter voor gezorgd dat vele verkoolde schillen in de bovenste bodemlaag werden opgenomen. Indien later een haardkuil werd gemaakt op dezelfde kampplaats, kunnen deze verdwaalde stukjes makkelijk in deze kuil herwerkt raken. Dit werd meermaals aangetoond in een vindplaats te Verrebroek waar stukjes houtskool een veel betrouwbaardere datering gaven voor de haardkuilen dan de daarin gevonden (veel oudere) stukjes verkoolde hazelnootschil <span class="citation" data-cites="van_strydonck_site_2001">(<a href="999_14C_bibliografie.html#ref-van_strydonck_site_2001" role="doc-biblioref">Van Strydonck <em>e.a.</em> 2001</a>)</span>.</p>
+<p>Vermijd in het algemeen om hout of houtskool te dateren van soorten die niet langer (bv. grove den, <em>Pinus sylvestris</em>, in de Romeinse periode) of uiterst zeldzaam (bv. venijnboom, <em>Taxus baccata</em>) in de regio voorkwamen op het moment dat het materiaal deel werd van een archeologisch spoor. Zo werden in een Romeins brandrestengraf op de site Hoge Dijken te Jabbeke verkoolde stukjes grove den gevonden. De datering van een stukje houtskool leerde al snel dat het inderdaad residueel materiaal betrof met een gekalibreerde ouderdom tussen 7480 en 7130 BC <span class="citation" data-cites="hillewaert_houtskoolresten_2009">(<a href="999_14C_bibliografie.html#ref-hillewaert_houtskoolresten_2009" role="doc-biblioref">Deforce 2009</a>)</span>. Dit toont nogmaals aan dat verkoold hout eeuwenlang in de bodem kan bewaard blijven.</p>
+<p>Een ander voorbeeld is het <strong>gebruik van (sub)fossiel hout</strong> uit oude veenlagen als bouwhout. Net over de landsgrens, in Ellewoutsdijk (NL), werden houten huizen uit de Romeinse periode ontdekt. De eikenhouten palen konden via dendrochronologisch onderzoek gedateerd worden in de 1ste en 2de eeuw AD. De minstens 7 tot 8m lange middenstaanders of dakdragende palen van de huizen bleken gemaakt van grove den (<em>Pinus sylvestris</em>, zogenaamd grenenhout), een boomsoort die tijdens de Romeinse periode vermoedelijk niet meer in onze regio voorkwam. Daarnaast waren voor de huizenbouw ook talrijke, knoestige palen van Taxus gebruikt. Na radiokoolstofdatering van zowel het grenenhout als de Taxus bleken deze houten onderdelen tot 5500 jaar oud te zijn. Ze werden door de lokale Romeinse bevolking uit het veen getrokken, met metalen bijlen bewerkt en gerecycleerd als bouwhout <span class="citation" data-cites="sier_het_2003">(<a href="999_14C_bibliografie.html#ref-sier_het_2003" role="doc-biblioref">Van Rijn 2003</a>)</span>.</p>
+<p>Daarnaast kan er ook een ‘aanrijking’ met recentere koolstof optreden van organisch materiaal uit archeologische contexten. Een goed voorbeeld van een dergelijke, ongewenste ‘vervuiling’ is de aanwezigheid van <strong>fijne plantenwortels</strong> in ouder organisch materiaal, zoals bijvoorbeeld verkoold of waterverzadigd hout uit een archeologische site (<a href="#fig-wortels" class="quarto-xref">fig.&nbsp;<span>4.5</span></a>). Deze wortels zijn aangemaakt door planten die hun koolstof uit de (huidige) atmosfeer hebben gehaald, en zijn dus opgebouwd met ‘recentere’ koolstof dan het doorwortelde oude hout. Stukken hout met recentere doorworteling worden daardoor best vermeden of ondergaan een mechanische reiniging tijdens de voorbehandeling in het labo door het manueel verwijderen van alle elementen die niets met het te dateren materiaal te maken hebben.</p>
+<div id="fig-wortels" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wortels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_16.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figuur&nbsp;4.5: Voorbeelden van stukjes hout en houtskool waar recentere wortels doorheen groeiden: a. houtskoolfragmenten met recente doorworteling uit een Romeins crematiegraf uit Jabbeke (JA06HD S85), b. doorworteling van een dennenhouten paaltje en c.&nbsp;van een wilgentwijg uit een Romeinse vlechtwerkmand uit Dudzele. (foto’s Â© Onroerend Erfgoed | K. Deforce)."><img src="./figuren/figuur_16.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wortels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;4.5: Voorbeelden van stukjes hout en houtskool waar recentere wortels doorheen groeiden: a. houtskoolfragmenten met recente doorworteling uit een Romeins crematiegraf uit Jabbeke (JA06HD S85), b. doorworteling van een dennenhouten paaltje en c.&nbsp;van een wilgentwijg uit een Romeinse vlechtwerkmand uit Dudzele. (foto’s Â© Onroerend Erfgoed | K. Deforce).
+</figcaption>
+</figure>
+</div>
+<p>Ook het bouwhistorisch onderzoek is niet vrijgesteld van intrusief of residueel materiaal. Stukjes houtskool die we in kalkmortels terugvinden, dateren soms (veel) ouder dan verwacht of mogelijk. We veronderstellen dat deze residuele houtskool in de mortel terecht kwam tijdens het branden van kalksteen, schelpen of botten (met hout of houtskool als brandstof) of tijdens het vermengen van de ongebluste kalk met zand. Uiteraard kunnen stukken houtskool in een mortel ook een oud-hout-effect in zich meedragen. Bij het archeologisch onderzoek in de Basiliek van Tongeren werden uit eenzelfde bouwfase soms meerdere houtskooldateringen van de mortel uitgevoerd. Geen overbodige luxe, zo bleek, want er werden ook duidelijk te oude dateringen opgemeten <span class="citation" data-cites="vanderhoeven_sporen_2018">(<a href="999_14C_bibliografie.html#ref-vanderhoeven_sporen_2018" role="doc-biblioref">Vanderhoeven <em>e.a.</em> 2018</a>)</span>. Door meerdere stalen per bouwfase te dateren kan men alvast de grootste anomalieën opsporen.</p>
+</section>
+<section id="periode-en-precisie" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="periode-en-precisie"><span class="header-section-number">4.6</span> Periode en precisie</h2>
+<p>De verwachtingen die men heeft bij het uitvoeren van een radiokoolstofdatering kunnen op voorhand als minder of meer realistisch worden ingeschat door eerst de kalibratiecurve te bekijken. Doorgaans heeft men al een ruwe inschatting van de verwachte ouderdom van het materiaal en door de vorm van de kalibratiecurve voor die te verwachten periode te bekijken, krijgt men een eerste indruk van de te verwachten precisie. Concreet kan de kalibratiecurve in een bepaalde tijdsperiode een stabiel en rechtlijnig verloop kennen (<a href="#fig-kalib-periode" class="quarto-xref">fig.&nbsp;<span>4.6</span></a> a , nr. 1), een duidelijke ‘kronkel’ of <em>‘wiggle’</em> vertonen (<a href="#fig-kalib-periode" class="quarto-xref">fig.&nbsp;<span>4.6</span></a> b en <a href="#fig-kalib-periode" class="quarto-xref">fig.&nbsp;<span>4.6</span></a> c , nr. 2) of een plateau bereiken (<a href="#fig-kalib-periode" class="quarto-xref">fig.&nbsp;<span>4.6</span></a> c , nr. 3). Indien <em>‘wiggles’</em> en plateaus elkaar opvolgen kunnen we spreken van een turbulente periode (<a href="#fig-kalib-periode" class="quarto-xref">fig.&nbsp;<span>4.6</span></a> d , nr. 4).</p>
+<div id="fig-kalib-periode" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kalib-periode-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_17_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figuur&nbsp;4.6: De kalibratiecurve in verschillende periodes, a: een lineair, stabiel verloop in de late bronstijd, b:een duidelijke ‘wiggle’ in de 13de eeuw AD, c: het ‘Hallstatt-plateau’ in de ijzertijd en een ‘wiggle’ tussen 400 en 200 BC, d: een turbulent verloop van de kalibratiecurve tussen 3600 en 2500 BC (cijferaanduidingen, zie tekst)"><img src="./figuren/figuur_17_update.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kalib-periode-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;4.6: De kalibratiecurve in verschillende periodes, a: een lineair, stabiel verloop in de late bronstijd, b:een duidelijke ‘wiggle’ in de 13de eeuw AD, c: het ‘Hallstatt-plateau’ in de ijzertijd en een ‘wiggle’ tussen 400 en 200 BC, d: een turbulent verloop van de kalibratiecurve tussen 3600 en 2500 BC (cijferaanduidingen, zie tekst)
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>De vorm van de kalibratiecurve bepaalt voor een groot deel de precisie van de gekalibreerde radiokoolstofdatering.</p>
+</div>
+</div>
+</div>
+<p>Dat de <strong>vorm van de kalibratiecurve</strong> voor een groot deel de precisie van de gekalibreerde radiokoolstofdatering bepaalt, wordt in wat volgt geïllustreerd met een aantal gesimuleerde voorbeelden. Indien een radiokoolstofdatering in een periode valt waarin de kalibratiecurve een mooi, quasi rechtlijnig verloop kent, zal het bereik van de gekalibreerde datering meestal een vrij beperkt tijdsinterval overspannen. In de kansverdeling van de kalenderjaren valt dan nog de vorm van een normaalverdeling te herkennen (simulatie 1 in <a href="#fig-combine" class="quarto-xref">fig.&nbsp;<span>4.7</span></a>). Dit ligt helemaal anders wanneer de radiokoolstofdatering in een zone valt waarin de kalibratiecurve een plateau of een vlak verloop vertoont. Dit is bijvoorbeeld het geval in de ijzertijd waar de kalibratiecurve het zogenaamde <strong>Hallstatt-plateau</strong> bereikt. Een gekalibreerde radiokoolstofdatering valt dan enkel binnen een heel ruim tijdsinterval te situeren, van gemakkelijk 200 tot 300 jaar breed (simulatie 2 in <a href="#fig-combine" class="quarto-xref">fig.&nbsp;<span>4.7</span></a>). Dit heeft tot gevolg dat materiaal uit de vroege ijzertijd moeilijk nauwkeurig te dateren valt met een radiokoolstofanalyse. Net vóór en aan het eind van deze periode, waar de kalibratiecurve weer een helling volgt, heeft een gekalibreerde radiokoolstofouderdom weer een prima, nauw dateringsinterval. Helemaal aan het begin van het Hallstatt-plateau heeft de kalibratiecurve een zodanig steil verloop dat na kalibratie het dateringsinterval zelfs nauwer is dan voor kalibratie (simulatie 3 in <a href="#fig-combine" class="quarto-xref">fig.&nbsp;<span>4.7</span></a>): een fenomeen dat zich op geen enkel ander tijdstip manifesteert!</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Naar het Hallstatt-plateau wordt door archeologen ook wel verwezen als ‘the 1st millennium BC radiocarbon disaster’.</p>
+</div>
+</div>
+</div>
+<p>Een lokale schommeling in de kalibratiecurve, bijvoorbeeld de <em>‘wiggle’</em> in de 13de eeuw, zorgt ervoor dat na kalibratie de mogelijke datering niet langer in éénn, aaneengesloten interval valt. De werkelijke datering ligt ergens binnen twee kleinere intervallen, die onderling niet bij elkaar aansluiten. Daardoor is het in het onderstaande voorbeeld (simulatie 4 in <a href="#fig-combine" class="quarto-xref">fig.&nbsp;<span>4.7</span></a>) moeilijk vast te stellen of het hier om 13de- of 14de-eeuws materiaal gaat. Soms kan één van de pieken of intervallen uitgesloten worden op basis van een historische bron (die dan een <em>terminus</em> geeft voor de datering) of door andere dateringen in rekening te brengen, van vondsten die een stratigrafisch verband met het eerst gedateerde materiaal vertonen (zie verder, <a href="07_C14_modelleren.html">hoofdstuk 7</a>).</p>
+<div id="fig-combine" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-combine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_18_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figuur&nbsp;4.7: Invloed van de vorm van de kalibratiecurve op het resultaat van de kalibratie van radiokoolstof-ouderdomsbepalingen."><img src="./figuren/figuur_18_update.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-combine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;4.7: Invloed van de vorm van de kalibratiecurve op het resultaat van de kalibratie van radiokoolstof-ouderdomsbepalingen.
+</figcaption>
+</figure>
+</div>
+<p>Bij bouwhistorisch onderzoek is de resolutie van een radiokoolstofdatering vaak te groot om historische onderzoeksvragen te kunnen beantwoorden. Of een houten constructie dateert uit het midden dan wel het einde van de 13de eeuw is een vraag die met één radiokoolstofdatering niet eenduidig zal kunnen beantwoord worden. De gekalibreerde radiokoolstofdatering zal resulteren in een range aan mogelijke kalenderjaren voor de kapdatum van het hout die te situeren is in de tweede helft van de 13de eeuw. Daar kan gedeeltelijk aan tegemoet gekomen worden door meerdere radiokoolstofdateringen te combineren (zie verder, <a href="07_C14_modelleren.html">hoofdstuk 7</a>). De combinatie van meerdere dateringen op houtstalen uit dezelfde context - en met een veronderstelde zelfde kapdatum! - kan een datering opleveren die een enger tijdsinterval omvat dat de individuele metingen (<a href="#fig-sims" class="quarto-xref">fig.&nbsp;<span>4.8</span></a>).</p>
+<p>Voor het dateren van historische houtconstructies is <strong><em>wiggle-matching</em></strong> ook een interessante techniek (zie <a href="07_C14_modelleren.html#wiggle-matching">7.6</a>. Het is eveneens een methode waarbij men op basis van het combineren van meerdere radiokoolstofanalyses de precisie van de datering probeert te verhogen.</p>
+<div id="fig-sims" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sims-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_19.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figuur&nbsp;4.8: Gesimuleerde dateringen (met een precisie van ± 25 BP en een betrouwbaarheidsinterval van 95,4%) van tien stukken hout uit een grote constructie met een kapdatum in 1275. Door de radiokoolstofdateringen te combineren - in de veronderstelling dat ze een zelfde gebeurtenis dateren - wordt een beduidend nauwer dateringsinterval bekomen (blauwe zone)."><img src="./figuren/figuur_19.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sims-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;4.8: Gesimuleerde dateringen (met een precisie van ± 25 BP en een betrouwbaarheidsinterval van 95,4%) van tien stukken hout uit een grote constructie met een kapdatum in 1275. Door de radiokoolstofdateringen te combineren - in de veronderstelling dat ze een zelfde gebeurtenis dateren - wordt een beduidend nauwer dateringsinterval bekomen (blauwe zone).
+</figcaption>
+</figure>
+</div>
+<p>Is het <strong>materiaal</strong> dat men wil dateren vermoedelijk <strong>jonger dan 1650 AD</strong>, zal een radiokoolstofdatering zelden meer informatie opleveren dan dat het inderdaad jonger dan dat jaartal is. Dit is te wijten aan de vorm van de kalibratiecurve: een vondst dateren die jonger is dan 1650 zal een gekalibreerde datering geven die zowat de hele 17de tot 20ste eeuw overspant, ongeacht of de vondst bijvoorbeeld uit de 18de of de 19de eeuw dateert (simulatie 5 in <a href="#fig-combine" class="quarto-xref">fig.&nbsp;<span>4.7</span></a>).</p>
+<p>In echt <strong>oud materiaal</strong> is het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> moeilijker precies te meten en stijgt de onzekerheid op de analyse (met een grotere standaardafwijking als gevolg). Maar ook de kalibratiecurve, die gebaseerd is op de analyses van oud materiaal, heeft last van hetzelfde fenomeen. Ook op de kalibratiecurve sluipt er in de oudere periodes, en zeker vanaf 12.000 BP, een steeds <strong>grotere foutenmarge</strong>. Dit alles zorgt ervoor dat we voor die oudere perioden een breed dateringsinterval mogen verwachten, dat makkelijk meerdere eeuwen overspant (simulatie 6 in <a href="#fig-combine" class="quarto-xref">fig.&nbsp;<span>4.7</span></a>).</p>
+<p><strong>Zelden</strong> bekomt men na kalibratie <strong>een dateringsinterval dat nauwer is dan 60 jaar</strong>, indien men een statistische zekerheid van 95,4% in rekening neemt. Bij het formuleren van de onderzoeksvragen en het opstellen van een dateringsstrategie moet daar rekening mee gehouden worden. Indien men bijvoorbeeld de bouwfasering van een gebouw wil achterhalen door de datering van houten structuren - en dendrochronologisch onderzoek hier geen uitweg in kan bieden - is ook de resolutie van radiokoolstofdateringen vermoedelijk te beperkt om een onderscheid te kunnen maken tussen bijvoorbeeld laat-14de- of vroeg-15de-eeuwse bouwfases.</p>
+<p>De piekwaarde van het <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte in de atmosfeer van het noordelijk halfrond in 1963, en 1965 in het zuidelijk halfrond (de <strong><em>‘bomb peak’</em></strong>), kan gebruikt worden om <strong>vervalsingen</strong> op te sporen. Deze extreem hoge waarden van het <span class="math inline">\(\mathrm{ ^{14}C}\)</span>-gehalte zullen immers enkel op te meten zijn in organisch materiaal dat tijdens die periode groeide. Kort ervoor en erna lag het <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte beduidend lager. Zo werd een schilderij toegeschreven aan de Franse kunstschilder Fernand Léger (°1881-✝1955) door radiokoolstofanalyse ‘ontmaskerd’ als een latere vervalsing. De radiokoolstofanalyse van een stukje van het katoenen canvas had een veel te hoog <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte waardoor het katoen ten vroegste in 1959 kon geoogst zijn, zeker 4 jaar ná het overlijden van de schilder en beeldhouwer. De veronderstelde datering, rond 1400 AD, van een stucco (kalkpleister) uit Italië werd bijgesteld toen uit de radiokoolstofanalyse bleek dat het pleister werd aangemaakt met een deel Portland-cement (met een heel laag <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte) en dat de fractie kalk in de pleister dan weer een te hoog percentage aan moderne koolstof bevatte <span class="citation" data-cites="van_strydonck_radiocarbon_2016">(<a href="999_14C_bibliografie.html#ref-van_strydonck_radiocarbon_2016" role="doc-biblioref">Van Strydonck 2016</a>)</span>. Deze stucco kan dus onmogelijk dateren uit de 14de of 15de eeuw.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-evin_single_1999" class="csl-entry" role="listitem">
+Ashmore P., 1999. Single entity dating, in: Evin J. (Red.), <span class="math inline">\(^{\textrm{14}}\)</span><span>C</span> and archaeology: 3rd international symposium; <span>Lyon</span>, 6 - 10 April 1998, Mémoires de la <span>Société</span> <span>Préhistorique</span> <span>Française</span>. Société Préhistorique Française, Paris, pp. 65–71.
+</div>
+<div id="ref-van_balen_kalkboek._2003" class="csl-entry" role="listitem">
+Balen K. van, Bommel B. van, Hees R. van, Hunen M. van, Rhijn J. van, Rooden M. van, 2003. Kalkboek. <span>Het</span> gebruik van kalk als bindmiddel voor metsel- en voegmortels in verleden en heden. Rijksdienst voor de Monumentenzorg, Zeist.
+</div>
+<div id="ref-beck_absolute_2018" class="csl-entry" role="listitem">
+Beck L., Caffy I., Delqué-Količ E., Moreau C., Dumoulin J.-P., Perron M., Guichard H., Jeammet V., 2018. Absolute dating of lead carbonates in ancient cosmetics by radiocarbon. Communications Chemistry 1. <a href="https://doi.org/10.1038/s42004-018-0034-y">https://doi.org/10.1038/s42004-018-0034-y</a>
+</div>
+<div id="ref-cook_using_2003" class="csl-entry" role="listitem">
+Cook A.C., Southon J.R., Wadsworth J., 2003. Using radiocarbon dating to establish the age of iron-based artifacts. JOM 55, 15–22. <a href="https://doi.org/10.1007/s11837-003-0239-z">https://doi.org/10.1007/s11837-003-0239-z</a>
+</div>
+<div id="ref-debruyne_waterputten_2013" class="csl-entry" role="listitem">
+Debruyne S., Ervynck A., Haneca K., 2013. Waterputten als archeologische informatiebron, Handleiding agentschap <span>Onroerend</span> <span>Erfgoed</span>. Agentschap Onroerend Erfgoed, Brussel. <a href="https://oar.onroerenderfgoed.be/item/719">https://oar.onroerenderfgoed.be/item/719</a>
+</div>
+<div id="ref-hillewaert_houtskoolresten_2009" class="csl-entry" role="listitem">
+Deforce K., 2009. De houtskoolresten, in: Hillewaert B., Hollevoet Y. (Red.), Vondsten uit vuur: <span>Romeins</span> grafveld met nederzettingssporen aan de <span>Hoge</span> <span>Dijken</span> in <span>Jabbeke</span>. Van de Wiele, Brugge, pp. 38–41.
+</div>
+<div id="ref-ervynck_assessment._2015" class="csl-entry" role="listitem">
+Ervynck A., Debruyne S., Ribbens R., 2015. Assessment. <span>Een</span> handleiding voor de archeoloog. Agentschap Onroerend Erfgoed, Brussel. <a href="https://oar.onroerenderfgoed.be/item/727">https://oar.onroerenderfgoed.be/item/727</a>
+</div>
+<div id="ref-hajdas_preparation_2017" class="csl-entry" role="listitem">
+Hajdas I., Lindroos A., Heinemeier J., Ringbom Å., Marzaioli F., Terrasi F., Passariello I., Capano M., Artioli G., Addis A., Secco M., Michalska D., Czernik J., Goslar T., Hayen R., Van Strydonck M., Fontaine L., Boudin M., Maspero F., Panzeri L., Galli A., Urbanová P., Guibert P., 2017. Preparation and dating of mortar samples – mortar dating inter-comparison study (modis). Radiocarbon 59, 1845–1858. <a href="https://doi.org/10.1017/RDC.2017.112">https://doi.org/10.1017/RDC.2017.112</a>
+</div>
+<div id="ref-heinemeier_successful_2010" class="csl-entry" role="listitem">
+Heinemeier J., Ringbom A., Lindroos A., Sveinbjornsdottir A.E., 2010. Successful <span>AMS</span> <span>C</span>-14 dating of non-hydraulic lime mortars from the medieval churches of the <span>Aland</span> <span>Islands</span>, <span>Finland</span>. Radiocarbon 52, 171–204. <a href="https://doi.org/10.1017/S0033822200045124">https://doi.org/10.1017/S0033822200045124</a>
+</div>
+<div id="ref-olsen_old_2013" class="csl-entry" role="listitem">
+Olsen J., Heinemeier J., Hornstrup K.M., Bennike P., Thrane H., 2013. "Old wood" effect in radiocarbon dating of prehistoric cremated bones? Journal of Archaeological Science 40, 30–34. <a href="https://doi.org/10.1016/j.jas.2012.05.034">https://doi.org/10.1016/j.jas.2012.05.034</a>
+</div>
+<div id="ref-snoeck_carbon_2014" class="csl-entry" role="listitem">
+Snoeck C., Brock F., Schulting R.J., 2014. Carbon exchanges between bone apatite and fuels during cremation: impact on radiocarbon dates. Radiocarbon 56, 591–602. <a href="https://doi.org/10.2458/56.17454">https://doi.org/10.2458/56.17454</a>
+</div>
+<div id="ref-ubelaker_impact_2015" class="csl-entry" role="listitem">
+Ubelaker D.H., Thomas C., Olson J.E., 2015. The impact of age at death on the lag time of radiocarbon values in human bone. Forensic Science International 251, 56–60. <a href="https://doi.org/10.1016/j.forsciint.2015.03.024">https://doi.org/10.1016/j.forsciint.2015.03.024</a>
+</div>
+<div id="ref-sier_het_2003" class="csl-entry" role="listitem">
+Van Rijn P., 2003. Het houtonderzoek, in: Sier M.M. (Red.), Ellewoutsdijk in de <span>Romeinse</span> tijd, <span>ADC</span> rapport. ADC-ArcheoProjecten, Bunschoten, pp. 104–138. <a href="https://doi.org/10.17026/dans-z42-dm4b">https://doi.org/10.17026/dans-z42-dm4b</a>
+</div>
+<div id="ref-van_strydonck_radiocarbon_2016" class="csl-entry" role="listitem">
+Van Strydonck M., 2016. Radiocarbon dating. Topics in Current Chemistry 374, 347–364. <a href="https://doi.org/10.1007/s41061-016-0011-9">https://doi.org/10.1007/s41061-016-0011-9</a>
+</div>
+<div id="ref-van_strydonck_14c-dating_2016" class="csl-entry" role="listitem">
+Van Strydonck M., Boudin M., Brande T.V. den, Saverwyns S., Van Acker J., Lehouck A., Vanclooster D., 2016. <span class="math inline">\(^{\textrm{14}}\)</span><span>C</span>-dating of the skeleton remains and the content of the lead coffin attributed to the <span>Blessed</span> <span>Idesbald</span> (<span>Abbey</span> of the <span>Dunes</span>, <span>Koksijde</span>, <span>Belgium</span>). Journal of Archaeological Science: Reports 5, 276–284. <a href="https://doi.org/10.1016/j.jasrep.2015.11.027">https://doi.org/10.1016/j.jasrep.2015.11.027</a>
+</div>
+<div id="ref-van_strydonck_carbon_2010" class="csl-entry" role="listitem">
+Van Strydonck M., Boudin M., De Mulder G., 2010. The carbon origin of structural carbonate in bone apatite of cremated bones. Radiocarbon 52, 578–586. <a href="https://doi.org/10.1017/S0033822200045616">https://doi.org/10.1017/S0033822200045616</a>
+</div>
+<div id="ref-van_strydonck_site_2001" class="csl-entry" role="listitem">
+Van Strydonck M., Crombé P., Maes A., 2001. The site of <span>Verrebroek</span> ’dok’ and its contribution to the absolute dating of the <span>Mesolithic</span> in the <span>Low</span> <span>Countries</span>. Radiocarbon 43, 997–1005. <a href="https://doi.org/10.1017/S0033822200041667">https://doi.org/10.1017/S0033822200041667</a>
+</div>
+<div id="ref-vanderhoeven_sporen_2018" class="csl-entry" role="listitem">
+Vanderhoeven A., Arts A., Borgers K., Celis D., Cryns J., De Winter N., Van den Hove P., Vander Ginst V., Vynckier G., 2018. De sporen uit de laat-<span>Romeinse</span> en vroegmiddeleeuwse periode, in: Vanderhoeven A., Ervynck A. (Red.), Het archeologisch en bouwhistorisch onderzoek van de <span>O</span>.<span>L</span>.<span>V</span>.-basiliek van <span>Tongeren</span> (1997-2013) <span>Deel</span> 4: <span>De</span> laat-<span>Romeinse</span> en vroegmiddeleeuwse periode, Relicta <span>MonografieÃ«n</span>. agentschap Onroerend Erfgoed, Brussel, pp. 15–141. <a href="https://oar.onroerenderfgoed.be/item/708">https://oar.onroerenderfgoed.be/item/708</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Gekopieerd!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Gekopieerd!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/publicaties\.onroerenderfgoed\.be\/HAOE-21-Radiokoolstof\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./03_C14_kalibratie.html" class="pagination-link" aria-label="Kalibratie">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kalibratie</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./05_C14_bemonsteren.html" class="pagination-link" aria-label="Bemonsteren">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Bemonsteren</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/04_C14_onderzoeksvragen.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

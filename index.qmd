@@ -1,0 +1,33 @@
+## Woord vooraf {-}
+
+Welkom bij de online versie van **^14^C: dateren met radiokoolstof**. Deze handleiding werd in 2019 gepubliceerd door het agentschap Onroerend Erfgoed en is als pdf te downloaden op de [**Open Archives Repositiry (OAR)**](https://doi.org/10.55465/ESYP8347).
+
+Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar hier kan je steeds de meest actuele versie raadplegen.
+
+```{r eval=F}
+# R chunck toegevoeggd zodat krnitr wordt aangesproken om het document om te zetten naar .md. Indien geen r chunck wordt gedetecteerd, zal het niet als Rmd worden aanzien.
+1+1
+```
+
+## Citeren {-}
+
+Gelieve te citeren als: <br/>
+
+Haneca K., Ervynck A., Van Strydonck M. (`r Sys.Date() |> format("%Y")`). ^14^C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed (v 1.2.4), Brussel. <https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/index.html> (geraadpleegd op `r Sys.Date() |> format("%d-%m-%Y")`)
+
+Oorspronkelijke gepubliceerd als: <br/>
+
+Haneca K., Ervynck A,, Van Strydonck M. (2019). ^14^C: dateren met radiokoolstof, Handleiding agentschap Onroerend Erfgoed 21, Brussel. <https://doi.org/10.55465/ESYP8347>.
+
+<br/>
+
+![](./figuren/cover.png){width=100%}
+
+
+## De auteurs {-}
+
+Dr. Kristof Haneca en dr. Anton Ervynck zijn beide erfgoedonderzoekers aan het [agentschap Onroerend Erfgoed](https://www.onroerenderfgoed.be/).  
+Mark Van Strydonck is het voormalig hoofd van het [Labo koolstofdatering](https://www.kikirpa.be/nl/wetenschappelijke-analyses/labo-koolstofdatering) aan het *Koninklijk Instituut voor het Kunstpatrimonium (KIK/IRPA)* in Brussel.
+
+
+

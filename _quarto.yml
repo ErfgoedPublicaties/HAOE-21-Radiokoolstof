@@ -1,0 +1,93 @@
+project:
+  type: book
+  output-dir: docs
+
+execute:
+  echo: false
+
+lang: nl
+
+book:
+  title: $\mathrm{^{14}C:}$ dateren met radiokoolstof
+  subtitle: "Handleiding Onroerend Erfgoed"
+  author:
+    - name: Kristof Haneca
+      orcid: 0000-0002-7719-8305
+      affiliations: "agentschap Onroerend Erfgoed"
+
+    - name: Anton Ervynck
+      orcid: 0000-0002-2016-8041
+      affiliations: "agentschap Onroerend Erfgoed"
+
+    - name: Mark Van Strydonck
+      orcid: 0000-0002-9074-4526
+
+  publisher: "agentschap Onroerend Erfgoed"
+  date: today
+  cover-image: figuren/haoe021-001_cover.jpg
+  sharing: [twitter, facebook, linkedin]
+  twitter-card:
+    image: "/figuren/haoe021-001_cover.jpg"
+  repo-url: https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/
+  repo-actions: [edit, issue]
+  site-url: https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/
+  chapters:
+    - index.qmd
+    - 00_C14_wijzigingen.qmd
+    - part: "Handleiding"
+      chapters:
+      - 01_C14_intro.qmd
+      - 02_C14_principes.qmd
+      - 03_C14_kalibratie.qmd
+      - 04_C14_onderzoeksvragen.qmd
+      - 05_C14_bemonsteren.qmd
+      - 06_C14_rapporteren.qmd
+      - 07_C14_modelleren.qmd
+    - part: "OxCal"
+      chapters:
+      - 08_C14_OxCal.qmd
+    - part: "Begrippen"
+      chapters:
+      - C14_begrippen.qmd
+    - part: "Bronnen"
+      chapters:
+      - 999_14C_bibliografie.qmd
+
+bibliography: C14_biblio.bib
+csl: elsevier-harvard_nl.csl
+
+engine: knitr
+
+title-block-banner: "#00509d"
+title-block-banner-color: white
+
+crossref:
+  fig-title: Figuur
+  fig-prefix: fig.
+  tbl-title: Tabel
+  tbl-prefix: tabel
+
+language:
+  toc-title-document: "Op deze pagina"
+  search-no-results-text: "Geen resultaat"
+  repo-action-links-edit: "Bewerk deze pagina"
+  title-block-author-plural: "auteurs"
+  title-block-published: "laatste update"
+  title-block-affiliation-plural: "affiliatie"
+  
+filters:
+   - lightbox
+lightbox: auto
+
+format:
+  html:
+    theme:
+      light:
+        - cosmo
+        - mycss.css
+      dark:
+        - slate
+        - mycss.css
+    cover-image: figuren/haoe021-001_cover.jpg
+    toc-depth: 4
+    link-external-newwindow: true

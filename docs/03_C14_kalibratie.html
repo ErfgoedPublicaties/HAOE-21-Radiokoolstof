@@ -6,12 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kristof Haneca">
-<meta name="author" content="Anton Ervynck">
-<meta name="author" content="Mark Van Strydonck">
-<meta name="dcterms.date" content="2024-09-02">
 
-<title>\mathrm{^{14}C:} dateren met radiokoolstof</title>
+<title>$\mathrm{^{14}C:}$ dateren met radiokoolstof – 3&nbsp; Kalibratie</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -34,7 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./00_C14_wijzigingen.html" rel="next">
+<link href="./04_C14_onderzoeksvragen.html" rel="next">
+<link href="./02_C14_principes.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -124,8 +141,8 @@ window.Quarto = {
 };
 </script>
 
-<meta name="twitter:title" content="\(\mathrm{^{14}C:}\) dateren met radiokoolstof">
-<meta name="twitter:description" content="Handleiding Onroerend Erfgoed">
+<meta name="twitter:title" content="\(\mathrm{^{14}C:}\) dateren met radiokoolstof - 3&nbsp; Kalibratie">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof//figuren/haoe021-001_cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -139,7 +156,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalknavigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Woord vooraf</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_C14_intro.html">Handleiding</a></li><li class="breadcrumb-item"><a href="./03_C14_kalibratie.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kalibratie</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalknavigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Zoeken" onclick="window.quartoOpenSearch();">
@@ -151,48 +168,15 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title"><span class="math inline">\(\mathrm{^{14}C:}\)</span> dateren met radiokoolstof</h1>
-            <p class="subtitle lead">Handleiding Onroerend Erfgoed</p>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_C14_intro.html">Handleiding</a></li><li class="breadcrumb-item"><a href="./03_C14_kalibratie.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kalibratie</span></a></li></ol></nav>
+      <h1 class="title"><span id="kalibratie" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kalibratie</span></span></h1>
                       </div>
   </div>
     
-  <div class="quarto-title-meta-author">
-    <div class="quarto-title-meta-heading">auteurs</div>
-    <div class="quarto-title-meta-heading">Affiliatie</div>
-    
-      <div class="quarto-title-meta-contents">
-      <p class="author">Kristof Haneca <a href="https://orcid.org/0000-0002-7719-8305" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              agentschap Onroerend Erfgoed
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Anton Ervynck <a href="https://orcid.org/0000-0002-2016-8041" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              agentschap Onroerend Erfgoed
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Mark Van Strydonck <a href="https://orcid.org/0000-0002-9074-4526" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-        </div>
-    </div>
-
+  
   <div class="quarto-title-meta">
 
-        
-      <div>
-      <div class="quarto-title-meta-heading">laatste update</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">2 september 2024</p>
-      </div>
-    </div>
+      
     
       
     </div>
@@ -242,7 +226,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Woord vooraf</span></a>
   </div>
 </li>
@@ -275,7 +259,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_C14_kalibratie.html" class="sidebar-item-text sidebar-link">
+  <a href="./03_C14_kalibratie.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Kalibratie</span></span></a>
   </div>
 </li>
@@ -366,11 +350,11 @@ window.Quarto = {
     <h2 id="toc-title">Op deze pagina</h2>
    
   <ul>
-  <li><a href="#woord-vooraf" id="toc-woord-vooraf" class="nav-link active" data-scroll-target="#woord-vooraf">Woord vooraf</a></li>
-  <li><a href="#citeren" id="toc-citeren" class="nav-link" data-scroll-target="#citeren">Citeren</a></li>
-  <li><a href="#de-auteurs" id="toc-de-auteurs" class="nav-link" data-scroll-target="#de-auteurs">De auteurs</a></li>
+  <li><a href="#kalibratiecurves" id="toc-kalibratiecurves" class="nav-link active" data-scroll-target="#kalibratiecurves"><span class="header-section-number">3.1</span> Kalibratiecurves</a></li>
+  <li><a href="#bomb-peak" id="toc-bomb-peak" class="nav-link" data-scroll-target="#bomb-peak"><span class="header-section-number">3.2</span> <em>Bomb peak</em></a></li>
+  <li><a href="#intcal20" id="toc-intcal20" class="nav-link" data-scroll-target="#intcal20"><span class="header-section-number">3.3</span> IntCal20</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/03_C14_kalibratie.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -379,27 +363,139 @@ window.Quarto = {
 
 
 
-<p><a href="figuren/haoe021-001_cover.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="figuren/haoe021-001_cover.jpg" title="$\mathrm{^{14}C:}$ dateren met radiokoolstof" class="quarto-cover-image img-fluid"></a></p>
-<section id="woord-vooraf" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="woord-vooraf">Woord vooraf</h2>
-<p>Welkom bij de online versie van <strong><sup>14</sup>C: dateren met radiokoolstof</strong>. Deze handleiding werd in 2019 gepubliceerd door het agentschap Onroerend Erfgoed en is als pdf te downloaden op de <a href="https://doi.org/10.55465/ESYP8347"><strong>Open Archives Repositiry (OAR)</strong></a>.</p>
-<p>Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen van radiokoolstofonderzoek binnen het erfgoedonderzoek - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar hier kan je steeds de meest actuele versie raadplegen.</p>
-</section>
-<section id="citeren" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="citeren">Citeren</h2>
-<p>Gelieve te citeren als: <br></p>
-<p>Haneca K., Ervynck A., Van Strydonck M. (2024). <sup>14</sup>C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed (v 1.2.4), Brussel. <a href="https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/index.html" class="uri">https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/index.html</a> (geraadpleegd op 02-09-2024)</p>
-<p>Oorspronkelijke gepubliceerd als: <br></p>
-<p>Haneca K., Ervynck A,, Van Strydonck M. (2019). <sup>14</sup>C: dateren met radiokoolstof, Handleiding agentschap Onroerend Erfgoed 21, Brussel. <a href="https://doi.org/10.55465/ESYP8347" class="uri">https://doi.org/10.55465/ESYP8347</a>.</p>
+<section id="kalibratiecurves" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="kalibratiecurves"><span class="header-section-number">3.1</span> Kalibratiecurves</h2>
+<p>De hierboven beschreven methode om de radiokoolstofouderdom te bepalen gaat uit van de veronderstelling dat het <span class="math inline">\(\mathrm{^{14}C}\)</span>-gehalte in de atmosfeer gelijk is gebleven door de eeuwen heen. Dat is echter niet geheel waar. Natuurlijke variaties in het aardmagnetisme en de zonneactiviteit veroorzaken wisselingen in het aardmagnetisch veld, waardoor een steeds wisselende hoeveelheid kosmische straling de atmosfeer binnendringt. Dit heeft tot gevolg dat de concentratie <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer nooit geheel constant was (en is). Daardoor is het noodzakelijk om gemeten radiokoolstofouderdom te ‘corrigeren’ (kalibreren) voor de steeds wisselende <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie in de atmosfeer. Zonder deze correctie of kalibratie zou het niet mogelijk zijn om radiokoolstofdateringen direct te vergelijken met historische data of andere dateringstechnieken.</p>
+<p>De variaties in de atmosferische <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie werden in kaart gebracht door het radiokoolstofgehalte te meten in houtstalen met exact gekende ouderdom. Die zijn afkomstig van dendrochronologisch gedateerd hout, waarbij men van elke jaarring weet in welk jaar die werd gevormd (zie de handleiding “<a href="https://publicaties.onroerenderfgoed.be/HAOE-16-Dendrochronologie/">Dendrochronologie en erfgoedonderzoek</a>”). Door het vergelijken van de gemeten conventionele radiokoolstofouderdom en de werkelijke ouderdom van een jaarring kan voor de afgelopen 14.000 jaar een zogenaamde kalibratiecurve worden opgesteld die de relatie tussen beide weergeeft <span class="citation" data-cites="reimer_intcal20_2020">(<a href="999_14C_bibliografie.html#ref-reimer_intcal20_2020" role="doc-biblioref">Reimer <em>e.a.</em> 2020</a>)</span>. Voor oudere periodes is de kalibratiecurve gebaseerd op de datering van organisch materiaal uit jaarlijkse sedimentlaagjes in diepe meren (varven) en op koolstof gehaald uit de aangroeilagen van koralen. De meersedimenten hebben een andere kleur in zomer en winter waardoor ze ook een gelaagdheid tonen waarin de opeenvolgende jaren van elkaar te onderscheiden zijn. Koralen worden gedateerd met andere ‘radiometrische’ methoden dan <span class="math inline">\(\mathrm{^{14}C}\)</span>, waarna de resultaten kunnen vergeleken worden met de <span class="math inline">\(\mathrm{^{14}C}\)</span>-datering.De huidige kalibratiecurve gaat terug in de tijd tot aan de detectielimieten van de meetinstrumenten en zo kan men materiaal tot 55.000 jaar oud kalibreren. Dergelijk oud materiaal betrouwbaar meten blijft echter een uiterst gevoelige en moeilijke opdracht (zie ook 2.5).</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>De concentratie <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer was (en is) nooit geheel constant.</p>
+</div>
+</div>
+</div>
+<p>De kalibratiecurve laat toe om een radiokoolstofouderdom - gerapporteerd in jaren BP en een standaardafwijking op deze meting - om te rekenen naar een bereik van <strong>kalenderjaren</strong>, uitgedrukt in jaren BC (vóór het begin van onze jaartelling) of AD (na het begin van onze jaartelling). Dit resulteert meestal in een groter bereik aan mogelijke jaren, in vergelijking met de radiokoolstofouderdom. Dit komt door de vaak grillige vorm van de kalibratiecurve en door het feit dat op de curve ook een statistische onzekerheid zit (ze is dus geen smalle lijn maar eerder een bredere band) (<a href="#fig-kalibratie" class="quarto-xref">fig.&nbsp;<span>3.1</span></a>).</p>
+<div id="fig-kalibratie" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kalibratie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_09_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figuur&nbsp;3.1: Kalibratie van een radiokoolstof-ouderdom (2018 ± 25 BP)."><img src="./figuren/figuur_09_update.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kalibratie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;3.1: Kalibratie van een radiokoolstof-ouderdom (2018 ± 25 BP).
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Onderstaande animatie toont hoe een radiokoolstofdatering met bijhorende onzekerheid wordt omgerekend naar een bereik van kalenderjaren (© <a href="https://maarten14c.github.io/">Maarten Blaauw</a>).</p>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/603364618?h=5a53c721b6" width="640" height="640" frameborder="0" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</div>
 <p><br></p>
-<p><a href="./figuren/cover.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./figuren/cover.png" class="img-fluid" style="width:100.0%"></a></p>
+<p>Op basis van de kalibratiecurve kan een grafiek worden opgebouwd die, doorheen de tijd, het verschil weergeeft tussen de conventionele radiokoolstofouderdom en het werkelijke kalenderjaar waaruit een materiaal stamt. Op die grafiek is te zien dat <span class="math inline">\(\mathrm{^{14}C}\)</span>-jaren tot 200 ‘jaar’ te oud zijn tijdens het eerste millennium AD, maar tot 800 jaar te jong in het 5de millennium BC (<a href="#fig-intcal" class="quarto-xref">fig.&nbsp;<span>3.2</span></a>). De relatie tussen de conventionele radiokoolstofouderdom en de werkelijke kalenderjaren is dus niet alleen wisselend van jaar tot jaar maar vertoont ook bredere trends doorheen de tijd die verband houden met astronomische fenomenen (schommelingen in het aardmagnetisme, cycli in de zonneactiviteit, …).</p>
+<div id="fig-intcal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intcal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_10_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figuur&nbsp;3.2: Evolutie van het verschil tussen de kalenderouderdom en de radiokoolstofouderdom tussen 5000 BC en 1950 AD, berekend op basis van de IntCal20 kalibratiecurve."><img src="./figuren/figuur_10_update.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intcal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;3.2: Evolutie van het verschil tussen de kalenderouderdom en de radiokoolstofouderdom tussen 5000 BC en 1950 AD, berekend op basis van de IntCal20 kalibratiecurve.
+</figcaption>
+</figure>
+</div>
+<p>Zoals eerder aangehaald (zie 2.2), bepaalt de zonneactiviteit voor een groot deel de aanmaak van <span class="math inline">\(\mathrm{^{14}C}\)</span> in onze atmosfeer. Tussen 1645 en 1715 werden door toenmalige astronomen uitzonderlijk weinig <strong>zonnevlekken</strong> geobserveerd (een periode nu gekend als het <strong>‘Maunder-minimum’</strong>), wat wijst op een extreem lage zonneactiviteit, wat een verhoogde vorming van <span class="math inline">\(\mathrm{ ^{14}C}\)</span> in de aardse atmosfeer tot gevolg had. De zonneactiviteit was tijdens de kleine ijstijd (15de-19de eeuw) bovendien al vrij laag. Door deze astronomische fenomenen, in combinatie met menselijk ingrijpen op de vegetatie <span class="citation" data-cites="koch_earth_2019">(<a href="999_14C_bibliografie.html#ref-koch_earth_2019" role="doc-biblioref">Koch <em>e.a.</em> 2019</a>)</span>, heeft de kalibratiecurve vanaf 1650 AD een vrij grillig en plateauvormig verloop (<a href="#fig-intcal" class="quarto-xref">fig.&nbsp;<span>3.2</span></a>).</p>
+<p>Het meest recente deel van de kalibratiecurve laat zien dat er aan het begin van de 20ste eeuw in de atmosfeer minder <span class="math inline">\(\mathrm{^{14}C}\)</span> aanwezig was dan ooit voorheen. Dit komt omdat vanaf halfweg de 19de eeuw de verbranding van <strong>fossiele brandstoffen</strong> enorm steeg door de industriële revolutie. Fossiele brandstoffen bestaan uit miljoenen jaren oude koolstof, en bevatten dus geen <span class="math inline">\(\mathrm{^{14}C}\)</span> meer. Aangezien deze oude koolstof massaal in de atmosfeer terechtkwam, kregen alle ‘deelnemers’ aan de koolstofcyclus minder <span class="math inline">\(\mathrm{^{14}C}\)</span> in hun weefsels, en dus een oudere radiokoolstofouderdom.</p>
 </section>
-<section id="de-auteurs" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="de-auteurs">De auteurs</h2>
-<p>Dr.&nbsp;Kristof Haneca en dr. Anton Ervynck zijn beide erfgoedonderzoekers aan het <a href="https://www.onroerenderfgoed.be/">agentschap Onroerend Erfgoed</a>.<br>
-Mark Van Strydonck is het voormalig hoofd van het <a href="https://www.kikirpa.be/nl/wetenschappelijke-analyses/labo-koolstofdatering">Labo koolstofdatering</a> aan het <em>Koninklijk Instituut voor het Kunstpatrimonium (KIK/IRPA)</em> in Brussel.</p>
+<section id="bomb-peak" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="bomb-peak"><span class="header-section-number">3.2</span> <em>Bomb peak</em></h2>
+<p>Vlak na de eerste nucleaire testen en het gebruik van atoombommen in 1945, en vooral tijdens de daaropvolgende wapenwedloop met tal van <strong>nucleaire experimenten</strong> in de atmosfeer, steeg halfweg de 20ste eeuw het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer dramatisch, tot meer dan 100% boven het gemiddelde ‘normale’ niveau van voor de postmiddeleeuwse periode <span class="citation" data-cites="hua_atmospheric_2013">(<a href="999_14C_bibliografie.html#ref-hua_atmospheric_2013" role="doc-biblioref">Hua <em>e.a.</em> 2013</a>)</span>. In de noordelijke hemisfeer bereikte het gehalte aan <span class="math inline">\(\mathrm{^{14}C}\)</span> daardoor een <strong>piekwaarde in 1963</strong>, een fenomeen waarnaar nu wordt verwezen als de <strong><em>‘bomb peak’</em></strong> (<a href="#fig-bombpeak" class="quarto-xref">fig.&nbsp;<span>3.3</span></a>). In de zuidelijke hemisfeer werd een gelijkaardige piekwaarde geregistreerd in 1965.</p>
+<p>Een radiokoolstofanalyse op recent gevormd organisch materiaal wordt niet uitgedrukt als een conventionele <span class="math inline">\(\mathrm{^{14}C}\)</span> ouderdom. Aangezien 1950 als het referentiejaar 0 BP werd vastgelegd, zouden meer recente materialen een negatieve <span class="math inline">\(\mathrm{^{14}C}\)</span> ouderdom moeten krijgen, wat theoretisch uiteraard niet wenselijk is. In dergelijke gevallen wordt daarom niet langer de conventionele <span class="math inline">\(\mathrm{^{14}C}\)</span> ouderdom berekend, maar de <em>fraction modern carbon</em> (<span class="math inline">\(\mathrm{ F^{14}C}\)</span>) of, als percentage uitgedrukt: het <em>percentage modern carbon</em> (<span class="math inline">\(pMC\)</span>). Dit is de verhouding van de gemeten <span class="math inline">\(\mathrm{^{14}C}\)</span>-activiteit ten opzichte van de internationaal vastgelegde standaard.</p>
+<div id="fig-bombpeak" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bombpeak-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/figuur_11.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figuur&nbsp;3.3: De ‘bomb peak’ zoals geobserveerd in het noordelijk halfrond, met maximale waarde in 1963, als gevolg van thermonucleaire testen tijdens de wapenwedloop in de jaren ’1950 en ’1960. De huidige kalibratiecurve voor de periode na 1950 in onze regio is Bomb13NH1 [@hua_atmospheric_2013]."><img src="./figuren/figuur_11.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bombpeak-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;3.3: De ‘bomb peak’ zoals geobserveerd in het noordelijk halfrond, met maximale waarde in 1963, als gevolg van thermonucleaire testen tijdens de wapenwedloop in de jaren ’1950 en ’1960. De huidige kalibratiecurve voor de periode na 1950 in onze regio is Bomb13NH1 <span class="citation" data-cites="hua_atmospheric_2013">(<a href="999_14C_bibliografie.html#ref-hua_atmospheric_2013" role="doc-biblioref">Hua <em>e.a.</em> 2013</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Het grillige verloop van de kalibratiecurve in het meest recente, ‘postmiddeleeuwse’ deel van de chronologie zorgt ervoor dat het quasi onmogelijk is om materiaal daterend van na 1650 AD en voor 1955 AD - wanneer de hoeveelheid <span class="math inline">\(\mathrm{^{14}C}\)</span> in de atmosfeer begint te stijgen door nucleaire experimenten - met enige precisie met de radiokoolstofmethode te dateren. Dat beperkt de range van de radiokoolstofmethode dus van ca. 55.000 jaar geleden tot het midden van de 17de eeuw. De <em>bomb peak</em> kan echter wel gebruikt worden om bijvoorbeeld 20ste-eeuwse vervalsingen van oudere of originele kunstwerken te onderscheiden. Indien hoge <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentraties worden gemeten in een materiaal en deze beduidend hoger liggen dan tijdens het postmiddeleeuwse gedeelte van de kalibratiecurve, wijst dit op een recente datering, rond de <em>bomb peak</em>. Dergelijk recente dateringen, op basis van het gehalte aan <em>modern carbon</em> (pMC) geven echter steeds twee mogelijkheden, één links en één rechts van de <em>bomb peak</em> in 1963. Door natuurlijk verval en de steeds maar toenemende aanrijking van de atmosfeer met oude koolstof (door verbranding fossiele brandstoffen) deemstert het effect van de <em>bomb peak</em> langzaam weg en zal binnen een aantal jaar het gehalte aan radiokoolstof in de atmosfeer terug op het niveau komen van het postmiddeleeuwse deel van de kalibratiecurve.</p>
+</section>
+<section id="intcal20" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="intcal20"><span class="header-section-number">3.3</span> IntCal20</h2>
+<p>Kalibratiecurves worden met enige regelmaat verlengd, verfijnd en aangevuld met recent onderzochte datasets. Ook de achterliggende modellering kan op basis van nieuwe statistische technieken aan herziening toe zijn. Geactualiseerde kalibratiecurves worden als sinds de jaren ’1960 gepubliceerd <span class="citation" data-cites="stuiver_relationship_1966">(<a href="999_14C_bibliografie.html#ref-stuiver_relationship_1966" role="doc-biblioref">Stuiver en Suess 1966</a>)</span>. De meest recente update kwam er in 2020 <span class="citation" data-cites="reimer_intcal20_2020">(<a href="999_14C_bibliografie.html#ref-reimer_intcal20_2020" role="doc-biblioref">Reimer <em>e.a.</em> 2020</a>)</span>, met de <strong>IntCal20</strong> kalibratiecurve, ter vervanging van Intcal13 (uit 2013). Deze nieuwste kalibratiecurve - voor terrestrische systemen op het noordelijke halfrond - is tot 11.960 BC volledig gebaseerd op dendrochronologisch gedateerd hout. Het oudere gedeelte is samengesteld met metingen op jaarringchronologieën die via <em>wiggle-matching</em> bij benadering zijn gedateerd (zie 7.6), sedimentlagen uit diepere meren (varven), mariene sedimenten, druipstenen (speleothems) en koralen, en gaat tot 55.000 jaar BP terug in de tijd (<a href="http://intcal.org" class="uri">http://intcal.org</a>).</p>
+<p>De globale trend in de IntCal20 kalibratiecurve wijkt tot ca. 25.000 jaar terug weinig af van de voorgaande gepubliceerde kalibratiecurven. Voor nog oudere perioden is er wel een significant verschil doordat er bij de update van de kalibratiecurve meer meetpunten van goed gedateerd materiaal zijn opgenomen. Dit uit zich bij het kalibreren van oud materiaal in vrij grote verschillen in vergelijking met de kalibratie met de vorige kalibratiecurven. Globaal gezien zal het verschil na kalibratie met behulp van IntCal20 in vergelijking met IntCal13, de vorige kalibratiecurve, vrij beperkt zijn voor de historische perioden, maar dit verschil kan oplopen tot enkele honderden jaren bij de kalibratie van ouder materiaal <span class="citation" data-cites="reimer_composition_2020 van_der_plicht_recent_2020">(<a href="999_14C_bibliografie.html#ref-reimer_composition_2020" role="doc-biblioref">Reimer 2020</a>; <a href="999_14C_bibliografie.html#ref-van_der_plicht_recent_2020" role="doc-biblioref">Van der Plicht <em>e.a.</em> 2020</a>)</span>.</p>
+<div id="fig-calcurves" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-calcurves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/calcurves.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figuur&nbsp;3.4: Vergelijking van de huidige en voorgaande kalibratiecurves in de Romeinse periode."><img src="./figuren/calcurves.jpg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-calcurves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;3.4: Vergelijking van de huidige en voorgaande kalibratiecurves in de Romeinse periode.
+</figcaption>
+</figure>
+</div>
+<p>IntCal20 heeft in vergelijking met vroegere kalibratiecurven veel meer detail en ziet er daardoor ook wat ‘nerveuzer’ uit, met meer kleine schommelingen (<a href="#fig-calcurves" class="quarto-xref">fig.&nbsp;<span>3.4</span></a>). Dit is het gevolg van de integratie van metingen op materiaal met een hoge tijdsresolutie, zoals de jaarlijkse groeiringen in dendrochronologisch gedateerd hout. Zo heeft IntCal20 tot 3050 BC een jaarlijkse resolutie. Het nog oudere gedeelte is dan weer berekend aan de hand van blokjes van 5, 10 of 20 jaarringen (<a href="#fig-calcurves-res" class="quarto-xref">fig.&nbsp;<span>3.5</span></a>).</p>
+<div id="fig-calcurves-res" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-calcurves-res-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./figuren/calcurves_res.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figuur&nbsp;3.5: Vergelijking van de resolutie van de huidige en voorgaande kalibratiecurves."><img src="./figuren/calcurves_res.jpg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-calcurves-res-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;3.5: Vergelijking van de resolutie van de huidige en voorgaande kalibratiecurves.
+</figcaption>
+</figure>
+</div>
+<p>Ook de vrij recente ontdekking van zogenaamde <strong>Miyake-events</strong> - een plotse, sterke toename van de <span class="math inline">\(\mathrm{^{14}C}\)</span>-concentratie in de atmosfeer als gevolg van een protonenstorm veroorzaakt door een zonnevlam (<em>solar particle event</em> (SPE)) - in 774-75 AD en 993 AD <span class="citation" data-cites="miyake_another_2013 miyake_signature_2012">(<a href="999_14C_bibliografie.html#ref-miyake_another_2013" role="doc-biblioref">Miyake <em>e.a.</em> 2013</a> en <a href="999_14C_bibliografie.html#ref-miyake_signature_2012" role="doc-biblioref">2012</a>)</span> zorgen op die plaatsen voor een duidelijk verschil met vorige kalibratiecurven. Door het meer nerveuze karakter van IntCal20 zal een gekalibreerde radiokoolstofdatering vaker resulteren in een discontinu bereik aan mogelijke kalenderjaren, in vergelijking met de oudere kalibratiecurven.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Het is aangewezen radiokoolstofdateringen altijd met de meest recente kalibratiecurve te (her)kalibreren.</p>
+</div>
+</div>
+</div>
+<p>Radiokoolstofdateringen die werden uitgevoerd vóór de publicatie van de IntCal20 curve, werden doorgaans met de toen geldende kalibratiecurve gekalibreerd (IntCal13, IntCal09, …). Indien we dergelijke oudere dateringen willen vergelijken met recent uitgevoerde radiokoolstofanalyses, dan moet de volledige set aan dateringen gekalibreerd worden met dezelfde (en meest recente) kalibratiecurve. Voor de vroeger uitgevoerde dateringen kan het bereik aan mogelijke kalenderjaren na kalibratie daardoor wel afwijken t.o.v. de origineel gerapporteerde datering.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-hua_atmospheric_2013" class="csl-entry" role="listitem">
+Hua Q., Barbetti M., Rakowski A.Z., 2013. Atmospheric radiocarbon for the period 1950-2010. Radiocarbon 55, 2059–2072. <a href="https://doi.org/10.2458/azu_js_rc.v55i2.16177">https://doi.org/10.2458/azu_js_rc.v55i2.16177</a>
+</div>
+<div id="ref-koch_earth_2019" class="csl-entry" role="listitem">
+Koch A., Brierley C., Maslin M.M., Lewis S.L., 2019. Earth system impacts of the <span>European</span> arrival and <span>Great</span> <span>Dying</span> in the <span>Americas</span> after 1492. Quaternary Science Reviews 207, 13–36. <a href="https://doi.org/10.1016/j.quascirev.2018.12.004">https://doi.org/10.1016/j.quascirev.2018.12.004</a>
+</div>
+<div id="ref-miyake_another_2013" class="csl-entry" role="listitem">
+Miyake F., Masuda K., Nakamura T., 2013. Another rapid event in the carbon-14 content of tree rings. Nature Communications 4, 1748. <a href="https://doi.org/10.1038/ncomms2783">https://doi.org/10.1038/ncomms2783</a>
+</div>
+<div id="ref-miyake_signature_2012" class="csl-entry" role="listitem">
+Miyake F., Nagaya K., Masuda K., Nakamura T., 2012. A signature of cosmic-ray increase in ad 774-775 from tree rings in <span>Japan</span>. Nature. <a href="https://doi.org/10.1038/nature11123">https://doi.org/10.1038/nature11123</a>
+</div>
+<div id="ref-reimer_composition_2020" class="csl-entry" role="listitem">
+Reimer P.J., 2020. Composition and consequences of the <span>IntCal20</span> radiocarbon calibration curve. Quaternary Research 96, 22–27. <a href="https://doi.org/10.1017/qua.2020.42">https://doi.org/10.1017/qua.2020.42</a>
+</div>
+<div id="ref-reimer_intcal20_2020" class="csl-entry" role="listitem">
+Reimer P.J., Austin W.E.N., Bard E., Bayliss A., Blackwell P.G., Bronk Ramsey C., Butzin M., Cheng H., Edwards R.L., Friedrich M., Grootes P.M., Guilderson T.P., Hajdas I., Heaton T.J., Hogg A.G., Hughen K.A., Kromer B., Manning S.W., Muscheler R., Palmer J.G., Pearson C., Van der Plicht J., Reimer R.W., Richards D.A., Scott E.M., Southon J.R., Turney C.S.M., Wacker L., Adolphi F., Büntgen U., Capano M., Fahrni S.M., Fogtmann-Schulz A., Friedrich R., Köhler P., Kudsk S., Miyake F., Olsen J., Reinig F., Sakamoto M., Sookdeo A., Talamo S., 2020. The <span>IntCal20</span> northern hemisphere radiocarbon age calibration curve (0-55 cal kbp). Radiocarbon 62, 725–757. <a href="https://doi.org/10.1017/RDC.2020.41">https://doi.org/10.1017/RDC.2020.41</a>
+</div>
+<div id="ref-stuiver_relationship_1966" class="csl-entry" role="listitem">
+Stuiver M., Suess H.E., 1966. On the relationship between radiocarbon dates and true sample ages. Radiocarbon 8, 534–540. <a href="https://doi.org/10.1017/S0033822200000345">https://doi.org/10.1017/S0033822200000345</a>
+</div>
+<div id="ref-van_der_plicht_recent_2020" class="csl-entry" role="listitem">
+Van der Plicht J., Bronk Ramsey C., Heaton T.J., Scott E.M., Talamo S., 2020. Recent developments in calibration for archaeological and environmental samples. Radiocarbon 62, 1095–1117. <a href="https://doi.org/10.1017/RDC.2020.22">https://doi.org/10.1017/RDC.2020.22</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -974,15 +1070,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./02_C14_principes.html" class="pagination-link" aria-label="Het principe van een ^14^C-datering">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Het principe van een <sup>14</sup>C-datering</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./00_C14_wijzigingen.html" class="pagination-link" aria-label="Updates">
-        <span class="nav-page-text">Updates</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04_C14_onderzoeksvragen.html" class="pagination-link" aria-label="Onderzoeksvragen en -strategie">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Onderzoeksvragen en -strategie</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom"});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/main/03_C14_kalibratie.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"loop":false,"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
