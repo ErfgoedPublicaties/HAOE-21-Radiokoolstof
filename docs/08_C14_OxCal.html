@@ -175,10 +175,6 @@ window.Quarto = {
 };
 </script>
 
-<meta name="twitter:title" content="\(\mathrm{^{14}C:}\) dateren met radiokoolstof - 8&nbsp; Handleiding OxCal">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof//figuren/haoe021-001_cover.jpg">
-<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating">
@@ -224,30 +220,12 @@ window.Quarto = {
       <a href="./"><span class="math inline">\(\mathrm{^{14}C:}\)</span> dateren met radiokoolstof</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/" title="Broncode" class="quarto-navigation-tool px-1" aria-label="Broncode"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-facebook pe-1"></i>
-            Facebook
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-linkedin pe-1"></i>
-            LinkedIn
-            </a>
-          </li>
-      </ul>
-    </div>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Schakel donkere modus"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Schakel leesmodus">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
     </div>
       </div>
@@ -441,10 +419,10 @@ window.Quarto = {
 <div id="fig-oxcal-login" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-login-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_01.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figuur&nbsp;8.1: Inlogscherm voor OxCal op https://c14.arch.ox.ac.uk/login."><img src="./figuren/figuur_B_01.jpg" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_login.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figuur&nbsp;8.1: Inlogscherm voor OxCal op https://c14.arch.ox.ac.uk/oxcal."><img src="./figuren/figuur_oxcal_login.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-login-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figuur&nbsp;8.1: Inlogscherm voor OxCal op https://c14.arch.ox.ac.uk/login.
+Figuur&nbsp;8.1: Inlogscherm voor OxCal op <a href="https://c14.arch.ox.ac.uk/oxcal" class="uri">https://c14.arch.ox.ac.uk/oxcal</a>.
 </figcaption>
 </figure>
 </div>
@@ -455,43 +433,53 @@ Figuur&nbsp;8.1: Inlogscherm voor OxCal op https://c14.arch.ox.ac.uk/login.
 <p>De meest gebruikte analyse binnen OxCal is het kalibreren van radiokoolstofdateringen. Daarbij wordt een conventionele radiokoolstofdatering, gerapporteerd in jaren BP, omgerekend naar kalenderjaren (BCE of CE).</p>
 <section id="kalibratie-van-één-datering" class="level3" data-number="8.2.1">
 <h3 data-number="8.2.1" class="anchored" data-anchor-id="kalibratie-van-één-datering"><span class="header-section-number">8.2.1</span> Kalibratie van één datering</h3>
-<p>Bij het opstarten van OxCal krijgen we het openingsscherm te zien dat meteen toelaat om een <span class="math inline">\(\mathrm{^{14}C}\)</span>-datering te kalibreren (linksboven op <a href="#fig-oxcal-cal" class="quarto-xref">fig.&nbsp;<span>8.2</span></a>).</p>
-<div id="fig-oxcal-cal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Bij het opstarten van OxCal krijgen we het openingsscherm te zien dat meteen toelaat om een <span class="math inline">\(\mathrm{^{14}C}\)</span>-datering te kalibreren (<a href="#fig-oxcal-cal" class="quarto-xref">fig.&nbsp;<span>8.2</span></a>).</p>
+<div id="fig-oxcal-cal" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-cal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_02_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figuur&nbsp;8.2: Openingsscherm van OxCal. Linksboven kan je een individuele radiokoolstofdatering invoeren en kalibreren."><img src="./figuren/figuur_B_02_update.png" class="img-fluid figure-img"></a>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><a href="./figuren/figuur_oxcal_calibrate.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figuur&nbsp;8.2: Openingsscherm van OxCal. Via het menu kan je de kalibratie van een individuele radiokoolstofdatering opstarten (knop [Calibrate])."><img src="./figuren/figuur_oxcal_calibrate.jpg" class="img-fluid figure-img"></a></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><a href="./figuren/figuur_oxcal_calibrate2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figuur&nbsp;8.2: Openingsscherm van OxCal. Via het menu kan je de kalibratie van een individuele radiokoolstofdatering opstarten (knop [Calibrate])."><img src="./figuren/figuur_oxcal_calibrate2.jpg" class="img-fluid figure-img"></a></p>
+</div>
+</div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-cal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figuur&nbsp;8.2: Openingsscherm van OxCal. Linksboven kan je een individuele radiokoolstofdatering invoeren en kalibreren.
+Figuur&nbsp;8.2: Openingsscherm van OxCal. Via het menu kan je de kalibratie van een individuele radiokoolstofdatering opstarten (knop <code>[Calibrate]</code>).
 </figcaption>
 </figure>
 </div>
 <p>Volgende velden vragen om input:</p>
 <ul>
 <li><strong>Name</strong>: in dit veld wordt bij voorkeur de unieke code van de radiokoolstofanalyse, inclusief de afkorting van het labo dat de analyse uitvoerde, ingevuld (bv. RICH-12345, Beta-98765, …)</li>
-<li><strong>Date</strong>: hier wordt de conventionele radiokoolstofdatering, in jaren BP ingevuld (bv. 1599)</li>
-<li><strong>±</strong>: de standaardafwijking op de radiokoolstofdatering (bv. 29)</li>
-<li><strong>Curve</strong>: hier selecteer je de naam van de kalibratiecurve die je wil gebruiken. Doorgaans is dit de meest recente kalibratiecurve, wat nu (dd. september 2024) de IntCal20-kalibratiecurve is <span class="citation" data-cites="reimer_intcal20_2020">(<a href="999_14C_bibliografie.html#ref-reimer_intcal20_2020" role="doc-biblioref">Reimer <em>e.a.</em> 2020</a>)</span>. Voor de kalibratie van een radiokoolstofdatering uitgevoerd op materiaal uit een marien reservoir moet een andere curve gekozen worden. Ook de oudere kalibratiecurven worden mee geïnstalleerd en zijn te selecteren indien gewenst. Dit kan handig zijn bij de evaluatie van oudere, in het verleden gepubliceerde dateringen.</li>
+<li><strong>14C Date</strong>: hier wordt de conventionele radiokoolstofdatering, in jaren BP ingevuld (bv. 1599)</li>
+<li><strong>Uncertainty</strong>: de standaardafwijking op de radiokoolstofdatering (bv. 29)</li>
+<li><strong>Options</strong>: via deze knop kom je in een menu terecht waar je de gewenste kalibratiecurve kan selecteren. Standaard is dit de meest recente kalibratiecurve, wat nu (dd. september 2024) de IntCal20-kalibratiecurve is <span class="citation" data-cites="reimer_intcal20_2020">(<a href="999_14C_bibliografie.html#ref-reimer_intcal20_2020" role="doc-biblioref">Reimer <em>e.a.</em> 2020</a>)</span>. Voor de kalibratie van een radiokoolstofdatering uitgevoerd op materiaal uit een marien reservoir moet een andere curve gekozen worden. Ook de oudere kalibratiecurven worden mee geïnstalleerd en zijn te selecteren indien gewenst. Dit kan handig zijn bij de (her-)evaluatie van oudere, in het verleden gepubliceerde dateringen.</li>
 </ul>
-<p>Door de knop <code>[Calibrate]</code> aan te klikken wordt de kalibratie uitgevoerd en het resultaat meteen in een grafiek voorgesteld (<a href="#fig-oxcal-calplot" class="quarto-xref">fig.&nbsp;<span>8.3</span></a>).</p>
+<p>Door de knop <code>[Run]</code> aan te klikken wordt de kalibratie uitgevoerd en het resultaat meteen in een grafiek voorgesteld (<a href="#fig-oxcal-calplot" class="quarto-xref">fig.&nbsp;<span>8.3</span></a>).</p>
 <div id="fig-oxcal-calplot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-calplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_03_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figuur&nbsp;8.3: "><img src="./figuren/figuur_B_03_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_calibrate_plot.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figuur&nbsp;8.3: "><img src="./figuren/figuur_oxcal_calibrate_plot.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-oxcal-calplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.3
 </figcaption>
 </figure>
 </div>
-<p>De vormgeving van deze grafiek kan je daarna nog aanpassen in het menu [Format] (<a href="#fig-oxcal-layout" class="quarto-xref">fig.&nbsp;<span>8.4</span></a>). Daar kan je op het tabblad Show kiezen welk betrouwbaarheidsinterval (68,2%, 95,4% en/of 99,7%) en wat voor variabelen (mean = gemiddelde, sigma = standaardafwijking, median = mediaan) je wil weergeven. Het bereik van de assen en de zoomfactor kan je eveneens aanpassen naar eigen voorkeur, via het tabblad Adjust of met de selectieknoppen <code>[Zoom]</code>, <code>[Centre]</code> en <code>[Span]</code> in de werkbalk boven de grafiek die je daarna kan aanpassen met de pijltjestoetsen op je klavier.</p>
+<p>De vormgeving van deze grafiek kan je daarna nog aanpassen in het menu <code>[Edit]</code> (<a href="#fig-oxcal-layout" class="quarto-xref">fig.&nbsp;<span>8.4</span></a>). Daar kan je via <code>Format</code> kiezen welk betrouwbaarheidsinterval (68,2%, 95,4% en/of 99,7%) en wat voor variabelen (mean = gemiddelde, sigma = standaardafwijking, median = mediaan) je wil weergeven. Het bereik van de assen en de zoomfactor kan je eveneens in het <code>[Edit]</code>menu aanpassen naar eigen voorkeur, via <code>Layout</code>, of door één van de knoppen <code>[Zoom]</code>, <code>[Center]</code> of <code>[Span]</code> te selecteren in de werkbalk boven de grafiek. Deze kan je daarna aanpassen met de pijltjestoetsen op je klavier.</p>
+<p>Zowel de zoomfactor als de range (span) kan je ook dynamisch aanpassen, door met de muis in de grafiek te klikken en de linkermuisknop ingedrukt te houden. Bij het bewegen schuift de grafiek mee, en door tegelijkertijd <code>Shift</code> of <code>Alt</code> ingedrukt te houden, past de <code>span</code> of <code>zoom</code> van de grafiek zich aan.</p>
 <div id="fig-oxcal-layout" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_04_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figuur&nbsp;8.4: De lay-out van de grafieken kan via het menu [Format] worden aangepast"><img src="./figuren/figuur_B_04_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_calibrate_plot2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figuur&nbsp;8.4: De lay-out van de grafieken kan via het menu [Edit] worden aangepast"><img src="./figuren/figuur_oxcal_calibrate_plot2.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figuur&nbsp;8.4: De lay-out van de grafieken kan via het menu [Format] worden aangepast
+Figuur&nbsp;8.4: De lay-out van de grafieken kan via het menu <code>[Edit]</code> worden aangepast
 </figcaption>
 </figure>
 </div>
@@ -508,33 +496,43 @@ Figuur&nbsp;8.4: De lay-out van de grafieken kan via het menu [Format] worden aa
 <div id="fig-oxcal-05" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_05_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figuur&nbsp;8.5: "><img src="./figuren/figuur_B_05_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_B_05_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figuur&nbsp;8.5: Onderdelen van een grafiek met een gekalibreerde radiokoolstofdatering."><img src="./figuren/figuur_B_05_update.png" class="img-fluid figure-img"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-oxcal-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figuur&nbsp;8.5
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figuur&nbsp;8.5: Onderdelen van een grafiek met een gekalibreerde radiokoolstofdatering.
 </figcaption>
 </figure>
 </div>
-<p>Onder het invulmenu van het openingsscherm (<a href="#fig-oxcal-cal" class="quarto-xref">fig.&nbsp;<span>8.2</span></a>) zijn nog twee andere functies beschikbaar:</p>
+<p>Onder het menu van het openingsscherm (<a href="#fig-oxcal-cal" class="quarto-xref">fig.&nbsp;<span>8.2</span></a>) zijn nog andere modules raadpleegbaar:</p>
 <ul>
-<li><p>Met <code>[View curve]</code> krijg je de kalibratiecurve te zien. Door de linker muisknop ingedrukt te houden terwijl je over de grafiek beweegt kan je de curve naar de gewenste tijdsperiode schuiven. Door tegelijkertijd de SHIFT-knop in te drukken, wordt het bereik aan kalenderjaren groter of kleiner naargelang je de muis naar links/rechts beweegt. Op die manier kan de kalibratiecurve verkend worden en kan een inschatting worden gemaakt van wat een datering voor een bepaalde tijdsperiode kan opleveren (aanwezigheid van plateau’s, <em>wiggles</em>, steil verloop, turbulente periode).</p></li>
-<li><p>De knop <code>[Projects...]</code> laat toe om eerder uitgevoerde en bewaarde OxCal-projecten te selecteren en op te roepen. Je kan opgeslagen projecten en figuren ook terugvinden door [File &gt; Manager] te selecteren.</p></li>
+<li><p>Met <code>[View curve]</code> krijg je de kalibratiecurve te zien. Door de linker muisknop ingedrukt te houden terwijl je over de grafiek beweegt kan je de curve naar de gewenste tijdsperiode schuiven. Door tegelijkertijd de SHIFT-knop in te drukken, wordt het bereik aan kalenderjaren groter of kleiner naargelang je de muis naar links/rechts beweegt. Op die manier kan de kalibratiecurve verkend worden en kan een inschatting worden gemaakt van wat een datering voor een bepaalde tijdsperiode kan opleveren (aanwezigheid van plateau’s, <em>wiggles</em>, steil verloop, turbulente periode). Met de <code>[Zoom]</code>, <code>[Center]</code> en <code>[Span]</code>knoppen, kan je de grafiek eveneens aanpassen.</p></li>
+<li><p>De knop <code>[Open Project]</code> laat toe om eerder uitgevoerde en bewaarde OxCal-projecten te selecteren en op te roepen. Je kan opgeslagen projecten en figuren ook terugvinden door <code>[File &gt; Manager]</code> te selecteren.</p></li>
 </ul>
 </section>
 <section id="kalibratie-van-meerdere-dateringen" class="level3" data-number="8.2.2">
 <h3 data-number="8.2.2" class="anchored" data-anchor-id="kalibratie-van-meerdere-dateringen"><span class="header-section-number">8.2.2</span> Kalibratie van meerdere dateringen</h3>
-<p>Uiteraard kunnen ook meerdere dateringen tegelijkertijd worden gekalibreerd en samen weergegeven in een zogenaamde multiplot. Dit laat toe om de radiokoolstofdateringen te ordenen volgens een chronologisch kader of stratigrafisch verband. De invoer start met het aanmaken van een nieuw project via het menu <code>[File &gt; new]</code>. Daarna start het eigenlijke ingeven van de radiokoolstofdateringen via het tabblad <code>[Insert]</code> (<a href="#fig-oxcal-multi" class="quarto-xref">fig.&nbsp;<span>8.6</span></a>). Om een radiokoolstofdatering in te voegen, selecteer je in het keuzemenu links bovenaan <code>R_Date()</code>. Deze procedure herhaal je voor alle dateringen die je wil kalibreren en aan de grafiek toevoegen.</p>
-<div id="fig-oxcal-multi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Uiteraard kunnen ook meerdere dateringen tegelijkertijd worden gekalibreerd en samen weergegeven in een zogenaamde multiplot. Dit laat toe om de radiokoolstofdateringen te ordenen volgens een chronologisch kader of stratigrafisch verband. De invoer start met het aanmaken van een nieuw project via het menu <code>[File &gt; new]</code>. Daarna start het eigenlijke ingeven van de radiokoolstofdateringen via het tabblad <code>[Insert]</code> (<a href="#fig-oxcal-multi" class="quarto-xref">fig.&nbsp;<span>8.6</span></a>). Om een radiokoolstofdatering in te voegen, selecteer je in het keuzemenu links bovenaan <code>R_Date()</code>. Je vult de nodige gegevens in (<code>Name</code>, <code>Date</code>, <code>Uncertainty</code>) en voegt de radiokoolstofdatering toe aan het project (<code>Ìnsert</code>). Deze procedure herhaal je voor alle dateringen die je wil kalibreren en aan de grafiek toevoegen.</p>
+<div id="fig-oxcal-multi" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-multi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_06_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figuur&nbsp;8.6: Programmeercode om een multiplot op te bouwen."><img src="./figuren/figuur_B_06_update.png" class="img-fluid figure-img"></a>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><a href="./figuren/figuur_oxcal_multi.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figuur&nbsp;8.6: Programmeercode om een multiplot op te bouwen."><img src="./figuren/figuur_oxcal_multi.jpg" class="img-fluid figure-img"></a></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><a href="./figuren/figuur_oxcal_multi_code.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figuur&nbsp;8.6: Programmeercode om een multiplot op te bouwen."><img src="./figuren/figuur_oxcal_multi_code.jpg" class="img-fluid figure-img"></a></p>
+</div>
+</div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-multi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.6: Programmeercode om een multiplot op te bouwen.
 </figcaption>
 </figure>
 </div>
-<p>Met de eerste vier knoppen in de werkbalk bovenaan (vak 1 in <a href="#fig-oxcal-multi" class="quarto-xref">fig.&nbsp;<span>8.6</span></a>) krijg je telkens een andere weergave van dezelfde programmeercode. De eerste knop geeft het model schematisch weer (zoals tijdens de invoer), de tweede knop keert de volgorde van de ingevoerde radiokoolstofdateringen om, de derde knop laat de programmeercode zien als een lijst en de laatste knop toont deze programmeercode als tekst (<a href="#fig-oxcal-multi" class="quarto-xref">fig.&nbsp;<span>8.6</span></a>, onderaan). De opbouw van de programmeercode voor het kalibreren en weergeven van een radiokoolstofdatering neemt steeds volgende vorm aan:</p>
+<p>Via het menu <code>[View]</code> kan je de weergave van de ingevoerde dateringen wijzigen. De eerste mogelijkheid (<code>Model</code>) geeft het model schematisch weer (zoals tijdens de invoer), en met de tweede optie keert de volgorde van de ingevoerde radiokoolstofdateringen om. De derde optie (<code>List</code>) laat de dateringen zien als een lijst en de laatste knop <code>Code</code> toont de achterliggende programmeercode als tekst (<a href="#fig-oxcal-multi" class="quarto-xref">fig.&nbsp;<span>8.6</span></a>, onderaan).</p>
+<p>De opbouw van de programmeercode voor het kalibreren en weergeven van een radiokoolstofdatering neemt steeds volgende vorm aan:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Plot</span>()</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> {</span>
@@ -549,8 +547,8 @@ Figuur&nbsp;8.6: Programmeercode om een multiplot op te bouwen.
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>De functie <code>R_Date()</code> heeft dus drie argumenten (het label van de radiokoolstofdatering de radiokoolstofouderdom en de standaardafwijking), die onderling gescheiden worden door een komma. Een regel eindigt steeds op een puntkomma, en een functie waar binnen andere functies worden opgeroepen begint met een <code>{</code> en eindigt met <code>};</code>. In deze weergave kan je zelf ook regels programmeercode toevoegen door deze in het geopende venster te typen.</p>
-<p>Met de knoppen rechts bovenaan (vak 2 in <a href="#fig-oxcal-multi" class="quarto-xref">fig.&nbsp;<span>8.6</span></a>) kan je respectievelijk een blok programmeercode knippen, kopiëren en plakken.</p>
-<p>Om OxCal de berekening te laten uitvoeren selecteer je in het menu <code>[File &gt; Run]</code> of klik je rechts bovenaan op de blauwe pijltoets <code>&gt;</code>. Nadat de berekeningen zijn uitgevoerd, krijg je eerst een tabel te zien. Door in het keuzeveld links bovenaan <code>[Multiple plot]</code> te selecteren, worden alle gekalibreerde radiokoolstofdateringen voorgesteld in één grafiek (<a href="#fig-oxcal-multi2" class="quarto-xref">fig.&nbsp;<span>8.7</span></a>). Na selectie van <code>[Zoom]</code>, <code>[Centre]</code> en <code>[Span]</code> kan je de grootte van de grafiek of het bereik van de assen aanpassen met de pijltjestoetsen. Selecteer je <code>[Single plot]</code> dan worden de individuele dateringen één voor één in een aparte grafiek voorgesteld. Met de pijltoetsen rechts bovenaan kan je dan door de volledige reeks van gekalibreerde dateringen bladeren.</p>
+<p>Met de knoppen rechts bovenaan (<a href="#fig-oxcal-multi" class="quarto-xref">fig.&nbsp;<span>8.6</span></a>) kan je respectievelijk een blok programmeercode knippen, kopiëren en plakken.</p>
+<p>Om OxCal de berekening te laten uitvoeren selecteer je in het menu <code>[File &gt; Run]</code> of klik je rechts bovenaan op de knop <code>[Run]</code>. Nadat de berekeningen zijn uitgevoerd, krijg je eerst een tabel te zien. Door in de menu <code>[View]</code> de optie <code>Plot dates</code> te selecteren, worden alle gekalibreerde radiokoolstofdateringen voorgesteld in één grafiek (<a href="#fig-oxcal-multi2" class="quarto-xref">fig.&nbsp;<span>8.7</span></a>). Na selectie van <code>[Zoom]</code>, <code>[Centre]</code> en <code>[Span]</code> kan je de grootte van de grafiek of het bereik van de assen aanpassen met de pijltjestoetsen. Selecteer je <code>Plot single</code> dan worden de individuele dateringen één voor één in een aparte grafiek voorgesteld. Met de pijltoetsen rechts bovenaan kan je dan door de volledige reeks van gekalibreerde dateringen bladeren.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> {</span>
@@ -568,7 +566,7 @@ Figuur&nbsp;8.6: Programmeercode om een multiplot op te bouwen.
 <div id="fig-oxcal-multi2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-multi2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_07_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figuur&nbsp;8.7: Een multiplot met negen gekalibreerde radiokoolstofdateringen."><img src="./figuren/figuur_B_07_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_multi_plot.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figuur&nbsp;8.7: Een multiplot met negen gekalibreerde radiokoolstofdateringen."><img src="./figuren/figuur_oxcal_multi_plot.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-multi2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.7: Een multiplot met negen gekalibreerde radiokoolstofdateringen.
@@ -582,35 +580,35 @@ Figuur&nbsp;8.7: Een multiplot met negen gekalibreerde radiokoolstofdateringen.
 <div id="fig-oxcal-excel" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-excel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_08.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figuur&nbsp;8.8: OxCal-programmacode aanmaken in MS Excel voor meerdere radiokoolstofdateringen. Met de functie TEKST.SAMENVOEGEN (1) breng je de stukken tekst uit de verschillende kolommen (2) samen tot de programmacode uit OxCal (3)."><img src="./figuren/figuur_B_08.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_B_08.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figuur&nbsp;8.8: OxCal-programmacode aanmaken in MS Excel voor meerdere radiokoolstofdateringen. Met de functie TEKST.SAMENVOEGEN (1) breng je de stukken tekst uit de verschillende kolommen (2) samen tot de programmacode uit OxCal (3)."><img src="./figuren/figuur_B_08.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-excel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.8: OxCal-programmacode aanmaken in MS Excel voor meerdere radiokoolstofdateringen. Met de functie TEKST.SAMENVOEGEN (1) breng je de stukken tekst uit de verschillende kolommen (2) samen tot de programmacode uit OxCal (3).
 </figcaption>
 </figure>
 </div>
-<p>Een nog eenvoudiger alternatief start met het openen van een nieuw project in OxCal. In het Excel bestand kopieer je ondertussen de drie kolommen met de labocode, radiokoolstofouderdom en de standaardafwijking. Via het tabblad <code>[Tools &gt; Import]</code> krijg je een venster te zien met drie kolommen: <code>Name</code>, <code>14C Date</code> en <code>Uncertainty</code> (<a href="#fig-oxcal-excel2" class="quarto-xref">fig.&nbsp;<span>8.9</span></a>). In dit venster plak je de gegevens die je uit Excel hebt gekopieerd. Met de knop <code>[ &gt;&gt; ]</code> worden deze dateringen dan omgezet en overgebracht in het venster met de programmeercode.</p>
+<p>Een nog eenvoudiger alternatief start met het openen van een nieuw project in OxCal. In het Excel bestand kopieer je ondertussen de drie kolommen met de labocode, radiokoolstofouderdom en de standaardafwijking. Via het menu <code>[Tools &gt; Import]</code> krijg je een venster <code>Data</code> te zien waar je gekopieerde gegevens rechtstreeks uit Excel kunt plakken (<a href="#fig-oxcal-excel2" class="quarto-xref">fig.&nbsp;<span>8.9</span></a>). Met de knop <code>[Insert]</code> worden deze dateringen dan omgezet en overgebracht in het venster met de programmeercode.</p>
 <div id="fig-oxcal-excel2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-excel2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_09.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figuur&nbsp;8.9: Copy-paste de gegevens van de radiokoolstofdateringen rechtstreeks in OxCal."><img src="./figuren/figuur_B_09.jpg" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_excel_paste.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figuur&nbsp;8.9: Copy-paste gegevens van de radiokoolstofdateringen rechtstreeks in OxCal."><img src="./figuren/figuur_oxcal_excel_paste.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-excel2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figuur&nbsp;8.9: Copy-paste de gegevens van de radiokoolstofdateringen rechtstreeks in OxCal.
+Figuur&nbsp;8.9: Copy-paste gegevens van de radiokoolstofdateringen rechtstreeks in OxCal.
 </figcaption>
 </figure>
 </div>
-<p>Welke methode er ook wordt gevolgd, door de aangemaakte programmeercode uit te voeren, bekomt men Ã©Ã©n grafiek met alle radiokoolstofdateringen samen.</p>
+<p>Welke methode er ook wordt gevolgd, door de aangemaakte programmeercode uit te voeren, bekomt men één grafiek met alle radiokoolstofdateringen samen.</p>
 </section>
 <section id="grafieken-en-tabellen" class="level3" data-number="8.2.4">
 <h3 data-number="8.2.4" class="anchored" data-anchor-id="grafieken-en-tabellen"><span class="header-section-number">8.2.4</span> Grafieken en tabellen</h3>
-<p>Eens een kalibratie uitgevoerd, zijn de resultaten zowel beschikbaar als een grafische voorstelling als in tabelvorm. De grafiek met de kalibratie van individuele radiokoolstofdateringen krijgt men te zien na selectie van <code>[Single plot]</code> in het keuzemenu links bovenaan het scherm. Indien meerder dateringen tegelijkertijd werden gekalibreerd, kunnen de individuele grafieken doorlopen worden met behulp van de pijlen rechts bovenaan het scherm. Alle gekalibreerde dateringen tegelijkertijd weergeven kan door de optie <code>[Multiple plot]</code> te selecteren in het keuzemenu. In een multiplot worden alle gekalibreerde dateringen onder elkaar weergegeven in de volgorde waarin ze werden ingevoerd. De grootte, het bereik en de periode die wordt overspannen in de grafiek kan je aanpassen in het menu <code>[Format]</code> en de tabbladen die in dit menu verschijnen, of met de knoppen bovenaan het venster (<code>[Zoom]</code>, <code>[Centre]</code> of <code>[Span]</code> selecteren en daarna met de pijltoetsen op het klavier het gewenste bereik selecteren). In het tabblad <code>[Show]</code> kan men ook aangeven welk waarschijnlijkheidsinterval (of meerdere) je wil weergegeven in de grafiek.</p>
-<p>Opslaan van de grafieken verloopt via het menu <code>[File &gt; Save as]</code>. Daarna krijgt je een venster te zien waarin men een mappenstructuur kan opbouwen en in de gewenste map de output onder de vorm van een grafiek opslaan. In de online versie van OxCal kan men de grafieken bewaren op de server, onder de ingelogde account. Bij het opnieuw inloggen kan je via <code>[File &gt; Manager]</code> de resultaten opnieuw opvragen. Wil men een lokale kopie van de grafiek, dan selecteert men de knop <code>[Download]</code> rechts onderaan, nadat men het gewenste output formaat heeft gekozen: als .pdf (<em>portable document format</em>), .png (<em>portable network grafic</em>) of .svg (<em>scalable vector grafic</em>). De grafiek wordt daarna in het gewenste formaat gedownload.</p>
-<p>De output in de vorm van tekst laat zich minder vlot exporteren. In het keuzemenu selecteert je eerst <code>[Table]</code>, waarna een tabel verschijnt met alle resultaten. Door in de tweede kolom te klikken, komt een venster tevoorschijn met bovenaan de gekalibreerde dateringen in tekstvorm, voor elk van de gevraagde betrouwbaarheidsintervallen (<a href="#fig-oxcal-output" class="quarto-xref">fig.&nbsp;<span>8.10</span></a>). Deze numerieke gegevens kan je als tekst kopiÃ«ren naar een eigen rapport of tabel. Met de pijltjestoetsen bovenaan rechts doorloop je alle gekalibreerde radiokoolstofdateringen.</p>
+<p>Eens een kalibratie uitgevoerd, worden de resultaten zowel numeriek als grafisch aangeboden. De grafiek met de kalibratie van individuele radiokoolstofdateringen krijgt men te zien na het aanvinken van <code>Plot single</code> in het menu <code>[View]</code>. Indien meerder dateringen tegelijkertijd werden gekalibreerd, kunnen de individuele grafieken doorlopen worden met behulp van de pijlen rechts bovenaan het scherm. Alle gekalibreerde dateringen tegelijkertijd weergeven kan door de optie <code>Plot dates</code> te selecteren in het keuzemenu. In een multiplot worden alle gekalibreerde dateringen onder elkaar weergegeven in de volgorde waarin ze werden ingevoerd. De grootte, het bereik en de periode die wordt overspannen in de grafiek kan je aanpassen in het menu <code>[Edit]</code> en de keuzevelden <code>Format</code>, <code>Layout</code> en <code>Adjust</code>. Via <code>Format</code> kan men o.a. aangeven welk waarschijnlijkheidsinterval (of meerdere) je wil weergegeven in de grafiek.</p>
+<p>Opslaan van de grafieken verloopt via het menu <code>[File &gt; Save as]</code>. Daarna krijg je een venster te zien waarin men een mappenstructuur kan opbouwen en in de gewenste map de output onder de vorm van een grafiek opslaan. In de online versie van OxCal kan men de grafieken bewaren op de server, onder de ingelogde account. Bij het opnieuw inloggen kan je via <code>[File &gt; Manager]</code> de resultaten opnieuw opvragen. Wil men een lokale kopie van de grafiek, dan selecteert men de knop <code>[Download]</code> rechts onderaan, nadat men het gewenste output formaat heeft gekozen: als .pdf (<em>portable document format</em>), .png (<em>portable network grafic</em>) of .svg (<em>scalable vector grafic</em>). De grafiek wordt daarna in het gewenste formaat gedownload.</p>
+<p>De output in de vorm van tekst laat zich minder vlot exporteren. In het keuzemenu <code>[View]</code>selecteer je eerst <code>Table</code>, waarna een tabel verschijnt met alle resultaten. Door in de tweede kolom op het rapport-icoon te klikken, komt een venster tevoorschijn met bovenaan de gekalibreerde dateringen in tekstvorm, voor elk van de gevraagde betrouwbaarheidsintervallen (<a href="#fig-oxcal-output" class="quarto-xref">fig.&nbsp;<span>8.10</span></a>). Deze numerieke gegevens kan je als tekst kopiëren naar een eigen rapport of tabel.</p>
 <div id="fig-oxcal-output" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-output-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_10.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figuur&nbsp;8.10: Output in tekstvorm na kalibratie."><img src="./figuren/figuur_B_10.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_output.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Figuur&nbsp;8.10: Output in tekstvorm na kalibratie."><img src="./figuren/figuur_oxcal_output.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-output-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.10: Output in tekstvorm na kalibratie.
@@ -621,7 +619,7 @@ Figuur&nbsp;8.10: Output in tekstvorm na kalibratie.
 </section>
 <section id="een-datering-simuleren" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="een-datering-simuleren"><span class="header-section-number">8.3</span> Een datering simuleren</h2>
-<p>In veel gevallen heeft men op voorhand wel een idee uit welke periode een object, constructie of gebeurtenis dateert. Indien een radiokoolstofdatering wordt overwogen, kan het nuttig zijn om voorafgaand aan de staalname en analyse de vorm van de kalibratiecurve binnen de geschatte periode te controleren. Indien er veel wiggles aanwezig zijn, zal een radiokoolstofdatering binnen die periode meerdere mogelijkheden of een breed interval aan kalenderjaren opleveren. Ook indien een plateau aanwezig is, zal het bereik aan mogelijke kalenderjaren breed uitvallen (zie 4.6). Zoals al eerder aangegeven, kan je de kalibratiecurve bekijken in OxCal door op de startpagina de knop <code>[View curve]</code> aan te klikken. Om dit nog wat verder te exploreren kan je binnen OxCal voor een welbepaalde kalenderdatum een mogelijke radiokoolstofdatering simuleren. Daarvoor moet je na het opstarten van een nieuw project <code>[File &gt; new]</code> in het menu <code>[Insert]</code> de functie <code>R_Simulate()</code> selecteren in de keuzelijst en deze functie met de knop <code>[ &gt;&gt; ]</code> naar het venster met programmeercode overbrengen. Uiteraard kan je in deze weergave ook de programeercode zelf intypen (<a href="#fig-oxcal-simulatie" class="quarto-xref">fig.&nbsp;<span>8.11</span></a>). Als parameters voor deze functie moet je een naam geven aan de simulatie (tussen aanhalingstekens), het jaartal dat je wil simuleren (AD of BC met het jaar tussen haakjes) en de verwachte standaardafwijking op de radiokoolstofdatering.</p>
+<p>In veel gevallen heeft men op voorhand wel een idee uit welke periode een object, constructie of gebeurtenis dateert. Indien een radiokoolstofdatering wordt overwogen, kan het nuttig zijn om voorafgaand aan de staalname en analyse de vorm van de kalibratiecurve binnen de geschatte periode te controleren. Indien er veel wiggles aanwezig zijn, zal een radiokoolstofdatering binnen die periode meerdere mogelijkheden of een breed interval aan kalenderjaren opleveren. Ook indien een plateau aanwezig is, zal het bereik aan mogelijke kalenderjaren breed uitvallen (zie 4.6). Zoals al eerder aangegeven, kan je de kalibratiecurve bekijken in OxCal door op de startpagina de knop <code>[View curve]</code> aan te klikken. Om dit nog wat verder te exploreren kan je binnen OxCal voor een welbepaalde kalenderdatum een mogelijke radiokoolstofdatering simuleren. Daarvoor moet je na het opstarten van een nieuw project <code>[File &gt; new]</code> in het menu <code>[Insert]</code> de functie <code>R_Simulate()</code> selecteren in de keuzelijst en deze functie met de knop <code>[Insert]</code> naar het venster met programmeercode overbrengen. Uiteraard kan je in deze weergave ook de programeercode zelf intypen (<a href="#fig-oxcal-simulatie" class="quarto-xref">fig.&nbsp;<span>8.11</span></a>). Als parameters voor deze functie moet je een naam geven aan de simulatie (tussen aanhalingstekens), het jaartal dat je wil simuleren (AD of BC met het jaar tussen haakjes) en de verwachte standaardafwijking op de radiokoolstofdatering.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> {</span>
@@ -631,10 +629,10 @@ Figuur&nbsp;8.10: Output in tekstvorm na kalibratie.
 <div id="fig-oxcal-simulatie" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-simulatie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_11_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figuur&nbsp;8.11: Programmacode voor het simuleren van een datering op materiaal uit 650 AD."><img src="./figuren/figuur_B_11_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_simulatie.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Figuur&nbsp;8.11: Kalibratie van een gesimuleerde datering op materiaal uit 650 AD."><img src="./figuren/figuur_oxcal_simulatie.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-simulatie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figuur&nbsp;8.11: Programmacode voor het simuleren van een datering op materiaal uit 650 AD.
+Figuur&nbsp;8.11: Kalibratie van een gesimuleerde datering op materiaal uit 650 AD.
 </figcaption>
 </figure>
 </div>
@@ -646,12 +644,12 @@ Figuur&nbsp;8.11: Programmacode voor het simuleren van een datering op materiaal
 <section id="oxcal_rcombine" class="level3" data-number="8.4.1">
 <h3 data-number="8.4.1" class="anchored" data-anchor-id="oxcal_rcombine"><span class="header-section-number">8.4.1</span> R_Combine</h3>
 <p>Meerdere radiokoolstofdateringen van stalen die dezelfde gebeurtenis of object dateren en die opgebouwd zijn met koolstof uit eenzelfde reservoir, kunnen beschouwd worden als herhaalde metingen. Deze herhaalde metingen kunnen dan gecombineerd worden. Dit zal een meer robuust dateringsresultaat opleveren: het zijn immers dateringen van eenzelfde gebeurtenis. De datering van meerdere beenderen van eenzelfde skelet vallen bijvoorbeeld onder deze categorie. Ze dateren alle het overlijden van dezelfde persoon en het koolstofreservoir (de voeding) is ook identiek. In dit geval kunnen de radiokoolstofdateringen samen gevoegd worden voorafgaand aan de eigenlijke kalibratie, door gebruik te maken van de functie <code>R_Combine()</code>.</p>
-<p>Dit voer je uit door, na het opstarten van een nieuw project <code>[File &gt; new]</code>, in het menu <code>[Insert]</code> <code>R_Combine()</code> te selecteren in de bovenste keuzelijst, en dit via de knop <code>[ &gt;&gt; ]</code> naar het venster met de programmacode over te brengen. Daarna selecteer je <code>R_Date()</code> en vul je alle parameters in (Name, 14C Date en Uncertainty) voor de eerste radiokoolstofdatering. Met de knop <code>[ &gt;&gt; ]</code> wordt deze datering toegevoegd aan het rechter venster. Deze stappen worden herhaald met alle te combineren dateringen. Na het uitvoeren van dit model, via het menu <code>[File &gt; Run]</code>, en de daarbij horende kalibratie zal de gecombineerde datering meestal een nauwer resultaat geven in vergelijking met de individuele dateringen.</p>
+<p>Dit voer je uit door, na het opstarten van een nieuw project <code>[File &gt; new]</code>, in het menu <code>[Insert]</code> <code>R_Combine()</code> te selecteren in de bovenste keuzelijst, en dit via de knop <code>[Insert]</code> naar het venster met de programmacode over te brengen. Daarna selecteer je <code>R_Date()</code> en vul je alle parameters in (Name, 14C Date en Uncertainty) voor de eerste radiokoolstofdatering. Met <code>[Insert]</code> wordt deze datering toegevoegd aan het rechter venster. Deze stappen worden herhaald met alle te combineren dateringen. Na het uitvoeren van dit model, via het menu <code>[File &gt; Run]</code>, en de daarbij horende kalibratie zal de gecombineerde datering meestal een nauwer resultaat geven in vergelijking met de individuele dateringen.</p>
 <p>Tijdens het combineren van de radiokoolstofdateringen voert OxCal ook een statistische test uit om na te gaan of de individuele dateringen weldegelijk een benadering van dezelfde gebeurtenis kunnen zijn. Dit is een <span class="math inline">\(\chi^2\)</span>-test (Chi-kwadraat-test) waarvan het resultaat in de grafiek wordt weergegeven. In deze test wordt een T-waarde berekend, die kleiner moet zijn dan de kritische <em>t</em>-waarde voor het beoogde betrouwbaarheidsinterval en het aantal dateringen die gecombineerd worden. Indien de T-waarde toch groter is dan deze kritische waarde (weergegeven tussen haakjes in de grafiek), mogen de radiokoolstofdateringen niet worden samen gevoegd en moeten ze afzonderlijk gerapporteerd worden. Indien de T-waarde lager ligt dan deze drempelwaarde, kunnen we met 95% zekerheid stellen dat de individuele dateringen inderdaad eenzelfde gebeurtenis kunnen vertegenwoordigen.</p>
 </section>
 <section id="oxcal_combine" class="level3" data-number="8.4.2">
 <h3 data-number="8.4.2" class="anchored" data-anchor-id="oxcal_combine"><span class="header-section-number">8.4.2</span> Combine</h3>
-<p>Indien meerdere radiokoolstofanalyses een zelfde gebeurtenis dateren, maar de geanalyseerde stalen niet hetzelfde koolstofreservoir hebben aangesproken, kunnen deze pas na kalibratie samengevoegd worden. De overeenkomst tussen de dateringen kan nu niet met een <span class="math inline">\(\chi^2\)</span>-test worden getoetst, maar wordt aan de hand van een <em>Agreement index</em> geÃ«valueerd. Deze index <span class="math inline">\(A\)</span> geeft weer of de gecombineerde radiokoolstofdateringen daadwerkelijk eenzelfde gebeurtenis dateren. De <span class="math inline">\(A_{comb}\)</span> moet groter zijn dan de kritische <span class="math inline">\(A_n\)</span>-waarde en best rond de 100% liggen. In onderstaand voorbeeld (<a href="#fig-oxcal-combine" class="quarto-xref">fig.&nbsp;<span>8.12</span></a>)) worden drie dateringen op materiaal uit een zelfde grafkist gecombineerd. De <span class="math inline">\(A_{comb}\)</span> (118,6%) ligt in dit geval hoger dan de drempelwaarde (<span class="math inline">\(A_n\)</span> = 40,8%). De drie dateringen kunnen dus inderdaad een zelfde gebeurtenis dateren. De combinatie van deze dateringen geeft een nauwer dateringsinterval dan de individuele radiokoolstofdateringen (Grafkist2: 554 AD (95.4%) 602 AD).</p>
+<p>Indien meerdere radiokoolstofanalyses een zelfde gebeurtenis dateren, maar de geanalyseerde stalen niet hetzelfde koolstofreservoir hebben aangesproken, kunnen deze pas na kalibratie samengevoegd worden. De overeenkomst tussen de dateringen kan nu niet met een <span class="math inline">\(\chi^2\)</span>-test worden getoetst, maar wordt aan de hand van een <em>Agreement index</em> geëvalueerd. Deze index <span class="math inline">\(A\)</span> geeft weer of de gecombineerde radiokoolstofdateringen daadwerkelijk eenzelfde gebeurtenis dateren. De <span class="math inline">\(A_{comb}\)</span> moet groter zijn dan de kritische <span class="math inline">\(A_n\)</span>-waarde en best rond de 100% liggen. In onderstaand voorbeeld (<a href="#fig-oxcal-combine" class="quarto-xref">fig.&nbsp;<span>8.12</span></a>)) worden drie dateringen op materiaal uit een zelfde grafkist gecombineerd. De <span class="math inline">\(A_{comb}\)</span> (118,6%) ligt in dit geval hoger dan de drempelwaarde (<span class="math inline">\(A_n\)</span> = 40,8%). De drie dateringen kunnen dus inderdaad een zelfde gebeurtenis dateren. De combinatie van deze dateringen geeft een nauwer dateringsinterval dan de individuele radiokoolstofdateringen (Grafkist2: 554 AD (95.4%) 602 AD).</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a> {</span>
@@ -666,7 +664,7 @@ Figuur&nbsp;8.11: Programmacode voor het simuleren van een datering op materiaal
 <div id="fig-oxcal-combine" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-combine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_12_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Figuur&nbsp;8.12: Combineren van drie dateringen na kalibratie."><img src="./figuren/figuur_B_12_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_combine.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Figuur&nbsp;8.12: Combineren van drie dateringen na kalibratie."><img src="./figuren/figuur_oxcal_combine.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-combine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.12: Combineren van drie dateringen na kalibratie.
@@ -678,10 +676,11 @@ Figuur&nbsp;8.12: Combineren van drie dateringen na kalibratie.
 <section id="oxcal_difference" class="level3" data-number="8.4.3">
 <h3 data-number="8.4.3" class="anchored" data-anchor-id="oxcal_difference"><span class="header-section-number">8.4.3</span> Difference</h3>
 <p>Het combineren van dateringen wordt niet alleen gebruikt om een verfijnde datering te bekomen bij vermoeden van quasi gelijktijdigheid, maar deze procedure kan ook helpen bewijzen dat bepaalde vondsten helemaal niet uit dezelfde periode dateren. Zo kan bijvoorbeeld residueel en intrusief materiaal als dusdanig herkend worden. Indien er een sterk vermoeden is dat twee dateringen niet een zelfde gebeurtenis dateren - de <span class="math inline">\(\chi^2\)</span>-test of <em>Agreement index</em> valt respectievelijk boven of onder de kritische drempelwaarde - kan bovendien becijferd worden hoe ver beide gebeurtenissen mogelijk uit elkaar liggen. In OxCal voert de functie <code>Difference()</code> daarvoor de nodige bewerkingen uit.</p>
+<p>Bij de opbouw van het model dat het verschil tussen twee dateringen berekent, gebruikt je het label of de naam die je aan de individuele dateringen hebt gegeven. In de functie <code>Difference()</code> specifieer je dan met welke twee dateringen je wil werken.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a> {</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Phase</span>(<span class="st">": mogelijk gelijktijdig?"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Phase</span>(<span class="st">"mogelijk gelijktijdig?"</span>)</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  {</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">"Date A"</span>, <span class="dv">1480</span>, <span class="dv">25</span>);</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">"Date B"</span>, <span class="dv">1365</span>, <span class="dv">20</span>);</span>
@@ -694,12 +693,12 @@ Figuur&nbsp;8.12: Combineren van drie dateringen na kalibratie.
 <div aria-describedby="fig-oxcal-difference-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><a href="./figuren/figuur_B_13_update_a.png" class="lightbox" data-gallery="difference-gallery" title="Figuur&nbsp;8.13: Opbouwen van een waarschijnlijkheidsverdeling voor het verschil tussen twee radiokoolstofdateringen. We kunnen met 95,4% zekerheid stellen dat er minstens 5 tot maximaal 115 kalenderjaren tussen beide gedateerde gebeurtenissen ligt. Deze radiokoolstofdateringen kunnen niet een zelfde gebeurtenis dateren."><img src="./figuren/figuur_B_13_update_a.png" class="img-fluid figure-img"></a></p>
+<p><a href="./figuren/figuur_oxcal_difference1.jpg" class="lightbox" data-gallery="difference-gallery" title="Figuur&nbsp;8.13: Opbouwen van een waarschijnlijkheidsverdeling voor het verschil tussen twee radiokoolstofdateringen. We kunnen met 95,4% zekerheid stellen dat er minstens 5 tot maximaal 115 kalenderjaren tussen beide gedateerde gebeurtenissen ligt. Deze radiokoolstofdateringen kunnen niet een zelfde gebeurtenis dateren."><img src="./figuren/figuur_oxcal_difference1.jpg" class="img-fluid figure-img"></a></p>
 </div>
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><a href="./figuren/figuur_B_13_update_b.png" class="lightbox" data-gallery="difference-gallery" title="Figuur&nbsp;8.13: Opbouwen van een waarschijnlijkheidsverdeling voor het verschil tussen twee radiokoolstofdateringen. We kunnen met 95,4% zekerheid stellen dat er minstens 5 tot maximaal 115 kalenderjaren tussen beide gedateerde gebeurtenissen ligt. Deze radiokoolstofdateringen kunnen niet een zelfde gebeurtenis dateren."><img src="./figuren/figuur_B_13_update_b.png" class="img-fluid figure-img"></a></p>
+<p><a href="./figuren/figuur_oxcal_difference2.jpg" class="lightbox" data-gallery="difference-gallery" title="Figuur&nbsp;8.13: Opbouwen van een waarschijnlijkheidsverdeling voor het verschil tussen twee radiokoolstofdateringen. We kunnen met 95,4% zekerheid stellen dat er minstens 5 tot maximaal 115 kalenderjaren tussen beide gedateerde gebeurtenissen ligt. Deze radiokoolstofdateringen kunnen niet een zelfde gebeurtenis dateren."><img src="./figuren/figuur_oxcal_difference2.jpg" class="img-fluid figure-img"></a></p>
 </div>
 </div>
 </div>
@@ -708,15 +707,6 @@ Figuur&nbsp;8.13: Opbouwen van een waarschijnlijkheidsverdeling voor het verschi
 </figcaption>
 </figure>
 </div>
-<p>Bij de opbouw van het model dat het verschil tussen twee dateringen berekent, gebruikt je het label of de naam die je aan de individuele dateringen hebt gegeven. In de functie <code>Difference()</code> specifieer je dan met welke twee dateringen je wil werken:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Plot</span>()</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a> {</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">"A"</span>, <span class="dv">1480</span>, <span class="dv">25</span>);</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">"B"</span>, <span class="dv">1400</span>, <span class="dv">25</span>);</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Difference</span>(<span class="st">"A-B"</span>, <span class="st">"A"</span>, <span class="st">"B"</span>);</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <p>De grafiek die hiermee wordt opgebouwd laat de waarschijnlijkheidsverdeling zien van het mogelijke tijdsinterval tussen de twee dateringen. Indien een verschil (Interval) van 0 jaar binnen het 95,4% interval ligt, dan zijn we niet zeker dat er werkelijk een verschil zit tussen de dateringen. In het voorbeeld in figuur <a href="#fig-oxcal-difference" class="quarto-xref"><span>8.13</span></a> ligt 0 buiten het 95,4% betrouwbaarheidsinterval, waarvan boven- en ondergrens aangeven dat datering A minstens 9 en maximaal 112 kalenderjaren ouder is dan datering B.</p>
 </section>
 </section>
@@ -724,10 +714,17 @@ Figuur&nbsp;8.13: Opbouwen van een waarschijnlijkheidsverdeling voor het verschi
 <h2 data-number="8.5" class="anchored" data-anchor-id="densiteitsplot"><span class="header-section-number">8.5</span> Densiteitsplot</h2>
 <p>Indien uit een bepaalde context, periode of regio veel radiokoolstofdateringen van een zelfde cultureel of natuurlijk fenomeen beschikbaar zijn, kan de som van hun probabiliteiten (waarschijnlijkheidsverdeling) een duidelijker beeld geven van de chronologische spreiding en van het voorkomen van hiaten in dit fenomeen doorheen de tijd. In OxCal kan de som van meerdere radiokoolstofdateringen berekend worden met de functie <code>Sum()</code>. Een dergelijk model bouw je op via het menu <code>[Insert]</code> waarna je in het keuzemenu deze functie selecteert en overbrengt naar het venster met de programmacode. Daarna voeg je de individuele radiokoolstofdateringen toe met de functie <code>R_Date()</code>.</p>
 <p>In onderstaand voorbeeld - met dateringen van stukjes houtskool uit verschillende houtskoolmeilers - wordt duidelijk dat er in een dataset met 69 radiokoolstofdateringen uit eenzelfde regio en periode een duidelijk hiaat aanwezig is in houtskoolproductie tussen ca. 400 en 650 AD (<a href="#fig-oxcal-sum" class="quarto-xref">fig.&nbsp;<span>8.14</span></a>).</p>
-<div id="fig-oxcal-sum" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-oxcal-sum" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-sum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_14.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Figuur&nbsp;8.14: De probabiliteitssom van 69 individuele radiokoolstofdateringen."><img src="./figuren/figuur_B_14.png" class="img-fluid figure-img"></a>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="./figuren/figuur_oxcal_sum.jpg" class="lightbox" data-gallery="sum-gallery" title="Figuur&nbsp;8.14: De probabiliteitssom van 69 individuele radiokoolstofdateringen."><img src="./figuren/figuur_oxcal_sum.jpg" class="img-fluid figure-img"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="./figuren/figuur_oxcal_sum_plot.jpg" class="lightbox" data-gallery="sum-gallery" title="Figuur&nbsp;8.14: De probabiliteitssom van 69 individuele radiokoolstofdateringen."><img src="./figuren/figuur_oxcal_sum_plot.jpg" class="img-fluid figure-img"></a></p>
+</div>
+</div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-sum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.14: De probabiliteitssom van 69 individuele radiokoolstofdateringen.
@@ -749,21 +746,21 @@ Figuur&nbsp;8.14: De probabiliteitssom van 69 individuele radiokoolstofdateringe
 <p>In OxCal kunnen beide begrippen gebruikt worden, en onderling gecombineerd, via de functies <code>Sequence()</code> en <code>Phase()</code>. Binnen een fase worden alle radiokoolstofdateringen opgenomen, met de functie <code>R_Date()</code>, die tot eenzelfde archeologische laag, periode of gebeurtenis behoren. Binnen een fase is er geen chronologische volgorde van de gedateerde stalen. Bij een sequentie is de opeenvolging van de verschillende dateringen wel gekend, en worden ze gerangschikt van oud (bovenaan) naar jong (onderaan). Deze volgorde volgt bijvoorbeeld uit de stratigrafische ligging van de gedateerde stalen, waarbij de oudere stalen in regel steeds onder lagen van jonger materiaal werden aangetroffen.</p>
 <p>Beide groeperingen kunnen door elkaar worden gebruikt. Zo kunnen er binnen één sequentie meerdere fasen aanwezig zijn, waarbij de fasen onderling in stratigrafisch verband te brengen zijn, maar er binnen de verschillende fasen geen chronologische ordening kan vooropgesteld worden. Door deze informatie (voorafgaand) in het model in te brengen, kan het dateringsinterval op de individuele gekalibreerde dateringen nauwer berekend worden. In onderstaand voorbeeld worden vier gedateerde stalen uit boven elkaar liggende archeologische lagen in een sequentie gemodelleerd (<a href="#fig-oxcal-sequentie" class="quarto-xref">fig.&nbsp;<span>8.15</span></a>). Na modellering zijn de originele gekalibreerde dateringen (in grijs) terug te brengen tot een nauwere waarschijnlijkheidsverdeling (donker grijs) - en dus enger tijdsinterval - doordat rekening is gehouden met de onderlinge samenhang van de individuele dateringen.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a> {</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sequence</span>(<span class="st">": gesimuleerde sequentie"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"sim1"</span>, <span class="dv">3200</span>, <span class="dv">25</span>);</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"sim2"</span>, <span class="dv">3180</span>, <span class="dv">20</span>);</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"sim3"</span>, <span class="dv">3160</span>, <span class="dv">20</span>);</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"sim4"</span>, <span class="dv">3150</span>, <span class="dv">20</span>);</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  };</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a> {</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sequence</span>(<span class="st">"gesimuleerde sequentie &gt; "</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"sim1"</span>, <span class="dv">3200</span>, <span class="dv">25</span>);</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"sim2"</span>, <span class="dv">3180</span>, <span class="dv">20</span>);</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"sim3"</span>, <span class="dv">3160</span>, <span class="dv">20</span>);</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"sim4"</span>, <span class="dv">3150</span>, <span class="dv">20</span>);</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  };</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="fig-oxcal-sequentie" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-sequentie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_15_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Figuur&nbsp;8.15: Bayesiaans model met vier radiokoolstofdateringen die chronologisch kunnen geordend worden op basis van de stratigrafie."><img src="./figuren/figuur_B_15_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_sequentie.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Figuur&nbsp;8.15: Bayesiaans model met vier radiokoolstofdateringen die chronologisch kunnen geordend worden op basis van de stratigrafie."><img src="./figuren/figuur_oxcal_sequentie.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-sequentie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.15: Bayesiaans model met vier radiokoolstofdateringen die chronologisch kunnen geordend worden op basis van de stratigrafie.
@@ -773,41 +770,41 @@ Figuur&nbsp;8.15: Bayesiaans model met vier radiokoolstofdateringen die chronolo
 <p>De radiokoolstofdateringen die beschikbaar zijn voor één bepaalde sequentie of fase geven niet noodzakelijk een goede afbakening voor het begin en einde van die fase. Hoe minder gedateerde elementen uit een bepaalde fase, of uit de vroegste fase van een sequentie, hoe minder waarschijnlijk het is dat de oudste datering effectief het oudste element is uit die fase, waardoor je minder zeker bent van de datering van de aanvang van die fase, en van de eventuele sequentie. Hetzelfde geldt - omgekeerd - voor het eind van een fase of een sequentie. OxCal tracht daaraan tegemoet te komen door van de veronderstelling uit te gaan dat de gedateerde stalen een gelijke (uniforme) kans hebben om uit het begin, midden of einde van de fase te dateren. Een uniforme kansverdeling betekent dat de gedateerde materialen beschouwd worden als een willekeurige staalname uit de fase die men wil dateren: ze hebben elk dus evenveel kans op voorkomen op elk mogelijk tijdstip binnen de afgebakende fase. Je kan er echter ook voor kiezen - indien het archeologisch onderzoek daarvoor argumenten aanreikt - om van de veronderstelling uit te gaan dat er meer materiaal uit het begin, midden of einde van een bepaalde fase werd bemonsterd en gedateerd. De afbakening van een fase kan in het model ingevoerd worden door grenzen - <em>boundaries</em> - te definiëren en zo verschillende groepen af te bakenen. De <em>boundaries</em> zullen er rekening mee houden dat de gedateerde stalen waarschijnlijk slechts in beperkte mate de volledige fase overspannen en - naar gelang het gekozen type <em>boundary</em> - een (on)gelijke kans hebben om uit het begin, midden of einde van een fase te dateren. Hoe groter de steekproef uit één fase, m.a.w. hoe groter het aantal gedateerde stalen, hoe scherper en met meer zekerheid de grenzen van die fase kunnen afgebakend worden.</p>
 <p>In het geval dat verschillende fasen elkaar mooi opvolgen, kan er één sequentie gedefinieerd worden waarbinnen de opeenvolgende fasen worden opgenomen (<a href="#fig-oxcal-fasering" class="quarto-xref">fig.&nbsp;<span>8.16</span></a>). De <em>boundaries</em> geven dan aan waar de overgang tussen het einde van de ene en het begin van de daaropvolgende fase te situeren is. Na kalibratie bekomt men zo een nauwere datering voor de individuele dateringen. Deze gemodelleerde kalibratie van de radiokoolstofouderdom wordt steeds in donkere tinten weergegeven, terwijl de oorspronkelijke waarschijnlijkheidsverdeling in lichte grijstinten is aangeduid.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a> {</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sequence</span>(<span class="st">" &gt; elkaar opeenvolgende lagen"</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">" start fase 1"</span>);</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">" materiaal uit laag A"</span>)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"A1"</span>, <span class="dv">3675</span>, <span class="dv">34</span>);</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"A2"</span>, <span class="dv">3670</span>, <span class="dv">40</span>);</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"A3"</span>, <span class="dv">3600</span>, <span class="dv">35</span>);</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">" einde fase 1 / begin fase 2"</span>);</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">" materiaal uit laag B"</span>)</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"B1"</span>, <span class="dv">3420</span>, <span class="dv">45</span>);</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"B2"</span>, <span class="dv">3370</span>, <span class="dv">35</span>);</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"B3"</span>, <span class="dv">3435</span>, <span class="dv">40</span>);</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_date</span>(<span class="st">"B4"</span>, <span class="dv">3304</span>, <span class="dv">55</span>);</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_date</span>(<span class="st">"B5"</span>, <span class="dv">3184</span>, <span class="dv">55</span>);</span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">" einde fase 2 / begin fase 3"</span>);</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">" materiaal uit laag E"</span>)</span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"E1"</span>, <span class="dv">3140</span>, <span class="dv">45</span>);</span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"E2"</span>, <span class="dv">3070</span>, <span class="dv">30</span>);</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"E3"</span>, <span class="dv">3005</span>, <span class="dv">30</span>);</span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">" einde fase 3"</span>);</span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>  };</span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a> {</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sequence</span>(<span class="st">"elkaar opeenvolgende lagen &gt; "</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">" start fase 1"</span>);</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">" materiaal uit laag A"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"A1"</span>, <span class="dv">3675</span>, <span class="dv">34</span>);</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"A2"</span>, <span class="dv">3670</span>, <span class="dv">40</span>);</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"A3"</span>, <span class="dv">3600</span>, <span class="dv">35</span>);</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">" einde fase 1 / begin fase 2"</span>);</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">" materiaal uit laag B"</span>)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"B1"</span>, <span class="dv">3420</span>, <span class="dv">45</span>);</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"B2"</span>, <span class="dv">3370</span>, <span class="dv">35</span>);</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"B3"</span>, <span class="dv">3435</span>, <span class="dv">40</span>);</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_date</span>(<span class="st">"B4"</span>, <span class="dv">3304</span>, <span class="dv">55</span>);</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_date</span>(<span class="st">"B5"</span>, <span class="dv">3184</span>, <span class="dv">55</span>);</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">" einde fase 2 / begin fase 3"</span>);</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">" materiaal uit laag E"</span>)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"E1"</span>, <span class="dv">3140</span>, <span class="dv">45</span>);</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"E2"</span>, <span class="dv">3070</span>, <span class="dv">30</span>);</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"E3"</span>, <span class="dv">3005</span>, <span class="dv">30</span>);</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">" einde fase 3"</span>);</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>  };</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="fig-oxcal-fasering" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-fasering-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_16_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Figuur&nbsp;8.16: Modellering van radiokoolstofdateringen uit drie elkaar opvolgende fases, gedateerd met materiaal uit drie lagen in een stratigrafie."><img src="./figuren/figuur_B_16_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_inSequence.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Figuur&nbsp;8.16: Modellering van radiokoolstofdateringen uit drie elkaar opvolgende fases, gedateerd met materiaal uit drie lagen in een stratigrafie."><img src="./figuren/figuur_oxcal_inSequence.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-fasering-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.16: Modellering van radiokoolstofdateringen uit drie elkaar opvolgende fases, gedateerd met materiaal uit drie lagen in een stratigrafie.
@@ -816,52 +813,52 @@ Figuur&nbsp;8.16: Modellering van radiokoolstofdateringen uit drie elkaar opvolg
 </div>
 <p>Is er daarentegen een overlap mogelijk tussen de verschillende fases (volgende fase vangt aan voor het einde van een voorafgaande fase), dan worden verschillende fasen gedefinieerd binnen één globale fase. De boundaries bepalen dan simpelweg voor elke groep apart het begin en het einde. Het einde van een bepaalde fase kan dan een grote overlap vertonen met de ingeschatte aanvang van een andere fase (<a href="#fig-oxcal-fasering2" class="quarto-xref">fig.&nbsp;<span>8.17</span></a>).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a> {</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Phase</span>(<span class="st">" &gt; elkaar overlappende fasen"</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Sequence</span>()</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" start fase 1"</span>);</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Phase</span>(<span class="st">" materiaal uit laag A"</span>)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"A1"</span>, <span class="dv">3675</span>, <span class="dv">34</span>);</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"A2"</span>, <span class="dv">3670</span>, <span class="dv">40</span>);</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"A3"</span>, <span class="dv">3600</span>, <span class="dv">35</span>);</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    };</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" einde fase 1"</span>);</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Sequence</span>()</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" start fase 2"</span>);</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Phase</span>(<span class="st">" materiaal uit laag B"</span>)</span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"B1"</span>, <span class="dv">3420</span>, <span class="dv">45</span>);</span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"B2"</span>, <span class="dv">3370</span>, <span class="dv">35</span>);</span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"B3"</span>, <span class="dv">3435</span>, <span class="dv">40</span>);</span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_date</span>(<span class="st">"B4"</span>, <span class="dv">3304</span>, <span class="dv">55</span>);</span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_date</span>(<span class="st">"B5"</span>, <span class="dv">3184</span>, <span class="dv">55</span>);</span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>    };</span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" einde fase 2"</span>);</span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Sequence</span>()</span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" start fase 3"</span>);</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Phase</span>(<span class="st">" materiaal uit laag E"</span>)</span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"E1"</span>, <span class="dv">3140</span>, <span class="dv">45</span>);</span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"E2"</span>, <span class="dv">3070</span>, <span class="dv">30</span>);</span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"E3"</span>, <span class="dv">3005</span>, <span class="dv">30</span>);</span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>    };</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" einde fase 3"</span>);</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>  };</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a> {</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Phase</span>(<span class="st">"elkaar overlappende fasen &gt; "</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Sequence</span>()</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" start fase 1"</span>);</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Phase</span>(<span class="st">" materiaal uit laag A"</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"A1"</span>, <span class="dv">3675</span>, <span class="dv">34</span>);</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"A2"</span>, <span class="dv">3670</span>, <span class="dv">40</span>);</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"A3"</span>, <span class="dv">3600</span>, <span class="dv">35</span>);</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    };</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" einde fase 1"</span>);</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Sequence</span>()</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" start fase 2"</span>);</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Phase</span>(<span class="st">" materiaal uit laag B"</span>)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"B1"</span>, <span class="dv">3420</span>, <span class="dv">45</span>);</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"B2"</span>, <span class="dv">3370</span>, <span class="dv">35</span>);</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"B3"</span>, <span class="dv">3435</span>, <span class="dv">40</span>);</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_date</span>(<span class="st">"B4"</span>, <span class="dv">3304</span>, <span class="dv">55</span>);</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_date</span>(<span class="st">"B5"</span>, <span class="dv">3184</span>, <span class="dv">55</span>);</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    };</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" einde fase 2"</span>);</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Sequence</span>()</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" start fase 3"</span>);</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Phase</span>(<span class="st">" materiaal uit laag E"</span>)</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"E1"</span>, <span class="dv">3140</span>, <span class="dv">45</span>);</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"E2"</span>, <span class="dv">3070</span>, <span class="dv">30</span>);</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>     <span class="fu">R_Date</span>(<span class="st">"E3"</span>, <span class="dv">3005</span>, <span class="dv">30</span>);</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    };</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Boundary</span>(<span class="st">" einde fase 3"</span>);</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>  };</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="fig-oxcal-fasering2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-fasering2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_17_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Figuur&nbsp;8.17: Modellering van radiokoolstofdateringen uit drie elkaar mogelijk overlappende fases, gedateerd met materiaal uit drie lagen die onderling geen duidelijk stratigrafisch verband hebben."><img src="./figuren/figuur_B_17_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_wOverlap.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="Figuur&nbsp;8.17: Modellering van radiokoolstofdateringen uit drie elkaar mogelijk overlappende fases, gedateerd met materiaal uit drie lagen die onderling geen duidelijk stratigrafisch verband hebben."><img src="./figuren/figuur_oxcal_wOverlap.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-fasering2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.17: Modellering van radiokoolstofdateringen uit drie elkaar mogelijk overlappende fases, gedateerd met materiaal uit drie lagen die onderling geen duidelijk stratigrafisch verband hebben.
@@ -880,19 +877,19 @@ Figuur&nbsp;8.17: Modellering van radiokoolstofdateringen uit drie elkaar mogeli
 <li><p><code>After("Label", expressie)</code>: definieert een <em>terminus post quem</em>.</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a> {</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">C_Date</span>(<span class="st">"Guldensporen"</span>, <span class="dv">1302</span>);</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">C_Date</span>(<span class="st">"Rond 1300 AD"</span>, <span class="fu">AD</span>(<span class="dv">1300</span>), <span class="dv">10</span>) {color<span class="ot">=</span><span class="st">"Darkblue"</span>;};</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Date</span>(<span class="st">"Van 1290 tot 1340"</span>, <span class="fu">U</span>(<span class="dv">1290</span>, <span class="dv">1340</span>)) {color<span class="ot">=</span><span class="st">"Red"</span>;};</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">R_Date</span>(<span class="st">" 600 ±25BP "</span>, <span class="dv">600</span>, <span class="dv">25</span>) <span class="sc">&amp;</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Before</span>(<span class="st">" gekende terminus"</span>, <span class="fu">AD</span>(<span class="dv">1350</span>));</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a> {</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">C_Date</span>(<span class="st">"Guldensporen"</span>, <span class="dv">1302</span>);</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">C_Date</span>(<span class="st">"Rond 1300 AD"</span>, <span class="fu">AD</span>(<span class="dv">1300</span>), <span class="dv">10</span>) {color<span class="ot">=</span><span class="st">"Darkblue"</span>;};</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Date</span>(<span class="st">"Van 1290 tot 1340"</span>, <span class="fu">U</span>(<span class="dv">1290</span>, <span class="dv">1340</span>)) {color<span class="ot">=</span><span class="st">"Red"</span>;};</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">R_Date</span>(<span class="st">" 600 ±25BP "</span>, <span class="dv">600</span>, <span class="dv">25</span>) <span class="sc">&amp;</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Before</span>(<span class="st">" gekende terminus"</span>, <span class="fu">AD</span>(<span class="dv">1350</span>));</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="fig-oxcal-cdate" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-cdate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_18.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Figuur&nbsp;8.18: OxCal functies om een gekende datering in te voegen of te combineren."><img src="./figuren/figuur_B_18.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_gekendeDatering.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="Figuur&nbsp;8.18: OxCal functies om een gekende datering in te voegen of te combineren."><img src="./figuren/figuur_oxcal_gekendeDatering.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-cdate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.18: OxCal functies om een gekende datering in te voegen of te combineren.
@@ -904,36 +901,36 @@ Figuur&nbsp;8.18: OxCal functies om een gekende datering in te voegen of te comb
 <p>Indien een historische datum is gekend waarna een bepaalde gebeurtenis onmogelijk kan vallen, dan kan dit in rekening worden gebracht bij de kalibratie van een radiokoolstofdatering die geassocieerd is met die gebeurtenis. Door gebruik te maken van het commando <code>Before()</code> en dit met het symbool &amp; te koppelen aan een radiokoolstofdatering. Na het berekenen van dit model zal het bereik (en kansverdeling) van mogelijke kalenderjaren worden beperkt tot deze grenswaarde (<a href="#fig-oxcal-cdate" class="quarto-xref">fig.&nbsp;<span>8.18</span></a>). Een <em>terminus ante quem</em> kan op vergelijkbare wijze worden ingevoerd met de syntax <code>After()</code>.</p>
 <p>Een combinatie van bovenstaande functies kan nu aangewend worden om een reëel vraagstuk te modelleren, zoals te zien in figuur <a href="#fig-oxcal-cdate2" class="quarto-xref"><span>8.19</span></a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a> {</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sequence</span>(<span class="st">": Ename 974?"</span>)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">C_Date</span>(<span class="st">": Stichting"</span>, <span class="fu">AD</span>(<span class="dv">974</span>), <span class="dv">0</span>);</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">"start"</span>);</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">": voor donjon"</span>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">": onderste laag"</span>, <span class="dv">1090</span>, <span class="dv">25</span>);</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">": bovenste laag"</span>, <span class="dv">1095</span>, <span class="dv">30</span>);</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">": buiten omwalling"</span>, <span class="dv">1110</span>, <span class="dv">25</span>);</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">": aanleg"</span>)</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">": paal"</span>, <span class="dv">1045</span>, <span class="dv">35</span>);</span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">": depressie"</span>)</span>
-<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>   {</span>
-<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">": onderste laag"</span>, <span class="dv">1020</span>, <span class="dv">35</span>);</span>
-<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">": middelste laag"</span>, <span class="dv">1045</span>, <span class="dv">30</span>);</span>
-<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">": bovenste laag"</span>, <span class="dv">1040</span>, <span class="dv">45</span>);</span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>   };</span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">"end"</span>);</span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>  };</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a> {</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sequence</span>(<span class="st">"Ename 974? &gt; "</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">C_Date</span>(<span class="st">"Stichting &gt; "</span>, <span class="fu">AD</span>(<span class="dv">974</span>), <span class="dv">0</span>);</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">"start"</span>);</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">"voor donjon &gt; "</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"onderste laag &gt; "</span>, <span class="dv">1090</span>, <span class="dv">25</span>);</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"bovenste laag &gt; "</span>, <span class="dv">1095</span>, <span class="dv">30</span>);</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"buiten omwalling &gt; "</span>, <span class="dv">1110</span>, <span class="dv">25</span>);</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">"aanleg &gt; "</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"paal &gt; "</span>, <span class="dv">1045</span>, <span class="dv">35</span>);</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Phase</span>(<span class="st">"depressie &gt; "</span>)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>   {</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"onderste laag &gt; "</span>, <span class="dv">1020</span>, <span class="dv">35</span>);</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"middelste laag &gt; "</span>, <span class="dv">1045</span>, <span class="dv">30</span>);</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">R_Date</span>(<span class="st">"bovenste laag &gt; "</span>, <span class="dv">1040</span>, <span class="dv">45</span>);</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>   };</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>   <span class="fu">Boundary</span>(<span class="st">"end"</span>);</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>  };</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="fig-oxcal-cdate2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-cdate2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_19_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Figuur&nbsp;8.19: Een Bayesiaans model voor radiokoolstofdateringen in stratigrafisch verband, rekening houdend met een historische bron."><img src="./figuren/figuur_B_19_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_ename.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Figuur&nbsp;8.19: Een Bayesiaans model voor radiokoolstofdateringen in stratigrafisch verband, rekening houdend met een historische bron."><img src="./figuren/figuur_oxcal_ename.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-cdate2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.19: Een Bayesiaans model voor radiokoolstofdateringen in stratigrafisch verband, rekening houdend met een historische bron.
@@ -947,41 +944,40 @@ Figuur&nbsp;8.19: Een Bayesiaans model voor radiokoolstofdateringen in stratigra
 <p>De opbouw van een Bayesiaans model en het gebruik van <em>boundaries</em> laat toe om ook gebeurtenissen te dateren die niet rechtstreeks aan één staal of radiokoolstofdatering te koppelen zijn. Door het indelen in fasen en sequenties kunnen we namelijk ook berekenen hoe lang een bepaalde fase heeft geduurd, wanneer die op z’n einde liep of welke periode nu precies door de radiokoolstofdateringen wordt overspannen. De twee functies die daarvoor kunnen aangesproken worden in OxCal zijn <code>Interval()</code> en <code>Span()</code>. Elk van deze functies berekent een waarschijnlijkheidsverdeling voor de duur van de periode (<a href="#fig-oxcal-span" class="quarto-xref">fig.&nbsp;<span>8.20</span></a>).</p>
 <p>De functie <strong><code>Span()</code></strong> berekent de periode die door alle dateringen binnen een fase of sequentie wordt overspannen. Er wordt hierbij enkel rekening gehouden met de individuele radiokoolstofdateringen. De <em>boundaries</em> van de fase of sequentie worden hierbij niet in rekening gebracht. Dat is echter wel zo bij de functie <strong><code>Interval()</code></strong> die de waarschijnlijkheidsverdeling voor de lengte van het interval tussen het begin en einde van een fase berekent. Deze functie houdt er dus rekening mee dat de aanvang en het einde van een fase niet noodzakelijk gedateerd wordt door Ã©Ã©n van de geanalyseerde stalen.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Plot</span>()</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a> {</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">Sequence</span>()</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>     <span class="fu">Boundary</span>(<span class="st">"Start fase"</span>);</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>     <span class="fu">Phase</span>()</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>     {</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">R_Date</span>(<span class="st">"A"</span>,<span class="dv">2235</span>,<span class="dv">25</span>);</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">R_Date</span>(<span class="st">"B"</span>,<span class="dv">2135</span>,<span class="dv">26</span>);</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">R_Date</span>(<span class="st">"C"</span>,<span class="dv">2112</span>,<span class="dv">23</span>);</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">R_Date</span>(<span class="st">"D"</span>,<span class="dv">2000</span>,<span class="dv">23</span>);</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>     };</span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Interval</span>();</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Span</span>();</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>     <span class="fu">Boundary</span>(<span class="st">"Einde fase"</span>);</span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>    };</span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Plot</span>()</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a> {</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">Sequence</span>()</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>     <span class="fu">Boundary</span>(<span class="st">"Start fase"</span>);</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>     <span class="fu">Phase</span>()</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>     {</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">R_Date</span>(<span class="st">"A"</span>,<span class="dv">2235</span>,<span class="dv">25</span>);</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">R_Date</span>(<span class="st">"B"</span>,<span class="dv">2135</span>,<span class="dv">26</span>);</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">R_Date</span>(<span class="st">"C"</span>,<span class="dv">2112</span>,<span class="dv">23</span>);</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">R_Date</span>(<span class="st">"D"</span>,<span class="dv">2000</span>,<span class="dv">23</span>);</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>     };</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>     <span class="fu">Interval</span>();</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>     <span class="fu">Span</span>();</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>     <span class="fu">Boundary</span>(<span class="st">"Einde fase"</span>);</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    };</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a> };</span></code><button title="Kopieer naar klembord" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="fig-oxcal-span" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-span-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><a href="./figuren/figuur_B_20_update_a.png" class="lightbox" data-gallery="span-gallery" title="Figuur&nbsp;8.20: Berekening van de periode die wordt overspannen door de radiokoolstofdateringen (Span) en de geschatte duur van de fase (Interval)."><img src="./figuren/figuur_B_20_update_a.png" class="img-fluid figure-img"></a></p>
+<p><a href="./figuren/figuur_oxcal_interval1.png" class="lightbox" data-gallery="span-gallery" title="Figuur&nbsp;8.20: Berekening van de periode die wordt overspannen door de radiokoolstofdateringen (Span) en de geschatte duur van de fase (Interval)."><img src="./figuren/figuur_oxcal_interval1.png" class="img-fluid figure-img"></a></p>
 </div>
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><a href="./figuren/figuur_B_20_update_b.png" class="lightbox" data-gallery="span-gallery" title="Figuur&nbsp;8.20: Berekening van de periode die wordt overspannen door de radiokoolstofdateringen (Span) en de geschatte duur van de fase (Interval)."><img src="./figuren/figuur_B_20_update_b.png" class="img-fluid figure-img"></a></p>
+<p><a href="./figuren/figuur_oxcal_interval2.png" class="lightbox" data-gallery="span-gallery" title="Figuur&nbsp;8.20: Berekening van de periode die wordt overspannen door de radiokoolstofdateringen (Span) en de geschatte duur van de fase (Interval)."><img src="./figuren/figuur_oxcal_interval2.png" class="img-fluid figure-img"></a></p>
 </div>
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<p><a href="./figuren/figuur_B_20_update_c.png" class="lightbox" data-gallery="span-gallery" title="Figuur&nbsp;8.20: Berekening van de periode die wordt overspannen door de radiokoolstofdateringen (Span) en de geschatte duur van de fase (Interval)."><img src="./figuren/figuur_B_20_update_c.png" class="img-fluid figure-img"></a></p>
+<p><a href="./figuren/figuur_oxcal_interval3.png" class="lightbox" data-gallery="span-gallery" title="Figuur&nbsp;8.20: Berekening van de periode die wordt overspannen door de radiokoolstofdateringen (Span) en de geschatte duur van de fase (Interval)."><img src="./figuren/figuur_oxcal_interval3.png" class="img-fluid figure-img"></a></p>
 </div>
 </div>
 </div>
@@ -997,22 +993,22 @@ Figuur&nbsp;8.20: Berekening van de periode die wordt overspannen door de radiok
 <p style="color:red;font-family:Consolas;text-align:center">
 Warning! Poor agreement - A=58.1% (Ac=60.0%)
 </p>
-<p>Voor het model in figuur <a href="#fig-oxcal-cdate2" class="quarto-xref"><span>8.19</span></a> is de <span class="math inline">\(A\)</span>-index 133,1% voor het globale model (kolom ‘indices’ bovenaan <a href="#fig-oxcal-output2" class="quarto-xref">fig.&nbsp;<span>8.21</span></a>), wat betekent dat de opgebouwde sequentie stand houdt. Ook voor de individuele dateringen ligt de <span class="math inline">\(A\)</span>-index hoger dan 100% (kolom <span class="math inline">\(A\)</span> in <a href="#fig-oxcal-output2" class="quarto-xref">fig.&nbsp;<span>8.21</span></a>). Enkel bij de datering van het staal dat buiten de omwalling werd gevonden ligt de <span class="math inline">\(A\)</span>-index iets lager (90,8%). Aangezien dit echter nog ruim boven de kritische waarde van 60% ligt, worden geen verdere vraagtekens geplaatst bij deze datering. Indien er afwijkende dateringen in het model voorkomen, krijgt je in de overzichtstabel een waarschuwing te zien bij de dateringen die niet goed in het gedefinieerde model passen. Het is dan altijd aangeraden het model te herberekenen zonder deze <em>outliers</em>. Hun aanwezigheid beïnvloedt immers de aanpassingen op de probabiliteitsverdelingen van de ‘passende’ dateringen.</p>
+<p>Voor het model in figuur <a href="#fig-oxcal-cdate2" class="quarto-xref"><span>8.19</span></a> is de <span class="math inline">\(A\)</span>-index 183,3% voor het globale model (kolom ‘indices’ bovenaan <a href="#fig-oxcal-output2" class="quarto-xref">fig.&nbsp;<span>8.21</span></a>), wat betekent dat de opgebouwde sequentie stand houdt. Ook voor de individuele dateringen ligt de <span class="math inline">\(A\)</span>-index hoger dan 100% (kolom <span class="math inline">\(A\)</span> in <a href="#fig-oxcal-output2" class="quarto-xref">fig.&nbsp;<span>8.21</span></a>). Enkel bij de datering van het staal dat buiten de omwalling werd gevonden ligt de <span class="math inline">\(A\)</span>-index iets lager (90,7%). Aangezien dit echter nog ruim boven de kritische waarde van 60% ligt, worden geen verdere vraagtekens geplaatst bij deze datering. Indien er afwijkende dateringen in het model voorkomen, krijgt je in de overzichtstabel een waarschuwing te zien bij de dateringen die niet goed in het gedefinieerde model passen. Het is dan altijd aangeraden het model te herberekenen zonder deze <em>outliers</em>. Hun aanwezigheid beïnvloedt immers de aanpassingen op de probabiliteitsverdelingen van de ‘passende’ dateringen.</p>
 <div id="fig-oxcal-output2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-output2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_21_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24" title="Figuur&nbsp;8.21: Output met de evaluatie van het opgebouwde Bayesiaanse model, in tabelvorm."><img src="./figuren/figuur_B_21_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_tableoutput.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="Figuur&nbsp;8.21: Output met de evaluatie van het opgebouwde Bayesiaanse model, in tabelvorm."><img src="./figuren/figuur_oxcal_tableoutput.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-output2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.21: Output met de evaluatie van het opgebouwde Bayesiaanse model, in tabelvorm.
 </figcaption>
 </figure>
 </div>
-<p>Door in de keuzelijst <code>[single plot]</code> te kiezen kan je de individuele dateringen, en hun gemodelleerde kansverdeling, bekijken. Voor de gedateerde funderingspaal is het gekalibreerde dateringsinterval (95,4% betrouwbaarheid) volgens dit model te situeren tussen 983 en 1014 AD (<a href="#fig-oxcal-output3" class="quarto-xref">fig.&nbsp;<span>8.22</span></a>). Deze bouwfase laat zich - mede op historische grond - vermoedelijk rond het jaar 1000 AD situeren.</p>
+<p>Door in de keuzelijst <code>[Plot single]</code> te kiezen kan je de individuele dateringen, en hun gemodelleerde kansverdeling, bekijken. Voor de gedateerde funderingspaal is het gekalibreerde dateringsinterval (95,4% betrouwbaarheid) volgens dit model te situeren tussen 983 en 1014 AD (<a href="#fig-oxcal-output3" class="quarto-xref">fig.&nbsp;<span>8.22</span></a>). Deze bouwfase laat zich - mede op historische grond - vermoedelijk rond het jaar 1000 AD situeren.</p>
 <div id="fig-oxcal-output3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-oxcal-output3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./figuren/figuur_B_22_update.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25" title="Figuur&nbsp;8.22: Gemodelleerde datering van een individueel element uit het opgebouwde Bayesiaans model."><img src="./figuren/figuur_B_22_update.png" class="img-fluid figure-img"></a>
+<a href="./figuren/figuur_oxcal_agreement.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Figuur&nbsp;8.22: Gemodelleerde datering van een individueel element uit het opgebouwde Bayesiaans model."><img src="./figuren/figuur_oxcal_agreement.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-oxcal-output3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figuur&nbsp;8.22: Gemodelleerde datering van een individueel element uit het opgebouwde Bayesiaans model.
@@ -1634,7 +1630,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/master/08_C14_OxCal.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","selector":".lightbox","descPosition":"bottom","closeEffect":"zoom"});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/edit/master/08_C14_OxCal.qmd" class="toc-action"><i class="bi bi-github"></i>Bewerk deze pagina</a></li><li><a href="https://github.com/ErfgoedPublicaties/HAOE-21-Radiokoolstof/issues/new" class="toc-action"><i class="bi empty"></i>Een probleem melden</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","descPosition":"bottom","selector":".lightbox","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
