@@ -5,20 +5,36 @@ In principe kan alle organisch materiaal gedateerd worden met de radiokoolstofte
 De radiokoolstofmethode dateert een materiaal, maar de erfgoedonderzoeker wil doorgaans de datering van een bepaalde gebeurtenis of activiteit bepalen. Het is dan ook uitermate belangrijk om een innig verband te hebben tussen het dateerbaar materiaal en deze gebeurtenis of activiteit. Binnen het erfgoedonderzoek wordt dit verband afgeleid uit de kennis die men heeft opgebouwd tijdens archeologische bodemingrepen of bouwhistorisch onderzoek. De veronderstellingen (en de onzekerheid hierop) die aan de basis liggen van deze verbanden tussen materiaal en activiteit moeten steeds zorgvuldig en kritisch geanalyseerd worden.
 
 ::: {.callout-note appearance="simple"}
-
 De radiokoolstofmethode dateert een materiaal. De erfgoedonderzoeker wil echter meestal de datering van een gebeurtenis of activiteit bepalen.
-
 :::
-
-
 
 Een staalname en datering van materiaal met een gekende tafonomische achtergrond en een bij de opgravingen of bouwhistorisch onderzoek goed geëvalueerd stratigrafisch verband zal de kenniswinst maximaliseren [@ervynck_assessment._2015]. Rijzen er na de radiokoolstofdatering vragen over de herkomst van het materiaal, het onderlinge verband tussen het staal en het archeologisch spoor of de activiteit die men wil dateren, dan is de uitgevoerde analyse een verkwisting van tijd en middelen. Een adequate staalname en selectie van geschikt materiaal vormt het fundament van de uiteindelijke dateringsresultaten en hun interpretatie [@evin_single_1999].
 
 ## Welk materiaal?
 
-Eén van de vaakst gedateerde materialen is **hout**, zowel in droge, waterverzadigde als verkoolde toestand. Hout is dan ook éénn van de meest gebruikte grondstoffen doorheen de geschiedenis van de mens. Bovendien vraagt het materiaal slechts een vrij eenvoudige behandeling voorafgaand aan de radiokoolstofdatering (zie 5.4). Andere plantaardige resten, zoals **zaden en vruchten**, zijn eveneens ideaal materiaal om tot een radiokoolstofdatering te komen. Uit pakketten van niet-vergane plantenresten, zoals veenlagen, kunnen zowel bulkstalen als specifieke macroresten (zaden, stukjes hout, ...) voor een datering geselecteerd worden. **Vezels** van plantaardige oorsprong, al dan niet verwerkt in touw, kledij of ander **textiel** zijn eveneens opgebouwd uit koolstofverbindingen en kunnen dus een datering opleveren.
+### Hout en houtskool
+
+Eén van de vaakst gedateerde materialen is **hout**, zowel in droge, waterverzadigde als verkoolde toestand. Hout is dan ook één van de meest gebruikte grondstoffen doorheen de geschiedenis van de mens. Bovendien vraagt het materiaal slechts een vrij eenvoudige behandeling voorafgaand aan de radiokoolstofdatering (zie 5.4).
+
+### Plantenresten
+
+Kruidachtige planten en landbouwgewassen hebben doorgaans een korte levensduur. Ze vormen geen, of slechts in beperkte mate, houtweefsel waardoor geen rekening moet gehouden worden met een mogelijk oud-hout-effect. Restanten van plantendelen, **zaden en vruchten** leveren daardoor dikwijls geschikt materiaal om tot een betekenisvolle radiokoolstofdatering te komen.
+
+Uit pakketten van niet-vergane plantenresten, zoals veenlagen, kunnen zowel bulkstalen als specifieke macroresten (zaden, stukjes hout, ...) voor een datering geselecteerd worden.
+
+**Vezels** van plantaardige oorsprong, al dan niet verwerkt in touw, kledij of ander **textiel** zijn eveneens opgebouwd uit koolstofverbindingen en kunnen dus een datering opleveren.
+
+### Aardewerk
+
+Aardewerk is op zich niet via radiokoolstof te dateren, maar aan de binnenzijde van menige pot, pan of kruik heeft zich soms een **korst van etensresten** opgebouwd. Aangezien die etensresten rechtstreeks gelinkt zijn aan het gebruik van het recipiënt, en gebruiksaardewerk in regel geen lange 'levensduur' kent, kan een radiokoolstofdatering op dat organisch materiaal wel een betrouwbare datering voor het gebruiksvoorwerp opleveren. Ook vetten die in het aardewerk zijn geabsorbeerd komen in aanmerking voor een radiokoolstofanalyse [@casanova2020; @casanova2024]. Een meer doorgedreven residu-analyse kan bijkomend nog details onthullen over de inhoud van het recipiënt, wat soms nodig is om een reservoireffect uit te sluiten (zie 2.8).
+
+Indien een **plantaardige magering** is gebruikt, zoals gras of mos, kan dit mogelijk een alternatief aanrijken om tot een datering te komen. Bij deze methode kan het isoleren van voldoende (verkoolde) plantaardige resten uit de kleimatrix uiteraard een belemmerende factor zijn [@teetaert2020].
+
+### Menseliijke en dierlijke resten
 
 **Beenderen**, zowel van dier als mens, bevatten aanzienlijke hoeveelheden koolstof. Indien beendermateriaal in het bodemarchief bewaard is gebleven, bestaat echter de kans dat het botweefsel (recente) koolstof heeft uitgewisseld met in de bodem aanwezige koolstofverbindingen (zoals humuszuren, ...). Een stukje bot dateren kan daardoor een te jonge radiokoolstofdatering opleveren. Om dat te verhelpen worden eiwitcomponenten - hoofdzakelijk collageen - uit het botmateriaal geëxtraheerd. Dit collageen is tijdens het 'verblijf in de bodem' niet geneigd om meer recente koolstof in te bouwen en vormt zo een betrouwbare bron van oude koolstof voor de radiokoolstofanalyse. Bij **crematies** kunnen stukken witverbrand bot ook een datering opleveren. Hier is in regel geen collageen meer aanwezig, en moet men noodgedwongen een ander bestanddeel - in dit geval het anorganische apatiet - afzonderen en dateren. Apatiet is een mineraal waarin ook koolstof kan opgenomen zijn. Ook tanden, hoorn en haar zijn geschikt materiaal voor een radiokoolstofdatering. **Hoorn en haar** zijn opgebouwd uit keratine, een eiwit dat als bron voor de koolstofdatering kan worden gebruikt. Bij **tanden** kan koolstof worden gehaald uit de verschillende delen: email, dentine en cementum. Gelooide huid die tot **leer** werd verwerkt, of ruwe huid die onder droge of extreem natte omstandigheden bewaard is gebleven, kan eveneens bemonsterd worden voor een radiokoolstofanalyse.
+
+### Mortel
 
 Voor de bouw van historische gebouwen werden doorgaans niet-hydraulische of slechts gedeeltelijk hydraulische mortels gebruikt als bindmiddel tussen de natuur- of bakstenen bouwelementen [@van_balen_kalkboek._2003]. Niet-hydraulische **(kalk)mortel** hardt uit door blootstelling aan de lucht, de hydraulische variant wordt hard door reactie met nevenbestanddelen zoals klei, kalk en water. In principe wordt een niet-hydraulische kalkmortel als volgt bereid (@fig-mortel). Kalksteen of schelpen, al dan niet tot poeder vermalen, worden op hoge temperatuur gebracht waardoor het calciumcarbonaat ($\mathrm{CaCO_3}$) ontbindt tot calciumoxide ($\mathrm{CaO}$) of ongebluste kalk, en ($\mathrm{CO_2}$) (reactie 1). Aan de ongebluste kalk wordt water ($\mathrm{H_2O}$) toegevoegd zodat calciumhydroxide ($\mathrm{Ca(OH)_2}$) of gebluste kalk ontstaat (reactie 2). Die wordt vermengd met een vulmiddel (zoals bv. zand) waardoor men mortel bekomt. Na het metselen zal de gebluste kalk zich binden met koolstofdioxide uit de lucht en opnieuw calciumcarbonaat vormen (reactie 3). Dit calciumcarbonaat vormt uiteindelijk de uitgeharde mortel tussen de natuur- of bakstenen.
 
@@ -34,6 +50,8 @@ Proces van aanmaak en toepassing van een hydraulische kalkmortel [naar @heinemei
 
 Soms wordt ervoor geopteerd om niet zozeer de mortel op zich te dateren, maar partikels houtskool ingesloten in de mortel. Men gaat er dan van uit dat die afkomstig zijn van het vuur waarin de kalksteen of de schelpen werden gebrand om ongebluste kalk te bekomen. Er zijn echter scenario's denkbaar die deze veronderstelling kunnen ondergraven en die aldus een te oude datering opleveren. Zo kan houtskool eeuwenlang in de (zand)bodem bewaard blijven en tijdens het mengen van de mortel met zand in de mortel terecht komen. Soms is het afkomstig van gerecycleerd (en dus ouder) hout dat gebruikt werd als brandstof bij het verhitten van de kalksteen. Om nog maar te zwijgen over een mogelijk 'oud-hout effect' (zie 4.4). Een extreme vorm van contaminatie kan optreden wanneer steenkool is gebruikt om de kalk te branden. Kleine partikels van deze fossiele brandstof kunnen in de mortel zijn opgenomen en zien er op het eerste gezicht uit als archeologische houtskool.
 
+### Niet-organisch materiaal
+
 Een aantal andere, niet-organische materialen wordt onder bepaalde omstandigheden ook aanzien als betrouwbare bron van oude, te dateren koolstof, al is dit dikwijls nog onderzoek in een experimenteel stadium. Zo kon loodcarbonaat uit de vermeende (loden) grafkist van Sint-Idesbald (een 12de-eeuwse abt van de Duinenabdij te Koksijde) gedateerd worden en werd bevestigd dat de menselijke resten niet van deze heilige konden komen. Het loodcarbonaat ontstond tijdens de ontbinding van het mensenlichaam, waarbij methaan ($\mathrm{CH_4}$) en koolstofdioxide ($\mathrm{CO_2}$) uit de menselijke resten vrijkomen, die op hun beurt reageerden met de loden grafkist. De koolstof in het loodcarbonaat is dus afkomstig van het lichaam van de overledene en aldus een geschikte bron om het overlijden van deze persoon te dateren [@van_strydonck_14c-dating_2016]. Daarnaast vinden we loodcarbonaat soms terug in zalfpotjes of andere toiletartikelen: dit product heeft in poedervorm een bleke kleur welke in het oude Egypte al werd gebruikt als cosmetica. Tijdens het productieproces van dit gegeerde poeder wordt koolstof uit de atmosfeer in het loodcarbonaat vastgelegd, wat nu - met een aangepast laboratoriumprotocol - een radiokoolstofdatering mogelijk maakt [@beck_absolute_2018]. Ook de koolstof gevangen in ijzer kan een datering van het smeltproces opleveren, op voorwaarde dat geen steenkool, maar houtskool werd gebruikt als brandstof [@cook_using_2003]. Steenkool bevat immers geen $\mathrm{ ^{14}C}$ meer door het eeuwenlange radioactief verval, waardoor een veel te oude datering zou bekomen worden.
 
 ## Selectie van geschikt materiaal
@@ -45,8 +63,6 @@ Ook houtskool en hout zijn zeer geschikt dateringsmateriaal maar kunnen onderhev
 Wanneer mensenresten worden gedateerd, vormen deze van jong gestorven personen een wat meer betrouwbare keuze dan deze van oudere individuen. Tijdens het leven gaat de op- en afbouw van weefsels steeds weer door (= remodeleren) waardoor het $\mathrm{^{14}C}$-gehalte in een lichaam hetzelfde blijft als in de atmosfeer. Een skeletdeel van een jong gestorven persoon dateren zal daardoor een goede benadering geven voor het tijdstip van overlijden. Bij oudere mensen verloopt deze remodelering echter niet meer zo vlot, waardoor in hun skelet steeds meer 'oude' koolstof blijft zitten. Indien men botmateriaal dateert van een persoon die ouder was dan 60 jaar op het moment van overlijden, kan er tussen de radiokoolstofdateringen en het tijdstip van overlijden een maximaal verschil van ca. 30 jaar optreden [@ubelaker_impact_2015]. Bij huisdieren die voor de vleesvoorziening worden gebruikt, stelt dit probleem van remodelering zich nauwelijks omdat zij toch op vrij jonge leeftijd worden geslacht.
 
 In veel gevallen lijkt een datering op zaden en vruchten, of jong houtig materiaal (vanwege het oud-houteffect, zie 4.3) een goede keuze. Men dient er zich wel steeds van bewust te zijn dat verkoold materiaal inert is tegen biologische degradatie en honderden, zelfs duizenden jaren in het bodemarchief aanwezig kan blijven zonder te vergaan. Mogelijk zijn verkoolde zaden en vruchten of kleine partikels houtskool in het bodemarchief dus residueel (zie ook 4.5). Ook gecremeerd menselijk of dierlijk botmateriaal kan trouwens lang in de bodem bewaard blijven en als residuele vondst in archeologische sporen opduiken. Indien men echter zeker is dat het verkoold materiaal niet residueel is of men net het branden van houtskool, een crematieproces of een brand wil dateren, is het uiteraard wel geschikt om die gebeurtenis te dateren. In bodemomstandigheden waarin onverkoold planten- of dierenmateriaal in regel niet bewaart (zoals droge zand- of leembodems) maar dit toch aanwezig is, is de kans echter groot dat het om recente, intrusieve resten gaat. In die gevallen is een datering van het onverkoolde materiaal zinloos en vormen de verkoolde resten een betere optie.
-
-Aardewerk is op zich niet via radiokoolstof te dateren, maar aan de binnenzijde van menige pot, pan of kruik heeft zich soms een korst van etensresten opgebouwd. Aangezien die etensresten rechtstreeks gelinkt zijn aan het gebruik van het recipiënt, en gebruiksaardewerk in regel geen lange 'levensduur' kent, kan een radiokoolstofdatering op dat organisch materiaal wel een betrouwbare datering voor het gebruiksvoorwerp opleveren. Een meer doorgedreven residu-analyse kan bijkomend nog details onthullen over de inhoud van het recipiÃ«nt, wat soms nodig is om een reservoireffect uit te sluiten (zie 2.8).
 
 ## Dateringsstrategie
 
@@ -81,7 +97,7 @@ Natuurlijk kan het binnen een spoor toch nuttig zijn een $\mathrm{ ^{14}C}$-date
 Het oud-hout-effect wordt tegenwoordig als een soort containerbegrip gebruikt voor alles wat kan mis gaan bij het dateren van hout en houtskool uit archeologische, bouwhistorische en museale contexten. In oorsprong verwijst het naar de problemen die kunnen opduiken bij het dateren van **kernhout**. Kernhout is het dode houtweefsel waarin geen actief transport van water en voedingsstoffen meer kan plaatsvinden. Het bevindt zich in het centrale gedeelte van een stam en wordt omgeven door het **spinthout**, dat aan de buitenzijde van de stam gelegen is, net onder de schors (zie @fig-stam en de handleiding [Dendrochronologie en erfgoedonderzoek](https://publicaties.onroerenderfgoed.be/HAOE-16-Dendrochronologie/) voor meer detail). Bij een levende boom wordt elk jaar een nieuw laagje hout gevormd vanuit een weefsellaag (het cambium) die zich net onder de schors bevindt. Het 'jongste', meest recent gevormde hout situeert zich dus aan de buitenzijde van een stam. Naarmate de boom ouder wordt, zal zich een steeds groter leeftijdsverschil opbouwen tussen de meest recent gevormde jaarring aan de buitenzijde van de stam en het centrale gedeelte van een boom, dat enkel uit dood houtweefsel bestaat. Aangezien sommige bomen wel honderden jaren oud kunnen worden, kan de datering van een stuk kernhout (dat dus mogelijk werd gevormd toen een eeuwenoude boom nog maar enkele jaren oud was) een sterk vertekend beeld opleveren van het kappen van die boom (meestal de gebeurtenis die men wil dateren). Een radiokoolstofdatering van een stuk kernhout is daardoor slechts te interpreteren als een *post quem*-datering, en ligt mogelijk vele decennia ver verwijderd van de werkelijke kapdatum.
 
 ::: {#fig-stam}
-![](./figuren/figuur_15_update.png) 
+![](./figuren/figuur_15_update.png)
 
 Doorsnede van een eikenhouten stam.
 :::
@@ -135,22 +151,15 @@ De verwachtingen die men heeft bij het uitvoeren van een radiokoolstofdatering k
 De kalibratiecurve in verschillende periodes, a: een lineair, stabiel verloop in de late bronstijd, b:een duidelijke 'wiggle' in de 13de eeuw AD, c: het 'Hallstatt-plateau' in de ijzertijd en een 'wiggle' tussen 400 en 200 BC, d: een turbulent verloop van de kalibratiecurve tussen 3600 en 2500 BC (cijferaanduidingen, zie tekst)
 :::
 
-
 ::: {.callout-note appearance="simple"}
-
 De vorm van de kalibratiecurve bepaalt voor een groot deel de precisie van de gekalibreerde radiokoolstofdatering.
-
 :::
 
 Dat de **vorm van de kalibratiecurve** voor een groot deel de precisie van de gekalibreerde radiokoolstofdatering bepaalt, wordt in wat volgt geïllustreerd met een aantal gesimuleerde voorbeelden. Indien een radiokoolstofdatering in een periode valt waarin de kalibratiecurve een mooi, quasi rechtlijnig verloop kent, zal het bereik van de gekalibreerde datering meestal een vrij beperkt tijdsinterval overspannen. In de kansverdeling van de kalenderjaren valt dan nog de vorm van een normaalverdeling te herkennen (simulatie 1 in @fig-combine). Dit ligt helemaal anders wanneer de radiokoolstofdatering in een zone valt waarin de kalibratiecurve een plateau of een vlak verloop vertoont. Dit is bijvoorbeeld het geval in de ijzertijd waar de kalibratiecurve het zogenaamde **Hallstatt-plateau** bereikt. Een gekalibreerde radiokoolstofdatering valt dan enkel binnen een heel ruim tijdsinterval te situeren, van gemakkelijk 200 tot 300 jaar breed (simulatie 2 in @fig-combine). Dit heeft tot gevolg dat materiaal uit de vroege ijzertijd moeilijk nauwkeurig te dateren valt met een radiokoolstofanalyse. Net vóór en aan het eind van deze periode, waar de kalibratiecurve weer een helling volgt, heeft een gekalibreerde radiokoolstofouderdom weer een prima, nauw dateringsinterval. Helemaal aan het begin van het Hallstatt-plateau heeft de kalibratiecurve een zodanig steil verloop dat na kalibratie het dateringsinterval zelfs nauwer is dan voor kalibratie (simulatie 3 in @fig-combine): een fenomeen dat zich op geen enkel ander tijdstip manifesteert!
 
-
 ::: {.callout-note appearance="simple"}
-
 Naar het Hallstatt-plateau wordt door archeologen ook wel verwezen als 'the 1st millennium BC radiocarbon disaster'.
-
 :::
-
 
 Een lokale schommeling in de kalibratiecurve, bijvoorbeeld de *'wiggle'* in de 13de eeuw, zorgt ervoor dat na kalibratie de mogelijke datering niet langer in éénn, aaneengesloten interval valt. De werkelijke datering ligt ergens binnen twee kleinere intervallen, die onderling niet bij elkaar aansluiten. Daardoor is het in het onderstaande voorbeeld (simulatie 4 in @fig-combine) moeilijk vast te stellen of het hier om 13de- of 14de-eeuws materiaal gaat. Soms kan één van de pieken of intervallen uitgesloten worden op basis van een historische bron (die dan een *terminus* geeft voor de datering) of door andere dateringen in rekening te brengen, van vondsten die een stratigrafisch verband met het eerst gedateerde materiaal vertonen (zie verder, [hoofdstuk 7](#modelleren)).
 
