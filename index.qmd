@@ -15,7 +15,7 @@ Andere online handleidingen en afwegingskaders van het agentschap Onroerend Erfg
 
 Gelieve te citeren als: <br/>
 
-Haneca K., Ervynck A., Van Strydonck M. (`r Sys.Date() |> format("%Y")`). ^14^C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed (v 1.2.4), Brussel. <https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/index.html> (geraadpleegd op ...)
+Haneca K., Ervynck A., Van Strydonck M. (`r Sys.Date() |> format("%Y")`). ^14^C: dateren met radiokoolstof. Handleiding agentschap Onroerend Erfgoed (v 1.3.0), Brussel. <https://publicaties.onroerenderfgoed.be/HAOE-21-Radiokoolstof/index.html> (geraadpleegd op ...)
 
 Oorspronkelijke gepubliceerd als: <br/>
 

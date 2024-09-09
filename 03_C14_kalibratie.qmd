@@ -104,7 +104,7 @@ knitr::kable(tmp, kable_stylingposition = "left", )
 
 Momenteel is deze techniek nog niet toegepast op archeologisch of bouwkundig erfgoed in Vlaanderen.
 
-::: {.callout-tip appearance="simple"}
+::: {.callout-note appearance="default"}
 
 ## Leestip
 

@@ -47,3 +47,9 @@ In het overzicht hier onder worden de belangrijkste wijzigingen die zijn aangebr
 - Omschakelen van [`bookdown`](https://bookdown.org/) naar [`quarto`](https://quarto.org/).
 - Integratie [`lightbox`](https://quarto.org/docs/output-formats/html-lightbox-figures.html) voor figuren.
 
+
+#### 1.3.0 (09-09-2024)
+
+- Actualisatie handleiding.
+- Hoofdstuk 8 aangepast naar nieuwe interface OxCal 4.4.
+- Toevoegingen in hoofdstuk 'kalibratie' (3.4), 'onderzoeksvragen' (4.1) en 'bibliografie'.

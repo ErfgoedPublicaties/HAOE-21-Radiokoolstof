@@ -1,5 +1,6 @@
 /*-- scss:rules --*/
 
+
 .panel-caption, .figure-caption, figcaption {
   font-size: 0.8rem;
   font-style: italic;
@@ -24,12 +25,20 @@
 div.callout-note.callout {
     border-color: #00509d;
 }
-div.callout-tip.callout {
-    border-color: #00509d;
-}
 
 .callout.callout-style-simple .callout-body {
     font-size: 1.1rem;
     color:  #00509d;
     font-style: italic;
-}
+} 
+
+.callout.callout-style-default .callout-body {
+    font-size: 1.1rem;
+    color:  #00509d;
+    font-style: italic;
+} 
+
+
+
+
+
